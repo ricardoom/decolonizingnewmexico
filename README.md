@@ -1,0 +1,2 @@
+# decolonizingnewmexico
+A scholarly project
