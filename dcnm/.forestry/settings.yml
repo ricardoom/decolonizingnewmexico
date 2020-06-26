@@ -9,8 +9,8 @@ sections:
   label: Pages
   create: all
   match: "*"
-upload_dir: ''
-public_path: ''
+upload_dir: http://res.cloudinary.com/toupeeproofbullets/image/upload
+public_path: https://res.cloudinary.com/toupeeproofbullets/image/upload
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
