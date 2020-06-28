@@ -4,18 +4,12 @@
 name = "DcnmTheme"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "A custom theme for this project, grids and minimal JS"
 homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Ricardo E. Galvez"
+  homepage = "http://ricardogalvezdesign.com"
