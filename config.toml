@@ -8,5 +8,3 @@ enableRobotsTXT = "true"
 
 [permalinks]
     post = "/:year/:month/:title/"
-
-[menus]
