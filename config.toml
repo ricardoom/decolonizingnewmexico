@@ -2,9 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Decolonizing New Mexico"
 theme = "dcnmTheme"
-
 relativeURLs = "true"
 enableRobotsTXT = "true"
-
 [permalinks]
     post = "/:year/:month/:title/"
