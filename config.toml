@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://epic-lichterman-3494de.netlify.app/"
 languageCode = "en-us"
 title = "Decolonizing New Mexico"
 theme = "dcnmTheme"
