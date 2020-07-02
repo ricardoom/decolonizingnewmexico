@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-{{ hugo.Generator }}
-</head>
-<style>
-  body {
-    background-color: hsl(0, 0%, 99%);
-  }
-
-  .debugger>* {
-    outline: red 1px dotted;
-  }
-</style>
-
-<body class="debugger">
-  <header>
-    <nav>
-      -- make this a partial
-    </nav>
-  </header>
+<header class="[ homepage] [ otherpage ]">
+  <h1>{{ .Site.Title }} & logo here...</h1>
+  {{ with .Site.Params.subtitle }}
+  <span class="subtitle">{{ . }}</span>
+  {{ end }}
+  {{ with .Site.Params.author }}
+  <span class="author">{{ . }}</span>
+  {{ end }}
+  {{- partial "nav.html" . -}}
+</header>

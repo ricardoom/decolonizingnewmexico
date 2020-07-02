@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html class="no-js">
+{{ block "head" . }}
+{{- partial "head.html" . -}}
+{{ end }}
+
+
+<body>
+  {{- partial "header.html" . -}}
+  {{- block "main" . }}{{- end }}
+  {{ block "footer" . }}
+  {{ partial "footer" . }}
+  {{ end }}
+</body>
+
+</html>
