@@ -1,10 +1,15 @@
-<header class="[ homepage] [ otherpage ]">
-  <h1>{{ .Site.Title }} & logo here...</h1>
+<header class="homepage | otherpage">
+  {{ if .IsHome }}
+  <h1>{{ .Site.Title }}</h1>
+  {{ else }}
+  <h1><a href="/">{{ .Site.Title }}</a></h1>
+  {{ end }}
+
   {{ with .Site.Params.subtitle }}
   <span class="subtitle">{{ . }}</span>
   {{ end }}
   {{ with .Site.Params.author }}
-  <span class="author">{{ . }}</span>
+  <span class="author">Developed by {{ . }}</span>
   {{ end }}
   {{- partial "nav.html" . -}}
 </header>

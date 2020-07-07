@@ -4,8 +4,15 @@
     <header>
       <h1>{{ .Title }}</h1>
     </header>
-    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-    {{ .Content }}
+
+
+    {{ $bundle := .Site.GetPage "page" "chapters" }}
+    {{$bundle}}
+    {{ .Resources }}
+    {{ range $bundle.Resources.ByType "page"  }}
+    {{ .Title }}: {{ .Content }}
+    {{ end }}
+
   </article>
   <ul>
     <!-- Ranges through content/posts/*.md -->

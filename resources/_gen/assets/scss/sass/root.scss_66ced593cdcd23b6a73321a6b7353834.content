@@ -1,0 +1,93 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+ul[class], ol[class] {
+  padding: 0; }
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], figure, blockquote, dl, dd {
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+ul[class], ol[class] {
+  list-style: none; }
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+article > * + * {
+  margin-top: 1em; }
+
+input, button, textarea, select {
+  font: inherit; }
+
+img:not([alt]) {
+  filter: blur(10px); }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important; } }
+
+:root {
+  --ratio: 1.6180339887;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio)); }
+
+h1 {
+  font-size: var(--s5);
+  line-height: var(--s4); }
+
+header > span {
+  font-size: var(--s2);
+  line-height: var(--s2);
+  display: block; }
+
+p {
+  max-width: 65ch; }
+
+:root {
+  --measure: 60ch; }
+
+* {
+  max-width: var(--measure); }
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none; }
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+body {
+  background-color: #efefef; }
+  body > .homepage {
+    font-size: var(--s3); }
+
+/*# sourceMappingURL=root.css.map */

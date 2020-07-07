@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Decolonizing New Mexico</title>
+    <link>https://epic-lichterman-3494de.netlify.app/posts/</link>
+    <description>Recent content in Posts on Decolonizing New Mexico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Jun 2020 16:50:23 -0400</lastBuildDate>
+    
+	<atom:link href="https://epic-lichterman-3494de.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

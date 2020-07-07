@@ -1,13 +1,24 @@
 {{ define "main" }}
+{{ $pageRes := .Page.Resources.GetMatch "notes.md" }}
 
-<section id="main">
-  <p>=== single html file from: themes/dcnmTheme/layouts/chapters/single.html ===</p>
+{{ if .Site.IsServer }}
+{{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
+{{ else }}
+{{ printf "<!-- its all the way live! -->" | safeHTML }}
+{{ end }}
+<section id="main" class="{{ .Params.Type }}">
   <h2 id="title">{{ .Title }}</h2>
-  <div>
-    <article id="content">
-      {{ .Content }}
-    </article>
-  </div>
+
+  <article id="content">
+    {{ .Content }}
+  </article>
+  {{ if $pageRes }}
+  {{$pageRes}}
+  <footer class="{{ $pageRes.Params.class }}">
+    <h3>{{ $pageRes.Title }}</h3>
+    <b>Here are the .Page.Resources:</b> {{ $pageRes.Content }}
+  </footer>
+  {{ end }}
 </section>
 <aside id="meta">
   <div>

@@ -1,0 +1,40 @@
+//
+// Imports
+//
+@import 'vendor/reset.min.scss';
+@import 'partial/typography';
+@import 'partial/color';
+//
+
+:root {
+  --measure: 60ch;
+}
+
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+html {
+  font-family: $sans-serif;
+}
+
+body {
+  background-color: $base-white;
+  
+  & > .homepage {
+    font-size: var(--s3);
+  }
+
+
+}
+
