@@ -1,24 +1,20 @@
 {{ define "main" }}
+{{ if .Site.IsServer }}
+{{ printf "<!-- the local development template for chapters/list.html   -->" | safeHTML }}
+{{ else }}
+{{ printf "<!-- its all the way live! -->" | safeHTML }}
+{{ end }}
 <main>
   <article>
     <header>
       <h1>{{ .Title }}</h1>
     </header>
-
-
-    {{ $bundle := .Site.GetPage "page" "chapters" }}
-    {{$bundle}}
-    {{ .Resources }}
-    {{ range $bundle.Resources.ByType "page"  }}
-    {{ .Title }}: {{ .Content }}
-    {{ end }}
-
   </article>
   <ul>
     <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
+    {{ range .Pages.ByWeight }}
     <li>
-      <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+      <a href="{{.Permalink}}" data-time-stamp="{{.Date.Format "2006-01-02"}}">{{.Title}}</a>
     </li>
     {{ end }}
   </ul>

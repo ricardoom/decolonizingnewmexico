@@ -1,10 +1,7 @@
-<header class="homepage | otherpage">
-  {{ if .IsHome }}
-  <h1>{{ .Site.Title }}</h1>
-  {{ else }}
-  <h1><a href="/">{{ .Site.Title }}</a></h1>
-  {{ end }}
+{{ $baseStyles := .Site.Params.style }}
+<header class="{{ if .IsHome }}{{ $baseStyles.homepage }}{{ else }}{{ $baseStyles.interior }}{{ end }}">
 
+  <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
   {{ with .Site.Params.subtitle }}
   <span class="subtitle">{{ . }}</span>
   {{ end }}

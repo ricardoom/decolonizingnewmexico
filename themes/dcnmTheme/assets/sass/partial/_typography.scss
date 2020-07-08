@@ -34,14 +34,14 @@ $slab-serif: 'Rockwell', 'Rockwell Extra Bold', 'Courier New', Monoco, Courier, 
 }
 
 h1 {
-  font-size: var(--s5);
+  font-size: var(--s4);
   line-height: var(--s4);
 }
 
 header {
   > span {
-    font-size: var(--s2);
-    line-height: var(--s2);
+    font-size: var(--s1);
+    line-height: var(--s1);
     display: block;
   }
 }

@@ -32,9 +32,25 @@ body {
   background-color: $base-white;
   
   & > .homepage {
-    font-size: var(--s3);
+    & nav {
+      background-color: $base-gray;
+    }
   }
 
+  &.stack {
+  /* ↓ The space is set as a custom property */
+  // --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
+  & > * {
+    margin-top: 0; // swtich to logical properties here...
+    margin-bottom: 0;
+    }
+  & > * + * {
+    margin-top: calc(var(--ratio) * 1rem);
+  }  
+  }
 }
 

@@ -4,9 +4,7 @@ draft = false
 title = "Introduction"
 slug = 'introduction'
 type = 'chapters'
-[[resources]]
-  name = 'notes'
-  src = 'notes.md'
+weight = 1
 +++
 
 ## INTRODUCTION

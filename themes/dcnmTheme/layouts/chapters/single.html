@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $pageRes := .Page.Resources.GetMatch "notes.md" }}
-
+{{ $pageClass := $pageRes.Params.class }}
 {{ if .Site.IsServer }}
 {{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
 {{ else }}
@@ -8,13 +8,12 @@
 {{ end }}
 <section id="main" class="{{ .Params.Type }}">
   <h2 id="title">{{ .Title }}</h2>
-
   <article id="content">
     {{ .Content }}
   </article>
   {{ if $pageRes }}
-  {{$pageRes}}
-  <footer class="{{ $pageRes.Params.class }}">
+  {{ $pageRes }}
+  <footer class="{{ $pageClass }}">
     <h3>{{ $pageRes.Title }}</h3>
     <b>Here are the .Page.Resources:</b> {{ $pageRes.Content }}
   </footer>
@@ -43,10 +42,11 @@
   </div>
   <div>
     {{ with .PrevInSection }}
+    <span>Previous</span>
     <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
     {{ end }}
     {{ with .NextInSection }}
-    <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+    <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>Next</span>
     {{ end }}
   </div>
 </aside>

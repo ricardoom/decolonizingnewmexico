@@ -1,11 +1,11 @@
----
-title: 'Comparative Analysis'
-date: 2020-07-06T18:40:40-04:00
-draft: false
-slug: 'analysis-compared'
-type: 'chapters'
-
----
++++
+date = "2020-07-06T18:40:40-04:00"
+draft = false
+title = "Comparative Analysis"
+type = 'chapters'
+slug = 'analysis-compared'
+weight = 3
++++
 
 ## Overview
 In an effort to contextualize this initiative, comparative research and analysis on methods and frameworks of various Truth and Reconciliation Commission (TRC) projects provided insightful information. TRC models have been critical in resolving deeply rooted conflicts around the world, promoting the belief that confronting and reckoning with the past is necessary for successful transitions from conflict, resentment and tension to peace and connectedness.

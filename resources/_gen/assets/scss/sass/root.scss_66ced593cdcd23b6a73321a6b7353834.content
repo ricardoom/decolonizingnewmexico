@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -56,12 +57,12 @@ img:not([alt]) {
   --s5: calc(var(--s4) * var(--ratio)); }
 
 h1 {
-  font-size: var(--s5);
+  font-size: var(--s4);
   line-height: var(--s4); }
 
 header > span {
-  font-size: var(--s2);
-  line-height: var(--s2);
+  font-size: var(--s1);
+  line-height: var(--s1);
   display: block; }
 
 p {
@@ -87,7 +88,17 @@ html {
 
 body {
   background-color: #efefef; }
-  body > .homepage {
-    font-size: var(--s3); }
+  body > .homepage nav {
+    background-color: #f2f2f2; }
+  body.stack {
+    /* ↓ The space is set as a custom property */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    body.stack > * {
+      margin-top: 0;
+      margin-bottom: 0; }
+    body.stack > * + * {
+      margin-top: calc(var(--ratio) * 1rem); }
 
 /*# sourceMappingURL=root.css.map */

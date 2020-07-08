@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $regPages := .Site.RegularPages }}
 <main aria-role="main">
   <header class="homepage-header">
     <h1>{{ .Title }}</h1>
@@ -13,5 +14,12 @@
     {{ .Render "summary"}}
     {{ end }}
   </div>
+  <div class="summary-parent">
+    <p>$regPages variable aqui: {{ $regPages }}</p>
+    {{ range first 10 .Site.RegularPages }}
+    {{ .Render "content" }}
+    {{ end }}
+  </div>
+
 </main>
 {{ end }}
