@@ -1,10 +1,13 @@
 {{ define "main" }}
 {{ $regPages := .Site.RegularPages }}
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>{{ .Title }}</h1>
 
-  </header>
+{{ if .Site.IsServer }}
+{{ printf "<!-- the local development template for index.html -->" | safeHTML }}
+{{ else }}
+{{ printf "<!-- its all the way live! template for index.html -->" | safeHTML }}
+{{ end }}
+<main id="main-content">
+
   <div class="homepage-content">
     <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
     {{ .Content }}
@@ -14,7 +17,7 @@
     {{ .Render "summary"}}
     {{ end }}
   </div>
-  <div class="summary-parent">
+  <div class="summary-parent-2">
     <p>$regPages variable aqui: {{ $regPages }}</p>
     {{ range first 10 .Site.RegularPages }}
     {{ .Render "content" }}

@@ -2,12 +2,16 @@
 // Imports
 //
 @import 'vendor/reset.min.scss';
+@import 'partial/overrides';
 @import 'partial/typography';
 @import 'partial/color';
-//
+@import 'partial/header';
+@import 'partial/nav';
+@import 'partial/footer';
+@import 'partial/mixins';
 
 :root {
-  --measure: 60ch;
+  
 }
 
 * {
@@ -24,18 +28,43 @@ footer {
   max-width: none;
 }
 
-html {
-  font-family: $sans-serif;
-}
 
 body {
   background-color: $base-white;
+  color: $base-black;
   
+//
+// Shared & Global Blocks
+//
+
+> header,
+> main,
+> footer {
+  padding: var(--s3);
+}
+
+> header,
+> footer
+ {
+  background-color: $dark-gray;
+  color: $base-white;
+}
+
+// 
+//  Home page
+//
+
   & > .homepage {
     & nav {
-      background-color: $base-gray;
+      // background-color: $base-gray;
     }
   }
+
+  h1 {
+    font-size: var(--s4);
+    line-height: var(--s4);
+  }
+
 
   &.stack {
   /* ↓ The space is set as a custom property */
@@ -48,9 +77,35 @@ body {
     margin-top: 0; // swtich to logical properties here...
     margin-bottom: 0;
     }
+
   & > * + * {
-    margin-top: calc(var(--ratio) * 1rem);
-  }  
+    @supports not (margin-block: 1px) {
+      margin-bottom: var(--s1);
+      margin-top: var(--s1);
+      }
+      margin-block-start: var(--s1);
+    }
+    
+    > section {
+
+      h2 {
+        font-weight: 400;
+      }
+      article {
+        font-family: $serif;
+      }
+
+      @include noSupport(padding-inline, 1px) {
+        border: 1px dotted pink;
+        padding-left: var(--s3);
+        padding-right: var(--s3);
+      }
+      padding-inline: var(--s3);
+    }
   }
 }
 
+
+@include noSupport(margin-block) {
+  margin-top: var(--s1)
+}

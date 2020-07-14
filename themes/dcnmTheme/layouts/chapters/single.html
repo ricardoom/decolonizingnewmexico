@@ -1,12 +1,14 @@
 {{ define "main" }}
+
 {{ $pageRes := .Page.Resources.GetMatch "notes.md" }}
 {{ $pageClass := $pageRes.Params.class }}
+
 {{ if .Site.IsServer }}
 {{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
 {{ else }}
 {{ printf "<!-- its all the way live! -->" | safeHTML }}
 {{ end }}
-<section id="main" class="{{ .Params.Type }}">
+<section id="main-content" class="{{ .Params.Type }}">
   <h2 id="title">{{ .Title }}</h2>
   <article id="content">
     {{ .Content }}
@@ -50,4 +52,5 @@
     {{ end }}
   </div>
 </aside>
+
 {{ end }}

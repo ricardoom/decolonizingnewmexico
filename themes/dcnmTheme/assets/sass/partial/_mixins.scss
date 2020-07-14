@@ -1,0 +1,10 @@
+//
+// Mixins
+//
+
+@mixin noSupport($property, $value...) {
+  @supports not ($property: $value) {
+    outline: 1px dotted pink;
+    @content;
+  }
+}

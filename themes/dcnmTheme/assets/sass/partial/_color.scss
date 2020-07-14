@@ -1,2 +1,4 @@
 $base-white: #efefef;
 $base-gray: hsl(0, 0%, 95%);
+$base-black: hsl(0, 0%, 0%);
+$dark-gray: lighten($base-black, 0.75);

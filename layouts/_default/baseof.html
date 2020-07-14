@@ -6,7 +6,10 @@
 
 
 <body class="stack">
+  <a href="#main-content">Skip to main content</a>
+  {{- block "header" .  -}}
   {{- partial "header.html" . -}}
+  {{ end }}
   {{- block "main" . }}{{- end }}
   {{ block "footer" . }}
   {{ partial "footer" . }}

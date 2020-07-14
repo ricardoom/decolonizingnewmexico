@@ -42,34 +42,50 @@ img:not([alt]) {
     transition-duration: .01ms !important;
     scroll-behavior: auto !important; } }
 
+.footnote-backref {
+  font-family: sans-serif; }
+
 :root {
+  --measure: 60ch;
   --ratio: 1.6180339887;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
   --s-2: calc(var(--s-1) / var(--ratio));
   --s-1: calc(var(--s0) / var(--ratio));
-  --s0: 1rem;
+  --s0: 1.125rem;
   --s1: calc(var(--s0) * var(--ratio));
   --s2: calc(var(--s1) * var(--ratio));
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio)); }
-
-h1 {
-  font-size: var(--s4);
-  line-height: var(--s4); }
+  --s5: calc(var(--s4) * var(--ratio));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 header > span {
   font-size: var(--s1);
-  line-height: var(--s1);
-  display: block; }
+  line-height: var(--s1); }
 
 p {
   max-width: 65ch; }
 
-:root {
-  --measure: 60ch; }
+header > * > * {
+  color: #efefef; }
+
+header > span {
+  display: block; }
+
+header > .subtitle {
+  padding-top: var(--s1);
+  padding-block-start: var(--s1); }
+
+nav {
+  padding-top: var(--s-3);
+  padding-block-start: var(--s-3); }
+  nav a {
+    color: #efefef; }
+
+.site-footer a {
+  color: #efefef; }
 
 * {
   max-width: var(--measure); }
@@ -83,13 +99,20 @@ main,
 footer {
   max-width: none; }
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-
 body {
-  background-color: #efefef; }
-  body > .homepage nav {
-    background-color: #f2f2f2; }
+  background-color: #efefef;
+  color: black; }
+  body > header,
+  body > main,
+  body > footer {
+    padding: var(--s3); }
+  body > header,
+  body > footer {
+    background-color: #020202;
+    color: #efefef; }
+  body h1 {
+    font-size: var(--s4);
+    line-height: var(--s4); }
   body.stack {
     /* ↓ The space is set as a custom property */
     display: flex;
@@ -99,6 +122,26 @@ body {
       margin-top: 0;
       margin-bottom: 0; }
     body.stack > * + * {
-      margin-top: calc(var(--ratio) * 1rem); }
+      margin-block-start: var(--s1); }
+      @supports not (margin-block: 1px) {
+        body.stack > * + * {
+          margin-bottom: var(--s1);
+          margin-top: var(--s1); } }
+    body.stack > section {
+      padding-inline: var(--s3); }
+      body.stack > section h2 {
+        font-weight: 400; }
+      body.stack > section article {
+        font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
+      @supports not (padding-inline: 1px) {
+        body.stack > section {
+          outline: 1px dotted pink;
+          border: 1px dotted pink;
+          padding-left: var(--s3);
+          padding-right: var(--s3); } }
+
+@supports not (margin-block: ) {
+  outline: 1px dotted pink;
+  margin-top: var(--s1); }
 
 /*# sourceMappingURL=root.css.map */

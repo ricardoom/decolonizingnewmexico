@@ -7,7 +7,6 @@ type = 'chapters'
 weight = 1
 +++
 
-## INTRODUCTION
 Defining the De-Colonial Project
 This manuscript builds upon all of the work that precedes it, including my own work in and with community. As a colonial studies scholar, trained as anthropologist, historian and literary scholar, I have been thinking and writing about New Mexico history, including slavery and identity, which formed the subject of my doctoral work, for over two decades. In becoming the State Historian of New Mexico, a position I held for a decade, and in other subsequent positions, I have been working in and with community to recover histories, particularly the silenced and forgotten, and to help realize the relevance of these stories to the present and future. 
 

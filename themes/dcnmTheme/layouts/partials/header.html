@@ -1,3 +1,5 @@
+<!-- uses: _header.scss  -->
+
 {{ $baseStyles := .Site.Params.style }}
 <header class="{{ if .IsHome }}{{ $baseStyles.homepage }}{{ else }}{{ $baseStyles.interior }}{{ end }}">
 
