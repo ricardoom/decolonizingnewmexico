@@ -105,14 +105,14 @@ body {
   body > header,
   body > main,
   body > footer {
-    padding: var(--s3); }
+    padding: var(--s1); }
   body > header,
   body > footer {
     background-color: #020202;
     color: #efefef; }
   body h1 {
-    font-size: var(--s4);
-    line-height: var(--s4); }
+    font-size: var(--s2);
+    line-height: var(--s2); }
   body.stack {
     /* ↓ The space is set as a custom property */
     display: flex;
