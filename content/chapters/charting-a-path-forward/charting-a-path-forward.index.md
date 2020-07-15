@@ -1,6 +1,5 @@
 +++
 date = 2020-07-15T04:00:00Z
-draft = true
 slug = ""
 title = "Charting a path forward"
 type = "chapter"
