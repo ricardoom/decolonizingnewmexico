@@ -17,3 +17,5 @@ fields:
 - type: number
   name: weight
   label: weight
+pages:
+- content/chapters/charting-a-path-forward.index.md
