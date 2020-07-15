@@ -1,6 +1,6 @@
 +++
 title = "DCNM"
-
+draft = false
 +++
 I would like to talk to her, share her secrets, ask her of what difficult clays she was born, from what acts of love and violation she comes.
 

@@ -17,12 +17,14 @@
     {{ .Render "summary"}}
     {{ end }}
   </div>
-  <div class="summary-parent-2">
+  {{ if .Site.IsServer }}
+  <div class="debugger">
     <p>$regPages variable aqui: {{ $regPages }}</p>
     {{ range first 10 .Site.RegularPages }}
     {{ .Render "content" }}
     {{ end }}
   </div>
+  {{ end }}
 
 </main>
 {{ end }}
