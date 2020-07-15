@@ -1,12 +1,11 @@
 +++
-title = 'Notes'
-date = 2020-07-06T23:38:38-04:00
-draft = true
-slug = ''
-type = 'page'
-class = 'notes'
-+++
+class = "notes"
+date = 2020-07-07T03:38:38Z
+slug = ""
+title = "Notes"
+type = "page"
 
++++
 1. some notes 
 2. more notes
 3. and the third...
