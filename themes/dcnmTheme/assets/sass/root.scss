@@ -28,6 +28,39 @@ footer {
   max-width: none;
 }
 
+//
+// Skip nav
+//
+.skip {
+  margin: 0;
+  padding: 0;
+
+  a {
+    background-color: #FFFFFF;
+    color: $base-black;
+    display: block;
+    font-size: var(--s0);
+    font-weight: 400;
+    height: 1px;
+    left: -10000px;
+    line-height: var(--s0);
+    margin: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    z-index: 1000;
+  
+    &:focus {
+      left: 0;
+      height: initial;
+      position: absolute;
+      width: initial;
+      top: 0;
+    }
+  }
+  
+}
 
 body {
   background-color: $base-white;
@@ -74,7 +107,7 @@ body {
   justify-content: flex-start;
 
   & > * {
-    margin-top: 0; // swtich to logical properties here...
+    margin-top: 0; // switch to logical properties here...
     margin-bottom: 0;
     }
 

@@ -13,12 +13,24 @@
   <article id="content">
     {{ .Content }}
   </article>
+  {{ if .Site.IsServer }}
   {{ if $pageRes }}
-  {{ $pageRes }}
+  <code>
+  page resources variable here: {{ $pageRes }}<br>
+  draft status: {{ $pageRes.Draft }}
+  </code>
+  {{ end }}
+  <!-- check for published: -->
+  {{ with (ne $pageRes.Draft true) }}
   <footer class="{{ $pageClass }}">
     <h3>{{ $pageRes.Title }}</h3>
+
     <b>Here are the .Page.Resources:</b> {{ $pageRes.Content }}
+    <br>and here is the dot {{ . }}
   </footer>
+  {{ end }}
+  <!-- /check for published  -->
+
   {{ end }}
 </section>
 <aside id="meta">

@@ -6,7 +6,9 @@
 
 
 <body class="stack">
-  <a href="#main-content">Skip to main content</a>
+  {{- block "skip" . -}}
+  {{- partial "skipnav" -}}
+  {{ end }}
   {{- block "header" .  -}}
   {{- partial "header.html" . -}}
   {{ end }}

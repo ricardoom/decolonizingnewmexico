@@ -4,7 +4,7 @@
 {{ else }}
 {{ printf "<!-- its all the way live! -->" | safeHTML }}
 {{ end }}
-<main>
+<main id="main-content">
   <ul>
     <!-- Ranges through content/posts/*.md -->
     {{ range .Pages.ByWeight }}
