@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<!-- uses: _header.scss  -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-{{ hugo.Generator }}
-</head>
-<style>
-  body {
-    background-color: hsl(0, 0%, 99%);
-  }
+{{ $baseStyles := .Site.Params.style }}
+<header class="{{ if .IsHome }}{{ $baseStyles.homepage }}{{ else }}{{ $baseStyles.interior }}{{ end }}">
 
-  .debugger>* {
-    outline: red 1px dotted;
-  }
-</style>
-
-<body class="debugger">
-  <header>
-    <nav>
-      -- make this a partial
-    </nav>
-  </header>
+  <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
+  {{ with .Site.Params.subtitle }}
+  <span class="subtitle">{{ . }}</span>
+  {{ end }}
+  {{ with .Site.Params.author }}
+  <span class="author">Developed by {{ . }}</span>
+  {{ end }}
+  {{- partial "nav.html" . -}}
+</header>

@@ -1,0 +1,23 @@
+{{ $targetPath := "css/root.css" }}
+{{ $options := ( dict "targetPath" $targetPath "enableSourceMap" true "includePaths" (slice "sass/vendor")) }}
+{{ $scssRoot := "sass/root.scss" }}
+{{ $styleSource := resources.Get $scssRoot }}
+
+{{ $style := resources.Get "sass/root.scss" | resources.ToCSS $options }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{ with .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
+<title>{{ .Site.Title }}</title>
+{{ hugo.Generator }}
+</head>
+<style>
+  .debugger>* {
+    outline: red 1px dotted;
+  }
+</style>

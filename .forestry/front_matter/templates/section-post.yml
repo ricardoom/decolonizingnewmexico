@@ -1,0 +1,22 @@
+---
+label: Section Post
+hide_body: false
+fields:
+- name: section_title
+  type: text
+  config:
+    required: true
+  label: Section Title
+  description: For each section, provide a title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+  description: Body of the section post
+pages:
+- content/section test.md

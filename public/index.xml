@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DCNM on Decolonizing New Mexico</title>
+    <link>https://epic-lichterman-3494de.netlify.app/</link>
+    <description>Recent content in DCNM on Decolonizing New Mexico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:24:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://epic-lichterman-3494de.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://epic-lichterman-3494de.netlify.app/chapters/introduction/</link>
+      <pubDate>Wed, 01 Jul 2020 09:25:26 -0400</pubDate>
+      
+      <guid>https://epic-lichterman-3494de.netlify.app/chapters/introduction/</guid>
+      <description>Index dot md </description>
+    </item>
+    
+    <item>
+      <title>Preface</title>
+      <link>https://epic-lichterman-3494de.netlify.app/chapters/preface/</link>
+      <pubDate>Tue, 30 Jun 2020 16:45:14 -0400</pubDate>
+      
+      <guid>https://epic-lichterman-3494de.netlify.app/chapters/preface/</guid>
+      <description>index.md for the preface chapter in chapters section, where we would define front matter for the entire section&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://epic-lichterman-3494de.netlify.app/section-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://epic-lichterman-3494de.netlify.app/section-test/</guid>
+      <description>Whats this part about?? Here are some things&amp;hellip; Might need a page template?</description>
+    </item>
+    
+  </channel>
+</rss>
