@@ -1,6 +1,5 @@
 +++
 date = 2020-07-15T04:00:00Z
-draft = true
 slug = "charting-a-path-forward"
 title = "Charting a Path Forward"
 weight = 3
