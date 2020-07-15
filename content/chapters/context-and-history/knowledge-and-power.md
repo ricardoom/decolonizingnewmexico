@@ -1,6 +1,5 @@
 +++
 content = ""
-draft = true
 section_title = " Knowledge and Power - Approaches to History"
 
 +++
