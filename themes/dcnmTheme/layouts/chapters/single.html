@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+{{ $local := .Site.IsServer }}
 {{ if .Site.IsServer }}
 {{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
 {{ else }}
@@ -9,8 +9,13 @@
   <h2 id="title">{{ .Title }}</h2>
   <article id="content">
     {{ .Content }}
+    {{ range where .Resources ".Draft" false }}
+    <h3>{{ .Title }}</h3>
+    {{ .Content }}
+    {{ end }}
   </article>
-  {{ if .Site.IsServer }}
+
+  {{ if $local }}
 
   some local stuff
 
@@ -19,9 +24,9 @@
 
   <footer class="">
     <h3></h3>
-    {{ $local := .Site.IsServer }}
+
     {{ if $local }}
-    <br><b>Here are the .Page.Resources:</b>
+    <br><b>Here are the .Page.Resources: {{ .Resources }}</b>
     <br>and here is the dot
     {{ end }}
   </footer>

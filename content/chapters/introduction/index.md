@@ -1,8 +1,8 @@
 +++
 date = "2020-07-01T09:25:02-04:00"
 draft = false
-title = "Introduction"
 slug = 'introduction'
+title = "Introduction"
 type = 'chapters'
 weight = 1
 +++
