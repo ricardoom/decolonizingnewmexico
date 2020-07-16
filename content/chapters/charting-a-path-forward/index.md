@@ -2,8 +2,9 @@
 date = 2020-07-15T04:00:00Z
 slug = ""
 title = "Charting a path forward"
-type = "chapter"
+type = "chapters"
 weight = 3
+draft = "false"
 
 +++
 ### Recommendations and Strategies
@@ -40,27 +41,25 @@ While these examples demonstrate the impact that this simple act can have, there
 
 ●	Countering or Cura-ting Context and Counterpoints for Monuments in New Mexico: While communities across the nation have begun to respond with various strategies, including removal of monuments and other memorials, others have called for providing more context and counterpoint to them. What is done will depend upon the will of the community and perhaps the specific monument or memorial. As a first step, it will be important to identify and map existing monuments in New Mexico. This work was in part begun by the City of Santa Fe, but remains incomplete. Heidi Brandow, an artists who is participating as a fellow at the Santa Fe Art Institute (SFAI) as part of the SFAI Story Maps initiative, is currently partnered with the City of Santa Fe's Parks Department, working on social engagement project that examines memorials throughout the city. Her project is concerned with creating an inventory of current monuments and further divides monuments based on demographic information, such as: gender represented and ethnicity represented. In this, visual representations such as maps are also being made to reflect the data collected and her goal is to include, as she notes, “a proposal that re-envisions the addition of memorials that impart more inclusive and historically accurate representations of the unique and complicated history of Santa Fe.”
 
-    Beyond the inventorying of these monuments across the state, one strategy would be to follow the work in New Orleans and begin a process for removal of those monuments that are deemed challenging in a modern era. Making these determinations, may be the work of a commission (see below).
-    
-    
-    
-    Another strategy would be to focus curating the monuments. This could be accomplished as a community engagement effort, in combination with media artists to raise consciousness and engender a creative reimagining and critical remembering. By providing an intersection for arts, technology and history, the aim would be to explore the possible transformation of public spaces into forums for inclusion and multiple voices, versus the current singular, static narratives that have reproduced negative social relations. Toward developing a process for transformation, the work will help us tests assumptions and identify new paths of public engagement. 
+Beyond the inventorying of these monuments across the state, one strategy would be to follow the work in New Orleans and begin a process for removal of those monuments that are deemed challenging in a modern era. Making these determinations, may be the work of a commission (see below).
+
+Another strategy would be to focus curating the monuments. This could be accomplished as a community engagement effort, in combination with media artists to raise consciousness and engender a creative reimagining and critical remembering. By providing an intersection for arts, technology and history, the aim would be to explore the possible transformation of public spaces into forums for inclusion and multiple voices, versus the current singular, static narratives that have reproduced negative social relations. Toward developing a process for transformation, the work will help us tests assumptions and identify new paths of public engagement. 
 
 Finally, following inventory and assessment, it could be a combination of both removal and contextualization.
 
-●	Community Engagement Toward Raising Consciousness and Fostering Community
+- Community Engagement Toward Raising Consciousness and Fostering Community
 
-○	Resolanas: Indo-Hispano communities throughout northern New Mexico could share information and address internal and often long-standing tensions through Resolanas. This is a potential model for open and transparent dialogue.
+- Resolanas: Indo-Hispano communities throughout northern New Mexico could share information and address internal and often long-standing tensions through Resolanas. This is a potential model for open and transparent dialogue.
 
-○	Gathering Stories: While there were many points in Santa Fe’s history punctuated by violence and conflict over the past 300 years, there have also been times of positive convergence and unity reflected in cross cultural marriages, inter-kin networks (comadrazgo and compadrazgo) and friendships.  Gathering and disseminating these historic and contemporary testimonies could be profound.
+- Gathering Stories: While there were many points in Santa Fe’s history punctuated by violence and conflict over the past 300 years, there have also been times of positive convergence and unity reflected in cross cultural marriages, inter-kin networks (comadrazgo and compadrazgo) and friendships.  Gathering and disseminating these historic and contemporary testimonies could be profound.
 
-○	Tracing the Degrees of Connection: Frigyes Karinthy’s 1929 short story, Chains, first espoused the concept that only six degrees of separation exist between all people; though in spite of the current divisions in our community, I believe there are even fewer separations given of our size. The goal of this project would be to chart that connectivity.
+- Tracing the Degrees of Connection: Frigyes Karinthy’s 1929 short story, Chains, first espoused the concept that only six degrees of separation exist between all people; though in spite of the current divisions in our community, I believe there are even fewer separations given of our size. The goal of this project would be to chart that connectivity.
 
-○	Accentuating Ancestry: In spite of more than century of accentuating false notions that Native American and Hispano communities are homogenous,  they actually share some common ancestors. Revealing this genetic connectivity through a community-wide family tree project would function to create new openings for understanding the past. The work of genealogist and historian José Antonio Esquibel is notable in this regard.
+- Accentuating Ancestry: In spite of more than century of accentuating false notions that Native American and Hispano communities are homogenous,  they actually share some common ancestors. Revealing this genetic connectivity through a community-wide family tree project would function to create new openings for understanding the past. The work of genealogist and historian José Antonio Esquibel is notable in this regard.
 
-○	Envisioning A Future: Invite the public to participate in writing a letter from the future. Envisioning themselves as members of the Fiesta Council in 2021, five years from now, writers can reveal how reconciliation led to a Fiesta that brought the community together.
+- Envisioning A Future: Invite the public to participate in writing a letter from the future. Envisioning themselves as members of the Fiesta Council in 2021, five years from now, writers can reveal how reconciliation led to a Fiesta that brought the community together.
 
-●	Establish a Truth, Racial Healing and Transformation Commission: In response to the contention around the Fiesta, in 2016 I wrote a letter to the editor of the Santa Fe New Mexican, recommending the establishment of a “Santa Fe Fiesta Reconciliation Commission.” Since then the All Pueblo Council of Governors passed a conceptual framework (December 2017) delineating a five-point plan for formal negotiations regarding the Santa Fe Fiesta, including the establishment of a Truth and Reconciliation Commission. This plan, including the commission, was reaffirmed in a proclamation by the All Pueblo Council of Governors on July 19, 2018.
+- Establish a Truth, Racial Healing and Transformation Commission: In response to the contention around the Fiesta, in 2016 I wrote a letter to the editor of the Santa Fe New Mexican, recommending the establishment of a “Santa Fe Fiesta Reconciliation Commission.” Since then the All Pueblo Council of Governors passed a conceptual framework (December 2017) delineating a five-point plan for formal negotiations regarding the Santa Fe Fiesta, including the establishment of a Truth and Reconciliation Commission. This plan, including the commission, was reaffirmed in a proclamation by the All Pueblo Council of Governors on July 19, 2018.
 
 As noted in the Introduction, when McCune originally engaged me to begin to deepen the work of healing and transformation, I submitted a proposal to establish what I called then, the “Santa Fe Truth, Racial Healing and Transformation Initiative.” This initiative included the development of what I noted would be a “formalized local, apolitical, nongovernmental entity designed to operate independently and flexibly to identify constructive avenues to facilitate civic trust.”
 

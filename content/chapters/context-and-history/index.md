@@ -4,7 +4,7 @@ draft = false
 slug = "telling-new-mexico"
 title = "Telling New Mexico"
 type = "chapters"
-weight = 2
+weight = 2  
 +++
 New Mexico’s story is one of astonishing complexity. It is set within a magnificent and sovereign landscape that is both ancient and modern. Its people are the heirs to unique and richly woven histories, traditions and a depth of wisdom and memories, all manifest in the physical and social landscape, tangible and intangible.
  

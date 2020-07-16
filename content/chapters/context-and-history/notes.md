@@ -5,10 +5,11 @@ draft = false
 slug = ''
 type = 'page'
 headless = true
+class = "notes-class footnotes"
 +++
 
 1. a note here
 2. another note here...
 3. some more... yeah!
 5. boom
-
+6. still works..

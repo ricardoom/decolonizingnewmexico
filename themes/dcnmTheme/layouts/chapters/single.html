@@ -1,8 +1,5 @@
 {{ define "main" }}
 
-{{ $pageRes := .Page.Resources.GetMatch "notes.md" }}
-{{ $pageClass := $pageRes.Params.class }}
-
 {{ if .Site.IsServer }}
 {{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
 {{ else }}
@@ -14,24 +11,24 @@
     {{ .Content }}
   </article>
   {{ if .Site.IsServer }}
-  {{ if $pageRes }}
-  <code>
-  page resources variable here: {{ $pageRes }}<br>
-  draft status: {{ $pageRes.Draft }}
-  </code>
+
+  some local stuff
+
   {{ end }}
   <!-- check for published: -->
-  {{ with (ne $pageRes.Draft true) }}
-  <footer class="{{ $pageClass }}">
-    <h3>{{ $pageRes.Title }}</h3>
 
-    <b>Here are the .Page.Resources:</b> {{ $pageRes.Content }}
-    <br>and here is the dot {{ . }}
+  <footer class="">
+    <h3></h3>
+    {{ $local := .Site.IsServer }}
+    {{ if $local }}
+    <br><b>Here are the .Page.Resources:</b>
+    <br>and here is the dot
+    {{ end }}
   </footer>
-  {{ end }}
+
   <!-- /check for published  -->
 
-  {{ end }}
+
 </section>
 <aside id="meta">
   <div>
