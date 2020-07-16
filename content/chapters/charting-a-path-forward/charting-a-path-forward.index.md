@@ -44,9 +44,7 @@ While these examples demonstrate the impact that this simple act can have, there
     
     
     
-    Another strategy would be to focus curating the monuments. This could be accomplished as a community engagement effort, in combination with media artists to raise consciousness and engender a creative reimagining and critical remembering. By providing an intersection for arts, technology and history, the aim would be to explore the possible transformation of public spaces into forums for inclusion and multiple voices, versus the current singular, static narratives that have reproduced negative social relations. Toward developing a process for transformation, the work will help us tests assumptions and identify new paths of public engagement. 
-
-Finally, following inventory and assessment, it could be a combination of both removal and contextualization.
+    Another strategy would be to focus curating the monuments. This could be accomplished as a community engagement effort, in combination with media artists to raise consciousness and engender a creative reimagining and critical remembering. By providing an intersection for arts, technology and history, the aim would be to explore the possible transformation of public spaces into forums for inclusion and multiple voices, versus the current singular, static narratives that have reproduced negative social relations. Toward developing a process for transformation, the work will help us tests assumptions and identify new paths of public engagement.Finally, following inventory and assessment, it could be a combination of both removal and contextualization.
 
 ●	Community Engagement Toward Raising Consciousness and Fostering Community
 
