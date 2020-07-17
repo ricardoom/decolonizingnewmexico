@@ -84,6 +84,15 @@ nav {
   nav a {
     color: #efefef; }
 
+article nav {
+  color: black; }
+  article nav ul {
+    display: flex; }
+    article nav ul > * {
+      padding-inline-end: var(--s-2); }
+  article nav a {
+    color: black; }
+
 .site-footer a {
   color: #efefef; }
 

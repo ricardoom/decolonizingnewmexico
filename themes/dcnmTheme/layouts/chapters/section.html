@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $local := .Site.IsServer }}
+<main>
+  <h2>{{ .Title }}</h2>
+  <article>
+    <nav>
+      {{ partial "breadcrumb.html" . }}
+    </nav>
+    {{ .Content }}
+  </article>
+  <sidebar>
+    <ul class="contents section-chapters-template">
+      {{ range .Paginator.Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{.Title}}</a>
+        <div>
+          {{ partial "summary.html" . }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </sidebar>
+  {{/* partial "pagination.html" . */}}
+  {{ if $local }}
+  <h4>Variables & Useful Development info:</h4>
+  <p>Current Section: <i>{{ .CurrentSection }}</i></p>
+  <p>Sections below this one: <i>{{ .Sections }}</i></p>
+  <p>This Page or Section Title: {{ .Title }}</p>
+  {{ range .Sections }}
+  <ul>
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  </ul>
+  {{ end }}</p>
+  {{ end }}
+</main>
+{{ end }}

@@ -5,11 +5,13 @@
 {{ printf "<!-- its all the way live! -->" | safeHTML }}
 {{ end }}
 <main id="main-content">
-  <ul>
-    <!-- Ranges through content/posts/*.md -->
+
+  <ul class="{{ .CurrentSection }}">
+    {{ if .Site.IsServer }}
+    {{ printf "<!-- Ranges through content/posts/*.md -->" | safeHTML }}
     {{ range .Pages.ByWeight }}
     <li>
-      <a href="{{.Permalink}}" data-time-stamp="{{.Date.Format "2006-01-02"}}">{{.Title}}</a>
+      <a href="{{ .Permalink }}" data-time-stamp="{{ .Date.Format "2006-01-02"}}">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>

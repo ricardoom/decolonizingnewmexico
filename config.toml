@@ -4,6 +4,7 @@ title = "Decolonizing New Mexico"
 theme = "dcnmTheme"
 relativeURLs = "true"
 enableRobotsTXT = "true"
+sectionPagesMenu = "main"
 
 [params]
   author = "Dr. Estevan Gálvez Rael"

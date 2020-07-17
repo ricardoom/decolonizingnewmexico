@@ -10,3 +10,27 @@ nav {
     color: $base-white;
   }
 }
+//
+// for nested section  navigations
+//  Kludge here, but needs doing 
+
+// specifically for breadcrumb.html
+article {
+  nav {
+    color: $base-black;
+    // &::before {
+    //   content: 'up one...';
+    //   font-size: var(--s-1);
+    // }
+    ul {
+      display: flex;
+    & > * {
+      padding-inline-end: var(--s-2);
+    }  
+    }
+
+    a {
+      color: $base-black;
+    }
+  }
+}

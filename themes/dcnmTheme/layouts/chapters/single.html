@@ -8,16 +8,21 @@
 <section id="main-content" class="{{ .Params.Type }}">
   <h2 id="title">{{ .Title }}</h2>
   <article id="content">
+    <nav>
+      {{ partial "breadcrumb.html" . }}
+    </nav>
     {{ .Content }}
     {{ range where .Resources ".Draft" false }}
+
     <h3>{{ .Title }}</h3>
     {{ .Content }}
     {{ end }}
   </article>
 
   {{ if $local }}
+  <h4>Useful Information:</h4>
+  <p>This page is in the: {{ .Section }} section</p>
 
-  some local stuff
 
   {{ end }}
   <!-- check for published: -->

@@ -1,13 +1,12 @@
 +++
-date = 2020-07-06T18:52:19-04:00
+title = 'Telling New Mexico'
+date = 2020-07-16T10:26:12-04:00
 draft = false
-slug = "context-and-history"
-title = "Context and History"
-type = "chapters"
-weight = 2
+slug = ''
+type = 'chapters'
+weight = 1
 +++
 
-### Telling New Mexico
 New Mexico’s story is one of astonishing complexity. It is set within a magnificent and sovereign landscape that is both ancient and modern. Its people are the heirs to unique and richly woven histories, traditions and a depth of wisdom and memories, all manifest in the physical and social landscape, tangible and intangible.
  
 Like the breath left behind by those that came before, memory and wisdom are like precious seeds that have continued to retain their germinative power. Particularly imperative in the times in which we are living, awakening this capacity will require both a critical and a creative re-member-ing, passing what happened here back through heart and mind, in order to make this place and its people whole. Moving beyond the surface, this effort will invite us to listen vigilantly to what we hear and to look carefully at what we see; and to pull back the complex layers that make this story contested — people, places, moments in time and the stories that reveal the delicacy and strength of the human condition. The following reflections then, are tellings glimpses of New Mexico.
@@ -27,7 +26,7 @@ But place, the “first of all beings” according to Aristotle, also reflects w
  
 Understanding why and how people settled where they did and how they designed, built and sustained the structures they did is critical. In this way, the human touch upon this land is visible everywhere; central plazas, churches, villages, burial grounds and agricultural lands all serve as anchors. These lands are intricately connected by trails, roads and acequias — ancient waterways that convey water from the river to fields. In all of these spaces, Native American and Indo-Hispano alike, including their points of convergence, villages have sustained multiple changes, including a mix of mud and modernism, where even mobile homes have been converted to reflect a local vernacular.
 
-The story of place is also about loss, however. For decades, with the loss of ancestral lands through conquest, governmental seizure, economic necessity and corrupt legal maneuvering that impacted Native American and Hispanic communities in New Mexico. The impact of these losses was a shift away from agricultural-pastoral economies, and because of it, these communities have faced declining populations, losing large percentages of their youth to major urban centers in the region, including Albuquerque, Denver, Las Vegas, and Salt Lake City. While some families have remained, many more have left, only to return for ritual events (e.g., funerals, weddings or feast days), with untold others never journeying back at all. 
+The story of place is also about loss, however. For decades, with the loss of ancestral lands through conquest, governmental seizure, economic necessity and corrupt legal maneuvering that impacted Native American and Hispanic communities in New Mexico[^9]. The impact of these losses was a shift away from agricultural-pastoral economies, and because of it, these communities have faced declining populations, losing large percentages of their youth to major urban centers in the region, including Albuquerque, Denver, Las Vegas, and Salt Lake City. While some families have remained, many more have left, only to return for ritual events (e.g., funerals, weddings or feast days), with untold others never journeying back at all. 
 
 ### People Tell
 
@@ -48,3 +47,4 @@ The cataclysmic violence born from Spanish colonialism caused the original wound
  
 In spite of this past and the seemingly insurmountable statistics, I believe in the dignity and resilience that has long characterized the people of this landscape. Beyond the epic and grand, including the terrible and traumatic, there are also the small everyday stories, all reflecting survival and endless dignity and strength, as well as beauty and joy. While it is critical to trace the jagged edges of what New Mexico tells, it is also important to recognize that New Mexico’s collective identity is both born out of the past and nourished by it as well. There is a delicacy, but also strength in what we do to collectively change what we are. Recovery, healing and transcendence begin with a critical remembering, but also frame a creative reimagining of the present and future.
 
+[^9]: For how these imperial policies and practices impacted indigenous peoples in the Southwest, see Edward H. Spicer, Cycles of Conquest - The Impact of Spain, Mexico, and the United States on Indians of the Southwest, 1533-1960 (Tucson: University of Arizona Press, 1981). In violation of the “Treaty of Guadalupe de Hidalgo,” vast amount of lands were lost in the Hispanic community because of takings by federal government and through legal maneuvers. For an overview of this, see Malcolm Ebright, Land Grants and Lawsuits in Northern New Mexico (Santa Fe, N.M.: Center for Land Grants Press, 2008).  
