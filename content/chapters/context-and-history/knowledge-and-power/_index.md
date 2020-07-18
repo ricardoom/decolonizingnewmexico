@@ -1,8 +1,8 @@
 +++
-content = "the body of the section post, i wrote... "
 headless = true
 section_title = "Knowledge and Power and the Approaches to History"
 title = "Knowledge and Power - Approaches to History"
+type = "chapters"
 weight = 2
 +++
 In order to revisit site by site, event by event and story by story, it is important to understand how knowledge and power work. How the past is imagined, remembered, memorialized and written is also subject to power, who holds it and who doesn’t. The inextricable relationship between knowledge and power can be found in tracing the history of colonial bureaucracies that were occupied with classifying people with censuses, surveys, ethnographies and maps[^9]. The vast extent of these bureaucracies included official repositories — archives and museums — where decisions were made about what artifacts were most valued and collected, about how materials were classified and represented, and where, for whom and how they were made accessible. Considering archives, the French philosopher, Michel Foucault, would define the colonial archive as a “monument to particular configurations of power,” and point to much of what is contained therein as “documents of exclusion,” which privileged some voices and silenced others. Political theorist, Benedict Anderson speaks to this same notion in his book, Imagined Communities, where he prefaces that maps, censuses and museums, all once defined as institutions of power, “profoundly shaped the way in which the colonial state imagined its dominion — the nature of the human beings it ruled, the geography of its domain and the legitimacy of its ancestry.” Tracing the impact of these imperial practices — which effectively extracted, obscured and erased local knowledge and communities assets — as significant markers of historic trauma, has, perhaps, never been more urgent, particularly in a decolonizing enterprise.   

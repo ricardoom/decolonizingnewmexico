@@ -4,7 +4,7 @@ date = 2020-07-16T18:44:26-04:00
 draft = false
 slug = ''
 type = 'chapters'
-
+weight = -1
 +++
 If “historic trauma” is the cumulative spiritual, emotional and psychological distress and wounding that is passed down from generation to generation, the question is how, when, where it is reflected in the present? This section of the report responds to these questions, providing context to the multiple issues that frame the social and cultural environment that is largely defined by historic trauma in New Mexico. Part of this context is about how colonialism, patriarchy and all levels of supremacy are manifest, in both tangible and intangible ways. 
 
@@ -15,3 +15,5 @@ Toward this end, working toward providing an understanding to these issues, in w
 **Section Two: 		Manifestations in Sites, Events**
 
 **Section Three: 	Narrative Frameworks**
+
+718.509.9013

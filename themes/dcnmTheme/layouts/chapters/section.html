@@ -21,18 +21,22 @@
     </ul>
   </sidebar>
   {{/* partial "pagination.html" . */}}
-  {{ if $local }}
+  <ol>
+    {{ range .Sections }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ol>
+
+
+</main>
+{{ if $local }}
+<aside>
   <h4>Variables & Useful Development info:</h4>
   <p>Current Section: <i>{{ .CurrentSection }}</i></p>
   <p>Sections below this one: <i>{{ .Sections }}</i></p>
   <p>This Page or Section Title: {{ .Title }}</p>
-  {{ range .Sections }}
-  <ul>
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-  </ul>
-  {{ end }}</p>
-  {{ end }}
-</main>
+</aside>
+{{ end }}
 {{ end }}
