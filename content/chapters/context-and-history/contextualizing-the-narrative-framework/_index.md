@@ -15,5 +15,3 @@ Toward this end, working toward providing an understanding to these issues, in w
 **Section Two: 		Manifestations in Sites, Events**
 
 **Section Three: 	Narrative Frameworks**
-
-718.509.9013
