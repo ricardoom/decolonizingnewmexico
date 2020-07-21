@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
 <main>
-  <h2>{{ .Title }}</h2>
   <article>
-    <nav>
+    <nav id="breadcrumb">
       {{ partial "breadcrumb.html" . }}
     </nav>
+    <h2>{{ .Title }}</h2>
     {{ .Content }}
   </article>
-  <sidebar>
+  <aside>
     <ul class="contents section-chapters-template">
       {{ range .Paginator.Pages }}
       <li>
@@ -19,15 +19,17 @@
       </li>
       {{ end }}
     </ul>
-  </sidebar>
-  {{/* partial "pagination.html" . */}}
-  <ol>
-    {{ range .Sections }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ol>
+  </aside>
+  <aside>
+    {{/* partial "pagination.html" . */}}
+    <ol class="contents section-chapters-template">
+      {{ range .Sections }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ol>
+  </aside>
 
 
 </main>

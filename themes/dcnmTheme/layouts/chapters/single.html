@@ -8,12 +8,8 @@
 <section id="main-content" class="{{ .Params.Type }}">
   <h2 id="title">{{ .Title }}</h2>
   <article id="content">
-    <nav>
-      {{ partial "breadcrumb.html" . }}
-    </nav>
     {{ .Content }}
     {{ range where .Resources ".Draft" false }}
-
     <h3>{{ .Title }}</h3>
     {{ .Content }}
     {{ end }}
