@@ -5,6 +5,11 @@ A scholarly project. This site uses Hugo for static site generation, content is 
 
 ## Releases:
 
+v0.0.2
+- improved TOC
+- minor styling improvements
+- template logic improvements
+
 v0.0.1
 
 ## Change Log
