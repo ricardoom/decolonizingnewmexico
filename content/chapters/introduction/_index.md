@@ -1,8 +1,8 @@
 +++
 date = "2020-07-01T09:25:02-04:00"
 draft = false
-title = "Introduction"
 slug = 'introduction'
+title = "Introduction"
 type = 'chapters'
 weight = 1
 +++
@@ -20,7 +20,7 @@ Decolonizing New Mexico is the culmination of that early engagement and the rese
 
 ●		Inventory of all City streets named after individuals/events that memorialize decimation/denigration of any Santa Fe population, past or present or that are perceived as such .
 
-In spite of my encouragement to keep this process moving forward, while the work was started, it exists at present as nothing more than a static inventory, and may not necessarily be complete. 
+In spite of my encouragement to keep this process moving forward, while the work was started, it exists at present as nothing more than a static inventory, and may not necessarily be complete[^1]. 
 
 During this period, I was also was invited by the leadership of the All Pueblo Council of Governors to become a part of a process, working with the All Pueblo Council of Governors, the Catholic Church/Archdiocese of Santa Fe and the Office of the Mayor, City of Santa Fe. In 2018, this effort expanded to include formal meetings with the leadership of Santa Fe Fiesta Council and the Caballeros De Vargas, the entity responsible for the Entrada. This collaborative effort, based on face-to-face constructive dialogue over the past few months, culminated in a reconciliation effort that has resulted in the discontinuation and complete transformation of an event, and as of the writing of this document, other efforts that remain ongoing, but positive. 
 
@@ -48,3 +48,5 @@ Living history is learning from it. This is what it means to raise consciousness
 ●		Illuminate and inspire creativity: My upbringing and professional training has grounded me in interdisciplinary approaches, and my professional experience has taught me that engaging creatives in the work reveals unexpected outcomes, deepening the interpretive work in community. This is as much about art and ideas as it is about innovation. 
 
 Decolonizing history is not easy. As Maori scholar, Linda Tuhiwai Smith, has cogently observed, “In order to decolonize our histories, we must revisit site by site.” Efforts to transform the impact of this trauma will actually require a concerted effort to contextualize and reimagine site-by-site, event-by-event and story-by-story. Ignoring this imperative and the opportunity before us is critical to creating new possibilities, including a healthy, vibrant and even more resilient communities. Similarly, in her work to recover Latina histories, Emma Perez, novelist and Associate Professor and Chair of Ethnic Studies at the University of Colorado, Boulder, uses the term “decolonial imaginary” as a way to overcome a colonial past, by literally re-inscribing new possibilities. Decolonial imaginary demands that we create a new type of map, a new way of recording presence and a new way of remembering ourselves whole. This counterpoint lies in our ability to creatively imagine the future, to ground it in the communities and networks that are essential to our communities, spaces that are changing all around us, and by this, raise consciousness core to the philosophy of why history matters. New Mexico’s story is certainly complex and full of contradictions, but here wisdom and memories resemble precious seed sand their germinative power lies in the capacity, as it always has, of their heirs awakening a practice of memory that does not complicate history, but invites us to make it. 
+
+[^1]: https://www.santafenm.gov/monuments 

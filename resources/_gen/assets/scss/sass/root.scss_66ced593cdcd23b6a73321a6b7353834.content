@@ -78,11 +78,24 @@ header > .subtitle {
   padding-top: var(--s1);
   padding-block-start: var(--s1); }
 
+.o-breadcrumb {
+  font-size: var(--s-1);
+  max-width: none; }
+
 nav {
   padding-top: var(--s-3);
   padding-block-start: var(--s-3); }
   nav a {
     color: #efefef; }
+
+article nav {
+  color: black; }
+  article nav ul {
+    display: flex; }
+    article nav ul > * {
+      padding-inline-end: var(--s-2); }
+  article nav a {
+    color: black; }
 
 .site-footer a {
   color: #efefef; }

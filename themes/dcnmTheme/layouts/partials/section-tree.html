@@ -1,0 +1,22 @@
+<ol>
+  {{ template "section-tree-nav" . }}
+</ol>
+
+{{ define "section-tree-nav" }}
+{{ range .Sections }}
+
+<li><a href="{{ .RelPermalink}}">{{ .Title }}</a>
+  <ul>
+    {{ range .Pages }}
+    <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+    {{ end }}
+    <ul>
+      {{ range .Pages }}
+      {{ template "section-tree-nav" . }}
+      {{ end }}
+    </ul>
+  </ul>
+</li>
+
+{{ end }}
+{{ end }}

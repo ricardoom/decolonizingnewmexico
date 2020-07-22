@@ -19,4 +19,5 @@ fields:
   label: Content
   description: Body of the section post
 pages:
+- content/chapters/context-and-history/knowledge-and-power.md
 - content/section test.md

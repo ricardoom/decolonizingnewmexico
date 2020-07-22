@@ -1,7 +1,7 @@
 +++
 title = 'Notes'
 date = 2020-07-06T20:56:48-04:00
-draft = false
+draft = true
 slug = ''
 type = 'page'
 headless = true

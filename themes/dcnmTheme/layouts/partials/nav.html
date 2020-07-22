@@ -1,7 +1,9 @@
-<nav>
+<nav aria-label="primary-navigation">
   {{ $currentPage := . }}
+  {{ printf "<!-- partials/nav.html -->" | safeHTML }}
   {{ range .Site.Menus.main }}
-  <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
-    href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+  <a id="{{ .Name }}"
+    class="sidebar-nav-item{{ if or ( $currentPage.IsMenuCurrent "main" . ) ($currentPage.HasMenuCurrent "main" . ) }} active{{end}}"
+    href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
   {{ end }}
 </nav>

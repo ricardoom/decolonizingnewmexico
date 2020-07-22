@@ -1,8 +1,5 @@
 {{ define "main" }}
-
-{{ $pageRes := .Page.Resources.GetMatch "notes.md" }}
-{{ $pageClass := $pageRes.Params.class }}
-
+{{ $local := .Site.IsServer }}
 {{ if .Site.IsServer }}
 {{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
 {{ else }}
@@ -12,26 +9,32 @@
   <h2 id="title">{{ .Title }}</h2>
   <article id="content">
     {{ .Content }}
+    {{ range where .Resources ".Draft" false }}
+    <h3>{{ .Title }}</h3>
+    {{ .Content }}
+    {{ end }}
   </article>
-  {{ if .Site.IsServer }}
-  {{ if $pageRes }}
-  <code>
-  page resources variable here: {{ $pageRes }}<br>
-  draft status: {{ $pageRes.Draft }}
-  </code>
+
+  {{ if $local }}
+  <h4>Useful Information:</h4>
+  <p>This page is in the: {{ .Section }} section</p>
+
+
   {{ end }}
   <!-- check for published: -->
-  {{ with (ne $pageRes.Draft true) }}
-  <footer class="{{ $pageClass }}">
-    <h3>{{ $pageRes.Title }}</h3>
 
-    <b>Here are the .Page.Resources:</b> {{ $pageRes.Content }}
-    <br>and here is the dot {{ . }}
+  <footer class="">
+    <h3></h3>
+
+    {{ if $local }}
+    <br><b>Here are the .Page.Resources: {{ .Resources }}</b>
+    <br>and here is the dot
+    {{ end }}
   </footer>
-  {{ end }}
+
   <!-- /check for published  -->
 
-  {{ end }}
+
 </section>
 <aside id="meta">
   <div>

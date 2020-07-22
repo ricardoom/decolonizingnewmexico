@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $local := .Site.IsServer }}
+<main>
+  <article>
+    <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
+      {{ partial "breadcrumb.html" . }}
+    </nav>
+    <h2 id="{{ .Title }}">{{ .Title }}</h2>
+    {{ .Content }}
+  </article>
+
+  <aside class="o-toc">
+    {{/* partial "pagination.html" . */}}
+    {{/* partial "basic-toc.html" . */}}
+    {{ partial "section-tree.html" . }}
+  </aside>
+
+
+
+</main>
+{{ if $local }}
+<aside>
+  <h4>Variables & Useful Development info:</h4>
+  <p>Current Section: <i>{{ .CurrentSection }}</i></p>
+  <p>Sections below this one: <i>{{ .Sections }}</i></p>
+  <p>All the Pages:
+  <ul>{{ range .Site.Pages }}<li>{{ .Title }}</li>{{ end }}</ul>
+  </p>
+  <p>This Page or Section Title: {{ .Title }}</p>
+  {{/* partial "section-tree.html" . */}}
+</aside>
+{{ end }}
+{{ end }}
