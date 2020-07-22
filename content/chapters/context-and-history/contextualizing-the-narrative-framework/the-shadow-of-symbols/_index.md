@@ -4,7 +4,7 @@ date = 2020-07-17T17:17:55-04:00
 draft = false
 slug = ''
 type = 'chapters'
-weight = 3
+weight = 2
 +++
 Just as language serves to define what it means to be human, symbols serve as predominant instruments through which the world comes to be represented. The word ‘symbol’ comes from the Greek σύμβολον symbolon, which means “token,” or “watchword" and is taken from the concept of bringing things together in order to contrast and compare toward determining if something is genuine. Symbols take the form of words, sounds, gestures, ideas or visual images and are used to convey other ideas and beliefs and are therefore foundational in terms of narratives and myths. 
 

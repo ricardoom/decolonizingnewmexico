@@ -68,6 +68,9 @@ header > span {
 p {
   max-width: 65ch; }
 
+.footnotes {
+  font-size: var(--s-1); }
+
 header > * > * {
   color: #efefef; }
 
