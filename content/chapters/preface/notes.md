@@ -1,6 +1,7 @@
 +++
 class = "notes"
 date = 2020-07-07T03:38:38Z
+draft = true
 slug = ""
 title = "Notes"
 type = "page"

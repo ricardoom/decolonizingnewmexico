@@ -1,5 +1,5 @@
 {{ printf "<!-- breadcrumb.html  -->" | safeHTML }}
-<ul class="nav navbar-nav">
+<ul class="o-breadcrumb">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 {{ define "breadcrumbnav" }}

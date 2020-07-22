@@ -2,34 +2,19 @@
 {{ $local := .Site.IsServer }}
 <main>
   <article>
-    <nav id="breadcrumb">
+    <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
       {{ partial "breadcrumb.html" . }}
     </nav>
-    <h2>{{ .Title }}</h2>
+    <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ .Content }}
   </article>
-  <aside>
-    <ul class="contents section-chapters-template">
-      {{ range .Paginator.Pages }}
-      <li>
-        <a href="{{ .Permalink }}">{{.Title}}</a>
-        <div>
-          {{ partial "summary.html" . }}
-        </div>
-      </li>
-      {{ end }}
-    </ul>
-  </aside>
-  <aside>
+
+  <aside class="o-toc">
     {{/* partial "pagination.html" . */}}
-    <ol class="contents section-chapters-template">
-      {{ range .Sections }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-      {{ end }}
-    </ol>
+    {{/* partial "basic-toc.html" . */}}
+    {{ partial "section-tree.html" . }}
   </aside>
+
 
 
 </main>
@@ -38,7 +23,11 @@
   <h4>Variables & Useful Development info:</h4>
   <p>Current Section: <i>{{ .CurrentSection }}</i></p>
   <p>Sections below this one: <i>{{ .Sections }}</i></p>
+  <p>All the Pages:
+  <ul>{{ range .Site.Pages }}<li>{{ .Title }}</li>{{ end }}</ul>
+  </p>
   <p>This Page or Section Title: {{ .Title }}</p>
+  {{/* partial "section-tree.html" . */}}
 </aside>
 {{ end }}
 {{ end }}
