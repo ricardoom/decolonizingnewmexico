@@ -99,13 +99,16 @@ body {
     line-height: var(--s2);
   }
 
+  h2 {
+    font-weight: 400;
+  }
+}
 
-  &.stack {
-  /* ↓ The space is set as a custom property */
-  // --space: 1.5rem;
+.stack {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-inline: var(--s3);
 
   & > * {
     margin-top: 0; // switch to logical properties here...
@@ -113,18 +116,17 @@ body {
     }
 
   & > * + * {
-    @supports not (margin-block: 1px) {
+    @supports not (margin-block-start: var(--s1)) {
       margin-bottom: var(--s1);
       margin-top: var(--s1);
       }
       margin-block-start: var(--s1);
     }
     
-    > section {
+    // section {
 
-      h2 {
-        font-weight: 400;
-      }
+    // }
+
       article {
         font-family: $serif;
       }
@@ -134,11 +136,7 @@ body {
         padding-left: var(--s3);
         padding-right: var(--s3);
       }
-      padding-inline: var(--s3);
-    }
   }
-}
-
 
 @include noSupport(margin-block) {
   margin-top: var(--s1)

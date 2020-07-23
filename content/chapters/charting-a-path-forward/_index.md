@@ -3,7 +3,7 @@ date = 2020-07-15T04:00:00Z
 slug = ""
 title = "Charting a path forward"
 type = "chapters"
-weight = 3
+weight = 4
 draft = "false"
 
 +++

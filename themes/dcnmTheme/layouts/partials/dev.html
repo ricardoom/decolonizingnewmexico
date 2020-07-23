@@ -1,0 +1,21 @@
+<style>
+  .dev {
+    background-color: lightgreen;
+    padding-block: var(--s3);
+  }
+
+  .debugger>* {
+    outline: red 1px dotted;
+  }
+</style>
+<aside class="dev stack">
+  <h4>Variables & Useful Development info:</h4>
+  <p>This Page or Section Title: <b>{{ .Title }}</b></p>
+  <p>Current Section type & path: <i>{{ .CurrentSection }}</i></p>
+  <p>Number of child descendant sections to this one: <i>{{ .Sections }}</i></p>
+  <ul>All the Pages:
+    {{ range .Site.Pages }}
+    <li>{{ .Title }}</li>
+    {{ end }}
+  </ul>
+</aside>

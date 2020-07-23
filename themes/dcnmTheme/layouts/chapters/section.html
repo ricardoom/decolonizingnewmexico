@@ -1,6 +1,11 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
-<main>
+{{ if $local }}
+{{ printf "<!-- the local development template for chapters/section.html -->" | safeHTML }}
+{{ else }}
+{{ printf "<!-- its all the way live! template for chapters/section.html -->" | safeHTML }}
+{{ end }}
+<main class="stack">
   <article>
     <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
       {{ partial "breadcrumb.html" . }}
@@ -19,15 +24,6 @@
 
 </main>
 {{ if $local }}
-<aside>
-  <h4>Variables & Useful Development info:</h4>
-  <p>Current Section: <i>{{ .CurrentSection }}</i></p>
-  <p>Sections below this one: <i>{{ .Sections }}</i></p>
-  <p>All the Pages:
-  <ul>{{ range .Site.Pages }}<li>{{ .Title }}</li>{{ end }}</ul>
-  </p>
-  <p>This Page or Section Title: {{ .Title }}</p>
-  {{/* partial "section-tree.html" . */}}
-</aside>
+{{ partial "dev.html" . }}
 {{ end }}
 {{ end }}

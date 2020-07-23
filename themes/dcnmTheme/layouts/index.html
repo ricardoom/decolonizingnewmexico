@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $regPages := .Site.RegularPages }}
 {{ $local := .Site.IsServer }}
-{{ if .Site.IsServer }}
+{{ if $local }}
 {{ printf "<!-- the local development template for index.html -->" | safeHTML }}
 {{ else }}
 {{ printf "<!-- its all the way live! template for index.html -->" | safeHTML }}
@@ -19,11 +19,12 @@
   </div>
   {{ if $local }}
   <div class="debugger">
-    <p>$regPages variable aqui: {{ $regPages }}</p>
+
     {{ range first 10 .Site.RegularPages }}
     {{ .Render "content" }}
     {{ end }}
   </div>
+  {{ partial "dev.html" . }}
   {{ end }}
 
 </main>
