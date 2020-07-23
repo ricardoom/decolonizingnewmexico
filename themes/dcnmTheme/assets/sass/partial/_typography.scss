@@ -45,9 +45,31 @@ header {
 }
 
 p {
+  font-family: $serif;
   max-width: 65ch;
 }
 
 .footnotes {
   font-size: var(--s-1);
+}
+
+blockquote {
+  padding-inline: var(--s1);
+  position: relative;
+
+  > p {
+    font-family: $sans-serif;
+    font-style: italic;
+  }
+
+  &::before {
+    content: '“';
+    filter: opacity(0.1);
+    font-family: $serif;
+    font-size: var(--s5);
+    left: calc(var(--s-2) * -1);
+    position: absolute;
+    top: calc(var(--s3) * -1);
+    width: var(--s1);
+  }
 }
