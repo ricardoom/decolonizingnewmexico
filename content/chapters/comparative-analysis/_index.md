@@ -13,7 +13,8 @@ In an effort to contextualize this initiative, comparative research and analysis
 
 While the first truth commission was formed in Uganda in 1974, others were initiated throughout Latin America in the 1970s and 1980s, taking the form of fact-finding, non-judicial committees or councils with the express purpose of uncovering the abuses committed by dictatorships and military juntas, and concomitantly, establishing a more inclusive and representative narrative of history for the country. Since the 1990s, even more countries in Latin America and Africa used this process, as have Australia, Canada and a few communities in the United States, followed with reconciliation after periods of inter-group conflict and political transition. 
 
-The processes for these models have varied, though they typically involve both public and private activities designed to uncover and deepen the understanding of tragedies and/or human rights violations. TRC’s have continued to evolve, and particularly serve as an inspiration in the United States to redress historic legacies and to address the ongoing violence perpetrated against African Americans. 
+The processes for these models have varied, though they typically involve both public and private activities designed to uncover and deepen the understanding of tragedies and/or human rights violations. TRC’s have continued to evolve, and particularly serve as an inspiration in the United States to redress historic legacies and to address the ongoing violence perpetrated against African Americans.
+
 The Carnegie Council’s 2015 essay, “Examining the Potential for an American Truth and Reconciliation Commission” completed an analysis of several models for these commissions. The W.K. Kellogg Foundation also completed a TRC Comparison Booklet featuring 17 distinct initiatives, including those with national, federal-based focus like President Clinton’s Initiative on Race and the Japanese Internment initiative which resulted in an apology, reparations, and the preservation of 10 detention sites as national landmarks; private efforts such as that taken on by Brown University to investigate and prepare a report about the University’s historical relationship to slavery and the transatlantic slave trade, or that of the Episcopal Church to recognize its own participation and complicity in slavery. 
 
 ### Comparative Analysis - Truth and Reconciliation Commissions 
@@ -59,9 +60,7 @@ When:
 
 Structure:
 : Built upon the “Statement of Reconciliation” dated January 7, 1998 and the principles developed by the Working Group on Truth and Reconciliation and of the Exploratory Dialogues (1998-1999), the Truth and Reconciliation Commission of Canada was established in 2009. It spent six years traveling the country to hear the stories of more than 6,000 witnesses, and held seven national events that lasted four days each. 
-
 : Commission Members: There were 3 commission members, appointmented from a pool of candidates nominated by former students, Aboriginal organizations, churches and government. The Assembly of First Nations (AFN) was consulted in making the final decisions and consideration was given to at least one of the three members being an Aboriginal person.
-
 : There was also a ten-member Indian Residential Schools Survivor Committee that served as an advisory body to the TRC, as well as a Inuit Subcommission.
 
 Outcomes:
@@ -89,9 +88,7 @@ Objective:
 
 Structure:
 : 7 commission members including the executive director of the Fellowship of Reconciliation (the United States affiliate of the International Fellowship of Reconciliation); an associate professor of curriculum and instruction in the School of Education at N.C. A & T State University; a consultant and former city councilwoman, a counselor, certified nursing assistant and community activist; a retired corporate attorney; executive director of Greensboro's Faith Action International House; and a retired manager with Wrangler Corporation
- 
 : GTRCP (Greensboro Truth and Reconciliation Project) coalesced and established mandate for a TRC; Andrus Family Fund and the International Center for Transitional Justice (ICTJ), and a National Advisory Committee provided financial, strategic and advisory support;   founding documents include the Guiding Principles and the Commission selection process. 
-
 : Activities included engaging with the Greensboro community through a variety of educational, cultural and spiritual activities; collecting 67 Commission nominees from the community and assembling a Selection Panel representing 14 different sectors of the community; regular Commission meetings; community forums, public hearings.
 
 Outcomes:
@@ -142,7 +139,6 @@ Challenges:
 
 Lessons: 
 : Learning lessons from the TRCs in South Africa, Canada, and Greensboro, the MWTRC has managed to pioneer a very different model. Like South Africa, the MWTRC drafted its mandate and formed a commission, in this case to inquire into the forced removal of Native children and those affected during the process, while also (unlike South Africa) placing the state and its child welfare system under examination. The truth-telling and healing mechanisms of the MWTRC are very similar to those seen in the Canadian TRC process, such as sharing circles and private testimony. The MWTRC also sought to change child welfare practices fundamentally and systemic reconciliation between the child welfare practices of the state and those of the tribes. 
-
 : Learning from Greensboro, the MWTRC obtained the signatures of the five tribal governments and the state of Maine, and, like Greensboro, also formed an organization (i.e. Maine Wabanaki REACH) to help fulfill the specific and wider goals of the TRC within and beyond its mandate.
 
 #### Confederate Memorials Removal Initiative - New Orleans, LA
@@ -167,4 +163,3 @@ Objective:
 
 Outcome:
 : New Orleans City Council voted 6-1 to remove four monuments to the Confederacy from prominent places in the city including statues of Gens. Robert E. Lee, P.G.T. Beauregard and Jefferson Davis, President of the Confederacy. The removal was supported by a local landmarks commission, the Human Relations Commission and Clergy for a United City, "a citywide interfaith group of nearly 100 pastors of leaders. [POSTSCRIPT: With the election of a new mayor in 2017, a new commission was established to determine new placement of the removed memorials which has caused dissent, as at least two are recommended to be placed in an area easily visible to the public, though not on public land].
-

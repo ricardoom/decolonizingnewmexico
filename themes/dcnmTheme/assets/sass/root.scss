@@ -93,22 +93,12 @@ body {
       // background-color: $base-gray;
     }
   }
-
-  h1 {
-    font-size: var(--s2);
-    line-height: var(--s2);
-  }
-
-  h2 {
-    font-weight: 400;
-  }
 }
 
 .stack {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-inline: var(--s3);
 
   & > * {
     margin-top: 0; // switch to logical properties here...
@@ -122,13 +112,27 @@ body {
       }
       margin-block-start: var(--s1);
     }
-    
-    // section {
 
-    // }
-
-      article {
+      p {
         font-family: $serif;
+      }
+
+      dl {
+        display: grid;
+        grid-template-columns: [left] 1fr [right] 2fr;
+        gap: var(--s-1);
+
+        dt {
+          grid-column: left;
+        }
+
+        dd {
+          grid-column: right;
+
+          ul * {
+            font-family: $sans-serif;
+          }
+        }
       }
 
       @include noSupport(padding-inline, 1px) {

@@ -36,12 +36,24 @@ $slab-serif: 'Rockwell', 'Rockwell Extra Bold', 'Courier New', Monoco, Courier, 
 }
 
 
-
+// style the secondary lines in the header
 header {
   > span {
-    font-size: var(--s1);
-    line-height: var(--s1);
+    font-size: var(--s0);
+    line-height: var(--s0);
   }
+}
+
+h1 {
+  font-size: var(--s2);
+  line-height: var(--s2);
+}
+
+h2 {
+  font-family: $sans-serif;
+  font-size: var(--s1);
+  font-weight: 400;
+  line-height: var(--s1);
 }
 
 p {
