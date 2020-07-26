@@ -4,7 +4,7 @@ date = 2020-07-16T10:26:12-04:00
 draft = false
 slug = ''
 type = 'chapters'
-weight = 1
+weight = -1
 +++
 
 New Mexico’s story is one of astonishing complexity. It is set within a magnificent and sovereign landscape that is both ancient and modern. Its people are the heirs to unique and richly woven histories, traditions and a depth of wisdom and memories, all manifest in the physical and social landscape, tangible and intangible.

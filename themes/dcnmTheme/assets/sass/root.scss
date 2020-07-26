@@ -93,16 +93,9 @@ body {
       // background-color: $base-gray;
     }
   }
+}
 
-  h1 {
-    font-size: var(--s2);
-    line-height: var(--s2);
-  }
-
-
-  &.stack {
-  /* ↓ The space is set as a custom property */
-  // --space: 1.5rem;
+.stack {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -113,20 +106,33 @@ body {
     }
 
   & > * + * {
-    @supports not (margin-block: 1px) {
+    @supports not (margin-block-start: var(--s1)) {
       margin-bottom: var(--s1);
       margin-top: var(--s1);
       }
       margin-block-start: var(--s1);
     }
-    
-    > section {
 
-      h2 {
-        font-weight: 400;
-      }
-      article {
+      p {
         font-family: $serif;
+      }
+
+      dl {
+        display: grid;
+        grid-template-columns: [left] 1fr [right] 2fr;
+        gap: var(--s-1);
+
+        dt {
+          grid-column: left;
+        }
+
+        dd {
+          grid-column: right;
+
+          ul * {
+            font-family: $sans-serif;
+          }
+        }
       }
 
       @include noSupport(padding-inline, 1px) {
@@ -134,11 +140,7 @@ body {
         padding-left: var(--s3);
         padding-right: var(--s3);
       }
-      padding-inline: var(--s3);
-    }
   }
-}
-
 
 @include noSupport(margin-block) {
   margin-top: var(--s1)

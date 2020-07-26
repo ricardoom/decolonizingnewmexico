@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $regPages := .Site.RegularPages }}
 {{ $local := .Site.IsServer }}
-{{ if .Site.IsServer }}
+{{ if $local }}
 {{ printf "<!-- the local development template for index.html -->" | safeHTML }}
 {{ else }}
 {{ printf "<!-- its all the way live! template for index.html -->" | safeHTML }}
@@ -12,18 +12,8 @@
     <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
     {{ .Content }}
   </div>
-  <div class="summary-parent">
-    {{ range first 10 .Site.RegularPages }}
-    {{ .Render "summary"}}
-    {{ end }}
-  </div>
   {{ if $local }}
-  <div class="debugger">
-    <p>$regPages variable aqui: {{ $regPages }}</p>
-    {{ range first 10 .Site.RegularPages }}
-    {{ .Render "content" }}
-    {{ end }}
-  </div>
+  {{ partial "dev.html" . }}
   {{ end }}
 
 </main>
