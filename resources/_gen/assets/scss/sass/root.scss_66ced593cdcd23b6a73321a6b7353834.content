@@ -48,6 +48,7 @@ img:not([alt]) {
 :root {
   --measure: 60ch;
   --ratio: 1.6180339887;
+  --halfRatio: calc(var(--ratio) / 2);
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
@@ -96,7 +97,8 @@ blockquote {
     left: calc(var(--s-2) * -1);
     position: absolute;
     top: calc(var(--s3) * -1);
-    width: var(--s1); }
+    width: var(--s1);
+    z-index: -100; }
 
 header > * > * {
   color: #efefef; }

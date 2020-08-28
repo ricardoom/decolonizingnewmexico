@@ -12,18 +12,24 @@
     </nav>
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ .Content }}
+    <nav>
+      {{ with .PrevInSection }}
+      <span>&lt;&lt; Previous &nbsp;</span>
+      <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>&nbsp;Next >></span>
+      {{ end }}
+    </nav>
   </article>
-
   <aside class="o-toc">
     {{/* partial "pagination.html" . */}}
     {{/* partial "basic-toc.html" . */}}
     {{ partial "section-tree.html" . }}
   </aside>
-
-
-
 </main>
 {{ if $local }}
 {{ partial "dev.html" . }}
+<pre> some shit </pre>
 {{ end }}
 {{ end }}

@@ -5,6 +5,11 @@
     padding: var(--s1);
   }
 
+  .dev>p,
+  .dev>dl {
+    border-block-end: 2px solid limegreen;
+  }
+
   .debugger>* {
     outline: red 1px dotted;
   }
@@ -12,11 +17,40 @@
 <aside class="dev stack">
   <h4>Variables & Useful Development info:</h4>
   <p>This Page or Section Title: <b>{{ .Title }}</b></p>
-  <p>Current Section type & path: <i>{{ .CurrentSection }}</i></p>
-  <p>Number of child descendant sections to this one: <i>{{ .Sections }}</i></p>
-  <ul>All the Pages:
+  <p><b>Here are the .Page.Resources:</b></p>
+  {{ $resources := .Resources }}
+  {{ range $elem_index, $elem_val := $resources }}
+  <dl>
+    <dt><b>{{ $elem_index }}</b></dt>
+    <dd>{{ $elem_val }}</dd>
+  </dl>
+  {{ end }}
+  <p>The dot for this page or section: <b>{{ . }}</b></p>
+  <p>Current Section type & path: <b>{{ .CurrentSection }}</b></p>
+  <p>Number of child descendant sections to this one: <b>{{ .Sections }}</b></p>
+
+  <p>{{ .Site.Params }}</p>
+  <p><b>Page Params:</b></p>
+  {{ $params := .Page.Params }}
+  {{ range $elem_index, $elem_val := $params }}
+  <dl>
+    <dt><b>{{ $elem_index }}</b></dt>
+    <dd>{{ $elem_val }}</dd>
+  </dl>
+  {{ end }}
+
+  {{ $regRecurs := .RegularPagesRecursive }}
+  {{ range $regRecurs }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+  <ul>All the regular pages and only first-level section pages under the current list page:
+    {{ range .Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  <ul>All the pages:
     {{ range .Site.Pages }}
-    <li>{{ .Title }}</li>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
 </aside>

@@ -1,8 +1,8 @@
 +++
 title = '{{ replace .Name "-" " " | title }}'
 date = {{ .Date }}
-draft = true
+draft = false
 slug = ''
-type = 'chapters'
-weight = 1
+type = 'pages'
 +++
+

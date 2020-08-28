@@ -13,11 +13,11 @@ sectionPagesMenu = "main"
   
   [params.style]
     homepage = 'homepage'
-    interior = 'interior'
+    page-type = 'interior'
     
-[menu]
-  [[menu.main]]
-    identifier = "chapters"
-    name = "chapters"
-    url = "/chapters/"
-    weight = -110
+# [menu]
+#   [[menu.main]]
+#     identifier = "Chapters"
+#     name = "Chapters"
+#     url = "/chapters/"
+#     weight = -110

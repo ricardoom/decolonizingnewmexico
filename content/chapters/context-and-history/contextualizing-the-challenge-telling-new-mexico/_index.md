@@ -1,5 +1,5 @@
 +++
-title = 'Contextualizing the Narrative Framework'
+title = 'Contextualizing the Challenge Telling New Mexico'
 date = 2020-07-16T18:44:26-04:00
 draft = false
 slug = ''

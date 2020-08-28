@@ -1,7 +1,5 @@
 {{ define "main" }}
 {{ $bundle := .Site.GetPage "page" "chapters" }}
-
-
 <p>this is a single template: _defaults/single.html</p>
 <p>this is the $bundle variable output: {{ $bundle }}</p>
 <section id="main">
@@ -19,6 +17,7 @@
       <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
       <h5 id="wordcount"> {{ .WordCount }} Words </h5>
     </section>
+    {{ .Params.topics }}topics?
     {{ with .Params.topics }}
     <ul id="topics">
       {{ range . }}

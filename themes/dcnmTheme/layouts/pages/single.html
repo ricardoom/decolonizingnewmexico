@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
 {{ if $local }}
-{{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
+{{ printf "<!-- the local development template for pages/single.html   -->" | safeHTML }}
 {{ else }}
 {{ printf "<!-- its all the way live! -->" | safeHTML }}
 {{ end }}
@@ -18,7 +18,7 @@
     <h5 id="wordcount">Number of Words {{ .WordCount }}</h5>
   </aside>
   <aside id="meta">
-    <div>
+    <div class="{{ .Params.topics }}">
       {{ with .Params.topics }}
       <ul id="topics">
         {{ range . }}
@@ -36,11 +36,10 @@
     </div>
     <div>
       {{ with .PrevInSection }}
-      <span>Previous</span>
-      <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+      <a class="previous" href="{{.Permalink}}"><span>&lt;&lt;&nbsp;&nbsp;</span>{{.Title}}</a>
       {{ end }}
       {{ with .NextInSection }}
-      <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>Next</span>
+      <a class="next" href="{{.Permalink}}"> {{.Title}}<span>&nbsp;&nbsp;&gt;&gt;</span></a>
       {{ end }}
     </div>
   </aside>
