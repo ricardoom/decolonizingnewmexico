@@ -2,12 +2,15 @@
 // Imports
 //
 @import 'vendor/reset.min.scss';
+@import 'partial/scaleRules';
+@import 'partial/color';
 @import 'partial/overrides';
 @import 'partial/typography';
-@import 'partial/color';
-@import 'partial/header';
+@import 'partial/compose/center';
+@import 'partial/hero';
 @import 'partial/breadcrumb';
 @import 'partial/nav';
+@import 'partial/block/main';
 @import 'partial/footer';
 @import 'partial/mixins';
 

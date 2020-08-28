@@ -1,14 +1,13 @@
-<!-- uses: _header.scss  -->
+<!-- uses: _hero.scss  -->
 
 {{ $baseStyles := .Site.Params.style }}
-<header class="{{ if .IsHome }}{{ $baseStyles.homepage }}{{ else }}{{ $baseStyles.interior }}{{ end }}">
+
+<header class="[ hero ] [ cover ]">
 
   <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
   {{ with .Site.Params.subtitle }}
   <span class="subtitle">{{ . }}</span>
   {{ end }}
-  {{ with .Site.Params.author }}
-  <span class="author">Developed by {{ . }}</span>
-  {{ end }}
+
   {{- partial "nav.html" . -}}
 </header>

@@ -12,8 +12,8 @@ sectionPagesMenu = "main"
   description = "The Decolonization of New Mexico"
   
   [params.style]
-    homepage = 'homepage'
-    page-type = 'interior'
+    homepage = 'home-page'
+    interiorpage = 'interior-page'
     
 # [menu]
 #   [[menu.main]]

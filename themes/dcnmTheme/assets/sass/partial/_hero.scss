@@ -1,0 +1,65 @@
+//
+// Handles the page header styles, that is: the 
+header {
+
+  > * > * {
+      color: $base-black;
+    } 
+  
+
+  > span {
+    display: block;
+  }
+
+  > .subtitle {
+    padding-top: var(--s1);
+    padding-block-start: var(--s1)
+  }
+}
+
+
+//
+// Hero redux 
+
+// conquistador kids image apsect ratio is 4:3
+
+%base-hero {
+  background-color: $base-yellow;
+  color: $base-black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 100vmin;
+}
+
+.home-page {
+  .hero {
+    @extend %base-hero;
+    /* equals to 4:3 a.r. = height: 75vmin; */
+    height: calc((3 * 100vmin) / 4); 
+
+    > h1 {
+        flex: 1 0 auto;
+        min-width: 100%;
+      }
+
+      > span {
+        flex: 1 0 auto;
+        min-width: 100%;
+      }
+
+      > nav {
+        flex: 1 0 auto;
+        align-self: flex-end;
+        min-width: 100%;
+     }
+  }
+}
+  
+.interior-page {
+  .hero {
+    @extend %base-hero;
+    flex-direction: column;
+    align-content: initial;
+    }
+  }
