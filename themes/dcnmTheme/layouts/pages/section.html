@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
 {{ if $local }}
-{{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
+{{ printf "<!-- the local development template for pages/section.html -->" | safeHTML }}
 {{ else }}
-{{ printf "<!-- its all the way live! -->" | safeHTML }}
+{{ printf "<!-- its all the way live! template for pages/section.html -->" | safeHTML }}
 {{ end }}
 <main id="main-content" class="[ {{ .Params.Type }} ] [ stack ]">
   <article>
@@ -12,13 +12,14 @@
     </nav>
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ .Content }}
+    {{ range .Pages }}
+    <ul>
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    </ul>
+    {{ end }}
   </article>
-  <aside>
-    <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }}</h4>
-    <h5 id="wordcount">Number of Words {{ .WordCount }}</h5>
-  </aside>
   <aside id="meta">
-    <div>
+    <div class="topics">
       {{ with .Params.topics }}
       <ul id="topics">
         {{ range . }}
@@ -36,19 +37,24 @@
     </div>
     <div>
       {{ with .PrevInSection }}
-      <span>Previous</span>
+      <span>&lt;&lt; Previous &nbsp;</span>
       <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
       {{ end }}
       {{ with .NextInSection }}
-      <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>Next</span>
+      <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>&nbsp;Next >></span>
       {{ end }}
     </div>
   </aside>
+  <aside class="o-toc">
+    {{/* partial "pagination.html" . */}}
+    {{/* partial "basic-toc.html" . */}}
+    {{ partial "section-tree.html" . }}
+  </aside>
+
+
+
 </main>
 {{ if $local }}
 {{ partial "dev.html" . }}
 {{ end }}
-
-
-
 {{ end }}

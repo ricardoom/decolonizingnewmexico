@@ -1,10 +1,10 @@
 +++
-date = "2020-07-01T09:25:02-04:00"
+title = 'Introduction'
+date = 2020-08-14T11:49:33-04:00
 draft = false
-slug = 'introduction'
-title = "Introduction"
-type = 'chapters'
-weight = 1
+slug = ''
+type = 'pages'
+weight = -1
 +++
 
 Defining the De-Colonial Project
