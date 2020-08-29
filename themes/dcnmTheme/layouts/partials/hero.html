@@ -4,10 +4,10 @@
 
 <header class="[ hero ] [ cover ]">
 
-  <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
+  <h1 class="">{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
   {{ with .Site.Params.subtitle }}
   <span class="subtitle">{{ . }}</span>
   {{ end }}
 
-  {{- partial "nav.html" . -}}
 </header>
+{{- partial "nav.html" . -}}

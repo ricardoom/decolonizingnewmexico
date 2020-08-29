@@ -67,6 +67,7 @@ img:not([alt]) {
 header > span {
   color: #690209;
   font-size: var(--s0);
+  font-weight: 700;
   line-height: var(--s0); }
 
 h1 {
@@ -122,8 +123,8 @@ header > span {
   display: block; }
 
 header > .subtitle {
-  padding-top: var(--s1);
-  padding-block-start: var(--s1); }
+  padding-top: var(--s-1);
+  padding-block-start: var(--s-1); }
 
 .interior-page .hero, .home-page .hero {
   background-color: #f2d7b5;
@@ -155,14 +156,20 @@ header > .subtitle {
   font-size: var(--s-1);
   max-width: none; }
 
-nav {
+.primary-nav {
+  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+  flex-direction: initial;
+  justify-content: flex-start;
   padding-top: var(--s-3);
-  padding-block-start: var(--s-3); }
-  nav a {
-    color: #efefef; }
+  padding-block-start: var(--s1);
+  padding-inline-start: var(--s1); }
+  .primary-nav a {
+    color: #690209;
+    padding-inline-end: var(--s1); }
 
 article nav {
-  color: black; }
+  color: black;
+  padding-inline-start: initial; }
   article nav ul {
     display: flex; }
     article nav ul > * {
@@ -171,7 +178,7 @@ article nav {
     color: black; }
 
 main {
-  background-color: lightblue; }
+  background-color: rgba(239, 239, 239, 0.75); }
 
 .site-footer a {
   color: #efefef; }
