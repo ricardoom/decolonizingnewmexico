@@ -5,7 +5,6 @@
 {{- partial "head.html" . -}}
 {{ end }}
 
-
 <body class="{{ if .IsHome }}[ {{ $baseStyles.homepage }} ]{{ else }}[ {{ $baseStyles.interiorpage }} ]{{ end }}">
   {{- block "skip" . -}}
   {{- partial "skipnav" -}}
