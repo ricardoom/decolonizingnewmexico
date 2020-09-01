@@ -1,3 +1,5 @@
+
+
 ///
 /// type family
 ///
@@ -14,46 +16,45 @@ $monospace: 'SFMono-Regular', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida
 
 $slab-serif: 'Rockwell', 'Rockwell Extra Bold', 'Courier New', Monoco, Courier, monospace;
 
-///
-/// Scale rules
-/// 
 
 :root {
-  --measure: 60ch;
-  --ratio: 1.6180339887;
-  --s-5: calc(var(--s-4) / var(--ratio));
-  --s-4: calc(var(--s-3) / var(--ratio));
-  --s-3: calc(var(--s-2) / var(--ratio));
-  --s-2: calc(var(--s-1) / var(--ratio));
-  --s-1: calc(var(--s0) / var(--ratio));
-  --s0: 1.125rem;
-  --s1: calc(var(--s0) * var(--ratio));
-  --s2: calc(var(--s1) * var(--ratio));
-  --s3: calc(var(--s2) * var(--ratio));
-  --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio));
-  font-family: $sans-serif;
+  font-family: $sans-serif; 
 }
-
 
 // style the secondary lines in the header
 header {
   > span {
+    color: $sub-heading-sienna;
     font-size: var(--s0);
+    font-weight: 700;
     line-height: var(--s0);
   }
 }
 
 h1 {
+  color: $base-black;
+  font-family: serif;
   font-size: var(--s2);
+  font-weight: 400;
   line-height: var(--s2);
+  
 }
 
 h2 {
   font-family: $sans-serif;
   font-size: var(--s1);
-  font-weight: 400;
+  font-weight: 300;
   line-height: var(--s1);
+}
+
+h3 {
+  font-size: var(--s0);
+  font-weight: 400;
+
+  &:after {
+    // use an svg here
+    
+  }
 }
 
 p {
@@ -83,5 +84,6 @@ blockquote {
     position: absolute;
     top: calc(var(--s3) * -1);
     width: var(--s1);
+    z-index: -100;
   }
 }
