@@ -1,71 +1,54 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
-{{ if .Site.IsServer }}
+{{ if $local }}
 {{ printf "<!-- the local development template for chapters/single.html   -->" | safeHTML }}
 {{ else }}
 {{ printf "<!-- its all the way live! -->" | safeHTML }}
 {{ end }}
-<section id="main-content" class="{{ .Params.Type }}">
-  <h2 id="title">{{ .Title }}</h2>
-  <article id="content">
+<main id="main-content" class="[ {{ .Params.Type }} ] [ stack ]">
+  <article>
+    <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
+      {{ partial "breadcrumb.html" . }}
+    </nav>
+    <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ .Content }}
-    {{ range where .Resources ".Draft" false }}
-    <h3>{{ .Title }}</h3>
-    {{ .Content }}
-    {{ end }}
   </article>
-
-  {{ if $local }}
-  <h4>Useful Information:</h4>
-  <p>This page is in the: {{ .Section }} section</p>
-
-
-  {{ end }}
-  <!-- check for published: -->
-
-  <footer class="">
-    <h3></h3>
-
-    {{ if $local }}
-    <br><b>Here are the .Page.Resources: {{ .Resources }}</b>
-    <br>and here is the dot
-    {{ end }}
-  </footer>
-
-  <!-- /check for published  -->
-
-
-</section>
-<aside id="meta">
-  <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-    </section>
-    {{ with .Params.topics }}
-    <ul id="topics">
-      {{ range . }}
-      <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+  <aside>
+    <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }}</h4>
+    <h5 id="wordcount">Number of Words {{ .WordCount }}</h5>
+  </aside>
+  <aside id="meta">
+    <div>
+      {{ with .Params.topics }}
+      <ul id="topics">
+        {{ range . }}
+        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
       {{ end }}
-    </ul>
-    {{ end }}
-    {{ with .Params.tags }}
-    <ul id="tags">
-      {{ range . }}
-      <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ with .Params.tags }}
+      <ul id="tags">
+        {{ range . }}
+        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
       {{ end }}
-    </ul>
-    {{ end }}
-  </div>
-  <div>
-    {{ with .PrevInSection }}
-    <span>Previous</span>
-    <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}
-    {{ with .NextInSection }}
-    <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>Next</span>
-    {{ end }}
-  </div>
-</aside>
+    </div>
+    <div>
+      {{ with .PrevInSection }}
+      <span>Previous</span>
+      <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>Next</span>
+      {{ end }}
+    </div>
+  </aside>
+</main>
+{{ if $local }}
+{{ partial "dev.html" . }}
+{{ end }}
+
+
 
 {{ end }}

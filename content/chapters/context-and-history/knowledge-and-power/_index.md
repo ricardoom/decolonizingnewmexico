@@ -1,5 +1,4 @@
 +++
-headless = true
 section_title = "Knowledge and Power and the Approaches to History"
 title = "Knowledge and Power - Approaches to History"
 type = "chapters"

@@ -6,7 +6,6 @@ slug = ''
 type = 'chapters'
 weight = 4
 +++
-
 Tangible sites reflect both the natural and built environment, which hold stories of origins, migrations, conflicts and collaboration, all holding wisdom to be gained. The landscape of this place, however, is deeply marked by colonialism. Here, the manifest ideology of empire making — Spain, Mexico, the United States — is revealed in the colonial and even modern context, where settlement occurs hand-in-hand with the dis-peopling of an area. Tracing the lure to land, reveals the contradictions of land grants, artist colonies and the economic push and pull of migrations resulting in a contest over space and place that continue in the developments rising up in neighborhoods across the state.
 
 In order to begin to decolonize site by site, it is important to understand where sites of trauma exist. Some of these places are known, other long since buried, literally and figuratively. Some exist because of the propensity to monumentalize events and people in certain places. While a more comprehensive assessment of colonialism and imperialism as it is manifest in places is necessary, an initial assessment of two categories of places follow, first broad themes  of place and colonialism and second, a focus on specific sites.

@@ -1,16 +1,16 @@
+{{ $baseStyles := .Site.Params.style }}
 <!DOCTYPE html>
 <html class="no-js">
 {{ block "head" . }}
 {{- partial "head.html" . -}}
 {{ end }}
 
-
-<body>
+<body class="{{ if .IsHome }}[ {{ $baseStyles.homepage }} ]{{ else }}[ {{ $baseStyles.interiorpage }} ]{{ end }}">
   {{- block "skip" . -}}
   {{- partial "skipnav" -}}
   {{ end }}
-  {{- block "header" .  -}}
-  {{- partial "header.html" . -}}
+  {{- block "hero" .  -}}
+  {{- partial "hero.html" . -}}
   {{ end }}
   {{- block "main" . }}{{- end }}
   {{ block "footer" . }}

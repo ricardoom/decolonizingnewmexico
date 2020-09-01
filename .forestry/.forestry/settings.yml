@@ -3,12 +3,7 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections:
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
+sections: 
 upload_dir: http://res.cloudinary.com/toupeeproofbullets/image/upload
 public_path: https://res.cloudinary.com/toupeeproofbullets/image/upload
 front_matter_path: ''
@@ -16,7 +11,6 @@ use_front_matter_path:
 file_template: ":filename:"
 build:
   preview_env:
-  - HUGO_ENV=staging
   - HUGO_VERSION=0.72.0
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:node12
