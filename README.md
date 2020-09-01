@@ -5,6 +5,12 @@ A scholarly project. This site uses Hugo for static site generation, content is 
 
 ## Releases & Change Log:
 
+v0.0.3
+- reorganizing the way css is written to the CUBE style (fixes #10) 
+- added accessible drop caps
+- other typographics addressed
+- some steps towards getting the header design in place
+
 v0.0.2
 - improved TOC
 - minor styling improvements
