@@ -1,3 +1,5 @@
+
+
 ///
 /// type family
 ///
@@ -41,8 +43,18 @@ h1 {
 h2 {
   font-family: $sans-serif;
   font-size: var(--s1);
-  font-weight: 400;
+  font-weight: 300;
   line-height: var(--s1);
+}
+
+h3 {
+  font-size: var(--s0);
+  font-weight: 400;
+
+  &:after {
+    // use an svg here
+    
+  }
 }
 
 p {

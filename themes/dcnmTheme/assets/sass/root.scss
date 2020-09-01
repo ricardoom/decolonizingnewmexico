@@ -13,10 +13,8 @@
 @import 'partial/block/main';
 @import 'partial/footer';
 @import 'partial/mixins';
+@import 'partial/exception/dropCaps';
 
-:root {
-  
-}
 
 * {
   max-width: var(--measure);
@@ -139,7 +137,7 @@ body {
       }
 
       @include noSupport(padding-inline, 1px) {
-        border: 1px dotted pink;
+        //border: 1px dotted pink;
         padding-left: var(--s3);
         padding-right: var(--s3);
       }

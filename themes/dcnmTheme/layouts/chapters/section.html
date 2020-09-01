@@ -11,7 +11,7 @@
       {{ partial "breadcrumb.html" . }}
     </nav>
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
-    {{ .Content }}
+    {{ partial "first-paragraph.html" .Content }}
     <nav>
       {{ with .PrevInSection }}
       <span>&lt;&lt; Previous &nbsp;</span>
@@ -30,6 +30,5 @@
 </main>
 {{ if $local }}
 {{ partial "dev.html" . }}
-<pre> some shit </pre>
 {{ end }}
 {{ end }}
