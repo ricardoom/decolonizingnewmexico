@@ -2,14 +2,21 @@
 // Nav
 //
 
-nav {
+.primary-nav {
+  font-family: $serif;
+  flex-direction: initial;
+  justify-content: flex-start;
   padding-top: var(--s-3);
-  padding-block-start: var(--s-3);
+  padding-block-start: var(--s1);
+  padding-inline-start: var(--s1);
 
   a {
-    color: $base-white;
+    color: $sub-heading-sienna;
+    padding-inline-end: var(--s1);
   }
 }
+
+
 //
 // for nested section  navigations
 //  Kludge here, but needs doing 
@@ -18,6 +25,7 @@ nav {
 article {
   nav {
     color: $base-black;
+    padding-inline-start: initial;
     // &::before {
     //   content: 'up one...';
     //   font-size: var(--s-1);

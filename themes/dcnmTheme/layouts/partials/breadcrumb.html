@@ -1,5 +1,5 @@
 {{ printf "<!-- breadcrumb.html  -->" | safeHTML }}
-<ul class="o-breadcrumb">
+<ul class="[ breadcrumb ]">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 {{ define "breadcrumbnav" }}
@@ -10,7 +10,7 @@
 {{ end }}
 
 {{ if eq .p1 .p2 }}
-<li>{{ .p1.Title }}</li>
+<li aria-hidden="true">{{ .p1.Title }}</li>
 {{ else }}
 <li><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
 {{ end }}

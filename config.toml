@@ -7,17 +7,18 @@ enableRobotsTXT = "true"
 sectionPagesMenu = "main"
 
 [params]
-  author = "Dr. Estevan Gálvez Rael"
+  author = "Dr. Estevan Rael–Gálvez"
   subtitle = "Remembering, Reimagining and Recovering"
   description = "The Decolonization of New Mexico"
+  hero-image = "https://res.cloudinary.com/toupeeproofbullets/image/upload/v1598883685/dcnm/IMG_0569.jpg"
   
   [params.style]
-    homepage = 'homepage'
-    interior = 'interior'
+    homepage = 'home-page'
+    interiorpage = 'interior-page'
     
-[menu]
-  [[menu.main]]
-    identifier = "chapters"
-    name = "chapters"
-    url = "/chapters/"
-    weight = -110
+# [menu]
+#   [[menu.main]]
+#     identifier = "Chapters"
+#     name = "Chapters"
+#     url = "/chapters/"
+#     weight = -110

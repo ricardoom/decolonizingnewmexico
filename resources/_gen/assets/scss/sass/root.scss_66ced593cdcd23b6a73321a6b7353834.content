@@ -42,12 +42,10 @@ img:not([alt]) {
     transition-duration: .01ms !important;
     scroll-behavior: auto !important; } }
 
-.footnote-backref {
-  font-family: sans-serif; }
-
 :root {
   --measure: 60ch;
   --ratio: 1.6180339887;
+  --halfRatio: calc(var(--ratio) / 2);
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
@@ -58,22 +56,36 @@ img:not([alt]) {
   --s2: calc(var(--s1) * var(--ratio));
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio)); }
+
+.footnote-backref {
+  font-family: sans-serif; }
+
+:root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 header > span {
+  color: #690209;
   font-size: var(--s0);
+  font-weight: 700;
   line-height: var(--s0); }
 
 h1 {
+  color: black;
+  font-family: serif;
   font-size: var(--s2);
+  font-weight: 400;
   line-height: var(--s2); }
 
 h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: var(--s1);
-  font-weight: 400;
+  font-weight: 300;
   line-height: var(--s1); }
+
+h3 {
+  font-size: var(--s0);
+  font-weight: 400; }
 
 p {
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
@@ -96,30 +108,78 @@ blockquote {
     left: calc(var(--s-2) * -1);
     position: absolute;
     top: calc(var(--s3) * -1);
-    width: var(--s1); }
+    width: var(--s1);
+    z-index: -100; }
+
+.center {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--measure);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 header > * > * {
-  color: #efefef; }
+  color: black; }
 
 header > span {
   display: block; }
 
 header > .subtitle {
-  padding-top: var(--s1);
-  padding-block-start: var(--s1); }
+  padding-top: var(--s-1);
+  padding-block-start: var(--s-1); }
 
-.o-breadcrumb {
+.interior-page .hero, .home-page .hero {
+  background-color: #f2d7b5;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 100vmin; }
+
+.home-page .hero {
+  /* equals to 4:3 a.r. = height: 75vmin; */
+  height: calc((3 * 100vmin) / 4); }
+  .home-page .hero > h1 {
+    flex: 1 0 auto;
+    min-width: 100%; }
+  .home-page .hero > span {
+    flex: 1 0 auto;
+    min-width: 100%; }
+  .home-page .hero > nav {
+    flex: 1 0 auto;
+    align-self: flex-end;
+    min-width: 100%; }
+
+.interior-page .hero {
+  flex-direction: column;
+  align-content: initial; }
+
+.breadcrumb {
   font-size: var(--s-1);
   max-width: none; }
+  .breadcrumb li:last-child {
+    display: none; }
+  .breadcrumb li:after {
+    content: ' > '; }
+  .breadcrumb li:nth-last-child(2):after {
+    content: ''; }
 
-nav {
+.primary-nav {
+  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+  flex-direction: initial;
+  justify-content: flex-start;
   padding-top: var(--s-3);
-  padding-block-start: var(--s-3); }
-  nav a {
-    color: #efefef; }
+  padding-block-start: var(--s1);
+  padding-inline-start: var(--s1); }
+  .primary-nav a {
+    color: #690209;
+    padding-inline-end: var(--s1); }
 
 article nav {
-  color: black; }
+  color: black;
+  padding-inline-start: initial; }
   article nav ul {
     display: flex; }
     article nav ul > * {
@@ -127,8 +187,37 @@ article nav {
   article nav a {
     color: black; }
 
+main {
+  background-color: rgba(239, 239, 239, 0.75); }
+
 .site-footer a {
   color: #efefef; }
+
+.has-dropcap {
+  margin-top: var(--s-1);
+  margin-block-start: var(--s-1); }
+  .has-dropcap .dropcap {
+    float: left;
+    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+    font-size: var(--s3);
+    font-weight: 500;
+    margin: 0.1em 0.1em 0 0; }
+  .has-dropcap .dropcap:before,
+  .has-dropcap .dropcap:after {
+    content: '';
+    display: block; }
+  .has-dropcap .dropcap:before {
+    margin-top: -0.41em; }
+  .has-dropcap .dropcap:after {
+    margin-bottom: -0.15em; }
+  .has-dropcap .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; }
 
 * {
   max-width: var(--measure); }
@@ -206,13 +295,10 @@ body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   @supports not (padding-inline: 1px) {
     .stack {
-      outline: 1px dotted pink;
-      border: 1px dotted pink;
       padding-left: var(--s3);
       padding-right: var(--s3); } }
 
 @supports not (margin-block: ) {
-  outline: 1px dotted pink;
   margin-top: var(--s1); }
 
 /*# sourceMappingURL=root.css.map */

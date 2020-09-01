@@ -1,0 +1,40 @@
+//
+// Basic Drop Cap for all pages
+
+.has-dropcap {
+
+  margin-top: var(--s-1);
+  margin-block-start: var(--s-1);
+  
+  .dropcap {
+    float: left;
+    font-family: $serif;
+    font-size: var(--s3);
+    font-weight: 500;
+    margin: 0.1em 0.1em 0 0;
+  }
+
+  .dropcap:before,
+  .dropcap:after {
+    content: '';
+    display: block;
+  }
+
+  .dropcap:before {
+    margin-top: -0.41em;
+  }
+
+  .dropcap:after {
+    margin-bottom: -0.15em;
+  }
+
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
