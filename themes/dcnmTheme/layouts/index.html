@@ -12,9 +12,11 @@
     <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
     {{ .Content }}
   </div>
+
   {{ if $local }}
   {{ partial "dev.html" . }}
   {{ end }}
 
 </main>
+{{ partial "uteMountainTopo.svg" . }}
 {{ end }}

@@ -29,14 +29,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
-  width: 100vmin;
+  // width: 100vmin;
+
 }
 
 .home-page {
   .hero {
     @extend %base-hero;
     /* equals to 4:3 a.r. = height: 75vmin; */
-    height: calc((3 * 100vmin) / 4); 
+    // height: calc((9 * 100vmin) / 16); 
 
     > h1 {
         flex: 1 0 auto;

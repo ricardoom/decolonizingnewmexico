@@ -15,4 +15,10 @@
 {{ end }}
 <title>{{ .Site.Title }}</title>
 {{ hugo.Generator }}
+<script>
+  if (window) {
+    const hasJS = document.querySelector('html');
+    hasJS.setAttribute('class', 'js');
+  }
+</script>
 </head>
