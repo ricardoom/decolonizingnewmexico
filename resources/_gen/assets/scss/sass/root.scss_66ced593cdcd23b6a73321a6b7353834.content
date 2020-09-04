@@ -120,39 +120,51 @@ blockquote {
   flex-direction: column;
   align-items: center; }
 
-header > * > * {
-  color: black; }
+:root {
+  --small-screen: 414px;
+  --oneThird: calc(100vh * 0.33);
+  --threeQuarter: calc(100vh * 0.75); }
 
-header > span {
-  display: block; }
-
-header > .subtitle {
-  padding-top: var(--s-1);
-  padding-block-start: var(--s-1); }
-
-.interior-page .hero, .home-page .hero {
+header.hero {
+  align-content: flex-end;
   background-color: #f2d7b5;
   color: black;
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end; }
+  flex-wrap: wrap; }
 
-.home-page .hero {
-  /* equals to 4:3 a.r. = height: 75vmin; */ }
-  .home-page .hero > h1 {
-    flex: 1 0 auto;
-    min-width: 100%; }
-  .home-page .hero > span {
-    flex: 1 0 auto;
-    min-width: 100%; }
-  .home-page .hero > nav {
-    flex: 1 0 auto;
-    align-self: flex-end;
-    min-width: 100%; }
+header.hero {
+  background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: var(--threeQuarter);
+  padding-bottom: var(--s3);
+  padding-block-end: var(--s3);
+  padding-left: 0;
+  padding-inline-start: 0; }
+  @media (max-width: 414px) {
+    header.hero {
+      min-height: var(--oneThird);
+      padding-bottom: var(--s2);
+      padding-block-end: var(--s2); } }
+  header.hero > * > * {
+    color: black; }
+  header.hero .hero-lockup {
+    padding: var(--s1); }
+    @media (max-width: 414px) {
+      header.hero .hero-lockup h1 {
+        font-size: var(--s1);
+        line-height: var(--s1); } }
+    header.hero .hero-lockup > * a {
+      color: black; }
+    header.hero .hero-lockup > span {
+      color: #690209;
+      display: block;
+      font-weight: 500;
+      line-height: var(--s0); }
 
-.interior-page .hero {
-  flex-direction: column;
-  align-content: initial; }
+.home-page header > .subtitle {
+  padding-top: var(--s-1);
+  padding-block-start: var(--s-1); }
 
 .breadcrumb {
   font-size: var(--s-1);

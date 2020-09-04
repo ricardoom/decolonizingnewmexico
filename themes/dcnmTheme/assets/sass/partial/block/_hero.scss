@@ -1,0 +1,91 @@
+//
+// Hero Partial. All things hero for both the home page and the interior pages
+
+// Set some viewport heights from which to work from 
+// TODO: fix up this ridiculous mess...
+$threeQuartersHeight: 0.75;
+$oneThirdHeight: 0.33;
+// Set a smallest screen width
+$small-screen: 414px;
+
+:root {
+  // --smallScreen: #{$small-screen};
+  --small-screen: #{$small-screen}; 
+  --oneThird: calc(100vh * #{$oneThirdHeight});
+  --threeQuarter: calc(100vh * #{$threeQuartersHeight});
+}
+
+%base-hero {
+  align-content: flex-end;
+  background-color: $base-yellow;
+  color: $base-black;
+  display: flex;
+  flex-wrap: wrap;
+  // width: 100vmin;
+}
+
+header {
+
+  &.hero {
+
+    @extend %base-hero;
+
+    background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: var(--threeQuarter);
+    padding-bottom: var(--s3);
+    padding-block-end: var(--s3);
+    padding-left: 0;
+    padding-inline-start: 0;
+
+    @media (max-width: $small-screen) {
+      min-height: var(--oneThird);
+      padding-bottom: var(--s2);
+      padding-block-end: var(--s2);
+    }
+
+    > * > * {
+      color: $base-black;
+    }
+
+    .hero-lockup {
+
+      padding: var(--s1);
+      h1 {
+
+        @media (max-width: $small-screen) {
+          font-size: var(--s1);
+          line-height: var(--s1);
+        }
+      }
+
+      > * a {
+        color: $base-black;
+      }
+
+      > span {
+        color: $sienna;
+        display: block;
+        font-weight: 500;
+        line-height: var(--s0);
+        @media (max-width: $small-screen) {}
+        
+      }
+    }
+  }
+}
+
+.interior-page {
+  header {
+  }
+}
+
+.home-page {
+  header {
+    > .subtitle {
+      padding-top: var(--s-1);
+      padding-block-start: var(--s-1);
+    }
+  }
+}
