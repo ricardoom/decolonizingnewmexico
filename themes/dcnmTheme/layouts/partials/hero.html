@@ -4,6 +4,7 @@
 {{ $heroImage :=  $params.heroimage }}
 
 <header class="[ cover ] [ hero ]">
+
   <div class="[ hero-lockup ]">
     <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
     {{ with $params.subtitle }}

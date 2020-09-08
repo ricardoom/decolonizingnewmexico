@@ -123,7 +123,8 @@ blockquote {
 :root {
   --small-screen: 414px;
   --oneThird: calc(100vh * 0.33);
-  --threeQuarter: calc(100vh * 0.75); }
+  --threeQuarter: calc(100vh * 0.75);
+  --oneQuarter: calc(100vh * 0.25); }
 
 header.hero {
   align-content: flex-end;
@@ -133,38 +134,53 @@ header.hero {
   flex-wrap: wrap; }
 
 header.hero {
-  background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg");
+  background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/v1599583814/dcnm/fracturedHeroBG.svg"), url("https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg");
+  background-position: 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover, cover;
+  display: flex;
   min-height: var(--threeQuarter);
-  padding-bottom: var(--s3);
-  padding-block-end: var(--s3);
+  padding-bottom: var(--s4);
+  padding-block-end: var(--s4);
   padding-left: 0;
   padding-inline-start: 0; }
   @media (max-width: 414px) {
     header.hero {
       min-height: var(--oneThird);
-      padding-bottom: var(--s2);
-      padding-block-end: var(--s2); } }
+      padding-bottom: var(--s0);
+      padding-block-end: var(--s0); } }
   header.hero > * > * {
     color: black; }
   header.hero .hero-lockup {
-    padding: var(--s1); }
-    @media (max-width: 414px) {
-      header.hero .hero-lockup h1 {
-        font-size: var(--s1);
-        line-height: var(--s1); } }
+    padding-left: var(--s0);
+    padding-inline-start: var(--s0); }
+    header.hero .hero-lockup h1 {
+      font-size: var(--s2);
+      line-height: var(--s2); }
+      @media (max-width: 414px) {
+        header.hero .hero-lockup h1 {
+          font-size: var(--s1);
+          line-height: var(--s0); } }
     header.hero .hero-lockup > * a {
       color: black; }
     header.hero .hero-lockup > span {
       color: #690209;
       display: block;
+      font-size: var(--s1);
       font-weight: 500;
-      line-height: var(--s0); }
+      line-height: var(--s1); }
+      @media (max-width: 414px) {
+        header.hero .hero-lockup > span {
+          font-size: var(--s-1); } }
+  header.hero svg {
+    filter: opacity(1);
+    height: 100%;
+    max-width: none;
+    width: 100%; }
 
-.home-page header > .subtitle {
-  padding-top: var(--s-1);
-  padding-block-start: var(--s-1); }
+.interior-page header.hero {
+  background-image: none;
+  height: var(--oneQuarter, 150px); }
 
 .breadcrumb {
   font-size: var(--s-1);
@@ -207,7 +223,7 @@ article nav {
   position: absolute;
   width: 100vw;
   top: 10vh;
-  z-index: -1; }
+  z-index: -1000; }
 
 .has-dropcap {
   margin-top: var(--s-1);
