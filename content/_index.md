@@ -6,7 +6,7 @@ title = "Home"
 > difficult clays she was born, from what acts of love and
 > violation she comes.
 >
-> — Eduardo Galaeno, Memory of Fire - Genesis
+> — Eduardo Galeano, Memory of Fire - Genesis
 
 > If she sees you watching she will invite you in for coffee, give
 > you warm bread, and you will be obligated to stay and listen.
