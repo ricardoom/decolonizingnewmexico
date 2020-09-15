@@ -3,8 +3,16 @@
 {{ $baseStyles := $params.style }}
 {{ $heroImage :=  $params.heroimage }}
 
+
+
+
 <header class="[ cover ] [ hero ]">
 
+  {{- partial "svg-hero-bg.html" . -}}
+  {{/*  <svg class="title-bg" viewBox="0 0 1929 1032" aria-hidden="true">
+    <use href="#title-bg" height="100" width="1000" x="" y="" />
+  </svg>  */}}
+  {{- partial "hOneHeaderBG.svg" . -}}
   <div class="[ hero-lockup ]">
     <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
     {{ with $params.subtitle }}
@@ -12,5 +20,8 @@
     {{ end }}
   </div>
 
+
+
 </header>
+
 {{- partial "nav.html" . -}}

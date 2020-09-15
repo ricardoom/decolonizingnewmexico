@@ -8,70 +8,118 @@ $oneThirdHeight: 0.33;
 $oneQuarter: 0.25;
 // Set a smallest screen width
 $small-screen: 414px;
+$wide-screen: 1280px
 
 :root {
   // --smallScreen: #{$small-screen};
   --small-screen: #{$small-screen}; 
   --oneThird: calc(100vh * #{$oneThirdHeight});
   --threeQuarter: calc(100vh * #{$threeQuartersHeight});
+  // --threeQuarter: calc(100vh / 1.75);
   --oneQuarter: calc(100vh * #{$oneQuarter});
 }
 
-%base-hero {
-  align-content: flex-end;
+// %base-hero {
+//   align-content: flex-end;
+//   background-color: $base-yellow;
+//   color: $base-black;
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+%grid-hero {
   background-color: $base-yellow;
   color: $base-black;
-  display: flex;
-  flex-wrap: wrap;
-  // width: 100vmin;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 5vw auto 5vw;
+  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-rows: 60% 40%;
+  padding: 0;
+
+  @media (max-width: $small-screen) {
+  //  grid-template-columns: 5vw auto 5vw ;
+  }
 }
 
 header {
-  
   &.hero {
-
-    @extend %base-hero;
-
-    background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/v1599583814/dcnm/fracturedHeroBG.svg'), url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
-    // background-position: bottom center, top center;
-    background-position: 0;
+    @extend %grid-hero;
+    background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover, cover;
-    display: flex;
-    min-height: var(--threeQuarter);
-    padding-bottom: var(--s4);
-    padding-block-end: var(--s4);
-    padding-left: 0;
-    padding-inline-start: 0;
-
+    background-size: cover;
+    height: var(--threeQuarter);
+    justify-items: start;
+    overflow: hidden;
+    
     @media (max-width: $small-screen) {
-      min-height: var(--oneThird);
-      padding-bottom: var(--s0);
-      padding-block-end: var(--s0);
+      height: var(--oneThird);
+      padding-bottom: 0;
+      padding-block-end: 0;
     }
 
-    > * > * {
-      color: $base-black;
+    // Purely Decorative svg styles:
+    .hero-svg {
+      align-self: end;
+      grid-column: 1 / 3;
+      grid-row: 1 / 4;
+      height: 60%;
+      max-width: none;
+      width: 100vw;
+      filter: opacity(0.5);    
+
+      @media screen and (max-width: $small-screen) {
+        filter: opacity(0.85)
+      }
+
+      // TODO: do somehting less generic naming wise here:
+      .a {
+        fill: hsl(31, 71%, 62%);
+      }
+
+      .b {
+        fill: hsl(18, 82%, 36%);
+      }
+
+      .c {
+        fill: hsl(17, 91%, 78%);
+      }
+    }
+
+    .title-bg {
+      align-self: center;
+      fill: #fcf6d8;
+      filter: opacity(0.65);
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      max-width: 99vw;
+      width: 70vw;
+      z-index: 1;
+
+      @media screen and (max-width: $wide-screen) {
+        width: 90vw;
+      }
     }
 
     .hero-lockup {
-      padding-left: var(--s0);
-      padding-inline-start: var(--s0);
+      align-self: center;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      padding-right: var(--s1);
+      padding-inline-end: var(--s1);
+      z-index: 2;
 
       h1 {
         font-size: var(--s2);
         line-height: var(--s2);
 
         @media (max-width: $small-screen) {
-          font-size: var(--s1);
+          font-size: var(--s0);
           line-height: var(--s0);
           // padding-left: var(--s0);
           // padding-inline-start: var(--s0);
         }
-      }
-
-      > * a {
-        color: $base-black;
       }
 
       > span {
@@ -83,25 +131,29 @@ header {
         
         @media (max-width: $small-screen) {
           font-size: var(--s-1);
+          line-height: var(--s-1);
         }
       }
     }
 
-    svg {
-      filter: opacity(1);
-      height: 100%;
-      max-width: none;
-      width: 100%;
+    > * > * {
+      color: $base-black;
     }
+
   }
 }
+
 
 .interior-page {
   header {
     &.hero {
       background-image: none;
+      min-height: var(--oneQuarter);
       height: var(--oneQuarter, 150px);
-
+    
+      > * a {
+        color: $base-black;
+      }
     }
   }
 }
@@ -114,3 +166,75 @@ header {
     // }
   }
 }
+
+
+// header {
+  
+//   &.hero-v0 {
+
+//     @extend %base-hero;
+
+//     // background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/v1599583814/dcnm/fracturedHeroBG.svg'), url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
+//     background-image:  url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
+//     background-position: top center, top center;
+//     background-repeat: no-repeat;
+//     background-size: cover, cover;
+//     display: flex;
+//     min-height: var(--threeQuarter);
+//     padding-bottom: var(--s4);
+//     padding-block-end: var(--s4);
+//     padding-left: 0;
+//     padding-inline-start: 0;
+
+//     @media (max-width: $small-screen) {
+//       min-height: var(--oneThird);
+//       padding-bottom: 0;
+//       padding-block-end: 0;
+//     }
+
+//     > * > * {
+//       color: $base-black;
+//     }
+
+//     .hero-lockup {
+//       padding-left: var(--s1);
+//       padding-inline-start: var(--s1);
+
+//       h1 {
+//         font-size: var(--s2);
+//         line-height: var(--s2);
+
+//         @media (max-width: $small-screen) {
+//           font-size: var(--s0);
+//           line-height: var(--s0);
+//           // padding-left: var(--s0);
+//           // padding-inline-start: var(--s0);
+//         }
+//       }
+
+//       > * a {
+//         color: $base-black;
+//       }
+
+//       > span {
+//         color: $sienna;
+//         display: block;
+//         font-size: var(--s1);
+//         font-weight: 500;
+//         line-height: var(--s1);
+        
+//         @media (max-width: $small-screen) {
+//           font-size: var(--s-1);
+//           line-height: var(--s0);
+//         }
+//       }
+//     }
+
+//     svg {
+//       filter: opacity(1);
+//       height: 100%;
+//       max-width: none;
+//       width: 100%;
+//     }
+//   }
+// }

@@ -2,8 +2,10 @@
 {{ $options := ( dict "targetPath" $targetPath "enableSourceMap" true "includePaths" (slice "sass/vendor")) }}
 {{ $scssRoot := "sass/root.scss" }}
 {{ $styleSource := resources.Get $scssRoot }}
-
 {{ $style := resources.Get "sass/root.scss" | resources.ToCSS $options }}
+{{ $watchedBoxMin := resources.Get "js/watched-box.min.js" }}
+{{ $watchedBox := resources.Get "js/watched-box.js" }}
+
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <meta charset="UTF-8">
@@ -21,4 +23,5 @@
     hasJS.setAttribute('class', 'js');
   }
 </script>
+
 </head>
