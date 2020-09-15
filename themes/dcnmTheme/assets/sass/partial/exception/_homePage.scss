@@ -1,0 +1,16 @@
+//
+// Home Page only Styles
+
+.home-page {
+  
+  > svg {
+  filter: opacity(0.3);
+  height: 100vh;
+  max-width: none;
+  position: absolute;
+  width: 100vw;
+  top: 10vh;
+  z-index: -1000;
+  }
+  
+}

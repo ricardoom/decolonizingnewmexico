@@ -10,11 +10,14 @@
   {{- partial "skipnav" -}}
   {{ end }}
   {{- block "hero" .  -}}
-  {{- partial "hero.html" . -}}
+  {{- partial "hero" . -}}
   {{ end }}
   {{- block "main" . }}{{- end }}
   {{ block "footer" . }}
   {{ partial "footer" . }}
+  {{ end }}
+  {{- block "scripts" . }}
+  {{- partial "scripts" . -}}
   {{ end }}
 </body>
 
