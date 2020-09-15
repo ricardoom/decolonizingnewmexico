@@ -9,7 +9,9 @@ v0.0.3
 - reorganizing the way css is written to the CUBE style (fixes #10) 
 - added accessible drop caps
 - other typographics addressed
-- some steps towards getting the header design in place
+- have a completed poc for the header
+- using svg for graphic elements
+- using hugo's esBuild for js bundling
 
 v0.0.2
 - improved TOC
