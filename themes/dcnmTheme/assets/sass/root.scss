@@ -7,12 +7,13 @@
 @import 'partial/overrides';
 @import 'partial/typography';
 @import 'partial/compose/center';
-@import 'partial/hero';
+@import 'partial/block/hero';
 @import 'partial/breadcrumb';
 @import 'partial/nav';
 @import 'partial/block/main';
 @import 'partial/footer';
 @import 'partial/mixins';
+@import 'partial/exception/homePage';
 @import 'partial/exception/dropCaps';
 
 
@@ -136,11 +137,11 @@ body {
         }
       }
 
-      @include noSupport(padding-inline, 1px) {
-        //border: 1px dotted pink;
-        padding-left: var(--s3);
-        padding-right: var(--s3);
-      }
+      // @include noSupport(padding-inline, 1px) {
+      //   //border: 1px dotted pink;
+      //   padding-left: var(--s1);
+      //   padding-right: var(--s1);
+      // }
   }
 
 @include noSupport(margin-block) {

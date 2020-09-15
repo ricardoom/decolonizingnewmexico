@@ -1,0 +1,17 @@
+{{ $observer := resources.Get "js/observer.js" }}
+
+{{ $main := resources.Get "js/main.js" }}
+
+{{ $importWatchedBox := resources.Get "js/imports.js" }}
+
+{{ $opts := dict "targetPath" "js/index.js" "target" "es2016" "minify" false }}
+
+{{ $built := resources.Get $main | js.Build $opts }}
+
+{{ if .Site.IsServer }}
+{{ $script := slice $main | resources.Concat "js/index.js" }}
+<script src="{{ $built.Permalink }}" type="module"></script>
+{{ else }}
+{{ $script := slice $main | resources.Concat "js/index.js" | fingerprint }}
+<script src="{{ $built.Permalink }}"></script>
+{{ end }}

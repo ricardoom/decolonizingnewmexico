@@ -7,9 +7,10 @@ $dark-gray: lighten($base-black, 0.75);
 // 
 
 $base-yellow:  hsl(33, 70%, 83%);
+$t-yellow: transparentize($base-yellow, 0.2);
 
 // type colors for the header
-$sub-heading-sienna: hsl(356, 96%, 21%);
+$sienna: hsl(356, 96%, 21%);
 
 
 $o-bgColor--866a74 : #866a74;
