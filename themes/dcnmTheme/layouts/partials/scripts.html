@@ -12,6 +12,6 @@
 {{ $script := slice $main | resources.Concat "js/index.js" }}
 <script src="{{ $built.Permalink }}" type="module"></script>
 {{ else }}
-{{ $script := slice $main | resources.Concat "js/index.js" | minify | fingerprint }}
+{{ $script := slice $main | resources.Concat "js/index.js" | fingerprint }}
 <script src="{{ $built.Permalink }}"></script>
 {{ end }}
