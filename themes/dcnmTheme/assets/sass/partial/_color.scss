@@ -1,4 +1,4 @@
-$base-white: #efefef;
+$base-white: #fff;
 $base-gray: hsl(0, 0%, 95%);
 $base-black: hsl(0, 0%, 0%);
 $dark-gray: lighten($base-black, 0.75);
@@ -9,8 +9,12 @@ $dark-gray: lighten($base-black, 0.75);
 $base-yellow:  hsl(33, 70%, 83%);
 $t-yellow: transparentize($base-yellow, 0.2);
 
-// type colors for the header
+// type colors for the header and main TOC
 $sienna: hsl(356, 96%, 21%);
+
+// type color for the home page intro / preface text
+$umber: hsl(350, 60%, 18%);
+$pale-sage: hsl(67, 31%, 75%);
 
 
 $o-bgColor--866a74 : #866a74;

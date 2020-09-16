@@ -8,6 +8,8 @@ sectionPagesMenu = "main"
 
 [params]
   author = "Dr. Estevan Rael–Gálvez"
+  design = "ricardogalvez.design"
+  development ="Ricardo E. Gálvez"
   subtitle = "Remembering, Reimagining and Recovering"
   description = "The Decolonization of New Mexico"
   heroimage = "https://res.cloudinary.com/toupeeproofbullets/image/upload/v1598883685/dcnm/IMG_0569.jpg"
@@ -16,7 +18,18 @@ sectionPagesMenu = "main"
     homepage = 'home-page'
     interiorpage = 'interior-page'
     
-# [menu]
+[menu]
+  [[ menu.hp ]]
+    identifier = "Table of Contents"
+    name = "Table of Contents"
+    url = "#table-of-contents"
+    weight = -1
+  [[ menu.hp ]]  
+    identifier = "About this Project"
+    name = "About this Project"
+    url = "#about-this-project"
+    weight = 1
+
 #   [[menu.main]]
 #     identifier = "Chapters"
 #     name = "Chapters"

@@ -1,45 +1,14 @@
 //
 // Hero Partial. All things hero for both the home page and the interior pages
 
-// Set some viewport heights from which to work from 
-// TODO: fix up this ridiculous mess...
-$threeQuartersHeight: 0.75;
-$oneThirdHeight: 0.33;
-$oneQuarter: 0.25;
-// Set a smallest screen width
-$small-screen: 414px;
-$wide-screen: 1280px
-
-:root {
-  // --smallScreen: #{$small-screen};
-  --small-screen: #{$small-screen}; 
-  --oneThird: calc(100vh * #{$oneThirdHeight});
-  --threeQuarter: calc(100vh * #{$threeQuartersHeight});
-  // --threeQuarter: calc(100vh / 1.75);
-  --oneQuarter: calc(100vh * #{$oneQuarter});
-}
-
-// %base-hero {
-//   align-content: flex-end;
-//   background-color: $base-yellow;
-//   color: $base-black;
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
 %grid-hero {
+  @include gridColumn();
   background-color: $base-yellow;
   color: $base-black;
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: 5vw auto 5vw;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: 60% 40%;
   padding: 0;
-
-  @media (max-width: $small-screen) {
-  //  grid-template-columns: 5vw auto 5vw ;
-  }
 }
 
 header {
@@ -139,7 +108,6 @@ header {
     > * > * {
       color: $base-black;
     }
-
   }
 }
 
@@ -166,75 +134,3 @@ header {
     // }
   }
 }
-
-
-// header {
-  
-//   &.hero-v0 {
-
-//     @extend %base-hero;
-
-//     // background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/v1599583814/dcnm/fracturedHeroBG.svg'), url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
-//     background-image:  url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
-//     background-position: top center, top center;
-//     background-repeat: no-repeat;
-//     background-size: cover, cover;
-//     display: flex;
-//     min-height: var(--threeQuarter);
-//     padding-bottom: var(--s4);
-//     padding-block-end: var(--s4);
-//     padding-left: 0;
-//     padding-inline-start: 0;
-
-//     @media (max-width: $small-screen) {
-//       min-height: var(--oneThird);
-//       padding-bottom: 0;
-//       padding-block-end: 0;
-//     }
-
-//     > * > * {
-//       color: $base-black;
-//     }
-
-//     .hero-lockup {
-//       padding-left: var(--s1);
-//       padding-inline-start: var(--s1);
-
-//       h1 {
-//         font-size: var(--s2);
-//         line-height: var(--s2);
-
-//         @media (max-width: $small-screen) {
-//           font-size: var(--s0);
-//           line-height: var(--s0);
-//           // padding-left: var(--s0);
-//           // padding-inline-start: var(--s0);
-//         }
-//       }
-
-//       > * a {
-//         color: $base-black;
-//       }
-
-//       > span {
-//         color: $sienna;
-//         display: block;
-//         font-size: var(--s1);
-//         font-weight: 500;
-//         line-height: var(--s1);
-        
-//         @media (max-width: $small-screen) {
-//           font-size: var(--s-1);
-//           line-height: var(--s0);
-//         }
-//       }
-//     }
-
-//     svg {
-//       filter: opacity(1);
-//       height: 100%;
-//       max-width: none;
-//       width: 100%;
-//     }
-//   }
-// }

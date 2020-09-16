@@ -1,0 +1,14 @@
+//
+// Home Page About 
+// The about section found at bottom of Page
+//
+
+.about {
+  display: grid;
+  @include gridColumn;
+  grid-template-rows: auto;
+
+  > * {
+    @include gridColumnMember;
+  }
+}

@@ -1,0 +1,63 @@
+//
+// Nav
+//
+
+.primary-nav {
+  @include gridColumn;
+  display: grid;
+  font-family: $serif;
+  font-size: var(--s0);
+  grid-template-rows: auto;
+  justify-content: flex-start;
+  margin-top: var(--s1);
+  margin-block-start: var(--s1);
+
+  .nav-list {
+    @include gridColumnMember;
+    display: flex;
+    list-style: none;
+
+    @media screen and (max-width: $small-screen) {
+      flex-direction: column;
+    }
+  }
+
+  a {
+    color: $sienna;
+    // display: block;
+    padding-right: var(--s1);
+    padding-inline-end: var(--s1);
+
+    // @media screen and (max-width: $small-screen) {
+    //   margin: var(--s0) 0;
+    //   margin-block-start: var(--s0);
+    //   margin-block-end: var(--s0);
+    // }
+  }
+}
+
+//
+// for nested section  navigations
+//  Kludge here, but needs doing
+
+// specifically for breadcrumb.html
+article {
+  nav {
+    color: $base-black;
+    padding-inline-start: initial;
+    // &::before {
+    //   content: 'up one...';
+    //   font-size: var(--s-1);
+    // }
+    ul {
+      display: flex;
+      & > * {
+        padding-inline-end: var(--s-2);
+      }
+    }
+
+    a {
+      color: $base-black;
+    }
+  }
+}

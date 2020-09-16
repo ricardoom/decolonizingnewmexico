@@ -2,6 +2,17 @@
 // Mixins
 //
 
+// Grid
+@mixin gridColumn {
+  grid-template-columns: 5vw auto 5vw;
+  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+}
+
+@mixin gridColumnMember {
+  grid-column: 2 / 3;
+}
+
+// No Supporting
 @mixin noSupport($property, $value...) {
   @supports not ($property: $value) {
     // outline: 1px solid pink;
