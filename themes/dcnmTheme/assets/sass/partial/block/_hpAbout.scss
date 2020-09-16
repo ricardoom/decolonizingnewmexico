@@ -7,6 +7,9 @@
   display: grid;
   @include gridColumn;
   grid-template-rows: auto;
+  padding: var(--s1) 0;
+  padding-block-start: var(--s1);
+  padding-block-end: var(--s1);
 
   > * {
     @include gridColumnMember;

@@ -8,6 +8,8 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-rows: 60% 40%;
+  margin-top: 0;
+  margin-block-start: 0;
   padding: 0;
 }
 

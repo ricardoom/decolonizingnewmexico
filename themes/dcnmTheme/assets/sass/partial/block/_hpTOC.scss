@@ -4,11 +4,22 @@
 //
 
 .toc {
+  display: grid;
   background-color: $t-yellow;
   color: $sienna;
-  grid-column: 2 / 3;
-  grid-row: 2;
+  display: grid;
+  @include gridColumn;
+  grid-template-rows: auto;
   max-width: none;
+  padding: var(--s1) 0;
+  padding-block-start: var(--s1);
+  padding-block-end: var(--s1);
+  
+  
+  > .toc-items {
+    @include gridColumnMember;
+    grid-row: auto;
+  }
 
   * > a {
     color: $sienna;
