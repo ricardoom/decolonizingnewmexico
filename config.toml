@@ -14,6 +14,7 @@ sectionPagesMenu = "main"
   description = "The Decolonization of New Mexico"
   heroimage = "https://res.cloudinary.com/toupeeproofbullets/image/upload/v1598883685/dcnm/IMG_0569.jpg"
   
+  
   [params.style]
     homepage = 'home-page'
     interiorpage = 'interior-page'

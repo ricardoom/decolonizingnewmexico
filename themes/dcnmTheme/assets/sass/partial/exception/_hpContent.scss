@@ -6,9 +6,7 @@
 .home-page {
   
   main {
-    display: grid;
-    @include gridColumn;
-    grid-template-rows: auto;
+    @include setBasicGrid;
     margin-top: var(--s1);
     margin-block-start: var(--s1);
 
@@ -38,6 +36,7 @@
   > svg {
   filter: opacity(0.5);
   height: 100%;
+  margin: 0;
   max-width: none;
   position: absolute;
   width: 100%;

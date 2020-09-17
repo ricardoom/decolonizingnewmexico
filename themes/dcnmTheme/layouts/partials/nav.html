@@ -13,7 +13,7 @@
 {{ printf "<!-- interior nav -->" | safeHTML }}
 <nav aria-label="primary-navigation" class="[ cover ] [ primary-nav ]">
   {{ $currentPage := . }}
-  <ul>
+  <ul class="[ nav-list ]">
     {{ range .Site.Menus.main }}
     <li>
       <a id="{{ .Name }}"

@@ -5,7 +5,8 @@
 {{- partial "head.html" . -}}
 {{ end }}
 
-<body class="[ stack {{ if .IsHome }}{{ $baseStyles.homepage }} ] {{ else }}[{{ $baseStyles.interiorpage }} ]{{ end }}">
+<body
+  class="[ stack ] {{ if .IsHome }}[ {{ $baseStyles.homepage }} ] {{ else }}[ {{ $baseStyles.interiorpage }} ]{{ end }}">
   {{- block "skip" . -}}
   {{- partial "skipnav" -}}
   {{ end }}
