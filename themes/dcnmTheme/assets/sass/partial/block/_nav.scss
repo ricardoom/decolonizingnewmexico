@@ -3,11 +3,9 @@
 //
 
 .primary-nav {
-  @include gridColumn;
-  display: grid;
+  @include setBasicGrid;
   font-family: $serif;
   font-size: var(--s0);
-  grid-template-rows: auto;
   justify-content: flex-start;
   margin-top: var(--s1);
   margin-block-start: var(--s1);

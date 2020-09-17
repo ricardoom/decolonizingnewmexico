@@ -2,9 +2,42 @@
 // footer
 //
 
+#bg-img {
+  background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/v1600360322/dcnm/aspens.jpg');
+}
+
 .site-footer {
-  a {
-    color: $base-white;
+  background-color: lighten($color: $navy-blue, $amount: 0.75);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: serif;
+  @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
+  padding-top: var(--s3);
+  padding-bottom: var(--s3);
+  padding-block-end: var(--s3);
+  padding-block-start: var(--s3);
+  // padding-block-start: var(--s3);
+  // padding-block-end: var(--s3);
+
+  > * {
+    @include gridColumnMember;
+    color: $navy-blue;
+    z-index: 2;
+  }
+  ul {
+    grid-row: 2 /3;
+  }
+
+  svg {
+    fill: $base-white;
+    filter: opacity(0.8);
+    grid-row: 2 / 3;
+    margin: calc(var(--s2) * -1) 0 0 calc(var(--s2) * -1);
+    margin-block-start: calc(var(--s2) * -1);
+    margin-inline-start: calc(var(--s2) * -1);
+    transform: translateY(calc(var(--s0) * -1));
+    transform-origin: left;
+    z-index: 1;
   }
 }
 

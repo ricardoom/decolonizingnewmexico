@@ -4,12 +4,9 @@
 //
 
 .toc {
-  display: grid;
   background-color: $t-yellow;
   color: $sienna;
-  display: grid;
-  @include gridColumn;
-  grid-template-rows: auto;
+  @include setBasicGrid;
   max-width: none;
   padding: var(--s1) 0;
   padding-block-start: var(--s1);

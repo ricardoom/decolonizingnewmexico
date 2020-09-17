@@ -1,0 +1,46 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  & > * {
+    margin-top: 0; // switch to logical properties here...
+    margin-bottom: 0;
+    }
+
+  & > * + * {
+    @supports not (margin-block-start: var(--s1)) {
+      margin-bottom: var(--s1);
+      margin-top: var(--s1);
+      }
+      margin-block-start: var(--s1);
+    }
+
+      p {
+        font-family: $serif;
+      }
+
+      dl {
+        display: grid;
+        grid-template-columns: [left] 1fr [right] 2fr;
+        gap: var(--s-1);
+
+        dt {
+          grid-column: left;
+        }
+
+        dd {
+          grid-column: right;
+
+          ul * {
+            font-family: $sans-serif;
+          }
+        }
+      }
+
+      // @include noSupport(padding-inline, 1px) {
+      //   //border: 1px dotted pink;
+      //   padding-left: var(--s1);
+      //   padding-right: var(--s1);
+      // }
+  }

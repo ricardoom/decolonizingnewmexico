@@ -3,12 +3,13 @@
 /// 
 
 // Set some viewport heights from which to work from 
-
+$baseUnit: 1.125rem; 
 $threeQuartersHeight: 0.75;
 $oneThirdHeight: 0.33;
 $oneQuarter: 0.25;
 // Set a smallest screen width
 $small-screen: 414px;
+$medium-screen: 768px;
 $wide-screen: 1280px
 
 

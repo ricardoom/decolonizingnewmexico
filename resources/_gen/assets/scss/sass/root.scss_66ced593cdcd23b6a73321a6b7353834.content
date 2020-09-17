@@ -127,10 +127,35 @@ blockquote {
   flex-direction: column;
   align-items: center; }
 
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .stack > * {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .stack > * + * {
+    margin-block-start: var(--s1); }
+    @supports not (margin-block-start: var(--s1)) {
+      .stack > * + * {
+        margin-bottom: var(--s1);
+        margin-top: var(--s1); } }
+  .stack p {
+    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
+  .stack dl {
+    display: grid;
+    grid-template-columns: [left] 1fr [right] 2fr;
+    gap: var(--s-1); }
+    .stack dl dt {
+      grid-column: left; }
+    .stack dl dd {
+      grid-column: right; }
+      .stack dl dd ul * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
 header.hero {
-  grid-template-columns: 5vw auto 5vw;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
-  background-color: #f2d7b5;
+  background-color: #fcf6d9;
   color: black;
   display: grid;
   grid-auto-flow: row;
@@ -216,11 +241,9 @@ header.hero {
     color: black; }
 
 .toc {
-  display: grid;
-  background-color: rgba(242, 215, 181, 0.8);
+  background-color: rgba(252, 246, 217, 0.8);
   color: #690209;
   display: grid;
-  grid-template-columns: 5vw auto 5vw;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: auto;
   max-width: none;
@@ -237,15 +260,23 @@ header.hero {
 
 .about {
   display: grid;
-  grid-template-columns: 5vw auto 5vw;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: auto;
+  max-width: none;
   padding: var(--s1) 0;
   padding-block-start: var(--s1);
   padding-block-end: var(--s1); }
   .about > * {
+    color: #172e73;
     grid-column: 2 / 3; }
-
+  .about > h3 {
+    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
+  @media screen and (min-width: 414px) {
+    .about > p {
+      column-count: 2;
+      column-gap: var(0);
+      column-width: auto;
+      max-width: none; } }
 .breadcrumb {
   font-size: var(--s-1);
   max-width: none; }
@@ -257,12 +288,11 @@ header.hero {
     content: ''; }
 
 .primary-nav {
-  grid-template-columns: 5vw auto 5vw;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   display: grid;
+  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-rows: auto;
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s0);
-  grid-template-rows: auto;
   justify-content: flex-start;
   margin-top: var(--s1);
   margin-block-start: var(--s1); }
@@ -288,12 +318,40 @@ article nav {
   article nav a {
     color: black; }
 
-.site-footer a {
-  color: #fff; }
+#bg-img {
+  background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/v1600360322/dcnm/aspens.jpg"); }
+
+.site-footer {
+  background-color: #172f76;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: serif;
+  display: grid;
+  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-rows: var(--s3) minmax(var(--s0), var(--s1)) var(--s3);
+  padding-top: var(--s3);
+  padding-bottom: var(--s3);
+  padding-block-end: var(--s3);
+  padding-block-start: var(--s3); }
+  .site-footer > * {
+    grid-column: 2 / 3;
+    color: #172e73;
+    z-index: 2; }
+  .site-footer ul {
+    grid-row: 2 /3; }
+  .site-footer svg {
+    fill: #fff;
+    filter: opacity(0.8);
+    grid-row: 2 / 3;
+    margin: calc(var(--s2) * -1) 0 0 calc(var(--s2) * -1);
+    margin-block-start: calc(var(--s2) * -1);
+    margin-inline-start: calc(var(--s2) * -1);
+    transform: translateY(calc(var(--s0) * -1));
+    transform-origin: left;
+    z-index: 1; }
 
 .home-page main {
   display: grid;
-  grid-template-columns: 5vw auto 5vw;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: auto;
   margin-top: var(--s1);
@@ -312,6 +370,7 @@ article nav {
 .home-page > svg {
   filter: opacity(0.5);
   height: 100%;
+  margin: 0;
   max-width: none;
   position: absolute;
   width: 100%;
@@ -411,32 +470,6 @@ body {
   body > footer {
     background-color: #020202;
     color: #fff; }
-
-.stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
-  .stack > * {
-    margin-top: 0;
-    margin-bottom: 0; }
-  .stack > * + * {
-    margin-block-start: var(--s1); }
-    @supports not (margin-block-start: var(--s1)) {
-      .stack > * + * {
-        margin-bottom: var(--s1);
-        margin-top: var(--s1); } }
-  .stack p {
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
-  .stack dl {
-    display: grid;
-    grid-template-columns: [left] 1fr [right] 2fr;
-    gap: var(--s-1); }
-    .stack dl dt {
-      grid-column: left; }
-    .stack dl dd {
-      grid-column: right; }
-      .stack dl dd ul * {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 @supports not (margin-block: ) {
   margin-top: var(--s1); }
