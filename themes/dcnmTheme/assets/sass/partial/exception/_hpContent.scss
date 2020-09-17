@@ -1,0 +1,56 @@
+//
+// Home Page Main Content
+// Basically the stuff before the big TOC
+//
+
+.home-page {
+  
+  main {
+    @include setBasicGrid;
+    margin-top: var(--s1);
+    margin-block-start: var(--s1);
+
+    .homepage-content {
+
+      @include gridColumnMember;
+      color: $umber;
+      font-weight: normal;
+      // max-width: var(--measure);
+      
+      > p {
+
+        @media screen and (min-width: $small-screen){
+          font-size: var(--s1);
+          line-height: calc(var(--s1) * 1.35);
+        }
+
+        @media screen and (min-width: $wide-screen){
+          max-width: var(--smallMeasure);
+        }
+      }
+     }
+  }
+
+  //
+  // Ute Mountain SVG Background SVG
+  > svg {
+  filter: opacity(0.5);
+  height: 100%;
+  margin: 0;
+  max-width: none;
+  position: absolute;
+  width: 100%;
+  top: var(--threeQuarter, 75vh);
+  z-index: -1000;
+
+  // Illustrator style attributes via classes:
+  .st0{stroke-linejoin:round;}
+	.st1{stroke-linecap:square;stroke-miterlimit:10;}
+  
+  > * {
+    fill: none;
+    stroke: $pale-sage;
+    stroke-linejoin: round;
+  }
+  }
+}

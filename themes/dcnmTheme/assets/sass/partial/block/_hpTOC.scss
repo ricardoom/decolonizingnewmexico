@@ -1,0 +1,26 @@
+//
+// HP TOC
+// Where the home page TOC List and links
+//
+
+.toc {
+  background-color: $t-yellow;
+  color: $sienna;
+  @include setBasicGrid;
+  max-width: none;
+  padding: var(--s1) 0;
+  padding-block-start: var(--s1);
+  padding-block-end: var(--s1);
+  
+  
+  > .toc-items {
+    @include gridColumnMember;
+    grid-row: auto;
+  }
+
+  * > a {
+    color: $sienna;
+    font-family: serif;
+    font-size: var(--s1);
+  }
+}

@@ -1,0 +1,31 @@
+//
+// Home Page About 
+// The about section found at bottom of Page
+//
+
+.about {
+  @include setBasicGrid;
+  max-width: none;
+  padding: var(--s1) 0;
+  padding-block-start: var(--s1);
+  padding-block-end: var(--s1);
+
+  > * {
+    color: $navy-blue;
+    @include gridColumnMember;
+  }
+
+  > h3 {
+    font-family: $serif;
+  }
+
+  > p {
+
+    @media screen and (min-width: $small-screen) {
+    column-count: 2;
+    column-gap: var(--0);
+    column-width: auto;
+    max-width: none;
+    }
+  }
+}

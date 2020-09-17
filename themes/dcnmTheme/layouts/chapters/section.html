@@ -5,8 +5,8 @@
 {{ else }}
 {{ printf "<!-- its all the way live! template for chapters/section.html -->" | safeHTML }}
 {{ end }}
-<main id="main-content" class="[ {{ .Params.Type }} ] [ stack ]">
-  <article>
+<main id="main-content" class="[ {{ .Params.Type }} ]">
+  <article class="[ stack ]">
     <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
       {{ partial "breadcrumb.html" . }}
     </nav>
@@ -22,13 +22,10 @@
       {{ end }}
     </nav>
   </article>
-  <aside class="o-toc">
-    {{/* partial "pagination.html" . */}}
-    {{/* partial "basic-toc.html" . */}}
-    {{ partial "section-tree.html" . }}
-  </aside>
+  {{- partial "toc.html" . -}}
+
 </main>
 {{ if $local }}
-{{ partial "dev.html" . }}
+{{/* partial "dev.html" . */}}
 {{ end }}
 {{ end }}

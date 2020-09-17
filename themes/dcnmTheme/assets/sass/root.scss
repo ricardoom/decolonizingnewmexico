@@ -3,17 +3,21 @@
 //
 @import 'vendor/reset.min.scss';
 @import 'partial/scaleRules';
+@import 'partial/mixins';
 @import 'partial/color';
 @import 'partial/overrides';
 @import 'partial/typography';
 @import 'partial/compose/center';
+@import 'partial/compose/stack';
 @import 'partial/block/hero';
-@import 'partial/breadcrumb';
-@import 'partial/nav';
+@import 'partial/block/hpTOC';
+@import 'partial/block/hpAbout';
+@import 'partial/block/breadcrumb';
+@import 'partial/block/nav';
 @import 'partial/block/main';
 @import 'partial/footer';
-@import 'partial/mixins';
-@import 'partial/exception/homePage';
+@import 'partial/exception/hpContent';
+@import 'partial/exception/skipNav';
 @import 'partial/exception/dropCaps';
 
 
@@ -31,39 +35,6 @@ footer {
   max-width: none;
 }
 
-//
-// Skip nav
-//
-.skip {
-  margin: 0;
-  padding: 0;
-
-  a {
-    background-color: #FFFFFF;
-    color: $base-black;
-    display: block;
-    font-size: var(--s0);
-    font-weight: 400;
-    height: 1px;
-    left: -10000px;
-    line-height: var(--s0);
-    margin: 5px;
-    padding: 5px 10px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    z-index: 1000;
-  
-    &:focus {
-      left: 0;
-      height: initial;
-      position: absolute;
-      width: initial;
-      top: 0;
-    }
-  }
-  
-}
 
 body {
   background-color: $base-white;
@@ -73,76 +44,15 @@ body {
 // Shared & Global Blocks
 //
 
-> header,
-> main,
-> footer {
-  padding: var(--s1);
-}
-
-> header,
-> footer
- {
-  background-color: $dark-gray;
-  color: $base-white;
-}
-
-// 
-//  Home page
-//
-
-  & > .homepage {
-    & nav {
-      // background-color: $base-gray;
-    }
+  > header,
+  > footer
+  {
+    background-color: $dark-gray;
+    color: $base-white;
   }
 }
 
-.stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 
-  & > * {
-    margin-top: 0; // switch to logical properties here...
-    margin-bottom: 0;
-    }
-
-  & > * + * {
-    @supports not (margin-block-start: var(--s1)) {
-      margin-bottom: var(--s1);
-      margin-top: var(--s1);
-      }
-      margin-block-start: var(--s1);
-    }
-
-      p {
-        font-family: $serif;
-      }
-
-      dl {
-        display: grid;
-        grid-template-columns: [left] 1fr [right] 2fr;
-        gap: var(--s-1);
-
-        dt {
-          grid-column: left;
-        }
-
-        dd {
-          grid-column: right;
-
-          ul * {
-            font-family: $sans-serif;
-          }
-        }
-      }
-
-      // @include noSupport(padding-inline, 1px) {
-      //   //border: 1px dotted pink;
-      //   padding-left: var(--s1);
-      //   padding-right: var(--s1);
-      // }
-  }
 
 @include noSupport(margin-block) {
   margin-top: var(--s1)
