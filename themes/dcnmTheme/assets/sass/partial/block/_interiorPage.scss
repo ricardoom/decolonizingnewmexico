@@ -1,0 +1,13 @@
+//
+// Basic rules for interior pages
+//
+
+.interior-page {
+  main {
+    @include setBasicGrid;
+
+    .interior-page-content  {
+      @include gridColumnMember;
+    }
+  }
+}
