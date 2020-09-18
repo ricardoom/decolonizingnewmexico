@@ -458,6 +458,9 @@ article nav {
   .homepage-content .has-dropcap .dropcap:after {
     margin: 0; } }
 
+.interior-page > .toc {
+  border: 1px dotted red; }
+
 * {
   max-width: var(--measure); }
 

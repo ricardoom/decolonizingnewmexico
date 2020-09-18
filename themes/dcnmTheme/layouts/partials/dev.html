@@ -29,7 +29,15 @@
   <p>Current Section type & path: <b>{{ .CurrentSection }}</b></p>
   <p>Number of child descendant sections to this one: <b>{{ .Sections }}</b></p>
 
-  <p>{{ .Site.Params }}</p>
+  <p><b>.Site.Params:</b></p>
+  {{ $siteParams := .Site.Params }}
+  {{ range $elem_index, $elem_val := $siteParams }}
+  <dl>
+    <dt><b>{{ $elem_index }}</b></dt>
+    <dd>{{ $elem_val }}</dd>
+  </dl>
+  {{ end }}
+
   <p><b>Page Params:</b></p>
   {{ $params := .Page.Params }}
   {{ range $elem_index, $elem_val := $params }}

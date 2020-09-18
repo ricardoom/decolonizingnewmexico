@@ -15,16 +15,17 @@
     <nav>
       {{ with .PrevInSection }}
       <span>&lt;&lt; Previous &nbsp;</span>
-      <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+      <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
       {{ end }}
       {{ with .NextInSection }}
-      <a class="next" href="{{.Permalink}}"> {{.Title}}</a><span>&nbsp;Next >></span>
+      <a class="next" href="{{ .Permalink }}"> {{.Title}}</a><span>&nbsp;Next >></span>
       {{ end }}
     </nav>
   </article>
 </main>
+
 {{- partial "toc.html" . -}}
 {{ if $local }}
-{{/* partial "dev.html" . */}}
+{{ partial "dev.html" . }}
 {{ end }}
 {{ end }}
