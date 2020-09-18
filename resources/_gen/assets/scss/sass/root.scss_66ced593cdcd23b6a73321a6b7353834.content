@@ -318,6 +318,13 @@ article nav {
   article nav a {
     color: black; }
 
+.interior-page main {
+  display: grid;
+  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-rows: auto; }
+  .interior-page main .interior-page-content {
+    grid-column: 2 / 3; }
+
 #bg-img {
   background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/v1600360322/dcnm/aspens.jpg"); }
 

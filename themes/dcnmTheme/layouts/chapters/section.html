@@ -6,7 +6,7 @@
 {{ printf "<!-- its all the way live! template for chapters/section.html -->" | safeHTML }}
 {{ end }}
 <main id="main-content" class="[ {{ .Params.Type }} ]">
-  <article class="[ stack ]">
+  <article class="[ stack ][ interior-page-content ]">
     <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
       {{ partial "breadcrumb.html" . }}
     </nav>
@@ -22,9 +22,8 @@
       {{ end }}
     </nav>
   </article>
-  {{- partial "toc.html" . -}}
-
 </main>
+{{- partial "toc.html" . -}}
 {{ if $local }}
 {{/* partial "dev.html" . */}}
 {{ end }}
