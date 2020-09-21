@@ -90,9 +90,16 @@ h2 {
   font-weight: 300;
   line-height: var(--s1); }
 
-h3 {
+h3, h4, h5, h6 {
   font-size: var(--s0);
   font-weight: 400; }
+
+h4, h5, h6 {
+  font-size: var(--s0);
+  font-weight: 200; }
+
+h5 + p {
+  margin-top: .53em; }
 
 p {
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
@@ -436,6 +443,9 @@ article nav {
     display: block; }
   .has-dropcap .dropcap:before {
     margin-top: -0.41em; }
+    @media screen and (max-width: 414px) {
+      .has-dropcap .dropcap:before {
+        margin-block-start: 0.2em; } }
   .has-dropcap .dropcap:after {
     margin-bottom: -0.15em; }
     @media screen and (max-width: 414px) {
@@ -460,6 +470,13 @@ article nav {
 
 .interior-page > .toc {
   border: 1px dotted red; }
+
+h4, h5, h6 {
+  font-size: var(--s0);
+  font-weight: 200; }
+  h4 + p, h5 + p, h6 + p {
+    margin-block: var(--s-1) !important;
+    margin-block-start: var(--s-1) !important; }
 
 * {
   max-width: var(--measure); }

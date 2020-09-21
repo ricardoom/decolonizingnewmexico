@@ -25,6 +25,9 @@
 
   .dropcap:before {
     margin-top: -0.41em;
+    @media screen and (max-width: $small-screen){
+      margin-block-start: 0.2em;
+    }
   }
 
   .dropcap:after {
