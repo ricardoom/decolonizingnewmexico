@@ -3,7 +3,7 @@ h4, h5, h6 {
   font-weight: 200;
 
   & + p {
-    margin-block: var(--s-1) !important;
+    margin-top: var(--s-1) !important;
     margin-block-start: var(--s-1) !important;
   }
  }

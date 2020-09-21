@@ -475,7 +475,7 @@ h4, h5, h6 {
   font-size: var(--s0);
   font-weight: 200; }
   h4 + p, h5 + p, h6 + p {
-    margin-block: var(--s-1) !important;
+    margin-top: var(--s-1) !important;
     margin-block-start: var(--s-1) !important; }
 
 * {
