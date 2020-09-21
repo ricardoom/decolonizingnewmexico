@@ -4,9 +4,15 @@
 //
 
 .toc {
+  @media screen and (max-width: $medium-screen) {
+    display: flex;
+    flex-direction: column;
+  }
+
   background-color: $t-yellow;
   color: $sienna;
   @include setBasicGrid;
+  grid-template-columns: 10vw repeat(2, 1fr) 10vw;
   max-width: none;
   padding: var(--s1) 0;
   padding-block-start: var(--s1);
@@ -23,4 +29,19 @@
     font-family: serif;
     font-size: var(--s1);
   }
+
+  //
+  // Home Page <menu>
+  menu {
+    @include gridColumnMember(2, 3);
+    justify-content: start;
+    padding-left: 0;
+    padding-inline-end: 0;
+  }
+
+  aside {
+    @include gridColumnMember(3, 4);
+    justify-content: center;
+  }
+
 }

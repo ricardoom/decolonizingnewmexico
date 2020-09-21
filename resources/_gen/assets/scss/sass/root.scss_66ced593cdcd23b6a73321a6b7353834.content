@@ -253,17 +253,33 @@ header.hero {
   display: grid;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: auto;
+  grid-template-columns: 10vw repeat(2, 1fr) 10vw;
   max-width: none;
   padding: var(--s1) 0;
   padding-block-start: var(--s1);
   padding-block-end: var(--s1); }
+  @media screen and (max-width: 768px) {
+    .toc {
+      display: flex;
+      flex-direction: column; } }
   .toc > .toc-items {
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row: auto; }
   .toc * > a {
     color: #690209;
     font-family: serif;
     font-size: var(--s1); }
+  .toc menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-content: start;
+    padding-left: 0;
+    padding-inline-end: 0; }
+  .toc aside {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-content: center; }
 
 .about {
   display: grid;
@@ -275,7 +291,8 @@ header.hero {
   padding-block-end: var(--s1); }
   .about > * {
     color: #172e73;
-    grid-column: 2 / 3; }
+    grid-column-start: 2;
+    grid-column-end: 3; }
   .about > h3 {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
   @media screen and (min-width: 414px) {
@@ -304,7 +321,8 @@ header.hero {
   margin-top: var(--s1);
   margin-block-start: var(--s1); }
   .primary-nav .nav-list {
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     display: flex;
     list-style: none; }
     @media screen and (max-width: 414px) {
@@ -330,7 +348,8 @@ article nav {
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: auto; }
   .interior-page main .interior-page-content {
-    grid-column: 2 / 3; }
+    grid-column-start: 2;
+    grid-column-end: 3; }
 
 #bg-img {
   background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/v1600360322/dcnm/aspens.jpg"); }
@@ -348,7 +367,8 @@ article nav {
   padding-block-end: var(--s3);
   padding-block-start: var(--s3); }
   .site-footer > * {
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     color: #172e73;
     z-index: 2; }
   .site-footer ul {
@@ -371,7 +391,8 @@ article nav {
   margin-top: var(--s1);
   margin-block-start: var(--s1); }
   .home-page main .homepage-content {
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     color: #49121c;
     font-weight: normal; }
     @media screen and (min-width: 414px) {

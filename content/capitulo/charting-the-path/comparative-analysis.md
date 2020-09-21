@@ -223,7 +223,8 @@ In the spirit of imagining reconciliation, I propose the following ideas for con
   With the completion of this research and analysis, including a careful assessment of how these initiatives and commissions have operated in other communities, I have concluded (again) that it would be useful to establish a commission. I recommend that it be broader than Santa Fe and that it emphasize the process, moving first toward transformation, then reconciliation; and if it can be had, healing. Toward this end, I suggest  the following steps be undertaken: 
 
   1. Determine Focus and Breadth
-Focus and scope of this initiative should be defined that encompases a broad geographic area, though the initial focus could begin more locally.
+    
+      Focus and scope of this initiative should be defined that encompases a broad geographic area, though the initial focus could begin more locally.
 
   2. Develop a Collaborative Planning & Public Engagement Process
 
