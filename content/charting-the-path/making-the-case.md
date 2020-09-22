@@ -3,10 +3,11 @@ title = 'Making the Case'
 date = 2020-09-21T09:07:13-04:00
 draft = false
 slug = ''
-type = 'capitulo'
+type = 'page'
+weight = 1
+color = 'sky-blue'
 +++
-
-This manuscript works to set the foundation for the work that is required to create transformation. Some of the questions before us are: how do we acknowledge the traumas of the past and yet still foster transformation in both present and future; how can we (re)imagine spaces, events and stories that are inclusive, that celebrate the complexity of its residents; how do take the harms and create possibility in healing? 
+This manuscript works to set the foundation for the work that is required to create transformation.<!--more--> Some of the questions before us are: how do we acknowledge the traumas of the past and yet still foster transformation in both present and future; how can we (re)imagine spaces, events and stories that are inclusive, that celebrate the complexity of its residents; how do take the harms and create possibility in healing? 
 
 At noted, at the heart of this initiative, the goal of this particular document, Decolonizing New Mexico, is to make the case for why it is imperative to initiate this process. Toward this end, this monograph has been developed to begin to document elements that constitute historic trauma in New Mexico and to explore the possibilities for transformation and healing. 
 

@@ -12,6 +12,15 @@
     </nav>
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ partial "first-paragraph.html" .Content }}
+    <ul class="contents section-default-template">
+      {{ range .Paginator.Pages }}
+      <li><a href="{{ .Permalink }}">{{.Title}}</a>
+        <div class="summary">
+          {{ .Summary }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
     <nav>
       {{ with .PrevInSection }}
       <span>&lt;&lt; Previous &nbsp;</span>

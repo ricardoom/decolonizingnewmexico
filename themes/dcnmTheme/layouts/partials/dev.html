@@ -2,6 +2,7 @@
   .dev {
     background-color: lightgreen;
     margin-block-start: var(--s1);
+    max-width: none;
     padding: var(--s1);
   }
 
@@ -47,18 +48,28 @@
   </dl>
   {{ end }}
 
+  <h4>Range through .RegularPagesRecursive</h4>
   {{ $regRecurs := .RegularPagesRecursive }}
   {{ range $regRecurs }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   <ul>All the regular pages and only first-level section pages under the current list page:
     {{ range .Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <li><a href="{{ .Permalink }}">{{ .Title }} (Type: {{ .Type }})</a></li>
     {{ end }}
   </ul>
   <ul>All the pages:
     {{ range .Site.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <li><a href="{{ .Permalink }}">{{ .Title }}
+        <ul>
+          <li>Type: {{ .Type }}</li>
+          <li>Kind: {{ .Kind }}</li>
+          {{ if .IsSection }}
+          <li>Section: {{ .IsSection }}</li>
+          {{ .Sections }}
+          {{ end }}
+        </ul>
+      </a></li>
     {{ end }}
   </ul>
 </aside>

@@ -1,15 +1,15 @@
 +++
-date = "2020-07-06T18:40:40-04:00"
+title = 'A Comparative Analysis'
+date = 2020-09-21T09:07:51-04:00
 draft = false
-title = "Comparative Analysis"
-type = 'chapters'
-slug = 'analysis-compared'
-weight = 3
+slug = ''
+type = 'page'
+weight = 2
+color = "pale-sage"
 +++
-
 ### Overview
 
-In an effort to contextualize this initiative, comparative research and analysis on methods and frameworks of various Truth and Reconciliation Commission (TRC) projects provided insightful information. TRC models have been critical in resolving deeply rooted conflicts around the world, promoting the belief that confronting and reckoning with the past is necessary for successful transitions from conflict, resentment and tension to peace and connectedness.
+In an effort to contextualize this initiative, comparative research and analysis on methods and frameworks of various Truth and Reconciliation Commission (TRC) projects provided insightful information.<!--more-->TRC models have been critical in resolving deeply rooted conflicts around the world, promoting the belief that confronting and reckoning with the past is necessary for successful transitions from conflict, resentment and tension to peace and connectedness.
 
 While the first truth commission was formed in Uganda in 1974, others were initiated throughout Latin America in the 1970s and 1980s, taking the form of fact-finding, non-judicial committees or councils with the express purpose of uncovering the abuses committed by dictatorships and military juntas, and concomitantly, establishing a more inclusive and representative narrative of history for the country. Since the 1990s, even more countries in Latin America and Africa used this process, as have Australia, Canada and a few communities in the United States, followed with reconciliation after periods of inter-group conflict and political transition. 
 

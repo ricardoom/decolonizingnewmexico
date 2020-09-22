@@ -3,11 +3,10 @@ date = "2020-06-28T20:15:17-04:00"
 draft = false
 title = "Preface"
 headless = false
-type = 'chapters'
+type = 'page'
 slug = 'preface'
 weight = -1
 +++
-
 Decolonizing New Mexico centers a subject of astonishing complexity, including its people, places, moments in time and stories that reflect the beautiful and the tragic. 
 
 It begins with a recognition that the present retain traumas born from the past, a spiritual, emotional and psychological wounding that radiates across the generations and has contemporary implications, including internalized wounds that are only beginning to be measured. 

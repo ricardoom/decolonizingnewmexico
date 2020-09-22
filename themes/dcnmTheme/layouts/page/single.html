@@ -1,0 +1,58 @@
+{{ define "main" }}
+{{ $local := .Site.IsServer }}
+{{ printf "<!-- this is a single template: capitulo/single.html -->" | safeHTML }}
+
+<main id="main-content" class="[ {{ .Params.Type }} ]">
+  <article class="[ stack ][ interior-page-content ]">
+    <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
+      {{ partial "breadcrumb.html" . }}
+    </nav>
+    <h2 id="{{ .Title }}">{{ .Title }}</h2>
+    {{ partial "first-paragraph.html" .Content }}
+    <nav>
+      {{ with .PrevInSection }}
+      <span>&lt;&lt; Previous &nbsp;</span>
+      <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a class="next" href="{{ .Permalink }}"> {{.Title}}</a><span>&nbsp;Next >></span>
+      {{ end }}
+    </nav>
+  </article>
+</main>
+
+<aside id="meta">
+  <div>
+    <section>
+      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
+    </section>
+    {{ .Params.topics }}topics?
+    {{ with .Params.topics }}
+    <ul id="topics">
+      {{ range . }}
+      <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ with .Params.tags }}
+    <ul id="tags">
+      {{ range . }}
+      <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  <div>
+    {{ with .PrevInSection }}
+    <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a class="next" href="{{ .Permalink }}"> {{.Title}}</a>
+    {{ end }}
+  </div>
+</aside>
+{{ if $local }}
+{{ partial "dev.html" . }}
+{{ end }}
+{{ end }}

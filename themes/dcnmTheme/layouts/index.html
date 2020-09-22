@@ -11,7 +11,7 @@
   {{ partial "preface.html" . }}
 </main>
 <section class="[ toc ]">
-  {{- partial "toc-2.html" . -}}
+  {{- partial "toc.html" . -}}
   {{- partial "poemas.html" . -}}
 </section>
 {{- partial "about.html" . -}}
@@ -19,5 +19,4 @@
 {{ if $local }}
 {{ partial "dev.html" . }}
 {{ end }}
-
 {{ end }}

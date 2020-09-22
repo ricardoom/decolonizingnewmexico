@@ -3,10 +3,11 @@ title = 'People'
 date = 2020-09-18T15:20:05-04:00
 draft = false
 slug = ''
-type = 'capitulo'
-weight = 1
+type = 'page'
+weight = 2
+color = 'lava-orange'
 +++
-New Mexico identity is set within a national paradigm of race that persistently renders non-whites and non-blacks invisible. Thanks to the tourism industry, even locally, representations of New Mexico’s people are reduced to an early 20th century invention of three typologies — Anglo, Indian and Spanish — an enduring and yet flawed mythology that continues to conflate distinctions between sovereign tribes, erasing entire groups of people and obscuring the reality of centuries of mixture, born from acts of both love and violence, including that of indigenous slavery. Here, identity is unique and the language of blood and belonging that developed within Spanish colonial rule was a highly complex racial taxonomy and cultural hierarchy of caste that operated to control difference, with a vocabulary so ingrained that some permeations exist to this day, including words like mestizo and coyote. 
+New Mexico identity is set within a national paradigm of race that persistently renders non-whites and non-blacks invisible.<!--more--> Thanks to the tourism industry, even locally, representations of New Mexico’s people are reduced to an early 20th century invention of three typologies — Anglo, Indian and Spanish — an enduring and yet flawed mythology that continues to conflate distinctions between sovereign tribes, erasing entire groups of people and obscuring the reality of centuries of mixture, born from acts of both love and violence, including that of indigenous slavery. Here, identity is unique and the language of blood and belonging that developed within Spanish colonial rule was a highly complex racial taxonomy and cultural hierarchy of caste that operated to control difference, with a vocabulary so ingrained that some permeations exist to this day, including words like mestizo and coyote. 
 
 However, identity is neither static nor something that can be easily placed in a box. Here, it is more like nesting dolls, one inside the other, and beauty buried in the layers of complexity and consciousness, unknown perhaps, but still there. Some individuals and communities stand in strength and sovereignty. Others, whether they carry the complexity of their ancestry in their faces and hands or not, sustain memory in an aching consciousness. 
 

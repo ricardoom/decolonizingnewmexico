@@ -3,10 +3,10 @@ title = 'Conclusion'
 date = 2020-09-18T14:16:22-04:00
 draft = false
 slug = ''
-type = 'capitulo'
+layout = 'capitulo'
+type = 'page'
 weight = 1
 +++
-
 On the home page of this site is displayed a photograph by Miguel Gandert. It was taken in 2006 in the Fiestas of Santa Fe. On the surface it shows three children who are perhaps community participants in the annual Fiesta. The young girl in the background is wearing a tiara, imagining herself a participant in the actual royal court of the Fiesta. In the forefront are pictured two young boys, each clad in plastic armor, including the iconic conquistador helmet. They are all not only caught up in the performance of identity, but in a narrative wholly encompassing of the violence of conquest. Children all over the world have long enacted winners and losers. There is, however, something more painful here, perhaps because of my own proximity to the subject. As with every photo, there is context that is unseen and this image is evocative of how deeply entrenched the narrative of a community that was imagined long ago remains so in the present. It is, for me, perhaps one of the most poignant representations of the harm that exists in our communities. This image reveals the complexity of the issue at hand. 
 
 Being proud of a cultural and ethnic background should not be dependent upon a story of domination, for children and adults alike. Beyond simply the performative element underlying colonial domination is the issue of identity, the complexity of which is completely erased or obscured in the symbols, language, events, sites and narratives that say who we are. This document is only seen as the beginning of a process to recover a fuller, deeper, more complex understanding of . In this way, several issues remain definitive as we work toward a collective vision for future portrayals of history: certain interpretations of the past are not defensible and cannot withstand any standard of historical credibility; while colonialism served the colonizers, it did not benefit those who were dispossessed of their stories, including both Hispanos and Native American people and their heirs; and the representation of these people, including the deeply flawed “tri-cultural” framework, monuments to individual colonizers and the deeply flawed understandings of identity that has long defined the populations of New Mexico, obscures the complexity and diversity of these historic and contemporary identities.

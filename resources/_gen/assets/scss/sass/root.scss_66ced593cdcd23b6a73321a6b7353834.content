@@ -65,6 +65,38 @@ img:not([alt]) {
   --threeQuarter: calc(100vh * 0.75);
   --oneQuarter: calc(100vh * 0.25); }
 
+.umber {
+  border-left: var(--s-1) #49121c solid;
+  border-inline-start: var(--s-1) #49121c solid; }
+
+.pale-sage {
+  border-left: var(--s-1) #ced3ab solid;
+  border-inline-start: var(--s-1) #ced3ab solid; }
+
+.navy-blue {
+  border-left: var(--s-1) #172e73 solid;
+  border-inline-start: var(--s-1) #172e73 solid; }
+
+.taupish {
+  border-left: var(--s-1) #f0ddc6 solid;
+  border-inline-start: var(--s-1) #f0ddc6 solid; }
+
+.sky-blue {
+  border-left: var(--s-1) #c2e0fa solid;
+  border-inline-start: var(--s-1) #c2e0fa solid; }
+
+.golden-rod {
+  border-left: var(--s-1) #fcbb5a solid;
+  border-inline-start: var(--s-1) #fcbb5a solid; }
+
+.peach {
+  border-left: var(--s-1) #f7d1bf solid;
+  border-inline-start: var(--s-1) #f7d1bf solid; }
+
+.lava-orange {
+  border-left: var(--s-1) #f75b26 solid;
+  border-inline-start: var(--s-1) #f75b26 solid; }
+
 .footnote-backref {
   font-family: sans-serif; }
 
@@ -266,16 +298,27 @@ header.hero {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: auto; }
+  .toc h2 {
+    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+    margin-bottom: var(--s0);
+    margin-block-end: var(--s0); }
   .toc * > a {
     color: #690209;
-    font-family: serif;
-    font-size: var(--s1); }
+    font-family: serif; }
   .toc menu {
     grid-column-start: 2;
     grid-column-end: 3;
     justify-content: start;
     padding-left: 0;
     padding-inline-end: 0; }
+    .toc menu > .toc-list > ul > li {
+      padding-left: 2.5vw;
+      padding-inline-end: 2.5vw; }
+      .toc menu > .toc-list > ul > li h3 {
+        font-size: var(--s1);
+        line-height: var(--s1); }
+      .toc menu > .toc-list > ul > li .summary h3 {
+        display: none; }
   .toc aside {
     grid-column-start: 3;
     grid-column-end: 4;

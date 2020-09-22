@@ -1,13 +1,13 @@
 +++
 title = 'Place'
 date = 2020-09-18T15:20:12-04:00
-draft = true
+draft = false
 slug = ''
-type = 'capitulo'
-weight = 1
+type = 'page'
+weight = 3
+color = "sky-blue"
 +++
-
-The representations of New Mexico spatially are revealed primarily in cartography — the artistic practice of placemaking — though in the colonial context, mapping is largely about power and politics: positioning places, people and objects in space; lines on parchment that are often made at the behest of distant popes, kings and presidents. Here, the manifest ideology of empire making — Spain, Mexico, the United States — is revealed in the colonial and even modern context, where settlement occurs hand-in-hand with the dis-peopling of an area. Tracing the lure to land, reveals the contradictions of land grants, artist colonies and the economic push and pull of migrations resulting in a contest over space and place that continue in the developments rising up in neighborhoods across the state.
+The representations of New Mexico spatially are revealed primarily in cartography — the artistic practice of placemaking — though in the colonial context, mapping is largely about power and politics: positioning places, people and objects in space; lines on parchment that are often made at the behest of distant popes, kings and presidents.<!--more--> Here, the manifest ideology of empire making — Spain, Mexico, the United States — is revealed in the colonial and even modern context, where settlement occurs hand-in-hand with the dis-peopling of an area. Tracing the lure to land, reveals the contradictions of land grants, artist colonies and the economic push and pull of migrations resulting in a contest over space and place that continue in the developments rising up in neighborhoods across the state.
  
 But place, the “first of all beings” according to Aristotle, also reflects where wisdom continues to sit, particularly salient where the continuous human habitation on the land is thousands of years old, perhaps beyond time. Even now, when someone looks at a ruin, but sees a home full of laughter and tears, they recognize a deep connection to geographic humanity. Ancient world-views are reflected in indigenous homelands, though many were diminished or lost by conquest, some have been retained: the four sacred mountains that define the parameters of Dinetah, the Diné homeland; and the Tewa Pueblo Indian world which embody spaces that radiates and reflects balance; surrounding bupingeh (heart of the Pueblo) are the homes and villages, just as nearby hills encircle the community and far off mountains further still, connecting land and sky. I also think of the Spanish word and concept, querencia, more than the love of land, but a generational connection to homeland for Indo-Hispanos who became land-based, peoples, who are ancestrally and contemporary connected to indigenous peoples.
  

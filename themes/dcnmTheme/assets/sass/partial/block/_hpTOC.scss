@@ -17,17 +17,22 @@
   padding: var(--s1) 0;
   padding-block-start: var(--s1);
   padding-block-end: var(--s1);
-  
-  
+
   > .toc-items {
     @include gridColumnMember;
     grid-row: auto;
   }
 
+  h2 {
+    font-family: $serif;
+    margin-bottom: var(--s0);
+    margin-block-end: var(--s0);
+  }
+
   * > a {
     color: $sienna;
     font-family: serif;
-    font-size: var(--s1);
+    // font-size: var(--s1);
   }
 
   //
@@ -37,11 +42,31 @@
     justify-content: start;
     padding-left: 0;
     padding-inline-end: 0;
-  }
 
+    > .toc-list {
+      > ul > li {
+        padding-left: 2.5vw;
+        padding-inline-end: 2.5vw;
+
+        h3 {
+          font-size: var(--s1);
+          line-height: var(--s1);
+        }
+
+        // Weird one-off, but thats the way it goes...
+        .summary {
+          h3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  //
+  // Handles poemas.html
+  // TODO: put this into its own partial where appropriate
   aside {
     @include gridColumnMember(3, 4);
     justify-content: center;
   }
-
 }
