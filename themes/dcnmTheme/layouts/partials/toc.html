@@ -1,5 +1,6 @@
-<menu id="table-of-contents">
-  <ul class="[ stack ][ toc-list ]">
+<menu class="[ stack ][ toc toc-member ]">
+  <p id="table-of-contents">Table of Contents</p>
+  <ul class="[ toc-list ]">
 
     {{ if ne .IsHome true }}
     {{ printf "<span> some safe html here...</span>" | safeHTML }}
@@ -39,5 +40,4 @@
     {{ define "heading" }}
     <h2>{{ .Title }}</h2>
     {{ end }}
-
 </menu>

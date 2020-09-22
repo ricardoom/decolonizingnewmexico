@@ -1,0 +1,15 @@
+//
+// styles the poems on the home page
+//
+
+.poems {
+  blockquote {
+    font-size: var(--s1);
+    line-height: var(--s2);
+
+    p {
+      color: lighten($sienna, 0.8);
+      font-style: normal;
+    }
+  }
+}

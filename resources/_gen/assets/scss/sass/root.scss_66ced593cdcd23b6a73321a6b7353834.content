@@ -65,6 +65,10 @@ img:not([alt]) {
   --threeQuarter: calc(100vh * 0.75);
   --oneQuarter: calc(100vh * 0.25); }
 
+.sienna {
+  border-left: var(--s-1) #690209 solid;
+  border-inline-start: var(--s-1) #690209 solid; }
+
 .umber {
   border-left: var(--s-1) #49121c solid;
   border-inline-start: var(--s-1) #49121c solid; }
@@ -279,7 +283,7 @@ header.hero {
   .interior-page header.hero > * a {
     color: black; }
 
-.toc {
+.toc-poem {
   background-color: rgba(252, 246, 217, 0.8);
   color: #690209;
   display: grid;
@@ -290,40 +294,39 @@ header.hero {
   padding: var(--s1) 0;
   padding-block-start: var(--s1);
   padding-block-end: var(--s1); }
-  @media screen and (max-width: 768px) {
-    .toc {
-      display: flex;
-      flex-direction: column; } }
-  .toc > .toc-items {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: auto; }
-  .toc h2 {
+  .toc-poem h2 {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
     margin-bottom: var(--s0);
     margin-block-end: var(--s0); }
-  .toc * > a {
+  .toc-poem * > a {
     color: #690209;
     font-family: serif; }
-  .toc menu {
+  .toc-poem menu {
     grid-column-start: 2;
     grid-column-end: 3;
     justify-content: start;
     padding-left: 0;
     padding-inline-end: 0; }
-    .toc menu > .toc-list > ul > li {
+    @media screen and (max-width: 768px) {
+      .toc-poem menu {
+        grid-column-start: 2;
+        grid-column-end: 4; } }
+    .toc-poem menu > .toc-list > ul > li {
       padding-left: 2.5vw;
       padding-inline-end: 2.5vw; }
-      .toc menu > .toc-list > ul > li h3 {
+      .toc-poem menu > .toc-list > ul > li h3 {
         font-size: var(--s1);
         line-height: var(--s1); }
-      .toc menu > .toc-list > ul > li .summary h3 {
+      .toc-poem menu > .toc-list > ul > li .summary h3 {
         display: none; }
-  .toc aside {
+  .toc-poem aside {
     grid-column-start: 3;
     grid-column-end: 4;
     justify-content: center; }
-
+    @media screen and (max-width: 768px) {
+      .toc-poem aside {
+        grid-column-start: 2;
+        grid-column-end: 4; } }
 .about {
   display: grid;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
@@ -534,6 +537,13 @@ article nav {
 
 .interior-page > .toc {
   border: 1px dotted red; }
+
+.poems blockquote {
+  font-size: var(--s1);
+  line-height: var(--s2); }
+  .poems blockquote p {
+    color: #6d0209;
+    font-style: normal; }
 
 h4, h5, h6 {
   font-size: var(--s0);

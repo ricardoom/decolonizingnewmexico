@@ -3,11 +3,11 @@
 // Where the home page TOC List and links
 //
 
-.toc {
-  @media screen and (max-width: $medium-screen) {
-    display: flex;
-    flex-direction: column;
-  }
+.toc-poem {
+  // @media screen and (max-width: $medium-screen) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
   background-color: $t-yellow;
   color: $sienna;
@@ -18,10 +18,14 @@
   padding-block-start: var(--s1);
   padding-block-end: var(--s1);
 
-  > .toc-items {
-    @include gridColumnMember;
-    grid-row: auto;
-  }
+  // > .toc-member {
+  //   @media screen and (max-width: $medium-screen) {
+  //     grid-column: 2 / 3;
+  //   }
+
+  //   @include gridColumnMember;
+  //   grid-row: auto;
+  // }
 
   h2 {
     font-family: $serif;
@@ -38,6 +42,10 @@
   //
   // Home Page <menu>
   menu {
+    @media screen and (max-width: $medium-screen){
+      @include gridColumnMember(2 ,4);
+    }
+    
     @include gridColumnMember(2, 3);
     justify-content: start;
     padding-left: 0;
@@ -66,6 +74,10 @@
   // Handles poemas.html
   // TODO: put this into its own partial where appropriate
   aside {
+    @media screen and (max-width: $medium-screen){
+      @include gridColumnMember(2 ,4);
+    }
+
     @include gridColumnMember(3, 4);
     justify-content: center;
   }
