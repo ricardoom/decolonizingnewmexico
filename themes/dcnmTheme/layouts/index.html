@@ -8,15 +8,15 @@
 {{ end }}
 
 <main class="[ cover ]" id="main-content">
-  <div class="[ stack ][ homepage-content ]">
-    {{- partial "first-paragraph.html" .Content -}}
-  </div>
+  {{ partial "preface.html" . }}
 </main>
-{{- partial "toc.html" . -}}
+<section class="[ stack ][ toc-poem ]">
+  {{- partial "toc.html" . -}}
+  {{- partial "poemas.html" . -}}
+</section>
 {{- partial "about.html" . -}}
 {{- partial "uteMountainTopo.svg" . -}}
 {{ if $local }}
-{{/*  {{ partial "dev.html" . }} */}}
+{{ partial "dev.html" . }}
 {{ end }}
-
 {{ end }}

@@ -1,11 +1,12 @@
 {{ define "main" }}
-<main>
+<main class="[ default ][ hugo-section ]">
   {{ .Content }}
   <ul class="contents section-default-template">
     {{ range .Paginator.Pages }}
-    <li>{{.Title}}
-      <div>
-        {{ partial "summary.html" . }}
+    <li><a href="{{ .Permalink }}">{{.Title}}</a>
+      <div class="summary">
+
+        {{ .Summary }}
       </div>
     </li>
     {{ end }}

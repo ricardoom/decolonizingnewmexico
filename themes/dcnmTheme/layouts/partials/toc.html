@@ -1,5 +1,43 @@
-<aside id="table-of-contents" class="[ toc ]">
-  {{/* partial "pagination.html" . */}}
-  {{/* partial "basic-toc.html" . */}}
-  {{ partial "section-tree.html" . }}
-</aside>
+<menu class="[ stack ][ toc toc-member ]">
+  <p id="table-of-contents">Table of Contents</p>
+  <ul class="[ toc-list ]">
+
+    {{ if ne .IsHome true }}
+    {{ printf "<span> some safe html here...</span>" | safeHTML }}
+    {{ end }}
+    {{ range where .Pages "Section" "the-context-framework"  }}
+    {{ template "heading" . }}
+    {{ template "sub-items" . }}
+    {{ end }}
+    {{ range where .Pages "Section" "charting-the-path"  }}
+    {{ template "heading" . }}
+    {{ template "sub-items" . }}
+    {{ end }}
+    {{ range where .Pages "Section" "conclusion"  }}
+    {{ template "heading-link" . }}
+    {{ end }}
+
+    {{ define "sub-items" }}
+    {{ $regRecurs := .RegularPagesRecursive }}
+    <ul class="[ stack ]">
+      {{ range $regRecurs }}
+      {{ $color := .Params.color }}
+      {{ $name := lower (replaceRE "(\\s)" "-" .Name) }}
+      <li class="[ card ][ {{ $color }} ]">
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="summary">
+          {{ .Summary }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ define "heading-link" }}
+    <h2><a href="{{ .RelPermalink}}">{{ .Title }}</a></h2>
+    {{ end }}
+
+    {{ define "heading" }}
+    <h2>{{ .Title }}</h2>
+    {{ end }}
+</menu>
