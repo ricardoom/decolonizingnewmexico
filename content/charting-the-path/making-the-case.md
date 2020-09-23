@@ -5,7 +5,7 @@ draft = false
 slug = ''
 type = 'page'
 weight = 1
-color = 'sky-blue'
+color = 'navy-blue'
 +++
 This manuscript works to set the foundation for the work that is required to create transformation.<!--more--> Some of the questions before us are: how do we acknowledge the traumas of the past and yet still foster transformation in both present and future; how can we (re)imagine spaces, events and stories that are inclusive, that celebrate the complexity of its residents; how do take the harms and create possibility in healing? 
 

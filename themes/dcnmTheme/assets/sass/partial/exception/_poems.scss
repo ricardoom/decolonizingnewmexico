@@ -1,15 +1,24 @@
 //
-// styles the poems on the home page
-//
+// styles the poems on the home page only.
+// Layout is controlled by the parent at _hpTOC.scss
 
 .poems {
+  color: $caliche;
+
   blockquote {
-    font-size: var(--s1);
-    line-height: var(--s2);
+    padding: unset;
 
     p {
-      color: lighten($sienna, 0.8);
+      font-size: var(--s1);
       font-style: normal;
+      font-weight: 100;
+      line-height: var(--s2);
     }
+  }
+
+  blockquote + p {
+    font-size: var(--s0);
+    font-weight: 900;
+    margin: unset;
   }
 }

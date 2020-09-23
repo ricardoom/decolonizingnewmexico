@@ -1,6 +1,6 @@
 //
-// HP TOC
-// Where the home page TOC List and links
+// HP TOC and Poem
+// Where the home page TOC List and links are and the poem / dedication (right or below, depending on viewport)
 //
 
 .toc-poem {
@@ -10,12 +10,12 @@
   // }
 
   background-color: $t-yellow;
-  color: $sienna;
+  clip-path: polygon(2px 1.30%, 100% 0px, 100% 100%, 0% 100%);
   @include setBasicGrid;
   grid-template-columns: 10vw repeat(2, 1fr) 10vw;
   max-width: none;
-  padding: var(--s1) 0;
-  padding-block-start: var(--s1);
+  padding: var(--s3) 0 var(--s1);
+  padding-block-start: var(--s3);
   padding-block-end: var(--s1);
 
   // > .toc-member {
@@ -29,8 +29,9 @@
 
   h2 {
     font-family: $serif;
-    margin-bottom: var(--s0);
+    margin: var(--s0) 0;
     margin-block-end: var(--s0);
+    margin-block-start: var(--s0);
   }
 
   * > a {
@@ -45,7 +46,7 @@
     @media screen and (max-width: $medium-screen){
       @include gridColumnMember(2 ,4);
     }
-    
+
     @include gridColumnMember(2, 3);
     justify-content: start;
     padding-left: 0;
@@ -62,6 +63,8 @@
         }
 
         // Weird one-off, but thats the way it goes...
+        // This removes one, count it one h3 from a summary on a TOC...
+        // TODO: figure out a way to this at the template level, instead of here...
         .summary {
           h3 {
             display: none;

@@ -285,19 +285,20 @@ header.hero {
 
 .toc-poem {
   background-color: rgba(252, 246, 217, 0.8);
-  color: #690209;
+  clip-path: polygon(2px 1.3%, 100% 0px, 100% 100%, 0% 100%);
   display: grid;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: auto;
   grid-template-columns: 10vw repeat(2, 1fr) 10vw;
   max-width: none;
-  padding: var(--s1) 0;
-  padding-block-start: var(--s1);
+  padding: var(--s3) 0 var(--s1);
+  padding-block-start: var(--s3);
   padding-block-end: var(--s1); }
   .toc-poem h2 {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
-    margin-bottom: var(--s0);
-    margin-block-end: var(--s0); }
+    margin: var(--s0) 0;
+    margin-block-end: var(--s0);
+    margin-block-start: var(--s0); }
   .toc-poem * > a {
     color: #690209;
     font-family: serif; }
@@ -538,12 +539,19 @@ article nav {
 .interior-page > .toc {
   border: 1px dotted red; }
 
-.poems blockquote {
-  font-size: var(--s1);
-  line-height: var(--s2); }
-  .poems blockquote p {
-    color: #6d0209;
-    font-style: normal; }
+.poems {
+  color: #a73e11; }
+  .poems blockquote {
+    padding: unset; }
+    .poems blockquote p {
+      font-size: var(--s1);
+      font-style: normal;
+      font-weight: 100;
+      line-height: var(--s2); }
+  .poems blockquote + p {
+    font-size: var(--s0);
+    font-weight: 900;
+    margin: unset; }
 
 h4, h5, h6 {
   font-size: var(--s0);

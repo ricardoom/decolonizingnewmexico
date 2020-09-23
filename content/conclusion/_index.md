@@ -3,7 +3,6 @@ title = 'Conclusion'
 date = 2020-09-18T14:16:22-04:00
 draft = false
 slug = ''
-layout = 'capitulo'
 type = 'page'
 weight = 1
 +++
