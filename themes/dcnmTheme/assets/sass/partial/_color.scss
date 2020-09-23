@@ -29,14 +29,7 @@ $caliche: hsl(18, 82%, 36%);
 
 $site-focus-ring: $lava-orange;
 
-@mixin tocBorder(
-  $color: null,
-  $width: null,
-  $style: null
-  ) {
-  border-left: $width $color $style;
-  border-inline-start: $width $color $style;;
-}
+
 
 // $border-colors:
 // $umber,
@@ -53,6 +46,7 @@ $site-focus-ring: $lava-orange;
 //     @include tocBorder($color, var(--s-1)) 
 //   }
 // }
+
 $site-colors: (
   sienna: $sienna,
   umber: $umber,

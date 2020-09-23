@@ -31,3 +31,12 @@
     @content;
   }
 }
+
+@mixin tocBorder(
+  $color: null,
+  $width: null,
+  $style: null
+  ) {
+  border-left: $width $color $style;
+  border-inline-start: $width $color $style;;
+}

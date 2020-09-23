@@ -12,6 +12,7 @@
   background-size: cover;
   font-family: serif;
   @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
+  overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
   padding-block-end: var(--s3);

@@ -409,6 +409,7 @@ article nav {
   display: grid;
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   grid-template-rows: var(--s3) minmax(var(--s0), var(--s1)) var(--s3);
+  overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
   padding-block-end: var(--s3);
@@ -450,8 +451,8 @@ article nav {
       .home-page main .homepage-content > p {
         max-width: var(--smallMeasure); } }
 .home-page > svg {
-  filter: opacity(0.5);
-  height: 100%;
+  filter: opacity(0.3);
+  height: 1280px;
   margin: 0;
   max-width: none;
   position: absolute;
