@@ -1,20 +1,30 @@
 <menu class="[ stack ][ toc toc-member ]">
   <p id="table-of-contents">Table of Contents</p>
   <ul class="[ toc-list ]">
+    {{ range where .Site.Pages "Section" "the-context-framework"  }}
+    {{ if .IsSection }}
 
-    {{ if ne .IsHome true }}
-    {{ printf "<span> some safe html here...</span>" | safeHTML }}
-    {{ end }}
-    {{ range where .Pages "Section" "the-context-framework"  }}
     {{ template "heading" . }}
+
+    {{ end }}
+
+
+    {{ template "sub-items" . }}
+
+    {{ end }}
+
+    {{ range where .Site.Pages "Section" "charting-the-path"  }}
+    {{ if .IsSection }}
+
+    {{ template "heading" . }}
+
+    {{ end }}
     {{ template "sub-items" . }}
     {{ end }}
-    {{ range where .Pages "Section" "charting-the-path"  }}
-    {{ template "heading" . }}
-    {{ template "sub-items" . }}
-    {{ end }}
-    {{ range where .Pages "Section" "conclusion"  }}
+    {{ range where .Site.Pages "Section" "conclusion"  }}
+    {{ if .IsSection }}
     {{ template "heading-link" . }}
+    {{ end }}
     {{ end }}
 
     {{ define "sub-items" }}

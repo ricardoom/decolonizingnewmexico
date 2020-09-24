@@ -5,11 +5,12 @@
 {{ else }}
 {{ printf "<!-- its all the way live! template for chapters/section.html -->" | safeHTML }}
 {{ end }}
+<nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
+  {{ partial "breadcrumb.html" . }}
+</nav>
 <main id="main-content" class="[ {{ .Params.Type }} ]">
   <article class="[ stack ][ interior-page-content ]">
-    <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
-      {{ partial "breadcrumb.html" . }}
-    </nav>
+
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ partial "first-paragraph.html" .Content }}
     <ul class="contents section-default-template">

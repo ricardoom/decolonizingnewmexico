@@ -3,9 +3,11 @@
 //
 
 .interior-page {
+  
   main {
     @include setBasicGrid;
-
+    
+    
     .interior-page-content  {
       @include gridColumnMember;
     }

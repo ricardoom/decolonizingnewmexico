@@ -10,15 +10,14 @@
   background-color: lighten($color: $navy-blue, $amount: 0.75);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: serif;
+  font-family: $serif;
+  font-size: var(--s0);
   @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
   overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
   padding-block-end: var(--s3);
   padding-block-start: var(--s3);
-  // padding-block-start: var(--s3);
-  // padding-block-end: var(--s3);
 
   > * {
     @include gridColumnMember;
@@ -36,7 +35,7 @@
     margin: calc(var(--s2) * -1) 0 0 calc(var(--s2) * -1);
     margin-block-start: calc(var(--s2) * -1);
     margin-inline-start: calc(var(--s2) * -1);
-    transform: translateY(calc(var(--s0) * -1));
+    transform: translateY(calc(var(--s0) * 1.25)) scale(1.76);
     transform-origin: left;
     z-index: 1;
   }

@@ -1,25 +1,33 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
-{{ printf "<!-- this is a single template: capitulo/single.html -->" | safeHTML }}
+{{ printf "<!-- this is a single template: page/single.html -->" | safeHTML }}
+
+
+{{ partial "breadcrumb.html" . }}
 
 <main id="main-content" class="[ {{ .Params.Type }} ]">
   <article class="[ stack ][ interior-page-content ]">
-    <nav id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
-      {{ partial "breadcrumb.html" . }}
-    </nav>
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ partial "first-paragraph.html" .Content }}
-    <nav>
-      {{ with .PrevInSection }}
-      <span>&lt;&lt; Previous &nbsp;</span>
-      <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
-      {{ end }}
+    <nav id="pager" class="[ pager ]">
       {{ with .NextInSection }}
-      <a class="next" href="{{ .Permalink }}"> {{.Title}}</a><span>&nbsp;Next >></span>
+
+      <a class="next" href="{{ .Permalink }}">{{.Title}}</a>
+
       {{ end }}
+
+      {{ with .PrevInSection }}
+
+      <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
+
+      {{ end }}
+
     </nav>
   </article>
 </main>
+<section class="[ stack ][ toc-poem ]">
+  {{- partial "toc.html" . -}}
+</section>
 
 <aside id="meta">
   <div>
