@@ -368,7 +368,7 @@ header.hero {
     grid-column-end: 3; }
   .about > h3 {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 768px) {
     .about > p {
       column-count: 2;
       column-gap: var(0);
