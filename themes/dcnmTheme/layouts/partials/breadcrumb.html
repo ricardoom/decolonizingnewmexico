@@ -1,14 +1,15 @@
 {{ printf "<!-- breadcrumb.html  -->" | safeHTML }}
-<ul class="[ breadcrumb ]">
-  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-</ul>
+<nav class="[ breadcrumb ]" id="breadcrumb-navigation" aria-label="breadcrumb-navigation">
+  <ul class="[ inline-list ]">
+    {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+  </ul>
+</nav>
 {{ define "breadcrumbnav" }}
-{{ if .p1.Parent }}
+{{ if and (eq .p1.Parent "Kind" "page") }}
 {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
 {{ else if not .p1.IsHome }}
 {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
 {{ end }}
-
 {{ if eq .p1 .p2 }}
 <li aria-hidden="true">{{ .p1.Title }}</li>
 {{ else }}

@@ -31,8 +31,9 @@
   //
   // Ute Mountain SVG Background SVG
   > svg {
-    filter: opacity(0.5);
-    height: 100%;
+    filter: opacity(0.3);
+    height: 1280px; // hard value here so we can guarantee the svg spreads the entire length of the doc
+    // TODO: do this better. 
     margin: 0;
     max-width: none;
     position: absolute;
