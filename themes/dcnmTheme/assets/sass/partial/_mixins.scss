@@ -37,6 +37,8 @@
   $width: null,
   $style: null
   ) {
-  border-left: $width $color $style;
-  border-inline-start: $width $color $style;;
+    border-left: $width $color $style;
+    @suports (border-inline-start: $width $color $style) {
+      border-inline-start: $width $color $style;
+    }  
 }

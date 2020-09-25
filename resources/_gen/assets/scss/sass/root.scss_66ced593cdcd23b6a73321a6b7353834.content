@@ -66,40 +66,67 @@ img:not([alt]) {
   --oneQuarter: calc(100vh * 0.25); }
 
 .sienna {
-  border-left: var(--s-1) #690209 solid;
-  border-inline-start: var(--s-1) #690209 solid; }
+  border-left: var(--s-1) #690209 solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .sienna {
+    border-inline-start: var(--s-1) #690209 solid; } }
 
 .umber {
-  border-left: var(--s-1) #49121c solid;
-  border-inline-start: var(--s-1) #49121c solid; }
+  border-left: var(--s-1) #49121c solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .umber {
+    border-inline-start: var(--s-1) #49121c solid; } }
 
 .pale-sage {
-  border-left: var(--s-1) #ced3ab solid;
-  border-inline-start: var(--s-1) #ced3ab solid; }
+  border-left: var(--s-1) #ced3ab solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .pale-sage {
+    border-inline-start: var(--s-1) #ced3ab solid; } }
 
 .navy-blue {
-  border-left: var(--s-1) #172e73 solid;
-  border-inline-start: var(--s-1) #172e73 solid; }
+  border-left: var(--s-1) #172e73 solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .navy-blue {
+    border-inline-start: var(--s-1) #172e73 solid; } }
 
 .taupish {
-  border-left: var(--s-1) #f0ddc6 solid;
-  border-inline-start: var(--s-1) #f0ddc6 solid; }
+  border-left: var(--s-1) #f0ddc6 solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .taupish {
+    border-inline-start: var(--s-1) #f0ddc6 solid; } }
 
 .sky-blue {
-  border-left: var(--s-1) #c2e0fa solid;
-  border-inline-start: var(--s-1) #c2e0fa solid; }
+  border-left: var(--s-1) #c2e0fa solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .sky-blue {
+    border-inline-start: var(--s-1) #c2e0fa solid; } }
 
 .golden-rod {
-  border-left: var(--s-1) #fcbb5a solid;
-  border-inline-start: var(--s-1) #fcbb5a solid; }
+  border-left: var(--s-1) #fcbb5a solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .golden-rod {
+    border-inline-start: var(--s-1) #fcbb5a solid; } }
 
 .peach {
-  border-left: var(--s-1) #f7d1bf solid;
-  border-inline-start: var(--s-1) #f7d1bf solid; }
+  border-left: var(--s-1) #f7d1bf solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .peach {
+    border-inline-start: var(--s-1) #f7d1bf solid; } }
 
 .lava-orange {
-  border-left: var(--s-1) #f75b26 solid;
-  border-inline-start: var(--s-1) #f75b26 solid; }
+  border-left: var(--s-1) #f75b26 solid; }
+
+@suports (border-inline-start: $width $color $style) {
+  .lava-orange {
+    border-inline-start: var(--s-1) #f75b26 solid; } }
 
 .footnote-backref {
   font-family: sans-serif; }
