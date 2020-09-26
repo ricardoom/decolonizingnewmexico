@@ -10,6 +10,17 @@
     
     .interior-page-content  {
       @include gridColumnMember;
+
+      ul > li {
+        margin: var(--s0) 0;
+        margin-block-end: var(--s0);
+        margin-block-start: var(--s0);
+
+        &:first-child,
+        &:last-child {
+          margin: unset;
+        }
+      }
     }
   }
 }
