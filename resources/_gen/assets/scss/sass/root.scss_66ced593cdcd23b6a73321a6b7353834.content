@@ -222,11 +222,16 @@ blockquote {
       .stack dl dd ul * {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-.footnotes * + * {
+.footnotes,
+ol,
+li {
   max-width: none; }
 
-.footnotes hr {
-  display: none; }
+.footnotes {
+  border-top: 5px solid #172e73;
+  color: #172e73; }
+  .footnotes hr {
+    display: none; }
 
 header.hero {
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
