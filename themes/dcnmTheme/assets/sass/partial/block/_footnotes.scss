@@ -1,0 +1,18 @@
+//
+// Author's Footnotes
+// Note; these are genererated by the the markdown engine, so we cannot really control the markup
+
+.footnotes,
+  ol,
+  li {
+    max-width: none;
+  }
+
+.footnotes {
+  border-top: 5px solid $navy-blue;
+  color: $navy-blue;
+
+  hr {
+    display: none;
+  }
+}

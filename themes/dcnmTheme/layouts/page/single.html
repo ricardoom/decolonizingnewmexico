@@ -10,18 +10,15 @@
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ partial "first-paragraph.html" .Content }}
     <nav id="pager" class="[ pager ]">
-      {{ with .NextInSection }}
 
-      <a class="next" href="{{ .Permalink }}">{{.Title}}</a>
-
-      {{ end }}
-
-      {{ with .PrevInSection }}
-
+      {{ with .Prev }}
+      <span>&lt;&lt; Previous&nbsp;</span>
       <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
-
       {{ end }}
-
+      {{ with .Next }}
+      <span>Next:</span>
+      <a class="next" href="{{ .Permalink }}"> {{.Title}}</a><span>&nbsp;&gt; &gt;</span>
+      {{ end }}
     </nav>
   </article>
 </main>
