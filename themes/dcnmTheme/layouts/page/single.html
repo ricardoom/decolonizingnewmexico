@@ -1,5 +1,11 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
+{{ $stringToFind := `<section class="footnotes" role="doc-endnotes">` }}
+{{- $append := `
+    
+    <h4>Notes:</h4>
+    <button>Expand Footnotes</button>
+    ` -}}
 {{ printf "<!-- this is a single template: page/single.html -->" | safeHTML }}
 
 
@@ -8,9 +14,13 @@
 <main id="main-content" class="[ {{ .Params.Type }} ]">
   <article class="[ stack ][ interior-page-content ]">
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
-    {{ partial "first-paragraph.html" .Content }}
-    <nav id="pager" class="[ pager ]">
+    {{ $para := partial "first-paragraph.html" .Content }}
+    {{/*  {{ $notes := partial "footnotes.html" $para }} */}}
 
+    {{ $footNoteSectionAppend := ( printf "${1}%s${2}" "<h4>Notes:</h4><button>Expand Footnotes</button>" )}}
+    {{ $para | replaceRE  "((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))" $footNoteSectionAppend | safeHTML }}
+
+    <nav id="pager" class="[ pager ]">
       {{ with .Prev }}
       <span>&lt;&lt; Previous&nbsp;</span>
       <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
