@@ -13,21 +13,22 @@
   color: $navy-blue;
 
   h4::before {
-    all: initial;
+    border: none;
   }
+  // Vestige of the H4 Collapsible section
+  // TODO: delete this bit
+  // h4 button {
+  //   all: inherit;
+  //   cursor: pointer;
 
-  h4 button {
-    all: inherit;
-    cursor: pointer;
+  //   &:focus svg {
+  //     outline: 2px solid;
+  //   }
 
-    &:focus svg {
-      outline: 2px solid;
-    }
-
-    & svg {
-      height: var(--s0);
-    }
-  }
+  //   & svg {
+  //     height: var(--s0);
+  //   }
+  // }
 
   [aria-expanded="true"] .vert {
     display: none;

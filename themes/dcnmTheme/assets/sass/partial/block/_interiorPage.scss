@@ -34,6 +34,12 @@
         border-top-width: var(--s-4);
         width: 5vw;
       }
+
+      .footnotes {
+        h4::before {
+          border: none;
+        }
+      }
     }
   }
 }

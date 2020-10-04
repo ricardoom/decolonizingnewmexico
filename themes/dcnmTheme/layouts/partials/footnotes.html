@@ -3,7 +3,6 @@
 {{- $append := `
     <section class="[ footnotes ]" role="doc-endnotes">
     <h4>Notes:</h4>
-    <button>Expand Footnotes</button>
     ` -}}
 
 {{ $content = replaceRE `^\S+` $stringToFind $append | safeHTML }}

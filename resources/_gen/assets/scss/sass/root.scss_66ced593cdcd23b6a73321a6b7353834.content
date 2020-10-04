@@ -451,6 +451,8 @@ article nav {
       border-color: #a73e11;
       border-top-width: var(--s-4);
       width: 5vw; }
+    .interior-page main .interior-page-content .footnotes h4::before {
+      border: none; }
 
 .footnotes,
 ol,
@@ -461,14 +463,7 @@ li {
   border-top: 5px solid #172e73;
   color: #172e73; }
   .footnotes h4::before {
-    all: initial; }
-  .footnotes h4 button {
-    all: inherit;
-    cursor: pointer; }
-    .footnotes h4 button:focus svg {
-      outline: 2px solid; }
-    .footnotes h4 button svg {
-      height: var(--s0); }
+    border: none; }
   .footnotes [aria-expanded="true"] .vert {
     display: none; }
   .footnotes [aria-expanded] rect {

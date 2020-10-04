@@ -22,7 +22,7 @@
     <!-- adds the hidden attribute to the ordered list -->
     {{ $addAttribute := ( printf "%s" "<ol hidden>") }}
 
-    {{ $mainContent | replaceRE  "((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))" $footNoteSectionAppend | safeHTML | replaceRE "(<ol>)" $addAttribute | safeHTML }}
+    {{ $mainContent | replaceRE  "((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))" $footNoteSectionAppend | safeHTML  }}
 
     {{/*  {{ $mainContent | replaceRE "((?:.*)<ol(?:.*)(?:.*))>" $addAttribute | safeHTML }} */}}
 
