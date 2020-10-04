@@ -1,9 +1,0 @@
-{{ $content := . }}
-{{ $stringToFind := `<section class="footnotes" role="doc-endnotes">` }}
-{{- $append := `
-    <section class="[ footnotes ]" role="doc-endnotes">
-    <h4>Notes:</h4>
-    ` -}}
-
-{{ $content = replaceRE `^\S+` $stringToFind $append | safeHTML }}
-{{ return $content }}

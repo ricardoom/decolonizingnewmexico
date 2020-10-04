@@ -1,31 +1,18 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
 {{ $stringToFind := `<section class="footnotes" role="doc-endnotes">` }}
-{{- $append := `
-    
-    <h4>Notes:</h4>
-    <button>Expand Footnotes</button>
-    ` -}}
+{{ $footNoteHeading := partial "footNoteSectionHead.html" . }}
+{{ $sectionToReplace := `((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))` }}
+{{ $footNoteSectionAppend := ( printf "${1}%s${2}" $footNoteHeading )}}
+{{ $mainContent := partial "first-paragraph.html" .Content }}
+
 {{ printf "<!-- this is a single template: page/single.html -->" | safeHTML }}
 
-
 {{ partial "breadcrumb.html" . }}
-
 <main id="main-content" class="[ {{ .Params.Type }} ]">
   <article class="[ stack ][ interior-page-content ]">
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
-    {{ $mainContent := partial "first-paragraph.html" .Content }}
-
-    {{ $noteButton := partial "footNoteSectionControl.html" . }}
-
-    {{ $footNoteSectionAppend := ( printf "${1}%s${2}" $noteButton )}}
-    <!-- adds the hidden attribute to the ordered list -->
-    {{ $addAttribute := ( printf "%s" "<ol hidden>") }}
-
-    {{ $mainContent | replaceRE  "((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))" $footNoteSectionAppend | safeHTML  }}
-
-    {{/*  {{ $mainContent | replaceRE "((?:.*)<ol(?:.*)(?:.*))>" $addAttribute | safeHTML }} */}}
-
+    {{ $mainContent | replaceRE  $sectionToReplace $footNoteSectionAppend | safeHTML  }}
     <nav id="pager" class="[ pager ]">
       {{ with .Prev }}
       <span>&lt;&lt; Previous&nbsp;</span>
