@@ -1,9 +1,26 @@
+<!-- global nav -->
+{{ printf "<!-- partials/nav.html -->" | safeHTML }}
+{{ if .IsHome }}
+{{ printf "<!-- hp nav -->" | safeHTML }}
+<nav aria-label="primary-navigation" class="[ cover ] [ primary-nav ]">
+  <ul class="[ nav-list ]">
+    {{ range .Site.Menus.hp }}
+    <li><a href="{{ .URL }}" id="{{ .Name }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>
+{{ else }}
+{{ printf "<!-- interior nav -->" | safeHTML }}
 <nav aria-label="primary-navigation" class="[ cover ] [ primary-nav ]">
   {{ $currentPage := . }}
-  {{ printf "<!-- partials/nav.html -->" | safeHTML }}
-  {{ range .Site.Menus.main }}
-  <a id="{{ .Name }}"
-    class="sidebar-nav-item{{ if or ( $currentPage.IsMenuCurrent "main" . ) ($currentPage.HasMenuCurrent "main" . ) }} active{{end}}"
-    href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
-  {{ end }}
+  <ul class="[ nav-list ]">
+    {{ range .Site.Menus.main }}
+    <li>
+      <a id="{{ .Name }}"
+        class="{{ if or ( $currentPage.IsMenuCurrent "main" . ) ($currentPage.HasMenuCurrent "main" . ) }} active{{end}} bobo"
+        href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
 </nav>
+{{ end }}

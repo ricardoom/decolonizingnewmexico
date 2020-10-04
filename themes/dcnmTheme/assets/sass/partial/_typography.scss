@@ -47,14 +47,23 @@ h2 {
   line-height: var(--s1);
 }
 
-h3 {
+h3, h4, h5, h6 {
   font-size: var(--s0);
   font-weight: 400;
-
-  &:after {
-    // use an svg here
-    
+  &:before {
+    // use an svg here for icons
   }
+  &:after {
+    // use an svg here for icons
+  }
+}
+
+h4, h5, h6 {
+  font-size: var(--s0);
+ }
+
+ h5 + p {
+  margin-top: .53em;
 }
 
 p {

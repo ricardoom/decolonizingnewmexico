@@ -1,9 +1,21 @@
 ///
-/// Scale rules
+/// Scale rules, Screen rules and sass variables 
 /// 
+
+// Set some viewport heights from which to work from 
+$baseUnit: 1.125rem; 
+$threeQuartersHeight: 0.75;
+$oneThirdHeight: 0.33;
+$oneQuarter: 0.25;
+// Set a smallest screen width
+$small-screen: 414px;
+$medium-screen: 768px;
+$wide-screen: 1280px
+
 
 :root {
   --measure: 60ch;
+  --smallMeasure: 40ch;
   --ratio: 1.6180339887;
   --halfRatio: calc(var(--ratio) / 2);
   --s-5: calc(var(--s-4) / var(--ratio));
@@ -12,10 +24,18 @@
   --s-2: calc(var(--s-1) / var(--ratio));
   --s-1: calc(var(--s0) / var(--ratio));
   --s0: 1.125rem;
+  --s05: calc(var(--s0) * var(--halfRatio));
   --s1: calc(var(--s0) * var(--ratio));
   --s2: calc(var(--s1) * var(--ratio));
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   --s6: calc(var(--s5) * var(--ratio));
+   // --smallScreen: #{$small-screen};
+   --small-screen: #{$small-screen}; 
+   --oneThird: calc(100vh * #{$oneThirdHeight});
+   --threeQuarter: calc(100vh * #{$threeQuartersHeight});
+   // --threeQuarter: calc(100vh / 1.75);
+   --oneQuarter: calc(100vh * #{$oneQuarter});
 }
+

@@ -1,0 +1,53 @@
+<menu class="[ stack ][ toc toc-member ]">
+  <p id="table-of-contents">Table of Contents</p>
+  <ul class="[ toc-list ]">
+    {{ range where .Site.Pages "Section" "the-context-framework"  }}
+    {{ if .IsSection }}
+
+    {{ template "heading" . }}
+
+    {{ end }}
+
+
+    {{ template "sub-items" . }}
+
+    {{ end }}
+
+    {{ range where .Site.Pages "Section" "charting-the-path"  }}
+    {{ if .IsSection }}
+
+    {{ template "heading" . }}
+
+    {{ end }}
+    {{ template "sub-items" . }}
+    {{ end }}
+    {{ range where .Site.Pages "Section" "conclusion"  }}
+    {{ if .IsSection }}
+    {{ template "heading-link" . }}
+    {{ end }}
+    {{ end }}
+
+    {{ define "sub-items" }}
+    {{ $regRecurs := .RegularPagesRecursive }}
+    <ul class="[ stack ]">
+      {{ range $regRecurs }}
+      {{ $color := .Params.color }}
+      {{ $name := lower (replaceRE "(\\s)" "-" .Name) }}
+      <li class="[ card ][ {{ $color }} ]">
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="summary">
+          {{ .Summary }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ define "heading-link" }}
+    <h2><a href="{{ .RelPermalink}}">{{ .Title }}</a></h2>
+    {{ end }}
+
+    {{ define "heading" }}
+    <h2>{{ .Title }}</h2>
+    {{ end }}
+</menu>

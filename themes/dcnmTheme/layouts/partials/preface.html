@@ -1,0 +1,5 @@
+<section class="[ stack ][ homepage-content preface ]">
+  {{ with $.Site.GetPage "page" "preface" }}
+  {{- partial "first-paragraph.html" .Content -}}
+  {{ end }}
+</section>

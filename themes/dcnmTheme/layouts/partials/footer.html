@@ -1,4 +1,9 @@
-<footer class="[ cover ] [ site-footer ]">
-  <p class="">&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  </p>
+{{ $params := .Site.Params }}
+
+<footer id="bg-img" class="[ cover ][ site-footer ]">
+  <ul class="[ footer-items ]">
+    <li>&copy; {{ now.Year }} {{ $params.author }}</li>
+    <li>{{ $params.development }} | {{ $params.design }}</li>
+  </ul>
+  {{ partial "footerBG.svg" . }}
 </footer>

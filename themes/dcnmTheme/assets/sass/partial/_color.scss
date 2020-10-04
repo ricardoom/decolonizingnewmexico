@@ -1,4 +1,4 @@
-$base-white: #efefef;
+$base-white: #fff;
 $base-gray: hsl(0, 0%, 95%);
 $base-black: hsl(0, 0%, 0%);
 $dark-gray: lighten($base-black, 0.75);
@@ -6,13 +6,70 @@ $dark-gray: lighten($base-black, 0.75);
 // Colors Based on the comps:
 // 
 
-$base-yellow:  hsl(33, 70%, 83%);
+// $base-yellow:  hsl(33, 70%, 83%);
+$base-yellow: hsl(50, 86%, 92%);
 $t-yellow: transparentize($base-yellow, 0.2);
 
-// type colors for the header
+// type colors for the header and main TOC
 $sienna: hsl(356, 96%, 21%);
 
+// type color for the home page intro / preface text / toc / page block colors
+$umber: hsl(350, 60%, 18%);
+$pale-sage: hsl(67, 31%, 75%);
+$navy-blue:  hsl(225, 67%, 27%);
+$taupish: hsl(33, 59%, 86%);
+$sky-blue: hsl(208, 85%, 87%);
+$golden-rod: hsl(36, 96%, 67%);
+$peach: hsl(19, 78%, 86%);
+$lava-orange: hsl(15, 93%, 56%);
+$caliche: hsl(18, 82%, 36%);
+//
+// Accessibility
+//
 
+$site-focus-ring: $lava-orange;
+
+
+
+// $border-colors:
+// $umber,
+// $pale-sage,
+// $navy-blue,
+// $taupish,
+// $sky-blue,
+// $golden-rod,
+// $peach,
+// $lava-orange;
+
+// @each $color in $border-colors {
+//   $color {
+//     @include tocBorder($color, var(--s-1)) 
+//   }
+// }
+
+$site-colors: (
+  sienna: $sienna,
+  umber: $umber,
+  pale-sage: $pale-sage,
+  navy-blue: $navy-blue,
+  taupish: $taupish,
+  sky-blue: $sky-blue,
+  golden-rod: $golden-rod,
+  peach: $peach,
+  lava-orange: $lava-orange
+);
+
+
+
+@each $site-color-name, $site-color in $site-colors {
+  .#{$site-color-name} {
+    @include tocBorder($site-color, var(--s-1), solid);
+  }
+}
+
+//
+// Outputs from XD
+// TODO: Ditch this list
 $o-bgColor--866a74 : #866a74;
 $o-bgColor--f2d7b6 : #f2d7b6;
 $o-bgColor--f2c36b : #f2c36b;

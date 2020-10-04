@@ -1,20 +1,26 @@
 <style>
   .dev {
-    background-color: lightgreen;
+    background-color: hsl(120, 80%, 94%);
     margin-block-start: var(--s1);
-    padding: var(--s1);
+    max-width: none;
+    padding: var(--s0);
   }
 
   .dev>p,
   .dev>dl {
-    border-block-end: 2px solid limegreen;
+    border-block-end: 2px solid hsl(157, 100%, 19%);
+    overflow-wrap: break-word;
+  }
+
+  dd {
+    overflow-wrap: break-word;
   }
 
   .debugger>* {
     outline: red 1px dotted;
   }
 </style>
-<aside class="dev stack">
+<aside class="[ dev stack ]">
   <h4>Variables & Useful Development info:</h4>
   <p>This Page or Section Title: <b>{{ .Title }}</b></p>
   <p><b>Here are the .Page.Resources:</b></p>
@@ -29,7 +35,15 @@
   <p>Current Section type & path: <b>{{ .CurrentSection }}</b></p>
   <p>Number of child descendant sections to this one: <b>{{ .Sections }}</b></p>
 
-  <p>{{ .Site.Params }}</p>
+  <p><b>.Site.Params:</b></p>
+  {{ $siteParams := .Site.Params }}
+  {{ range $elem_index, $elem_val := $siteParams }}
+  <dl>
+    <dt><b>{{ $elem_index }}</b></dt>
+    <dd>{{ $elem_val }}</dd>
+  </dl>
+  {{ end }}
+
   <p><b>Page Params:</b></p>
   {{ $params := .Page.Params }}
   {{ range $elem_index, $elem_val := $params }}
@@ -39,18 +53,28 @@
   </dl>
   {{ end }}
 
+  <h4>Range through .RegularPagesRecursive</h4>
   {{ $regRecurs := .RegularPagesRecursive }}
   {{ range $regRecurs }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   <ul>All the regular pages and only first-level section pages under the current list page:
     {{ range .Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <li><a href="{{ .Permalink }}">{{ .Title }} (Type: {{ .Type }})</a></li>
     {{ end }}
   </ul>
   <ul>All the pages:
     {{ range .Site.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <li><a href="{{ .Permalink }}">{{ .Title }}
+        <ul>
+          <li>Type: {{ .Type }}</li>
+          <li>Kind: {{ .Kind }}</li>
+          {{ if .IsSection }}
+          <li>Section: {{ .IsSection }}</li>
+          {{ .Sections }}
+          {{ end }}
+        </ul>
+      </a></li>
     {{ end }}
   </ul>
 </aside>

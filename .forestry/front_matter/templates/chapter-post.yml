@@ -17,5 +17,3 @@ fields:
 - type: number
   name: weight
   label: weight
-pages:
-- content/chapters/conclusion/conclusion.index.md

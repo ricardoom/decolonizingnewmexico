@@ -1,7 +1,5 @@
 {{ define "main" }}
-{{ $bundle := .Site.GetPage "page" "chapters" }}
-<p>this is a single template: _defaults/single.html</p>
-<p>this is the $bundle variable output: {{ $bundle }}</p>
+{{ printf "<!-- this is a single template: _defaults/single.html -->" | safeHTML }}
 <section id="main">
   <h1 id="title">{{ .Title }}</h1>
   <div>

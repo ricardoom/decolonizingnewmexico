@@ -1,0 +1,38 @@
+//
+// Breadcrumb navigation
+//
+
+.breadcrumb {
+  background-color: $navy-blue;
+  clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
+  color: $base-white;
+  font-size: var(--s-1);
+  @include setBasicGrid;
+  grid-template-rows: var(--s3);
+  margin-top: calc(var(--s-1) * -1);
+  max-width: none;
+
+  ul {
+    @include gridColumnMember;
+    place-self: center stretch;
+
+    li {
+      a {
+        color: $base-white;
+      }
+    }
+
+    li:last-child {
+      // evident Kludge
+      // display: none;
+    }
+
+    li:before {
+      content: ' > ';
+    }
+
+    li:nth-last-child(2):before {
+      content: '';
+    }
+  }
+}

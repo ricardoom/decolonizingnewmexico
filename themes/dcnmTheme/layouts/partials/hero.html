@@ -23,5 +23,6 @@
 
 
 </header>
-
+{{ if .IsHome }}
 {{- partial "nav.html" . -}}
+{{ end }}

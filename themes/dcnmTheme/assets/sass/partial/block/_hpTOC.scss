@@ -1,0 +1,87 @@
+//
+// HP TOC and Poem
+// Where the home page TOC List and links are and the poem / dedication (right or below, depending on viewport)
+//
+
+.toc-poem {
+  // @media screen and (max-width: $medium-screen) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  background-color: $t-yellow;
+  clip-path: polygon(2px 1.30%, 100% 0px, 100% 100%, 0% 100%);
+  @include setBasicGrid;
+  grid-template-columns: 10vw repeat(2, 1fr) 10vw;
+  max-width: none;
+  padding: var(--s3) 0 var(--s1);
+  padding-block-start: var(--s3);
+  padding-block-end: var(--s1);
+
+  // > .toc-member {
+  //   @media screen and (max-width: $medium-screen) {
+  //     grid-column: 2 / 3;
+  //   }
+
+  //   @include gridColumnMember;
+  //   grid-row: auto;
+  // }
+
+  h2 {
+    font-family: $serif;
+    margin: var(--s0) 0;
+    margin-block-end: var(--s0);
+    margin-block-start: var(--s0);
+  }
+
+  * > a {
+    color: $sienna;
+    font-family: serif;
+    // font-size: var(--s1);
+  }
+
+  //
+  // Home Page <menu>
+  menu {
+    @media screen and (max-width: $medium-screen){
+      @include gridColumnMember(2 ,4);
+    }
+
+    @include gridColumnMember(2, 3);
+    justify-content: start;
+    padding-left: 0;
+    padding-inline-end: 0;
+
+    > .toc-list {
+      > ul > li {
+        padding-left: 2.5vw;
+        padding-inline-end: 2.5vw;
+
+        h3 {
+          font-size: var(--s1);
+          line-height: var(--s1);
+        }
+
+        // Weird one-off, but thats the way it goes...
+        // This removes one, count it one h3 from a summary on a TOC...
+        // TODO: figure out a way to this at the template level, instead of here...
+        .summary {
+          h3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  //
+  // Handles poemas.html
+  // TODO: put this into its own partial where appropriate
+  aside {
+    @media screen and (max-width: $medium-screen){
+      @include gridColumnMember(2 ,4);
+    }
+
+    @include gridColumnMember(3, 4);
+    justify-content: center;
+  }
+}
