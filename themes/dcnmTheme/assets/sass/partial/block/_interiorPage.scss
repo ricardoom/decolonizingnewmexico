@@ -21,6 +21,25 @@
           margin: unset;
         }
       }
+
+      h3::before,
+      h4::before {
+        border-top: var(--s-3) solid $sienna;
+        content: ' ';
+        display: block;
+        width: 10vw;
+      }
+      h4::before {
+        border-color: $caliche;
+        border-top-width: var(--s-4);
+        width: 5vw;
+      }
+
+      .footnotes {
+        h4::before {
+          border: none;
+        }
+      }
     }
   }
 }

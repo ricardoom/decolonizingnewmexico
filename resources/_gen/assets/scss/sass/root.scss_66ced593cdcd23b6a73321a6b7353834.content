@@ -222,17 +222,6 @@ blockquote {
       .stack dl dd ul * {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-.footnotes,
-ol,
-li {
-  max-width: none; }
-
-.footnotes {
-  border-top: 5px solid #172e73;
-  color: #172e73; }
-  .footnotes hr {
-    display: none; }
-
 header.hero {
   grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
   background-color: #fcf6d9;
@@ -452,6 +441,35 @@ article nav {
       margin-block-start: var(--s0); }
       .interior-page main .interior-page-content ul > li:first-child, .interior-page main .interior-page-content ul > li:last-child {
         margin: unset; }
+    .interior-page main .interior-page-content h3::before,
+    .interior-page main .interior-page-content h4::before {
+      border-top: var(--s-3) solid #690209;
+      content: ' ';
+      display: block;
+      width: 10vw; }
+    .interior-page main .interior-page-content h4::before {
+      border-color: #a73e11;
+      border-top-width: var(--s-4);
+      width: 5vw; }
+    .interior-page main .interior-page-content .footnotes h4::before {
+      border: none; }
+
+.footnotes,
+ol,
+li {
+  max-width: none; }
+
+.footnotes {
+  border-top: 5px solid #172e73;
+  color: #172e73; }
+  .footnotes h4::before {
+    border: none; }
+  .footnotes [aria-expanded="true"] .vert {
+    display: none; }
+  .footnotes [aria-expanded] rect {
+    fill: currentColor; }
+  .footnotes hr {
+    display: none; }
 
 #bg-img {
   background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/v1600360322/dcnm/aspens.jpg"); }

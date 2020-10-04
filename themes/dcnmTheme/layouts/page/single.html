@@ -1,16 +1,19 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
+{{ $stringToFind := `<section class="footnotes" role="doc-endnotes">` }}
+{{ $footNoteHeading := partial "footNoteSectionHead.html" . }}
+{{ $sectionToReplace := `((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))` }}
+{{ $footNoteSectionAppend := ( printf "${1}%s${2}" $footNoteHeading )}}
+{{ $mainContent := partial "first-paragraph.html" .Content }}
+
 {{ printf "<!-- this is a single template: page/single.html -->" | safeHTML }}
 
-
 {{ partial "breadcrumb.html" . }}
-
 <main id="main-content" class="[ {{ .Params.Type }} ]">
   <article class="[ stack ][ interior-page-content ]">
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
-    {{ partial "first-paragraph.html" .Content }}
+    {{ $mainContent | replaceRE  $sectionToReplace $footNoteSectionAppend | safeHTML  }}
     <nav id="pager" class="[ pager ]">
-
       {{ with .Prev }}
       <span>&lt;&lt; Previous&nbsp;</span>
       <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
