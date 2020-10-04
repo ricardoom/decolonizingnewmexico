@@ -4,6 +4,19 @@
 A scholarly project. This site uses Hugo for static site generation, content is managed via Forestry.io and hosted on Netlify.com. This site is visible here: https://decolonizingnewmexico.com
 
 ## Releases & Change Log:
+v0.0.4
+
+- design updates
+- added footnote heading
+- fixed issues w/ pager
+- better variable naming in templates
+- TOC, Footer, About section(s) reflects design
+- Other additions to code to reflect design
+  - better spacing between subsections
+  - eyebrows added
+  - interior page grids
+  - hero section
+
 
 v0.0.3
 - reorganizing the way css is written to the CUBE style (fixes #10) 
@@ -20,4 +33,4 @@ v0.0.2
 
 v0.0.1
 
-
+- initial works...
