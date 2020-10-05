@@ -17,8 +17,8 @@ v0.0.4
   - interior page grids
   - hero section
 
-
 v0.0.3
+
 - reorganizing the way css is written to the CUBE style (fixes #10) 
 - added accessible drop caps
 - other typographics addressed
@@ -27,6 +27,7 @@ v0.0.3
 - using hugo's esBuild for js bundling
 
 v0.0.2
+
 - improved TOC
 - minor styling improvements
 - template logic improvements
