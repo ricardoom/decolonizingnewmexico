@@ -10,7 +10,14 @@ color = "taupish"
 Temporally, New Mexico has often been divided by archaeologists into the troublesome binary of “prehistoric” and “historic”; framed by historians into distinct periods: “Pre-contact, Spanish Colonial, Mexican, Territorial and American,” all of which fail to capture the complexities of cycles and the transitions that lead up to and follow events, both cataclysmic and ordinary.<!--more--> 
 
 Time here, perhaps anywhere, cannot be captured in a straight line, but rather in the symbol of a spiral and the radiating circles of cause and effect. Sometimes words, phrases or entire stories were more revealing than numbers, like emergence or Ha’atastín, the Diné word for a period remembered as “watching out for enemies.” Yet among the countless dates, there are many that hold meaning still: contact and settlement — 1539, the moment of first contact at Halona:wa Idiwana, the Middle Place, present-day Zuñi Pueblo and 1598, date of Spanish settlers arriving in New Mexico; revolutions, including that of 1680, the most successful indigenous uprising in what is now the U.S. and one that would ensure survival and rescript Pueblo-Spanish relations, or that of 1847, defined by a coalition of Pueblo and Hispanos who would rise up against U.S. imperial occupation; belonging, 1912, the date when New Mexico shifted from a Territory to a State, following over six decades of denial of full citizenship to its residents because of race and religion. In the century since this last transition, a chain of events would transpire — the rise of the military industry, the building of a bomb, development of internment camps and continual struggles over civil rights.  
- 
+
+{{< image
+  fileID="v1601912469"
+  imagename="MainPageOSH"
+  alt="an image from a website"
+  caption="The caption"
+  >}}
+
 New Mexico is indeed delicate, changing, but there are always lessons and still there is joy, but it may not lie in the grand or epic, but instead within common cycles, celebrations and ceremonies: dust rising from dances that have persisted for ages, language and prayer that rise and fall like a song, fingers moving over beads; the births and anniversaries that have resulted from love; the dignity of work, including the annual rituals of cleaning the ditch, harvesting the crops or the daily acts of simply preparing and sharing a meal.
 
 From the beginning of time, people have gathered together to commemorate. These events, may have begun organically with the passing of an elder or the birth of a child, celebrated a harvest or marked the beginning or end of a migration. Some of these gatherings are one time events, while others evolved into traditions, defined by a recurrence from generation to generation. While some traditions emerge organically, others are intentionally invented, defined by a range from factually authentic to wholly imagined and fabricated.
@@ -77,7 +84,7 @@ Underlying the Fiesta del Valle de Española are elements of a dominant narrativ
 
 Aside from the militaristic and aristocratic frame in which the “royal court” is portrayed, the representations in the pageant emerge as stereotypes of both Hispanic and Native Americans in which people are not only depicted as static and frozen in time, but that also fail to fully capture the complexity of New Mexican identity in history or as it evolved over time. In this way, Native Americans can only exist as Scout or Indian Princess. The image of the Indian Scout is not only a figure that comes to be incorporated in colonial enterprises, wherein a male from an indigenous tribe is incorporated as a soldier or paramilitary operator, but also a symbol of how conquest required both indigenous cooperation and ultimately, betrayal to his own natal community. In terms of the “Native American Princesa,” the fact that Pueblo inclusion is only made possible within this framework of Spanish royalty is problematic. Like her counterpart, the Scout, she is also symbolic and set in a context of the historic portrayal of Native American women as either Queens or Princesses, particularly from the sixteenth to the nineteenth century, by European and American artists.[^19] In these depictions, Hispanics also can only exist as colonial agents: the Spanish Queen and court, priests, soldiers, and conquerors, each flat and debilitating.
 
-###### Responses
+#### Responses
 
 Resistance and response to the Española Fiesta can be traced to different periods in time. 
 

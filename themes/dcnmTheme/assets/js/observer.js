@@ -1,6 +1,7 @@
 ///
 /// Observer.js
 ///
+export function intersectionObserver() {
 document.addEventListener('DOMContentLoaded', function() {
   const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 
@@ -66,3 +67,4 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('orientationchange', lazyLoad);
   }
 });
+}

@@ -3,14 +3,14 @@
 /// 
 
 // Set some viewport heights from which to work from 
-$baseUnit: 1.125rem; 
+$baseUnit: 1.125; 
 $threeQuartersHeight: 0.75;
 $oneThirdHeight: 0.33;
 $oneQuarter: 0.25;
 // Set a smallest screen width
-$small-screen: 414px;
-$medium-screen: 768px;
-$wide-screen: 1280px
+$small-screen: 25.875em; // 414px
+$medium-screen: 48em; // 768px
+$wide-screen: 80em; // 1280px
 
 
 :root {
@@ -31,11 +31,11 @@ $wide-screen: 1280px
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   --s6: calc(var(--s5) * var(--ratio));
-   // --smallScreen: #{$small-screen};
+   
    --small-screen: #{$small-screen}; 
    --oneThird: calc(100vh * #{$oneThirdHeight});
    --threeQuarter: calc(100vh * #{$threeQuartersHeight});
-   // --threeQuarter: calc(100vh / 1.75);
    --oneQuarter: calc(100vh * #{$oneQuarter});
+   font-size: var(--s0)
 }
 

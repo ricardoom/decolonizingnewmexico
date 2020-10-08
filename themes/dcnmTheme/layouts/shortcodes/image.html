@@ -1,0 +1,66 @@
+{{/*  Example Usage in markdown file:  */}}
+{{/* 
+  {{< image
+  fileID="v1601912469"
+  imagename="MainPageOSH"
+  alt="an image from a website"
+  caption="The caption"
+  width="640" >}}
+*/}}
+{{/*  A rough max width of the column is ~605px / 38rem  */}}
+{{ $placeHolder := ("/images/placeHolding.svg" | absURL) }}
+
+{{ $height := .Get "height" }}
+{{ $width := .Get "width" }}
+
+{{/*  media query variables:  */}}
+{{ $xlarge := "(min-width: 80.1em 960px)" }}
+{{ $large := "(min-width: 57.5em) 960px" }}
+{{ $medium := "(min-width: 48em) 640px" }}
+{{ $small := "(min-width: 28.75em) calc(72.5vw + 28px)" }}
+{{ $default := "75.1vw" }}
+
+
+{{/*  sizes="(min-width: 920px) 680px, (min-width: 460px) calc(72.5vw + 28px), 75.71vw"  */}}
+
+{{/*  Sources from cdn:  */}}
+{{- $cdnURL := "https://res.cloudinary.com/toupeeproofbullets/image/upload/" -}}
+{{/* transform presets from cloudinary */}}
+{{- $320 := "t_320/" -}}
+{{- $480 := "t_480/" -}}
+{{- $640 := "t_640/" -}}
+{{- $960 := "t_960/" -}}
+{{- $transforms := ( slice $320 $480 $640 $960 ) -}}
+{{- $w := ( slice "320w" "480w" "640w" "960w" ) -}}
+{{- $id := .Get "fileID" -}}
+
+{{- $cdnFolder := "/dcnm/" -}}
+
+{{- $imageName := .Get "imagename" -}}
+
+{{- $fileExtension := ( slice ".jpg" ".webp" ) -}}
+
+{{/*  Source Variables */}}
+{{- $src := delimit ( slice $cdnURL ( index $transforms 0 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ) "" -}}
+
+{{- $srcsetSmall := delimit ( slice $cdnURL ( index $transforms 0 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 0) ) "" " " -}}
+
+{{- $srcsetMedium := delimit ( slice $cdnURL ( index $transforms 1 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 1 ) ) "" " " -}}
+
+{{- $srcsetLarge := delimit ( slice $cdnURL ( index $transforms 2 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 2) ) "" " " -}}
+
+{{- $srcsetXLarge := delimit ( slice $cdnURL ( index $transforms 3 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 3) ) "" " " -}}
+
+<figure>
+  <img loading="lazy"
+       class="lazy imgs"
+       data-src="{{ $src }}"
+       data-srcset="{{ $srcsetSmall }}, {{ $srcsetMedium }}, {{ $srcsetLarge }}, {{ $srcsetXLarge }}"
+       srcset="{{ $placeHolder }}"
+       src="{{ $placeHolder }}"
+       alt="{{ .Get "alt" }}"
+       sizes="{{ $xlarge }}, {{ $large}}, {{ $medium }}, {{ $small }}, {{ $default }}" />
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
