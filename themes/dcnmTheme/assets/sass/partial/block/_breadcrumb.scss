@@ -1,26 +1,40 @@
 //
-// Breadcrumb navigation
+// Breadcrumb navigation & pager nav found at bottom of pages
 //
 
-.breadcrumb {
+.breadcrumb,
+.pager {
   background-color: $navy-blue;
   clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
   color: $base-white;
   font-size: var(--s-1);
-  @include setBasicGrid;
-  grid-template-rows: var(--s3);
   margin-top: calc(var(--s-1) * -1);
   max-width: none;
+  
+ a {
+    color: $base-white;
+  }
+}
+.pager {
+  display: flex;
+  justify-content: space-between;
+  @include noSupport(padding-block-start, var(--s1) ) {
+    padding: var(--s1) var(--s4);  
+  }
+  padding-inline-start: var(--s4);
+    padding-inline-end: var(--s4);
+    padding-block-start: var(--s1);
+    padding-block-end: var(--s1);
+}
+
+.breadcrumb {  
+  @include setBasicGrid;
+  grid-template-rows: var(--s3);
+  
 
   ul {
     @include gridColumnMember;
     place-self: center stretch;
-
-    li {
-      a {
-        color: $base-white;
-      }
-    }
 
     li:last-child {
       // evident Kludge

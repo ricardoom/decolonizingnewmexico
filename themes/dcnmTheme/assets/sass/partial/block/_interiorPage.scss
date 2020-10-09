@@ -22,23 +22,39 @@
         }
       }
 
+      // TODO: some sass magic here, spitting out the ::before rules in a snazzier fashion...
       h3::before,
-      h4::before {
+      h4::before,
+      h5::before,
+      H6::before {
         border-top: var(--s-3) solid $sienna;
         content: ' ';
         display: block;
+        margin-bottom: var(--s-1);
+        scroll-margin-block-end: var(--s-1);
         width: 10vw;
       }
-      h4::before {
+      h4::before,
+      h5::before {
         border-color: $caliche;
         border-top-width: var(--s-4);
         width: 5vw;
+      }
+
+      h5::before,
+      H6::before {
+        border-color: $lava-orange;
       }
 
       .footnotes {
         h4::before {
           border: none;
         }
+      }
+
+      figcaption {
+        font-size: var(--s-1);
+        font-style: italic;
       }
     }
   }

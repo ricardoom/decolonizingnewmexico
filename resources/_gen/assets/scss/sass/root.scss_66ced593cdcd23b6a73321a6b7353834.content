@@ -60,10 +60,11 @@ img:not([alt]) {
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   --s6: calc(var(--s5) * var(--ratio));
-  --small-screen: 414px;
+  --small-screen: 25.875em;
   --oneThird: calc(100vh * 0.33);
   --threeQuarter: calc(100vh * 0.75);
-  --oneQuarter: calc(100vh * 0.25); }
+  --oneQuarter: calc(100vh * 0.25);
+  font-size: var(--s0); }
 
 .sienna {
   border-left: var(--s-1) #690209 solid; }
@@ -150,7 +151,7 @@ h1 {
 h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: var(--s1);
-  font-weight: 300;
+  font-weight: 100;
   line-height: var(--s1); }
 
 h3, h4, h5, h6 {
@@ -223,7 +224,7 @@ blockquote {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 header.hero {
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   background-color: #fcf6d9;
   color: black;
   display: grid;
@@ -241,7 +242,7 @@ header.hero {
   height: var(--threeQuarter);
   justify-items: start;
   overflow: hidden; }
-  @media (max-width: 414px) {
+  @media (max-width: 25.875em) {
     header.hero {
       height: var(--oneThird);
       padding-bottom: 0;
@@ -254,7 +255,7 @@ header.hero {
     max-width: none;
     width: 100vw;
     filter: opacity(0.5); }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 25.875em) {
       header.hero .hero-svg {
         filter: opacity(0.85); } }
     header.hero .hero-svg .a {
@@ -272,7 +273,7 @@ header.hero {
     max-width: 99vw;
     width: 70vw;
     z-index: 1; }
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 80em) {
       header.hero .title-bg {
         width: 90vw; } }
   header.hero .hero-lockup {
@@ -285,7 +286,7 @@ header.hero {
     header.hero .hero-lockup h1 {
       font-size: var(--s2);
       line-height: var(--s2); }
-      @media (max-width: 414px) {
+      @media (max-width: 25.875em) {
         header.hero .hero-lockup h1 {
           font-size: var(--s0);
           line-height: var(--s0); } }
@@ -295,7 +296,7 @@ header.hero {
       font-size: var(--s1);
       font-weight: 500;
       line-height: var(--s1); }
-      @media (max-width: 414px) {
+      @media (max-width: 25.875em) {
         header.hero .hero-lockup > span {
           font-size: var(--s-1);
           line-height: var(--s-1); } }
@@ -313,7 +314,7 @@ header.hero {
   background-color: rgba(252, 246, 217, 0.8);
   clip-path: polygon(2px 1.3%, 100% 0px, 100% 100%, 0% 100%);
   display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: auto;
   grid-template-columns: 10vw repeat(2, 1fr) 10vw;
   max-width: none;
@@ -334,7 +335,7 @@ header.hero {
     justify-content: start;
     padding-left: 0;
     padding-inline-end: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 48em) {
       .toc-poem menu {
         grid-column-start: 2;
         grid-column-end: 4; } }
@@ -350,13 +351,13 @@ header.hero {
     grid-column-start: 3;
     grid-column-end: 4;
     justify-content: center; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 48em) {
       .toc-poem aside {
         grid-column-start: 2;
         grid-column-end: 4; } }
 .about {
   display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: auto;
   max-width: none;
   padding: var(--s1) 0;
@@ -368,29 +369,44 @@ header.hero {
     grid-column-end: 3; }
   .about > h3 {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 48em) {
     .about > p {
       column-count: 2;
       column-gap: var(0);
       column-width: auto;
       max-width: none; } }
-.breadcrumb {
+.breadcrumb,
+.pager {
   background-color: #172e73;
   clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
   color: #fff;
   font-size: var(--s-1);
-  display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
-  grid-template-rows: auto;
-  grid-template-rows: var(--s3);
   margin-top: calc(var(--s-1) * -1);
   max-width: none; }
+  .breadcrumb a,
+  .pager a {
+    color: #fff; }
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: var(--s4);
+  padding-inline-end: var(--s4);
+  padding-block-start: var(--s1);
+  padding-block-end: var(--s1); }
+  @supports not (padding-block-start: var(--s1)) {
+    .pager {
+      padding: var(--s1) var(--s4); } }
+
+.breadcrumb {
+  display: grid;
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
+  grid-template-rows: auto;
+  grid-template-rows: var(--s3); }
   .breadcrumb ul {
     grid-column-start: 2;
     grid-column-end: 3;
     place-self: center stretch; }
-    .breadcrumb ul li a {
-      color: #fff; }
     .breadcrumb ul li:before {
       content: ' > '; }
     .breadcrumb ul li:nth-last-child(2):before {
@@ -398,7 +414,7 @@ header.hero {
 
 .primary-nav {
   display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: auto;
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s0);
@@ -410,7 +426,7 @@ header.hero {
     grid-column-end: 3;
     display: flex;
     list-style: none; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 25.875em) {
       .primary-nav .nav-list {
         flex-direction: column; } }
   .primary-nav a {
@@ -430,7 +446,7 @@ article nav {
 
 .interior-page main {
   display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: auto; }
   .interior-page main .interior-page-content {
     grid-column-start: 2;
@@ -442,17 +458,28 @@ article nav {
       .interior-page main .interior-page-content ul > li:first-child, .interior-page main .interior-page-content ul > li:last-child {
         margin: unset; }
     .interior-page main .interior-page-content h3::before,
-    .interior-page main .interior-page-content h4::before {
+    .interior-page main .interior-page-content h4::before,
+    .interior-page main .interior-page-content h5::before,
+    .interior-page main .interior-page-content H6::before {
       border-top: var(--s-3) solid #690209;
       content: ' ';
       display: block;
+      margin-bottom: var(--s-1);
+      scroll-margin-block-end: var(--s-1);
       width: 10vw; }
-    .interior-page main .interior-page-content h4::before {
+    .interior-page main .interior-page-content h4::before,
+    .interior-page main .interior-page-content h5::before {
       border-color: #a73e11;
       border-top-width: var(--s-4);
       width: 5vw; }
+    .interior-page main .interior-page-content h5::before,
+    .interior-page main .interior-page-content H6::before {
+      border-color: #f75b26; }
     .interior-page main .interior-page-content .footnotes h4::before {
       border: none; }
+    .interior-page main .interior-page-content figcaption {
+      font-size: var(--s-1);
+      font-style: italic; }
 
 .footnotes,
 ol,
@@ -472,7 +499,7 @@ li {
     display: none; }
 
 #bg-img {
-  background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/v1600360322/dcnm/aspens.jpg"); }
+  background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/c_scale,q_10,w_960/v1600360322/dcnm/aspens.webp"); }
 
 .site-footer {
   background-color: #172f76;
@@ -481,7 +508,7 @@ li {
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s0);
   display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: var(--s3) minmax(var(--s0), var(--s1)) var(--s3);
   overflow: hidden;
   padding-top: var(--s3);
@@ -508,7 +535,7 @@ li {
 
 .home-page main {
   display: grid;
-  grid-template-columns: 10vw minmax(auto, 79vw) minmax(var(--s3), 10vw);
+  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: auto;
   margin-top: var(--s1);
   margin-block-start: var(--s1); }
@@ -517,11 +544,11 @@ li {
     grid-column-end: 3;
     color: #49121c;
     font-weight: normal; }
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: 25.875em) {
       .home-page main .homepage-content > p {
         font-size: var(--s1);
         line-height: calc(var(--s1) * 1.35); } }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 80em) {
       .home-page main .homepage-content > p {
         max-width: var(--smallMeasure); } }
 .home-page > svg {
@@ -577,7 +604,7 @@ li {
     font-size: var(--s3);
     font-weight: 500;
     margin: 0.1em 0.1em 0 0; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 25.875em) {
       .has-dropcap .dropcap {
         line-height: 0.35em; } }
   .has-dropcap .dropcap:before,
@@ -586,12 +613,12 @@ li {
     display: block; }
   .has-dropcap .dropcap:before {
     margin-top: -0.41em; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 25.875em) {
       .has-dropcap .dropcap:before {
         margin-block-start: 0.2em; } }
   .has-dropcap .dropcap:after {
     margin-bottom: -0.15em; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 25.875em) {
       .has-dropcap .dropcap:after {
         margin: 0; } }
   .has-dropcap .sr-only:not(:focus):not(:active) {
@@ -607,7 +634,7 @@ li {
   margin-top: 0.2em;
   margin-block-start: 0.2em; }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 25.875em) {
   .homepage-content .has-dropcap .dropcap:after {
     margin: 0; } }
 
