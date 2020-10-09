@@ -38,12 +38,12 @@
 
 {{- $imageName := .Get "imagename" -}}
 
-{{- $fileExtension := ( slice ".jpg" ".webp" ) -}}
+{{- $fileExtension := ( slice ".jpg" ".webp" ".png" ) -}}
 
 {{/*  Source Variables */}}
 {{- $src := delimit ( slice $cdnURL ( index $transforms 0 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ) "" -}}
 
-{{- $srcsetSmall := delimit ( slice $cdnURL ( index $transforms 0 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 0) ) "" " " -}}
+{{- $srcsetSmall := delimit ( slice $cdnURL ( index $transforms 0 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ( index $w 0) ) "" " " -}}
 
 {{- $srcsetMedium := delimit ( slice $cdnURL ( index $transforms 1 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 1 ) ) "" " " -}}
 
@@ -52,14 +52,15 @@
 {{- $srcsetXLarge := delimit ( slice $cdnURL ( index $transforms 3 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 3) ) "" " " -}}
 
 <figure>
-  <img loading="lazy"
+  <img
        class="lazy imgs"
-       data-src="{{ $src }}"
        data-srcset="{{ $srcsetSmall }}, {{ $srcsetMedium }}, {{ $srcsetLarge }}, {{ $srcsetXLarge }}"
-       srcset="{{ $placeHolder }}"
-       src="{{ $placeHolder }}"
+       data-src="{{ $src }}"
        alt="{{ .Get "alt" }}"
-       sizes="{{ $xlarge }}, {{ $large}}, {{ $medium }}, {{ $small }}, {{ $default }}" />
+       sizes="{{ $xlarge }}, {{ $large}}, {{ $medium }}, {{ $small }}, {{ $default }}"
+       srcset="{{ $placeHolder }}"
+       src="{{ $placeHolder }}" />
+
   {{ with .Get "caption" }}
   <figcaption>{{ . }}</figcaption>
   {{ end }}

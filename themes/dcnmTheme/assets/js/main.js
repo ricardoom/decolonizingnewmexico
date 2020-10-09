@@ -1,3 +1,4 @@
+import detectImageFormat from "./imageFormats";
 //
 // Import here
 // import WatchedBox from './watched-box';
@@ -5,7 +6,7 @@
 // import { heroSvg } from './svgScripts';
 // import { noteControl } from './footNoteControl';
 import { intersectionObserver } from "./observer";
-
+// import { detectImageFormat } from "./imageFormats";
 //
 // Main Calls
 //
@@ -13,3 +14,4 @@ import { intersectionObserver } from "./observer";
 // noteControl();
 // heroSvg();
 intersectionObserver();
+detectImageFormat();
