@@ -15,6 +15,11 @@ sections:
   create: all
   match: "**/*"
 - type: directory
+  path: content/the-context-framework
+  label: The Context and Framework
+  create: documents
+  match: "**/*"
+- type: directory
   path: content/charting-the-path
   label: Charting the Path
   create: all
