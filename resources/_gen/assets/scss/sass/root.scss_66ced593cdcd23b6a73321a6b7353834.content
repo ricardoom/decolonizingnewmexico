@@ -375,23 +375,38 @@ header.hero {
       column-gap: var(0);
       column-width: auto;
       max-width: none; } }
-.breadcrumb {
+.breadcrumb,
+.pager {
   background-color: #172e73;
   clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
   color: #fff;
   font-size: var(--s-1);
+  margin-top: calc(var(--s-1) * -1);
+  max-width: none; }
+  .breadcrumb a,
+  .pager a {
+    color: #fff; }
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: var(--s4);
+  padding-inline-end: var(--s4);
+  padding-block-start: var(--s1);
+  padding-block-end: var(--s1); }
+  @supports not (padding-block-start: var(--s1)) {
+    .pager {
+      padding: var(--s1) var(--s4); } }
+
+.breadcrumb {
   display: grid;
   grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
   grid-template-rows: auto;
-  grid-template-rows: var(--s3);
-  margin-top: calc(var(--s-1) * -1);
-  max-width: none; }
+  grid-template-rows: var(--s3); }
   .breadcrumb ul {
     grid-column-start: 2;
     grid-column-end: 3;
     place-self: center stretch; }
-    .breadcrumb ul li a {
-      color: #fff; }
     .breadcrumb ul li:before {
       content: ' > '; }
     .breadcrumb ul li:nth-last-child(2):before {
@@ -449,6 +464,8 @@ article nav {
       border-top: var(--s-3) solid #690209;
       content: ' ';
       display: block;
+      margin-bottom: var(--s-1);
+      scroll-margin-block-end: var(--s-1);
       width: 10vw; }
     .interior-page main .interior-page-content h4::before,
     .interior-page main .interior-page-content h5::before {

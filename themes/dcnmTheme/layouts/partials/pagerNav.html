@@ -1,0 +1,16 @@
+<nav id="pager" class="[ pager ]" aria-label="pager navigation">
+  {{- with .NextInSection -}}
+  <span class="previous">&lt;&lt;&nbsp;Previous&nbsp;<a href="{{ .Permalink }}">{{.Title}}</a></span>
+  {{- end -}}
+  {{- with .PrevInSection -}}
+  <span class="next">Next<a href="{{ .Permalink }}">{{.Title}}</a>&nbsp;&gt;&gt;</span>
+  {{- end -}}
+</nav>
+<!-- <div>
+  {{ with .NextInSection }}
+  <a class="previous" href="{{ .Permalink }}">&lt;&lt; {{.Title}}</a>
+  {{ end }}
+  {{ with .PrevInSection }}
+  <a class="next" href="{{ .Permalink }}"> {{.Title}} &gt;&gt;</a>
+  {{ end }}
+</div> -->

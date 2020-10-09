@@ -30,6 +30,8 @@
         border-top: var(--s-3) solid $sienna;
         content: ' ';
         display: block;
+        margin-bottom: var(--s-1);
+        scroll-margin-block-end: var(--s-1);
         width: 10vw;
       }
       h4::before,

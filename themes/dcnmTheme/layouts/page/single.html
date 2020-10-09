@@ -13,53 +13,13 @@
   <article class="[ stack ][ interior-page-content ]">
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ $mainContent | replaceRE  $sectionToReplace $footNoteSectionAppend | safeHTML  }}
-    <nav id="pager" class="[ pager ]">
-      {{ with .Prev }}
-      <span>&lt;&lt; Previous&nbsp;</span>
-      <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
-      {{ end }}
-      {{ with .Next }}
-      <span>Next:</span>
-      <a class="next" href="{{ .Permalink }}"> {{.Title}}</a><span>&nbsp;&gt; &gt;</span>
-      {{ end }}
-    </nav>
+
   </article>
 </main>
+{{- partial "pagerNav.html" . -}}
 <section class="[ stack ][ toc-poem ]">
   {{- partial "toc.html" . -}}
 </section>
-
-<aside id="meta">
-  <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-    </section>
-    {{ .Params.topics }}topics?
-    {{ with .Params.topics }}
-    <ul id="topics">
-      {{ range . }}
-      <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-    {{ with .Params.tags }}
-    <ul id="tags">
-      {{ range . }}
-      <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-  </div>
-  <div>
-    {{ with .PrevInSection }}
-    <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
-    {{ end }}
-    {{ with .NextInSection }}
-    <a class="next" href="{{ .Permalink }}"> {{.Title}}</a>
-    {{ end }}
-  </div>
-</aside>
 {{/*  {{ if $local }}
 {{ partial "dev.html" . }}
 {{ end }} */}}
