@@ -5,6 +5,31 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content/preface
+  label: Preface
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/about
+  label: About
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/charting-the-path
+  label: Charting the Path
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/conclusion
+  label: Conclusion
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/poems
+  label: Poems
+  create: all
+  match: "**/*"
+- type: directory
   path: content/chapters
   label: Chapters
   create: all
