@@ -15,8 +15,7 @@ Time here, perhaps anywhere, cannot be captured in a straight line, but rather i
   fileID="v1601912469"
   imagename="MainPageOSH"
   alt="an image from a website"
-  caption="The caption"
-  >}}
+  caption="The caption">}}
 
 New Mexico is indeed delicate, changing, but there are always lessons and still there is joy, but it may not lie in the grand or epic, but instead within common cycles, celebrations and ceremonies: dust rising from dances that have persisted for ages, language and prayer that rise and fall like a song, fingers moving over beads; the births and anniversaries that have resulted from love; the dignity of work, including the annual rituals of cleaning the ditch, harvesting the crops or the daily acts of simply preparing and sharing a meal.
 
