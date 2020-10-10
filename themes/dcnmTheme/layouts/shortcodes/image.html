@@ -45,11 +45,11 @@
 
 {{- $srcsetSmall := delimit ( slice $cdnURL ( index $transforms 0 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ( index $w 0) ) "" " " -}}
 
-{{- $srcsetMedium := delimit ( slice $cdnURL ( index $transforms 1 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 1 ) ) "" " " -}}
+{{- $srcsetMedium := delimit ( slice $cdnURL ( index $transforms 1 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ( index $w 1 ) ) "" " " -}}
 
-{{- $srcsetLarge := delimit ( slice $cdnURL ( index $transforms 2 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 2) ) "" " " -}}
+{{- $srcsetLarge := delimit ( slice $cdnURL ( index $transforms 2 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ( index $w 2) ) "" " " -}}
 
-{{- $srcsetXLarge := delimit ( slice $cdnURL ( index $transforms 3 ) $id $cdnFolder $imageName ( index $fileExtension 1 ) ( index $w 3) ) "" " " -}}
+{{- $srcsetXLarge := delimit ( slice $cdnURL ( index $transforms 3 ) $id $cdnFolder $imageName ( index $fileExtension 0 ) ( index $w 3) ) "" " " -}}
 
 <figure>
   <img

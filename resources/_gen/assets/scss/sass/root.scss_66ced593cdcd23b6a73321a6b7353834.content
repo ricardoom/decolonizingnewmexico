@@ -464,9 +464,14 @@ article nav {
       border-top: var(--s-3) solid #690209;
       content: ' ';
       display: block;
-      margin-bottom: var(--s-1);
-      scroll-margin-block-end: var(--s-1);
+      margin-block-end: var(--s-1);
       width: 10vw; }
+      @supports not (margin-block-end: var(--s-1)) {
+        .interior-page main .interior-page-content h3::before,
+        .interior-page main .interior-page-content h4::before,
+        .interior-page main .interior-page-content h5::before,
+        .interior-page main .interior-page-content H6::before {
+          margin-bottom: var(--s-1); } }
     .interior-page main .interior-page-content h4::before,
     .interior-page main .interior-page-content h5::before {
       border-color: #a73e11;
