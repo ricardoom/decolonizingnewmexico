@@ -149,8 +149,12 @@ More commemorative events will take place. As humans, there seems to be a propen
 More than a focus on singular events, however, questions before us, are how can commemorations of the past take place within a de-colonial framework, if at all? How do we ensure that we are not not failing to recognize the complexity of history and even further replicated the harms that come from representing it? Above, all, how do we ensure that what is celebrated is truthful and raises all voices? There is another set of events that merit attention in this work of decolonization, events that also are based on singular dates, but that unlike the preceding, take place annually
 
 \[^1\]: Charles Montgomery, The Spanish Redemption: Heritage, Power, and Loss on the New Mexico’s Upper Rio Grande. Berkeley: University of California Press, 2002, pp.  7-8.
+
+
 \[^2\]: The Santa Fe Tertio-Millennial Anniversary Association was comprised of a Board of Directors, including W. W. Griffin, L. W. Bradford Prince, Adolph Seligman, Arthur Boyle, Charles W. Greene, Solomon Spiegelberg, E. L. Bartlett, W.v. Hayt, W. T. Thorton, A. Staab, Lehman Spiegelberg and Romulo Martinez, the sole native-born New Mexican.
+
 \[^3\]: Ibid,  Montgomery, pp. 93-97.
+
 \[^4\]: See Wayne Mauzy, “The Tertio-Millennial Exposition,” El Palacio 37 (24) december 1934, pp. 185-99.
 \[^5\]: As the director of the Tourist Bureau, which was promoting the newly established tagline for New Mexico, “Land of Enchantment,” noted, “Coronado was unsuccessful in his search \[for gold\], but the celebration that honors his journey in 1940 should mean gold for New Mexico.” Even if not completely financially successful, there was an increase in visitors. By 1935, visitorship reached a zenith of 2.7 million, four times the state’s population. Mary Irene Severns, “Tourism in New Mexico: The Promotional Activities of the New Mexico State Tourism Bureau, 1935-1950” (Master’s thesis, University of New Mexico, 1951). 1-77.
 \[^6\]: CCC-RC. Fergusson, “The Coronado Cuarto Centennial,” 67-68.
