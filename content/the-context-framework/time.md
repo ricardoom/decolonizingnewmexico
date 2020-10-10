@@ -11,7 +11,11 @@ Temporally, New Mexico has often been divided by archaeologists into the trouble
 
 Time here, perhaps anywhere, cannot be captured in a straight line, but rather in the symbol of a spiral and the radiating circles of cause and effect. Sometimes words, phrases or entire stories were more revealing than numbers, like emergence or Ha’atastín, the Diné word for a period remembered as “watching out for enemies.” Yet among the countless dates, there are many that hold meaning still: contact and settlement — 1539, the moment of first contact at Halona:wa Idiwana, the Middle Place, present-day Zuñi Pueblo and 1598, date of Spanish settlers arriving in New Mexico; revolutions, including that of 1680, the most successful indigenous uprising in what is now the U.S. and one that would ensure survival and rescript Pueblo-Spanish relations, or that of 1847, defined by a coalition of Pueblo and Hispanos who would rise up against U.S. imperial occupation; belonging, 1912, the date when New Mexico shifted from a Territory to a State, following over six decades of denial of full citizenship to its residents because of race and religion. In the century since this last transition, a chain of events would transpire — the rise of the military industry, the building of a bomb, development of internment camps and continual struggles over civil rights.
 
-{{< image fileID="v1601912469" imagename="MainPageOSH" alt="an image from a website" caption="The caption">}}
+{{< image
+  fileID="v1601912469"
+  imagename="MainPageOSH"
+  alt="an image from a website"
+  caption="The caption">}}
 
 New Mexico is indeed delicate, changing, but there are always lessons and still there is joy, but it may not lie in the grand or epic, but instead within common cycles, celebrations and ceremonies: dust rising from dances that have persisted for ages, language and prayer that rise and fall like a song, fingers moving over beads; the births and anniversaries that have resulted from love; the dignity of work, including the annual rituals of cleaning the ditch, harvesting the crops or the daily acts of simply preparing and sharing a meal.
 
