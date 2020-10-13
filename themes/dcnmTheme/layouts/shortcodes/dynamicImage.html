@@ -3,7 +3,7 @@
   */}}
 
 {{ $placeHolder := ("/images/placeHolding.svg" | absURL) }}
-{{ $placeHolder2 := ( $.Site.Params.placeHolderSVG | absURL) }}
+{{ $placeHolder2 := $.Site.Params.placeHolderSVG }}
 {{ $cloudinary := $.Site.Params.cloudinary }}
 {{/* all subsequent $cloudinary variables can be found in the config 
     and should look something like: $cloudinary.base_url. With the prefix of $cloudinary... sarsipius.
@@ -34,7 +34,7 @@ variables values provided by the user below:
 
 <figure>
   <img
-       src=""
+       src="{{ $placeHolder2 }}"
        data-src=""
        srcset=""
        data-srcset=""
