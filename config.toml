@@ -6,7 +6,6 @@ relativeURLs = "true"
 enableRobotsTXT = "true"
 sectionPagesMenu = "main"
 
-
 [params]
   author = "Dr. Estevan Rael–Gálvez"
   design = "ricardogalvez.design"
@@ -15,7 +14,10 @@ sectionPagesMenu = "main"
   description = "The Decolonization of New Mexico"
   heroimage = "https://res.cloudinary.com/toupeeproofbullets/image/upload/v1598883685/dcnm/IMG_0569.jpg"
   placeHolderSVG = "/images/placeHolding.svg"  
-  
+  [params.cloudinary]
+    base_url = "https://res.cloudinary.com/toupeeproofbullets/image/upload/"
+    folder = "/dcnm/"
+    class = "cld-responsive"
   [params.style]
     homepage = 'home-page'
     interiorpage = 'interior-page'

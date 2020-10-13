@@ -17,6 +17,13 @@ Time here, perhaps anywhere, cannot be captured in a straight line, but rather i
   alt="an image from a website"
   caption="The caption">}}
 
+{{< dynamicImage
+  fileID="v1601912469"
+  imagename="MainPageOSH"
+  alt="another image from the website"
+  caption="my hot captions"
+    >}}
+
 New Mexico is indeed delicate, changing, but there are always lessons and still there is joy, but it may not lie in the grand or epic, but instead within common cycles, celebrations and ceremonies: dust rising from dances that have persisted for ages, language and prayer that rise and fall like a song, fingers moving over beads; the births and anniversaries that have resulted from love; the dignity of work, including the annual rituals of cleaning the ditch, harvesting the crops or the daily acts of simply preparing and sharing a meal.
 
 From the beginning of time, people have gathered together to commemorate. These events, may have begun organically with the passing of an elder or the birth of a child, celebrated a harvest or marked the beginning or end of a migration. Some of these gatherings are one time events, while others evolved into traditions, defined by a recurrence from generation to generation. While some traditions emerge organically, others are intentionally invented, defined by a range from factually authentic to wholly imagined and fabricated.

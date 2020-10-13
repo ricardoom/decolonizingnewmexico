@@ -1,0 +1,47 @@
+{{/*
+  dynamic image w/ cloudninary js 
+  */}}
+
+{{ $placeHolder := ("/images/placeHolding.svg" | absURL) }}
+{{ $placeHolder2 := ( $.Site.Params.placeHolderSVG | absURL) }}
+{{ $cloudinary := $.Site.Params.cloudinary }}
+{{/* all subsequent $cloudinary variables can be found in the config 
+    and should look something like: $cloudinary.base_url. With the prefix of $cloudinary... sarsipius.
+  */}}
+
+{{/* 
+  The this is the shortcode call in markdown looks:
+  {{< image
+  fileID="v1601912469"
+  imagename="MainPageOSH"
+  alt="an image from a website"
+  caption="The caption"
+  >}}
+
+variables values provided by the user below:
+*/}}
+{{- $alt := .Get "alt" -}}
+{{- $id := .Get "fileID" -}}
+{{- $imageName := .Get "imagename" -}}
+{{/* file extension array */}}
+{{- $fileExtension := ( slice ".jpg" ".webp" ".png" ) -}}
+{{/*  constant  values provided by cdn:  */}}
+{{- $cdnURL := $cloudinary.base_url -}}
+{{- $autoTransform := "w_auto,c_scale" -}}
+
+{{- $cdnFolder := $cloudinary.folder -}}
+{{- $fullURL := delimit ( slice $cdnURL $autoTransform $id $cdnFolder $imageName ( index $fileExtension 1 ) ) "" -}}
+
+<figure>
+  <img
+       src=""
+       data-src=""
+       srcset=""
+       data-srcset=""
+       alt="{{ $alt }}"
+       class="{{ $cloudinary.class }} lazy" />
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
+{{ $fullURL }}
