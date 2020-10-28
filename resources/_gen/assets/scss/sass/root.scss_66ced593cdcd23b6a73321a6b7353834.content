@@ -350,12 +350,18 @@ header.hero {
           border-right: 1px solid #f2f2f2;
           border-bottom: 1px solid #f2f2f2;
           box-shadow: 0 0 10px 10px rgba(105, 2, 9, 0.05);
-          transform: scale(1.2);
-          transition: 250ms all ease-out;
+          transform: scale(1.125);
+          transition: 100ms transform ease-out;
           z-index: 100; } }
       .toc-poem menu > .toc-list > ul > li h3 {
         font-size: var(--s1);
-        line-height: var(--s1); }
+        line-height: var(--s1);
+        padding: var(--s0) 0 0;
+        padding-block-start: var(--s0); }
+      .toc-poem menu > .toc-list > ul > li p {
+        padding: var(--s-1) 0 var(--s0);
+        padding-block-end: var(--s0);
+        padding-block-start: var(--s-1); }
       .toc-poem menu > .toc-list > ul > li .summary h3 {
         display: none; }
   .toc-poem aside {
@@ -363,7 +369,7 @@ header.hero {
     grid-column-end: 4;
     justify-content: center;
     padding-left: var(--s1);
-    padding-inline-end: var(--s1); }
+    padding-inline-start: var(--s1); }
     @media screen and (max-width: 48em) {
       .toc-poem aside {
         grid-column-start: 2;
@@ -683,7 +689,7 @@ li {
     padding: unset; }
     .poems blockquote p {
       font-size: var(--s1);
-      font-size: clamp(var(--s1), 3vw, 5vh);
+      font-size: clamp(var(--s0), 2rem, 3.5vw);
       font-style: normal;
       font-weight: 100;
       line-height: var(--s2);
@@ -691,7 +697,7 @@ li {
   .poems blockquote + p {
     font-size: var(--s0);
     font-size: clamp(var(--s0), 2vw, 4vh);
-    font-weight: 900;
+    font-weight: 500;
     margin: unset; }
 
 h4, h5, h6 {

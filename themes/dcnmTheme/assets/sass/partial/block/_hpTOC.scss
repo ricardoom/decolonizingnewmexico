@@ -66,13 +66,9 @@
             border-right: 1px solid $base-gray;
             border-bottom: 1px solid $base-gray;
             box-shadow: 0 0 10px 10px transparentize($sienna, 0.95);
-            transform: scale(1.2);
-            transition: 250ms all ease-out;
+            transform: scale(1.125);
+            transition: 100ms transform ease-out;
             z-index: 100;
-
-            p {
-              // height: calc(var(--s1) / 100);
-            }
           }  
         }
         
@@ -80,8 +76,15 @@
         h3 {
           font-size: var(--s1);
           line-height: var(--s1);
+          padding: var(--s0) 0 0;
+          padding-block-start: var(--s0);
         }
 
+        p {
+          padding: var(--s-1) 0 var(--s0);
+          padding-block-end: var(--s0);
+          padding-block-start: var(--s-1);
+        }
         // Weird one-off, but thats the way it goes...
         // This removes one, count it one h3 from a summary on a TOC...
         // TODO: figure out a way to this at the template level, instead of here...
@@ -104,7 +107,7 @@
     @include gridColumnMember(3, 4);
     justify-content: center;
     padding-left: var(--s1);
-    padding-inline-end: var(--s1);
+    padding-inline-start: var(--s1);
   }
 }
 
