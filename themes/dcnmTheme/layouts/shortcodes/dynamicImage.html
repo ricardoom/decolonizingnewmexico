@@ -2,7 +2,7 @@
   dynamic image w/ cloudninary js 
   */}}
 
-{{ $placeHolder := ("/images/placeHolding.svg" | absURL) }}
+{{/*  {{ $placeHolder := ("/images/placeHolding.svg" | absURL) }} */}}
 {{ $placeHolder2 := $.Site.Params.placeHolderSVG }}
 {{ $cloudinary := $.Site.Params.cloudinary }}
 {{/* all subsequent $cloudinary variables can be found in the config 
@@ -22,26 +22,23 @@ variables values provided by the user below:
 */}}
 {{- $alt := .Get "alt" -}}
 {{- $id := .Get "fileID" -}}
-{{- $imageName := .Get "imagename" -}}
+{{- $imageName := .Get "imageName" -}}
 {{/* file extension array */}}
 {{- $fileExtension := ( slice ".jpg" ".webp" ".png" ) -}}
 {{/*  constant  values provided by cdn:  */}}
 {{- $cdnURL := $cloudinary.base_url -}}
-{{- $autoTransform := "w_auto,c_scale" -}}
+{{- $autoTransform := "q_auto,w_auto,c_scale,f_auto/" -}}
 
 {{- $cdnFolder := $cloudinary.folder -}}
-{{- $fullURL := delimit ( slice $cdnURL $autoTransform $id $cdnFolder $imageName ( index $fileExtension 1 ) ) "" -}}
+{{- $fullURL := delimit ( slice $cdnURL $autoTransform $id $cdnFolder $imageName ( index $fileExtension 0 ) ) "" -}}
 
 <figure>
   <img
        src="{{ $placeHolder2 }}"
-       data-src=""
-       srcset=""
-       data-srcset=""
+       data-src="{{ $fullURL }}"
        alt="{{ $alt }}"
-       class="{{ $cloudinary.class }} lazy" />
+       class="{{ $cloudinary.class }}" />
   {{ with .Get "caption" }}
   <figcaption>{{ . }}</figcaption>
   {{ end }}
 </figure>
-{{ $fullURL }}

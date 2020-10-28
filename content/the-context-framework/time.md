@@ -5,23 +5,24 @@ slug = ""
 title = "Time"
 type = "page"
 weight = 1
+images = true
 
 +++
 Temporally, New Mexico has often been divided by archaeologists into the troublesome binary of “prehistoric” and “historic”; framed by historians into distinct periods: “Pre-contact, Spanish Colonial, Mexican, Territorial and American,” all of which fail to capture the complexities of cycles and the transitions that lead up to and follow events, both cataclysmic and ordinary.<!--more-->
 
 Time here, perhaps anywhere, cannot be captured in a straight line, but rather in the symbol of a spiral and the radiating circles of cause and effect. Sometimes words, phrases or entire stories were more revealing than numbers, like emergence or Ha’atastín, the Diné word for a period remembered as “watching out for enemies.” Yet among the countless dates, there are many that hold meaning still: contact and settlement — 1539, the moment of first contact at Halona:wa Idiwana, the Middle Place, present-day Zuñi Pueblo and 1598, date of Spanish settlers arriving in New Mexico; revolutions, including that of 1680, the most successful indigenous uprising in what is now the U.S. and one that would ensure survival and rescript Pueblo-Spanish relations, or that of 1847, defined by a coalition of Pueblo and Hispanos who would rise up against U.S. imperial occupation; belonging, 1912, the date when New Mexico shifted from a Territory to a State, following over six decades of denial of full citizenship to its residents because of race and religion. In the century since this last transition, a chain of events would transpire — the rise of the military industry, the building of a bomb, development of internment camps and continual struggles over civil rights.
 
-{{< image
+<!-- {{< image
   fileID="v1601912469"
-  imagename="MainPageOSH"
+  imageName="MainPageOSH"
   alt="an image from a website"
-  caption="The caption">}}
+  caption="The caption">}} -->
 
 {{< dynamicImage
-  fileID="v1601912469"
-  imagename="MainPageOSH"
+  fileID="v1601912447"
+  imageName="TimeOSH"
   alt="another image from the website"
-  caption="my hot captions"
+  caption=""
     >}}
 
 New Mexico is indeed delicate, changing, but there are always lessons and still there is joy, but it may not lie in the grand or epic, but instead within common cycles, celebrations and ceremonies: dust rising from dances that have persisted for ages, language and prayer that rise and fall like a song, fingers moving over beads; the births and anniversaries that have resulted from love; the dignity of work, including the annual rituals of cleaning the ditch, harvesting the crops or the daily acts of simply preparing and sharing a meal.
@@ -40,6 +41,15 @@ It is this context which is necessary in order to understand the mindset and pag
 
 In 1883, when the city of Santa Fe was bypassed by the railroad, a group of community leaders — consisting  of 12 Anglo men and one sole Hispano — created an anniversary celebration in order to attract business investments and tourism[^2].
 
+{{< dynamicImage
+  fileID="v1598883686"
+  imageName="Tertio-Millenial"
+  alt="another image from the website"
+  caption=""
+    >}}
+
+The 1883 Tertio Millennial Exposition was a forty-five day extravaganza commemorating 333 years of European settlement in Santa Fe. Historian and Santa Fe native Charles Montgomery, has written about this events as follows:
+
 > The organizers knew perfectly well that the first official Spanish colony was established in 1598, not 1550, and that Santa Fe was not founded until 1610. But none of that really mattered. To draw the attention of eastern newspapers, they chose a date that justified an elaborate commemoration, complete with a rousing, if chaotic, potpourri of historical costumes and tableaus. The only resemblance of historical coherence came in late July, when organizers staged a trio of historical pageants, each of which was meant to recall the dramatic events of a single century. On the first two days, richly attired Spanish conquistadores and Franciscan priests shared the stage with Apaches, Zunis, and Pueblos. Day three, featuring the coming of American soldiers, brought spectators up to the modern period.[^3]
 
 The celebration failed on many levels, including financially, where, according to Montgomery, it did not attract the desired capital investments and tourism, which was looming, but yet not fully developed. The inclination of the organizers to leverage culture, including history and the arts, was a good one; however, the failure came from a lack of imagination and the alignment of values that placed the residents of the community at the forefront. Aside from a temporal frame that was completely falsely constructed, organizers instead drew upon stereotypical representation of both Hispanic and Native Americans in which people were depicted as static and frozen in time. This wholly fabricated exposition embodied the elements of all those events that would follow, including forefronting a celebration of conquest, and the use of static moments as well as the use of the icon of the conquistadores. If the event had been invented largely by Anglo power brokers, the elite Hispanos not only relished in the narrative, but donned the roles to portray it. Felipe Delgado, for instance, proudly portrayed Coronado and Major Jose D. Sena, “attired as a Spanish Chieftain,” characterized the conquerors and “their descendants here gathered” as “Spaniards.”[^4] Thus, the framework for selective elements of the past had been established, which would continued to be solidified in the decades to come.
@@ -47,6 +57,13 @@ The celebration failed on many levels, including financially, where, according t
 ##### 1940 Coronado Cuarto Centennial Exposition
 
 Six decades separate 1940 Coronado Cuarto Centennial Exposition from the Tertio-Millennial celebration. In another effort to draw upon tourism, state officials began to design a campaign in 1931 that culminated in a new exposition, a statewide tribute to the conquistador Francisco Vásquez de Coronado. At the center of the commemoration was the Coronado Entrada, a colonial expedition led by Coronado from Compostela, Mexico into present-day Kansas and through parts of the southwestern United States. The event was framed around a series of pageants that were performed on an enlarged mobile stage that toured throughout the state. Unlike the previous 1883 exposition, this one was successful in drawing tourists, which became a driving force for the event.[^5] As was true of the 1883 event, organizers decided to ignore the facts of Coronado’s devastating and deadly impact upon the Pueblo village of Tiguex to instead paint a narrative picture of a heroic and noble colonizer, and as one promotional guide noted, forming “the basis for the European civilization in the Southwest.”[^6]
+
+{{< dynamicImage
+  fileID="v1603921670"
+  imageName="CCC-Stamp"
+  alt="An image of a stamp commemorating the Coronado Cuarto Centennial, 1940"
+  caption="A stamp commemorating the Coronado Cuarto Centennial from 1940"
+  >}}
 
 As this selective narrative began to unfold through the decades in these events, and though many non-native Anglo men were involved, several Hispano supporters, primarily from “elite” families, began to buy into this narrative, including Commission Secretary Gilberto Espinosa, B.C. Hernandez, Concha Ortiz y Pino and Fabiola Cabeza de Baca. The event however, did, have its progressive detractors including folklorist Arthur Campa, who throughout the 1930s had criticized the fixation on Spanish origins, particularly at the expense of Indian and Mexican influences. Ahead of his time, in 1939, Campa became even more aggressive in his critique of Spanish heritage symbolism. In a series of essays in El Nuevo Mexicano, this young scholar called on his colleagues to recognize several key issues, including the facts of colonization where most of the settlers were men and of the fallacy of purity of blood and the primacy of Mexican culture, including indigenous ancestors\[^7] In 1940, the same year of the Exposition, education professor George I. Sanchez, would publish his critical study of Taos County, Forgotten People, which documented the impact of Anglo conquest and neglect after 1848. Like Campa, Sanchez would critique the celebration as organized by outsiders, while ignoring not only the knowledge and local customs of the people, but the issues most impacting them as well.[^8] The critique also came from the Isleta Pueblo Governor and President of the All Indian Pueblo Council, Pablo Abeyta, who called into question the honoring of a man who had killed Pueblo people and forced them into war.[^9]
 
@@ -66,7 +83,7 @@ The Fiestas de Española and Santa Fe form the primary focus of the following as
 
 ##### Española Fiesta
 
-The annual event known as the Fiesta del Valle de Española celebrates the Spanish colonial founding of New Mexico and the establishment of the “first European Capital” of New Mexico on July 11, 1598. As articulated in the Fiesta Bylaws, the Fiesta is specifically held to, “commemorate and celebrate the initial conquest of New Mexico by Captain Juan de Oñate, and the establishment of his capital at San Gabriel de Los Españoles, at the confluence of the Rio Chama and the Rio Grande del Norte.\[^14]
+The annual event known as the Fiesta del Valle de Española celebrates the Spanish colonial founding of New Mexico and the establishment of the “first European Capital” of New Mexico on July 11, 1598. As articulated in the Fiesta Bylaws, the Fiesta is specifically held to, “commemorate and celebrate the initial conquest of New Mexico by Captain Juan de Oñate, and the establishment of his capital at San Gabriel de Los Españoles, at the confluence of the Rio Chama and the Rio Grande del Norte.[^14]
 
 First presented in 1932, the impetus credited to Delfin Salazar, the event struggled for significance in the first three decades, and according to Robert Naranjo, the event only occurred six times, first in the early 1930s and from 1948 - 1950.[^15] In 1969, then mayor Richard Lucero and other businessmen, reignited the Fiesta.
 

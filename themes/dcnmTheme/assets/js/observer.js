@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 
   if ('IntersectionObserver' in window) {
-    //console.log('IntersectionObserver done working...');
+    //console.log('IntersectionObserver _does_ work...');
     let lazyImageObserver = new IntersectionObserver(function(
       entries,
       observer,
@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
           lazyImage.src = lazyImage.dataset.src;
           lazyImage.srcset = lazyImage.dataset.srcset;
           lazyImage.classList.remove('lazy');
+          lazyImage.classList.add('cld-responsive');
           lazyImageObserver.unobserve(lazyImage);
         }
       });
