@@ -75,6 +75,13 @@ Leading up to the 500th anniversary, as early as 1989, demonstrations began to e
 
 While efforts had been building for years, protests deepened. For some, the protests against these celebrations were quiet; the pueblo of Ohkay Owingeh simply removed Columbus Day from its calendar. More demonstrative efforts were made by groups across New Mexico, including students from the Institute of American Indian Arts who staged a “die in” at the State Capital. Other protests were also planned by Tonantzin Land Institute, the Southwest Indian Student Coalition and Moviemiento Estudiantil Chicano de Aztlan of the University of New Mexico. Among the many responses, perhaps the most profound centered the value of storytelling. The Institute of American Indian Arts, in collaboration with KNME-TV, the local PBS station based in Albuquerque, produced, along with Director Diane Reyna, "Surviving Columbus: The Story of the Pueblo People," a deeply imaginative film that tells the story of the Pueblo People, including the 500 year-relationship of the Pueblos and other cultures. The film won a Peabody Award that year and continues to resonate to this day.
 
+{{< dynamicImage
+imageName="SurvivingColumbusStill"
+fileID="v1603922622"
+alt="A still image from the film Surviving Columbus"
+caption="Still shot from “Surviving Columbus,” December 19, 1990"
+  >}}
+
 #### Current Commemorative Events - Fiestas
 
 The annual Feast Day Celebrations, also known as Fiestas provide us an important point to assess how memory and community intersect, how the history is sometimes as much about forgetting as it is about remembering. To understand these events, it is important to include some background. Every community settled under the Spanish empire was designated in the name of a patron saint. For instance, Santo Tomas Apostol de Abiquiú was the full name of the village known still as Abiquiú. This practice also included the renaming of indigenous villages. For instance, Kewa was renamed Santo Domingo and Ohkay Owingeh renamed San Juan de los Caballeros and in both cases, these communities have since those colonial baptisms reclaimed their original name, even if the feasts continue to honor the patron saint.[^13] Given the long history of Catholicism in New Mexico, most feast days are defined by the centrality of these patron saints, each assigned to specific days of the year. These celebrations usually consist of a mass, vespers and a procession of the saint, followed by those gathered breaking bread in community, traditions now as common in Hispanic villages as in Pueblo villages. For instance, in Acoma Pueblo, the feast honors San Esteban and in Albuquerque’s Old Town, San Felipe de Neri is at the center of a three day Fiesta.
@@ -84,6 +91,13 @@ The Fiestas de Española and Santa Fe form the primary focus of the following as
 ##### Española Fiesta
 
 The annual event known as the Fiesta del Valle de Española celebrates the Spanish colonial founding of New Mexico and the establishment of the “first European Capital” of New Mexico on July 11, 1598. As articulated in the Fiesta Bylaws, the Fiesta is specifically held to, “commemorate and celebrate the initial conquest of New Mexico by Captain Juan de Oñate, and the establishment of his capital at San Gabriel de Los Españoles, at the confluence of the Rio Chama and the Rio Grande del Norte.[^14]
+
+<!-- {{< dynamicImage
+imageName=""
+fileID=""
+alt=""
+caption="From the Espanola Fiesta Facebook Page: The first Oñate Fiesta Royal Court in 1933 with costumes borrowed from a Hollywood film studio. Delfin Salazar portrayed the first Don Juan de Oñate y Salazar and Siria Lucero was the first Mrs. Oñate. Española village mayor Dr. Tobias Espinoza is pictured bottom center left. He is credited with the original vision of the Fiesta. But it wouldn't be until 1969, under mayor Richard Lucero that Fiestas would become an annual community tradition."
+  >}} -->
 
 First presented in 1932, the impetus credited to Delfin Salazar, the event struggled for significance in the first three decades, and according to Robert Naranjo, the event only occurred six times, first in the early 1930s and from 1948 - 1950.[^15] In 1969, then mayor Richard Lucero and other businessmen, reignited the Fiesta.
 

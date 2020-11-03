@@ -3,7 +3,7 @@
 ///
 export function intersectionObserver() {
 document.addEventListener('DOMContentLoaded', function() {
-  const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+  const lazyImages = [].slice.call(document.querySelectorAll('.lazy'));
 
   if ('IntersectionObserver' in window) {
     //console.log('IntersectionObserver _does_ work...');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   } else {
     //console.log('done messed up!');
-    let lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+    let lazyImages = [].slice.call(document.querySelectorAll('.lazy'));
     let active = false;
 
     const lazyLoad = function() {

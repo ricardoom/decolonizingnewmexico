@@ -37,7 +37,8 @@ variables values provided by the user below:
        src="{{ $placeHolder2 }}"
        data-src="{{ $fullURL }}"
        alt="{{ $alt }}"
-       class="{{ $cloudinary.class }}" />
+       class="{{ $cloudinary.class }}"
+       loading="lazy" />
   {{ with .Get "caption" }}
   <figcaption>{{ . }}</figcaption>
   {{ end }}
