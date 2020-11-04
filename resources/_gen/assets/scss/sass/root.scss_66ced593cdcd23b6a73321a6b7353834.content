@@ -532,6 +532,29 @@ article nav {
             margin-inline-start: var(--s0);
             margin-inline-end: var(--s0); } }
 
+.interior-page header.layout-test {
+  height: unset;
+  min-height: unset;
+  padding: var(--s1); }
+  @supports (margin-block-start: var(--s1)) {
+    .interior-page header.layout-test {
+      padding-block-end: var(--s1);
+      padding-block-start: var(--s1);
+      padding-inline-start: 0;
+      padding-inline-end: 0; } }
+  .interior-page header.layout-test svg {
+    display: none; }
+  .interior-page header.layout-test .hero-lockup {
+    grid-column: 2 / -2;
+    grid-row: 1 / -1;
+    align-self: unset; }
+    .interior-page header.layout-test .hero-lockup h1 {
+      font-size: clamp(2rem, var(--s0), var(--s2));
+      line-height: 1.2; }
+    .interior-page header.layout-test .hero-lockup span {
+      font-size: var(--s0);
+      line-height: var(--s0); }
+
 .interior-page main {
   display: block; }
   .interior-page main .interior-page-content {

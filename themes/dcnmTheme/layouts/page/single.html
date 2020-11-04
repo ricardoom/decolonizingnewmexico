@@ -12,7 +12,7 @@
 {{ partial "breadcrumb.html" . }}
 {{ if $testLayout }}
 <main id="main-content" class="[ {{ .Params.Type }} ]">
-  <article class="[ stack ][ interior-page-content test-layout ]">
+  <article class="[ stack ][ interior-page-content ]">
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ $mainContent | replaceRE  $sectionToReplace $footNoteSectionAppend | safeHTML  }}
   </article>

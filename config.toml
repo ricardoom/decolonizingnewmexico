@@ -21,6 +21,7 @@ sectionPagesMenu = "main"
   [params.style]
     homepage = 'home-page'
     interiorpage = 'interior-page'
+    layouttest = 'layout-test'
     
 [menu]
   [[ menu.hp ]]
