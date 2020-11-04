@@ -5,11 +5,11 @@
 .interior-page {
   
   main {
-    @include setBasicGrid;
+    // @include setBasicGrid;
     
     
     .interior-page-content  {
-      @include gridColumnMember;
+      // @include gridColumnMember;
 
       ul > li {
         margin: var(--s0) 0;

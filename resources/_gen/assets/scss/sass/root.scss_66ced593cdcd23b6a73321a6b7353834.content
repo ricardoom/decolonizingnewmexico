@@ -68,66 +68,57 @@ img:not([alt]) {
 
 .sienna {
   border-left: var(--s-1) #690209 solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .sienna {
-    border-inline-start: var(--s-1) #690209 solid; } }
+  @supports (border-inline-start: var(--s-1) #690209 solid) {
+    .sienna {
+      border-inline-start: var(--s-1) #690209 solid; } }
 
 .umber {
   border-left: var(--s-1) #49121c solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .umber {
-    border-inline-start: var(--s-1) #49121c solid; } }
+  @supports (border-inline-start: var(--s-1) #49121c solid) {
+    .umber {
+      border-inline-start: var(--s-1) #49121c solid; } }
 
 .pale-sage {
   border-left: var(--s-1) #ced3ab solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .pale-sage {
-    border-inline-start: var(--s-1) #ced3ab solid; } }
+  @supports (border-inline-start: var(--s-1) #ced3ab solid) {
+    .pale-sage {
+      border-inline-start: var(--s-1) #ced3ab solid; } }
 
 .navy-blue {
   border-left: var(--s-1) #172e73 solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .navy-blue {
-    border-inline-start: var(--s-1) #172e73 solid; } }
+  @supports (border-inline-start: var(--s-1) #172e73 solid) {
+    .navy-blue {
+      border-inline-start: var(--s-1) #172e73 solid; } }
 
 .taupish {
   border-left: var(--s-1) #f0ddc6 solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .taupish {
-    border-inline-start: var(--s-1) #f0ddc6 solid; } }
+  @supports (border-inline-start: var(--s-1) #f0ddc6 solid) {
+    .taupish {
+      border-inline-start: var(--s-1) #f0ddc6 solid; } }
 
 .sky-blue {
   border-left: var(--s-1) #c2e0fa solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .sky-blue {
-    border-inline-start: var(--s-1) #c2e0fa solid; } }
+  @supports (border-inline-start: var(--s-1) #c2e0fa solid) {
+    .sky-blue {
+      border-inline-start: var(--s-1) #c2e0fa solid; } }
 
 .golden-rod {
   border-left: var(--s-1) #fcbb5a solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .golden-rod {
-    border-inline-start: var(--s-1) #fcbb5a solid; } }
+  @supports (border-inline-start: var(--s-1) #fcbb5a solid) {
+    .golden-rod {
+      border-inline-start: var(--s-1) #fcbb5a solid; } }
 
 .peach {
   border-left: var(--s-1) #f7d1bf solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .peach {
-    border-inline-start: var(--s-1) #f7d1bf solid; } }
+  @supports (border-inline-start: var(--s-1) #f7d1bf solid) {
+    .peach {
+      border-inline-start: var(--s-1) #f7d1bf solid; } }
 
 .lava-orange {
   border-left: var(--s-1) #f75b26 solid; }
-
-@suports (border-inline-start: $width $color $style) {
-  .lava-orange {
-    border-inline-start: var(--s-1) #f75b26 solid; } }
+  @supports (border-inline-start: var(--s-1) #f75b26 solid) {
+    .lava-orange {
+      border-inline-start: var(--s-1) #f75b26 solid; } }
 
 .footnote-backref {
   font-family: sans-serif; }
@@ -165,8 +156,7 @@ h5 + p {
   margin-top: .53em; }
 
 p {
-  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
-  max-width: 65ch; }
+  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
 
 .footnotes {
   font-size: var(--s-1); }
@@ -414,15 +404,15 @@ header.hero {
       max-width: none; } }
 .breadcrumb,
 .pager {
-  background-color: #172e73;
+  background-color: #c2e0fa;
   clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
-  color: #fff;
+  color: #690209;
   font-size: var(--s-1);
   margin-top: calc(var(--s-1) * -1);
   max-width: none; }
   .breadcrumb a,
   .pager a {
-    color: #fff; }
+    color: #690209; }
 
 .pager {
   display: flex;
@@ -481,47 +471,72 @@ article nav {
   article nav a {
     color: black; }
 
-.interior-page main {
-  display: grid;
-  grid-template-columns: minmax(var(--s-2), 10vw) minmax(auto, 79vw) minmax(1vw, var(--s2));
-  grid-template-rows: auto; }
-  .interior-page main .interior-page-content {
-    grid-column-start: 2;
-    grid-column-end: 3; }
-    .interior-page main .interior-page-content ul > li {
-      margin: var(--s0) 0;
-      margin-block-end: var(--s0);
-      margin-block-start: var(--s0); }
-      .interior-page main .interior-page-content ul > li:first-child, .interior-page main .interior-page-content ul > li:last-child {
-        margin: unset; }
+.interior-page main .interior-page-content ul > li {
+  margin: var(--s0) 0;
+  margin-block-end: var(--s0);
+  margin-block-start: var(--s0); }
+  .interior-page main .interior-page-content ul > li:first-child, .interior-page main .interior-page-content ul > li:last-child {
+    margin: unset; }
+
+.interior-page main .interior-page-content h3::before,
+.interior-page main .interior-page-content h4::before,
+.interior-page main .interior-page-content h5::before,
+.interior-page main .interior-page-content H6::before {
+  border-top: var(--s-3) solid #690209;
+  content: ' ';
+  display: block;
+  margin-block-end: var(--s-1);
+  width: 10vw; }
+  @supports not (margin-block-end: var(--s-1)) {
     .interior-page main .interior-page-content h3::before,
     .interior-page main .interior-page-content h4::before,
     .interior-page main .interior-page-content h5::before,
     .interior-page main .interior-page-content H6::before {
-      border-top: var(--s-3) solid #690209;
-      content: ' ';
-      display: block;
-      margin-block-end: var(--s-1);
-      width: 10vw; }
-      @supports not (margin-block-end: var(--s-1)) {
-        .interior-page main .interior-page-content h3::before,
-        .interior-page main .interior-page-content h4::before,
-        .interior-page main .interior-page-content h5::before,
-        .interior-page main .interior-page-content H6::before {
-          margin-bottom: var(--s-1); } }
-    .interior-page main .interior-page-content h4::before,
-    .interior-page main .interior-page-content h5::before {
-      border-color: #a73e11;
-      border-top-width: var(--s-4);
-      width: 5vw; }
-    .interior-page main .interior-page-content h5::before,
-    .interior-page main .interior-page-content H6::before {
-      border-color: #f75b26; }
-    .interior-page main .interior-page-content .footnotes h4::before {
-      border: none; }
-    .interior-page main .interior-page-content figcaption {
-      font-size: var(--s-1);
-      font-style: italic; }
+      margin-bottom: var(--s-1); } }
+
+.interior-page main .interior-page-content h4::before,
+.interior-page main .interior-page-content h5::before {
+  border-color: #a73e11;
+  border-top-width: var(--s-4);
+  width: 5vw; }
+
+.interior-page main .interior-page-content h5::before,
+.interior-page main .interior-page-content H6::before {
+  border-color: #f75b26; }
+
+.interior-page main .interior-page-content .footnotes h4::before {
+  border: none; }
+
+.interior-page main .interior-page-content figcaption {
+  font-size: var(--s-1);
+  font-style: italic; }
+
+.interior-page main {
+  display: block; }
+  .interior-page main .interior-page-content {
+    display: grid;
+    grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+    max-width: none; }
+    .interior-page main .interior-page-content > * {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    .interior-page main .interior-page-content > figure {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      max-width: 100%; }
+      .interior-page main .interior-page-content > figure img {
+        background: no-repeat url("../../images/placeHolding.svg");
+        background-size: cover;
+        height: clamp(10vh, 15vh);
+        width: 100%; }
+      .interior-page main .interior-page-content > figure figcaption {
+        margin: var(--s0); }
+        @supports (margin-block-start: var(--s0)) {
+          .interior-page main .interior-page-content > figure figcaption {
+            margin-block-end: var(--s0);
+            margin-block-start: var(--s0);
+            margin-inline-start: var(--s0);
+            margin-inline-end: var(--s0); } }
 
 .footnotes,
 ol,
