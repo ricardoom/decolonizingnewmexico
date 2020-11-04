@@ -4,15 +4,15 @@
 
 .breadcrumb,
 .pager {
-  background-color: $navy-blue;
+  background-color: $sky-blue;
   clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
-  color: $base-white;
+  color: $sienna;
   font-size: var(--s-1);
   margin-top: calc(var(--s-1) * -1);
   max-width: none;
   
  a {
-    color: $base-white;
+    color: $sienna;
   }
 }
 .pager {
