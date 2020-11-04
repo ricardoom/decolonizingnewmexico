@@ -3,6 +3,38 @@
 //
 
 .interior-page {
+  header {
+    &.layout-test {
+      // background-color: $pale-sage;
+
+      height: unset;
+      min-height: unset;
+      @include easyPadMarg($spacer: padding,
+      $baseVal: var(--s1),
+      $in-start: 0,
+      $in-end: 0);
+
+      svg {
+        display: none;
+      }
+      .hero-lockup {
+        grid-column: 2 / -2;
+        grid-row: 1 / -1;
+        align-self: unset;
+
+        h1 {
+          font-size: clamp(2rem, var(--s0), var(--s2));
+          line-height: max(1, 1.2);
+        }
+
+        span {
+          font-size: var(--s0);
+          line-height: var(--s0);
+        }
+      }
+
+    }
+  }
 
   main {
     display: block;
