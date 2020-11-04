@@ -38,7 +38,7 @@ header {
       height: 60%;
       max-width: none;
       width: 100vw;
-      filter: opacity(0.5);    
+      filter: opacity(0.5);
 
       @media screen and (max-width: $small-screen) {
         filter: opacity(0.85)

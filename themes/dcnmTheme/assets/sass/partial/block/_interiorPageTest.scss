@@ -5,12 +5,13 @@
 .interior-page {
   header {
     &.layout-test {
-      // background-color: $pale-sage;
-
+      // svg background images
+      @include gridColumn(
+      minmax(var(--s-2), var(--s2)) minmax(auto, 79vw) minmax(1vw, var(--s2)));
       height: unset;
       min-height: unset;
       @include easyPadMarg($spacer: padding,
-      $baseVal: var(--s1),
+      $baseVal: var(--s2),
       $in-start: 0,
       $in-end: 0);
 
@@ -23,8 +24,11 @@
         align-self: unset;
 
         h1 {
-          font-size: clamp(2rem, var(--s0), var(--s2));
-          line-height: max(1, 1.2);
+          --minFontSize: var(--s1);
+          --maxFontSize: var(--s2);
+          --scaler: 10vw;
+          font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) ); 
+          line-height: max(0.8, 1);
         }
 
         span {
