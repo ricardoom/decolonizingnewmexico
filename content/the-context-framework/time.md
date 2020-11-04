@@ -6,7 +6,7 @@ title = "Time"
 type = "page"
 weight = 1
 images = true
-
+testlayout = true
 +++
 Temporally, New Mexico has often been divided by archaeologists into the troublesome binary of “prehistoric” and “historic”; framed by historians into distinct periods: “Pre-contact, Spanish Colonial, Mexican, Territorial and American,” all of which fail to capture the complexities of cycles and the transitions that lead up to and follow events, both cataclysmic and ordinary.<!--more-->
 

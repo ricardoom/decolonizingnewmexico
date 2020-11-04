@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
+{{ $testLayout := .Page.Params.testlayout }}
 {{ $stringToFind := `<section class="footnotes" role="doc-endnotes">` }}
 {{ $footNoteHeading := partial "footNoteSectionHead.html" . }}
 {{ $sectionToReplace := `((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))` }}
@@ -9,13 +10,22 @@
 {{ printf "<!-- this is a single template: page/single.html -->" | safeHTML }}
 
 {{ partial "breadcrumb.html" . }}
+{{ if $testLayout }}
+<main id="main-content" class="[ {{ .Params.Type }} ]">
+  <article class="[ stack ][ interior-page-content test-layout ]">
+    <h2 id="{{ .Title }}">{{ .Title }}</h2>
+    {{ $mainContent | replaceRE  $sectionToReplace $footNoteSectionAppend | safeHTML  }}
+  </article>
+</main>
+{{ else }}
 <main id="main-content" class="[ {{ .Params.Type }} ]">
   <article class="[ stack ][ interior-page-content ]">
     <h2 id="{{ .Title }}">{{ .Title }}</h2>
     {{ $mainContent | replaceRE  $sectionToReplace $footNoteSectionAppend | safeHTML  }}
-
   </article>
 </main>
+{{ end }}
+
 {{- partial "pagerNav.html" . -}}
 <section class="[ stack ][ toc-poem ]">
   {{- partial "toc.html" . -}}
