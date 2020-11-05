@@ -68,7 +68,7 @@ h4, h5, h6 {
 
 p {
   font-family: $serif;
-  max-width: 65ch;
+  // max-width: var(--measure);
 }
 
 .footnotes {

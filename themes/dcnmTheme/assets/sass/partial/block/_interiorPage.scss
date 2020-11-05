@@ -5,13 +5,24 @@
 .interior-page {
   
   main {
-    @include setBasicGrid;
+    display: block;
     
     
     .interior-page-content  {
-      @include gridColumnMember;
+      @include setBasicGrid();
+      @include gridColumn(
+        minmax(var(--s-1), 1fr),
+        minmax(auto, 80vw),
+        minmax(1vw, 1fr),
+        );
+      max-width: none;
+
+      > * {
+        @include gridColumnMember;
+      }
 
       ul > li {
+        font-family: $serif;
         margin: var(--s0) 0;
         margin-block-end: var(--s0);
         margin-block-start: var(--s0);
@@ -54,9 +65,23 @@
         }
       }
 
-      figcaption {
+      > figure {
+        
+        @include gridColumnMember(1, -1);
+        max-width: 100%;
+
+        img {
+          background: no-repeat url('../../images/placeHolding.svg');
+          background-size: cover;
+          height: clamp(10vh, 15vh);
+          width: 100%;
+        }
+
+        figcaption {
         font-size: var(--s-1);
         font-style: italic;
+        @include easyPadMarg; 
+        }
       }
     }
   }

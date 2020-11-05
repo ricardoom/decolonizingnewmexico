@@ -15,6 +15,12 @@
   h4::before {
     border: none;
   }
+
+  ol {
+    li {
+      word-break: break-word;
+    }
+  }
   // Vestige of the H4 Collapsible section
   // TODO: delete this bit
   // h4 button {

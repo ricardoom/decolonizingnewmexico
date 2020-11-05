@@ -10,15 +10,19 @@
 
     p {
       font-size: var(--s1);
+      font-size: clamp(var(--s0), 2rem, 3.5vw);
       font-style: normal;
       font-weight: 100;
       line-height: var(--s2);
+      line-height: clamp(1.4em, var(--s1), 3vh);
     }
   }
 
   blockquote + p {
     font-size: var(--s0);
-    font-weight: 900;
+    font-size: clamp(var(--s0), 2vw, 4vh);
+    font-weight: 500;
     margin: unset;
+    // padding: clamp(0, var(--s0), var(--s2));
   }
 }

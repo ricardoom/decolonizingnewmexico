@@ -2,34 +2,41 @@
 // Mixins
 //
 
+// basic grid variables:
+
 // Grid
+// Magic numbers, but the layout says it should be this way.
+// TODO: get better at writing functional SASS
+//
 @mixin gridColumn(
-  $col-1: minmax(var(--s-2), 10vw), 
+  $col-1: minmax(var(--s-1), 1fr), 
   $col-2: minmax(auto, 79vw),
-  $col-3: minmax(1vw, var(--s2)),
+  $col-3: minmax(1vw, 1fr),
   $col-n...) {
   grid-template-columns: $col-1 $col-2 $col-3 $col-n;
 }
 
-@mixin gridColumnMember($start: 2, $end: 3) {
+@mixin gridColumnMember($start: 2, $end: 3){
   grid-column-start: $start;
   grid-column-end: $end;
 }
 
-@mixin gridRowMember($start: auto, $end: auto) {
+@mixin gridRowMember($start: auto, $end: auto){
   grid-row: $start / $end;
-};
+}
 
-@mixin setBasicGrid($defineRows: auto){
+@mixin setBasicGrid($defineRows: auto, $auto-flow: row){
   display: grid;
-  @include gridColumn;
+  @include gridColumn();
+  grid-auto-flow: $auto-flow;
   grid-template-rows: $defineRows;
 }
+
 
 //
 // No Supporting
 //
-@mixin noSupport($property, $value...) {
+@mixin noSupport($property, $value...){
   @supports not ($property: $value) {
     // outline: 1px solid pink;
     @content;
@@ -39,10 +46,28 @@
 @mixin tocBorder(
   $color: null,
   $width: null,
-  $style: null
+  $style: null,
   ) {
     border-left: $width $color $style;
-    @suports (border-inline-start: $width $color $style) {
+    @supports (border-inline-start: $width $color $style) {
       border-inline-start: $width $color $style;
-    }  
+    }
+}
+
+@mixin easyPadMarg(
+  
+  $baseVal: var(--s0),
+  $spacer: margin, // or padding
+  $b-start: $baseVal,
+  $in-start: $baseVal,
+  $b-end: $baseVal,
+  $in-end: $baseVal,
+){
+  #{$spacer}: $baseVal;
+  @supports (margin-block-start: $baseVal) {
+    #{$spacer}-block-end: $b-end;
+    #{$spacer}-block-start: $b-start;
+    #{$spacer}-inline-start: $in-start;
+    #{$spacer}-inline-end: $in-end;
+    }
 }

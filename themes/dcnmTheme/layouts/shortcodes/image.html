@@ -24,7 +24,7 @@
 {{/*  sizes="(min-width: 920px) 680px, (min-width: 460px) calc(72.5vw + 28px), 75.71vw"  */}}
 
 {{/*  Sources from cdn:  */}}
-{{- $cdnURL := "https://res.cloudinary.com/toupeeproofbullets/image/upload/" -}}
+{{- $cdnURL := $.Site.Params.cloudinary.base_url -}}
 {{/* transform presets from cloudinary */}}
 {{- $320 := "t_320/" -}}
 {{- $480 := "t_480/" -}}

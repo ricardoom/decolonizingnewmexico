@@ -2,8 +2,13 @@
 // footer
 //
 
+#bg-img.lazy {
+  background-image: none;
+  backgound-color: $base-yellow;
+}
+
 #bg-img {
-  background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/c_scale,q_10,w_960/v1600360322/dcnm/aspens.webp');
+  background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/c_scale,q_10,w_960,f_auto/v1600360322/dcnm/aspens.webp');
 }
 
 .site-footer {
