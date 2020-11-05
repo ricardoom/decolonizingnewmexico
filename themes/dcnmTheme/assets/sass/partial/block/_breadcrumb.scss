@@ -28,9 +28,7 @@
 }
 
 .breadcrumb {  
-  @include setBasicGrid;
-  grid-template-rows: var(--s3);
-  
+  @include setBasicGrid($defineRows: var(--s3));
 
   ul {
     @include gridColumnMember;

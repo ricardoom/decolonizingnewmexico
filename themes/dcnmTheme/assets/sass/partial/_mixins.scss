@@ -5,10 +5,13 @@
 // basic grid variables:
 
 // Grid
+// Magic numbers, but the layout says it should be this way.
+// TODO: get better at writing functional SASS
+//
 @mixin gridColumn(
-  $col-1: minmax(var(--s-2), 10vw), 
+  $col-1: minmax(var(--s-1), 1fr), 
   $col-2: minmax(auto, 79vw),
-  $col-3: minmax(1vw, var(--s2)),
+  $col-3: minmax(1vw, 1fr),
   $col-n...) {
   grid-template-columns: $col-1 $col-2 $col-3 $col-n;
 }
@@ -24,9 +27,10 @@
 
 @mixin setBasicGrid($defineRows: auto){
   display: grid;
-  @include gridColumn;
+  @include gridColumn();
   grid-template-rows: $defineRows;
 }
+
 
 //
 // No Supporting

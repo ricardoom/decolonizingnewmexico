@@ -20,12 +20,12 @@ header {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: var(--threeQuarter);
+    height: clamp(var(--oneQuarter), var(--threeFifths), var(--threeQuarter));
     justify-items: start;
     overflow: hidden;
     
     @media (max-width: $small-screen) {
-      height: var(--oneThird);
+      // height: var(--threeFifths);
       padding-bottom: 0;
       padding-block-end: 0;
     }
@@ -80,30 +80,45 @@ header {
       padding-right: var(--s1);
       padding-inline-end: var(--s1);
       z-index: 2;
+      
+      --minFontSize: var(--s1);
+      --maxFontSize: var(--s2);
+      --scaler: 5vw;
 
       h1 {
-        font-size: var(--s2);
-        line-height: var(--s2);
-
-        @media (max-width: $small-screen) {
-          font-size: var(--s0);
-          line-height: var(--s0);
-          // padding-left: var(--s0);
-          // padding-inline-start: var(--s0);
-        }
+        font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) ); 
+        line-height: max(0.8, 1.1);
       }
 
+
       > span {
+        --scaler: calc(var(--ratio) * 2vw);
         color: $sienna;
         display: block;
-        font-size: var(--s1);
+        font-size: clamp( var(--s0), var(--scaler), var(--s1) );
         font-weight: 500;
-        line-height: var(--s1);
+        line-height: max(0.8, 1);
         
-        @media (max-width: $small-screen) {
-          font-size: var(--s-1);
-          line-height: var(--s-1);
-        }
+        // @media (max-width: $small-screen) {
+        //   font-size: var(--s0);
+        //   line-height: var(--s0);
+        // }
+        
+        
+      }
+
+      &.interior {
+        @include easyPadMarg($spacer: padding,
+        $baseVal: var(--s2),
+        $in-start: 0,
+        $in-end: 0);
+        // h1 { 
+        //   --minFontSize: var(--s1);
+        //   --maxFontSize: var(--s2);
+        //   --scaler: 10vw;
+        //   font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) ); 
+        //   line-height: max(0.8, 1);
+        // }
       }
     }
 
@@ -115,18 +130,26 @@ header {
 
 
 .interior-page {
-  header {
-    &.hero {
+  
+  .hero {
+      
       background-image: none;
-      min-height: var(--oneQuarter);
-      height: var(--oneQuarter, 150px);
+      // min-height: var(--oneQuarter);
+      // height: var(--oneQuarter, 150px);
+      height: clamp(150px, var(--oneFifth), var(--s6));
     
       > * a {
         color: $base-black;
       }
+
+      .hero-lockup {
+        grid-column: 2 / -2;
+        grid-row: 1 / -1;
+        align-self: center;
+      }
     }
   }
-}
+
 
 .home-page {
   header {

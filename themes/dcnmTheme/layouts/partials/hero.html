@@ -15,12 +15,16 @@
     <use href="#title-bg" height="100" width="1000" x="" y="" />
   </svg>  */}}
     {{- partial "hOneHeaderBG.svg" . -}}
+    {{ if .IsHome }}
     <div class="[ hero-lockup ]">
-      <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
-      {{ with $params.subtitle }}
-      <span class="[ subtitle ]">{{ . }}</span>
-      {{ end }}
-    </div>
+      {{ else }}
+      <div class="[ hero-lockup ][ interior ]">
+        {{ end }}
+        <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}<a href="/">{{ .Site.Title }}</a>{{ end }}</h1>
+        {{ with $params.subtitle }}
+        <span class="[ subtitle ]">{{ . }}</span>
+        {{ end }}
+      </div>
   </header>
   {{ if .IsHome }}
   {{- partial "nav.html" . -}}

@@ -2,76 +2,89 @@
 // Basic rules for interior pages
 //
 
+
+
+.breadcrumb,
+.interior-page-content, {
+  
+}
+
 .interior-page {
   header {
     &.layout-test {
       // svg background images
-      @include gridColumn(
-      minmax(var(--s-2), var(--s2)) minmax(auto, 79vw) minmax(1vw, var(--s2)));
-      height: unset;
-      min-height: unset;
-      @include easyPadMarg($spacer: padding,
-      $baseVal: var(--s2),
-      $in-start: 0,
-      $in-end: 0);
+      // @include gridColumn(
+      //   minmax(var(--s-1), 1fr),
+      //   minmax(auto, 79vw),
+      //   minmax(1vw, 1fr),
+      //   );
+      // height: unset;
+      // min-height: unset;
+      // @include easyPadMarg($spacer: padding,
+      // $baseVal: var(--s2),
+      // $in-start: 0,
+      // $in-end: 0);
 
       svg {
         display: none;
       }
-      .hero-lockup {
-        grid-column: 2 / -2;
-        grid-row: 1 / -1;
-        align-self: unset;
 
-        h1 {
-          --minFontSize: var(--s1);
-          --maxFontSize: var(--s2);
-          --scaler: 10vw;
-          font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) ); 
-          line-height: max(0.8, 1);
-        }
+      // .hero-lockup {
+        // grid-column: 2 / -2;
+        // grid-row: 1 / -1;
+        // align-self: unset;
 
-        span {
-          font-size: var(--s0);
-          line-height: var(--s0);
-        }
-      }
+        // h1 {
+        //   --minFontSize: var(--s1);
+        //   --maxFontSize: var(--s2);
+        //   --scaler: 10vw;
+        //   font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) ); 
+        //   line-height: max(0.8, 1);
+        // }
+
+        // span {
+        //   font-size: var(--s0);
+        //   line-height: var(--s0);
+        // }
+      // }
 
     }
   }
 
-  main {
-    display: block;
+
+
+  // main {
+    // display: block;
 
     // .interior-page-content.test-layout
-    .interior-page-content {
-      display: grid;
-      @include gridColumn(
-        minmax(var(--s-1), 1fr),
-        minmax(auto, 79vw),
-        minmax(1vw, 1fr));
-      max-width: none;
+    // .interior-page-content {
+    //   display: grid;
+    //   @include gridColumn(
+    //     minmax(var(--s-1), 1fr),
+    //     minmax(auto, 79vw),
+    //     minmax(1vw, 1fr));
+    //   max-width: none;
 
-      > * {
-        @include gridColumnMember;
-      }
+    //   > * {
+    //     @include gridColumnMember;
+    //   }
 
-      > figure {
+    //   > figure {
         
-        @include gridColumnMember(1, -1);
-        max-width: 100%;
+    //     @include gridColumnMember(1, -1);
+    //     max-width: 100%;
 
-        img {
-          background: no-repeat url('../../images/placeHolding.svg');
-          background-size: cover;
-          height: clamp(10vh, 15vh);
-          width: 100%;
-        }
+    //     img {
+    //       background: no-repeat url('../../images/placeHolding.svg');
+    //       background-size: cover;
+    //       height: clamp(10vh, 15vh);
+    //       width: 100%;
+    //     }
 
-        figcaption {
-          @include easyPadMarg;
-        }
-      }
-    }
-  }
+    //     figcaption {
+    //       @include easyPadMarg;
+    //     }
+    //   }
+    // }
+  // }
 }
