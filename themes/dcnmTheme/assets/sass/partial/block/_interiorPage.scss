@@ -12,7 +12,7 @@
       @include setBasicGrid();
       @include gridColumn(
         minmax(var(--s-1), 1fr),
-        minmax(auto, 79vw),
+        minmax(auto, 80vw),
         minmax(1vw, 1fr),
         );
       max-width: none;

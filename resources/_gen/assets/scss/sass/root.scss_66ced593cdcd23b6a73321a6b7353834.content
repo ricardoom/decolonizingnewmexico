@@ -216,11 +216,12 @@ blockquote {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 header.hero {
-  grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
   background-color: #fcf6d9;
   color: black;
   display: grid;
+  grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
   grid-auto-flow: row;
+  grid-template-rows: auto;
   grid-template-rows: 60% 40%;
   margin-top: 0;
   margin-block-start: 0;
@@ -239,16 +240,12 @@ header.hero {
       padding-bottom: 0;
       padding-block-end: 0; } }
   header.hero .hero-svg {
-    align-self: end;
     grid-column: 1 / 3;
     grid-row: 1 / 4;
-    height: 60%;
-    max-width: none;
-    width: 100vw;
     filter: opacity(0.5); }
     @media screen and (max-width: 25.875em) {
       header.hero .hero-svg {
-        filter: opacity(0.85); } }
+        filter: opacity(0.5); } }
     header.hero .hero-svg .a {
       fill: #e3a059; }
     header.hero .hero-svg .b {
@@ -257,7 +254,7 @@ header.hero {
       fill: #fab194; }
   header.hero .title-bg {
     align-self: center;
-    fill: #fcf6d8;
+    fill: #fcbb5a;
     filter: opacity(0.65);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -287,32 +284,34 @@ header.hero {
       font-size: clamp(var(--s0), var(--scaler), var(--s1));
       font-weight: 500;
       line-height: 1; }
-    header.hero .hero-lockup.interior {
-      padding: var(--s2); }
-      @supports (margin-block-start: var(--s2)) {
-        header.hero .hero-lockup.interior {
-          padding-block-end: var(--s2);
-          padding-block-start: var(--s2);
-          padding-inline-start: 0;
-          padding-inline-end: 0; } }
   header.hero > * > * {
     color: black; }
 
 .interior-page .hero {
   background-image: none;
+  grid-template-rows: auto;
   height: clamp(150px, var(--oneFifth), var(--s6)); }
   .interior-page .hero > * a {
     color: black; }
+  .interior-page .hero .title-bg {
+    grid-area: 1 / 1 / -1 / -1; }
   .interior-page .hero .hero-lockup {
     grid-column: 2 / -2;
     grid-row: 1 / -1;
     align-self: center; }
+  .interior-page .hero .hero-svg {
+    align-self: center;
+    background-color: #df3a45;
+    grid-area: 1 / 1 / -1 / -1;
+    max-width: unset;
+    width: 100%; }
 
 .toc-poem {
   background-color: rgba(252, 246, 217, 0.8);
   clip-path: polygon(2px 1.3%, 100% 0px, 100% 100%, 0% 100%);
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+  grid-auto-flow: row;
   grid-template-rows: auto;
   grid-template-columns: 10vw repeat(2, 1fr) 10vw;
   max-width: none;
@@ -393,6 +392,7 @@ header.hero {
 .about {
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+  grid-auto-flow: row;
   grid-template-rows: auto;
   max-width: none;
   padding: var(--s1) 0;
@@ -436,6 +436,7 @@ header.hero {
 .breadcrumb {
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+  grid-auto-flow: row;
   grid-template-rows: var(--s3); }
   .breadcrumb ul {
     grid-column-start: 2;
@@ -449,6 +450,7 @@ header.hero {
 .primary-nav {
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+  grid-auto-flow: row;
   grid-template-rows: auto;
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s0);
@@ -483,8 +485,9 @@ article nav {
   .interior-page main .interior-page-content {
     display: grid;
     grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+    grid-auto-flow: row;
     grid-template-rows: auto;
-    grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+    grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 80vw) minmax(1vw, 1fr);
     max-width: none; }
     .interior-page main .interior-page-content > * {
       grid-column-start: 2;
@@ -541,9 +544,6 @@ article nav {
             margin-inline-start: var(--s0);
             margin-inline-end: var(--s0); } }
 
-.interior-page header.layout-test svg {
-  display: none; }
-
 .footnotes,
 ol,
 li {
@@ -578,6 +578,7 @@ li {
   font-size: var(--s0);
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+  grid-auto-flow: row;
   grid-template-rows: var(--s3) minmax(var(--s0), var(--s1)) var(--s3);
   overflow: hidden;
   padding-top: var(--s3);
@@ -605,6 +606,7 @@ li {
 .home-page main {
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
+  grid-auto-flow: row;
   grid-template-rows: auto;
   margin-top: var(--s1);
   margin-block-start: var(--s1); }

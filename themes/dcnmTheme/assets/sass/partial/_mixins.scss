@@ -25,9 +25,10 @@
   grid-row: $start / $end;
 }
 
-@mixin setBasicGrid($defineRows: auto){
+@mixin setBasicGrid($defineRows: auto, $auto-flow: row){
   display: grid;
   @include gridColumn();
+  grid-auto-flow: $auto-flow;
   grid-template-rows: $defineRows;
 }
 

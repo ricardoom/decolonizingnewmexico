@@ -2,11 +2,12 @@
 // Hero Partial. All things hero for both the home page and the interior pages
 
 %grid-hero {
-  @include gridColumn();
   background-color: $base-yellow;
   color: $base-black;
-  display: grid;
-  grid-auto-flow: row;
+  // display: grid;
+  // grid-auto-flow: row;
+  // @include gridColumn();
+  @include setBasicGrid();
   grid-template-rows: 60% 40%;
   margin-top: 0;
   margin-block-start: 0;
@@ -14,6 +15,7 @@
 }
 
 header {
+
   &.hero {
     @extend %grid-hero;
     background-image: url('https://res.cloudinary.com/toupeeproofbullets/image/upload/t_960_1x/v1598883685/dcnm/IMG_0569.jpg');
@@ -32,19 +34,19 @@ header {
 
     // Purely Decorative svg styles:
     .hero-svg {
-      align-self: end;
+      // align-self: end;
       grid-column: 1 / 3;
       grid-row: 1 / 4;
-      height: 60%;
-      max-width: none;
-      width: 100vw;
+      // height: 60%;
+      // max-width: none;
+      // width: 100vw;
       filter: opacity(0.5);
 
       @media screen and (max-width: $small-screen) {
-        filter: opacity(0.85)
+        filter: opacity(0.5)
       }
 
-      // TODO: do somehting less generic naming wise here:
+      // TODO: do something less generic naming wise here:
       .a {
         fill: hsl(31, 71%, 62%);
       }
@@ -60,7 +62,7 @@ header {
 
     .title-bg {
       align-self: center;
-      fill: #fcf6d8;
+      fill: $golden-rod;
       filter: opacity(0.65);
       grid-column: 1 / 2;
       grid-row: 2 / 3;
@@ -98,28 +100,14 @@ header {
         font-size: clamp( var(--s0), var(--scaler), var(--s1) );
         font-weight: 500;
         line-height: max(0.8, 1);
-        
-        // @media (max-width: $small-screen) {
-        //   font-size: var(--s0);
-        //   line-height: var(--s0);
-        // }
-        
-        
       }
 
-      &.interior {
-        @include easyPadMarg($spacer: padding,
-        $baseVal: var(--s2),
-        $in-start: 0,
-        $in-end: 0);
-        // h1 { 
-        //   --minFontSize: var(--s1);
-        //   --maxFontSize: var(--s2);
-        //   --scaler: 10vw;
-        //   font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) ); 
-        //   line-height: max(0.8, 1);
-        // }
-      }
+      // &.interior {
+      //   @include easyPadMarg($spacer: padding,
+      //   $baseVal: var(--s2),
+      //   $in-start: 0,
+      //   $in-end: 0);
+      // }
     }
 
     > * > * {
@@ -132,14 +120,15 @@ header {
 .interior-page {
   
   .hero {
-      
       background-image: none;
-      // min-height: var(--oneQuarter);
-      // height: var(--oneQuarter, 150px);
+      grid-template-rows: auto;
       height: clamp(150px, var(--oneFifth), var(--s6));
     
       > * a {
         color: $base-black;
+      }
+      .title-bg {
+        grid-area: 1 / 1 / -1 / -1;
       }
 
       .hero-lockup {
@@ -147,15 +136,13 @@ header {
         grid-row: 1 / -1;
         align-self: center;
       }
+
+      .hero-svg {
+        align-self: center;
+        background-color: $rose;
+        grid-area: 1 / 1 / -1 / -1;
+        max-width: unset;
+        width: 100%;
+      }
     }
   }
-
-
-.home-page {
-  header {
-    // > .subtitle {
-    //   padding-top: var(--s-1);
-    //   padding-block-start: var(--s-1);
-    // }
-  }
-}
