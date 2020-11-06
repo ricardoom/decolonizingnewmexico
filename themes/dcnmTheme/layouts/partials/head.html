@@ -6,9 +6,9 @@
 
 {{ $styleSource := resources.Get $sassRoot }}
 
-{{ $prodStyle := resources.Get $sassRoot | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{ $prodStyle := $styleSource | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 
-{{ $devStyle := resources.Get $sassRoot | resources.ToCSS $options }}
+{{ $devStyle := $styleSource | resources.ToCSS $options }}
 
 {{ $modernizr := resources.Get "js/modernizr.js" }}
 
