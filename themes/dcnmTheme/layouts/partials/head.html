@@ -3,25 +3,19 @@
 {{ $scssRoot := "sass/root.scss" }}
 {{ $styleSource := resources.Get $scssRoot }}
 {{ $style := resources.Get "sass/root.scss" | resources.ToCSS $options }}
-{{ $watchedBoxMin := resources.Get "js/watched-box.min.js" }}
-{{ $watchedBox := resources.Get "js/watched-box.js" }}
+{{ $modernizr := resources.Get "js/modernizr.js" }}
 
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-{{ with .Site.Params.description }}
-<meta name="description" content="{{ . }}">
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-{{ end }}
-<title>{{ .Site.Title }}</title>
-{{ hugo.Generator }}
-<script>
-  if (window) {
-    const hasJS = document.querySelector('html');
-    hasJS.setAttribute('class', 'js');
-  }
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {{ with .Site.Params.description }}
+  <meta name="description" content="{{ . }}">
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ end }}
+  <title>{{ .Site.Title }}</title>
+  {{ hugo.Generator }}
 
-</head>
+  <script src="{{ $modernizr.Permalink }}"></script>
+  </head>

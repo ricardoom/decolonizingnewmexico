@@ -10,13 +10,15 @@
 <main class="[ cover ]" id="main-content">
   {{ partial "preface.html" . }}
 </main>
+
 <section class="[ stack ][ toc-poem ]">
   {{- partial "toc.html" . -}}
   {{- partial "poemas.html" . -}}
 </section>
+
 {{- partial "about.html" . -}}
 {{- partial "uteMountainTopo.svg" . -}}
-{{ if $local }}
+{{/*  {{ if $local }}
 {{ partial "dev.html" . }}
-{{ end }}
+{{ end }} */}}
 {{ end }}

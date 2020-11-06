@@ -43,7 +43,7 @@ h1 {
 h2 {
   font-family: $sans-serif;
   font-size: var(--s1);
-  font-weight: 300;
+  font-weight: 100;
   line-height: var(--s1);
 }
 
@@ -68,7 +68,7 @@ h4, h5, h6 {
 
 p {
   font-family: $serif;
-  max-width: 65ch;
+  // max-width: var(--measure);
 }
 
 .footnotes {
