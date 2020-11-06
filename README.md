@@ -4,7 +4,18 @@
 A scholarly project. This site uses Hugo for static site generation, content is managed via Forestry.io and hosted on Netlify.com. This site is visible here: https://decolonizingnewmexico.com
 
 ## Releases & Change Log:
-v0.0.4
+### v0.0.5
+
+- short code for adding images to any part of a markdown file, so 
+- responsive images dynamically updated via Cloudinary
+- full bleed images are now possible
+- home page and interior page hero 
+- footnotes fixed due to screw up w/ Forestry not using them
+  - users will be forced into using the raw markdown editor to avoidthe about screw up
+- some simple hover animations added where appropriate
+  - prefers reduced motion media query has also been added
+
+### v0.0.4
 
 - design updates
 - added footnote heading
@@ -17,7 +28,7 @@ v0.0.4
   - interior page grids
   - hero section
 
-v0.0.3
+### v0.0.3
 
 - reorganizing the way css is written to the CUBE style (fixes #10) 
 - added accessible drop caps
@@ -26,12 +37,12 @@ v0.0.3
 - using svg for graphic elements
 - using hugo's esBuild for js bundling
 
-v0.0.2
+### v0.0.2
 
 - improved TOC
 - minor styling improvements
 - template logic improvements
 
-v0.0.1
+### v0.0.1
 
 - initial works...
