@@ -8,7 +8,8 @@
 
 {{ $main := resources.Get "js/main.js" }}
 
-{{ $opts := dict "targetPath" "js/index.js" "target" "es2016" "minify" false }}
+
+{{ $opts := dict "targetPath" "js/index.min.js" "target" "es2016" "minify" true }}
 
 {{ $built := resources.Get $main | js.Build $opts }}
 
@@ -16,14 +17,16 @@
 
 {{/* $script := slice $main | resources.Concat "js/index.js"  */}}
 
-
 {{ if $images }}
+
 <script src="{{ $cloudinaryCore }}" type="text/javascript"></script>
+
 <script type="text/javascript">
   let cl = cloudinary.Cloudinary.new();
   cl.config("cloud_name", "toupeeproofbullets");
   cl.responsive();
 </script>
+
 {{ end }}
 
 <script src="{{ $built.Permalink }}" type="module"></script>
