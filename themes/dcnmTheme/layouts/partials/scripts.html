@@ -1,5 +1,5 @@
 {{ $images := .Params.images }}
-
+<!-- // Dont forget that the markdown file needs to have this param set to: true -->
 {{ $cloudinaryCore := "https://unpkg.com/cloudinary-core@2.11.3/cloudinary-core-shrinkwrap.min.js"}}
 
 {{ $ccCore := resources.Get $cloudinaryCore }}
@@ -8,32 +8,32 @@
 
 {{ $main := resources.Get "js/main.js" }}
 
-{{ $opts := dict "targetPath" "js/index.js" "target" "es2016" "minify" false }}
+
+{{ $opts := dict "targetPath" "js/index.min.js" "target" "es2016" "minify" true }}
 
 {{ $built := resources.Get $main | js.Build $opts }}
 
 {{ if .Site.IsServer }}
-{{ $script := slice $main | resources.Concat "js/index.js" }}
+
+{{/* $script := slice $main | resources.Concat "js/index.js"  */}}
 
 {{ if $images }}
+
 <script src="{{ $cloudinaryCore }}" type="text/javascript"></script>
 
 <script type="text/javascript">
   let cl = cloudinary.Cloudinary.new();
   cl.config("cloud_name", "toupeeproofbullets");
-
-  // let tr = cloudinary.Transformation.new();
-  // tr.crop("scale").width('auto');
-  // Responsive Images via Cloudinary:
-
   cl.responsive();
-
-  //const tag = cl.url("v1600360322/dcnm/aspens.jpg", { tr });
 </script>
 
 {{ end }}
+
 <script src="{{ $built.Permalink }}" type="module"></script>
+
 {{ else }}
+
+{{ $script := slice $main | resources.Concat "js/index.js" | fingerprint }}
 
 {{ if $images }}
 <script src="{{ $cloudinaryCore }}" type="text/javascript"></script>
@@ -44,6 +44,7 @@
 </script>
 {{ end }}
 
-{{ $script := slice $main | resources.Concat "js/index.js" | fingerprint }}
+
 <script src="{{ $built.Permalink }}"></script>
+
 {{ end }}
