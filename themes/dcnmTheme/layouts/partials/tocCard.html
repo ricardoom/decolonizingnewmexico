@@ -1,0 +1,9 @@
+{{ $color := .Params.color }}
+<li class="card {{ $color }}">
+  <div class="card-body">
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <div class="summary">
+      {{ .Summary }}
+    </div>
+  </div>
+</li>

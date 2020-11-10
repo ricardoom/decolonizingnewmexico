@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .summary > p {
+      position: relative;
+    }
+
+  }
+  a::after {
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &:hover {
+    // put the drop shadow rules here
+  }
+}
