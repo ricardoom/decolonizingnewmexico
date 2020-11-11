@@ -1,6 +1,6 @@
 {{ $color := .Params.color }}
-<li class="card {{ $color }}">
-  <div class="card-body">
+<li class="[ stack ][ card {{ $color }} ]">
+  <div class="[ stack ][ card-body ]">
     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     <div class="summary">
       {{ .Summary }}

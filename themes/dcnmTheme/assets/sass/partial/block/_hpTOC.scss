@@ -41,7 +41,7 @@
   }
 
   //
-  // Home Page <menu>
+  // Home Page <menu> in the TOC at the bottom of the page
   menu {
     @media screen and (max-width: $medium-screen){
       @include gridColumnMember(2 ,4);
@@ -54,23 +54,23 @@
 
     > .toc-list {
       > ul > li {
-        transform: scale(1);
-        transition: 150ms transform ease-in;
-        padding-left: 2.5vw;
-        padding-inline-end: 2.5vw;
+        // transform: scale(1);
+        // transition: 150ms transform ease-in;
+        // padding-left: 2.5vw;
+        // padding-inline-end: 2.5vw;
         // padding-top: var(--s1);
         // padding-bottom: var(--s1);
-        @media screen and (min-width: $medium-screen){
-          &:hover {
-            background: $base-yellow;
-            border-right: 1px solid $base-gray;
-            border-bottom: 1px solid $base-gray;
-            box-shadow: 0 0 10px 10px transparentize($sienna, 0.95);
-            transform: scale(1.125);
-            transition: 100ms transform ease-out;
-            z-index: 100;
-          }  
-        }
+        // @media screen and (min-width: $medium-screen) {
+        //   &:hover {
+        //     background: $base-yellow;
+        //     border-right: 1px solid $base-gray;
+        //     border-bottom: 1px solid $base-gray;
+        //     box-shadow: 0 0 10px 10px transparentize($sienna, 0.95);
+        //     transform: scale(1.125);
+        //     transition: 100ms transform ease-out;
+        //     z-index: 100;
+        //   }  
+        // }
         
 
         h3 {
@@ -80,11 +80,11 @@
           padding-block-start: var(--s0);
         }
 
-        p {
-          padding: var(--s-1) 0 var(--s0);
-          padding-block-end: var(--s0);
-          padding-block-start: var(--s-1);
-        }
+        // p {
+        //   // padding: var(--s-1) 0 var(--s0);
+        //   // padding-block-end: var(--s0);
+        //   // padding-block-start: var(--s-1);
+        // }
         // Weird one-off, but thats the way it goes...
         // This removes one, count it one h3 from a summary on a TOC...
         // TODO: figure out a way to this at the template level, instead of here...
