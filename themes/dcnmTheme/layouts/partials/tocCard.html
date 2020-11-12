@@ -1,0 +1,12 @@
+{{ $color := .Params.color }}
+{{ $title := .Title }}
+{{ $ariatitle := lower (replaceRE "(\\s)" "-" $title) }}
+
+<li class="[ stack ][ card {{ $color }} ]">
+  <div class="[ stack ][ card-body ]">
+    <h3 id="{{ $ariatitle }}"><a href="{{ .Permalink }}" aria-labelledby="{{ $ariatitle }}">{{ .Title }}</a></h3>
+    <div class="summary">
+      {{ .Summary }}
+    </div>
+  </div>
+</li>

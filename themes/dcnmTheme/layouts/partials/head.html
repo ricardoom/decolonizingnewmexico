@@ -1,8 +1,15 @@
 {{ $targetPath := "css/root.css" }}
+
 {{ $options := ( dict "targetPath" $targetPath "enableSourceMap" true "includePaths" (slice "sass/vendor")) }}
-{{ $scssRoot := "sass/root.scss" }}
-{{ $styleSource := resources.Get $scssRoot }}
-{{ $style := resources.Get "sass/root.scss" | resources.ToCSS $options }}
+
+{{ $sassRoot := "sass/root.scss" }}
+
+{{ $styleSource := resources.Get $sassRoot }}
+
+{{ $prodStyle := $styleSource | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+
+{{ $devStyle := $styleSource | resources.ToCSS $options }}
+
 {{ $modernizr := resources.Get "js/modernizr.js" }}
 
 <!DOCTYPE html>
@@ -12,7 +19,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}">
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ end }}
+  {{ if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $devStyle.Permalink }}">
+  {{ else }}
+  <link rel="stylesheet" href="{{ $prodStyle.Permalink }}">
   {{ end }}
   <title>{{ .Site.Title }}</title>
   {{ hugo.Generator }}
