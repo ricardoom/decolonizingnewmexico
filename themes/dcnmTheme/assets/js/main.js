@@ -1,5 +1,5 @@
 import detectImageFormat from "./imageFormats";
-
+import { cards, cardMaker } from './cards';
 //
 // Import here
 
@@ -14,5 +14,6 @@ import { intersectionObserver } from "./observer";
 
 // noteControl();
 // heroSvg();
+cardMaker();
 intersectionObserver();
 detectImageFormat();

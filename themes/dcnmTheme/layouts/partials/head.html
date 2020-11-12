@@ -8,7 +8,7 @@
 
 {{ $prodStyle := $styleSource | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 
-{{ $devStyle := $styleSource | resources.ToCSS $options | resources.Minify }}
+{{ $devStyle := $styleSource | resources.ToCSS $options }}
 
 {{ $modernizr := resources.Get "js/modernizr.js" }}
 

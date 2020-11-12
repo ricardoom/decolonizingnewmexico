@@ -8,7 +8,6 @@
 
     {{ end }}
 
-
     {{ template "sub-items" . }}
 
     {{ end }}
@@ -29,18 +28,17 @@
 
     {{ define "sub-items" }}
     {{ $regRecurs := .RegularPagesRecursive }}
+    {{ if gt (len $regRecurs) 0 }}
     <ul class="[ stack ]">
+
       {{ range $regRecurs }}
-      {{ $color := .Params.color }}
       {{ $name := lower (replaceRE "(\\s)" "-" .Name) }}
-      <li class="[ card ][ {{ $color }} ]">
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        <div class="summary">
-          {{ .Summary }}
-        </div>
-      </li>
+
+      {{ partial "tocCard.html" . }}
+
       {{ end }}
     </ul>
+    {{ end }}
     {{ end }}
 
     {{ define "heading-link" }}
