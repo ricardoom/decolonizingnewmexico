@@ -1,5 +1,5 @@
 @mixin card-hover {
-  background: $base-yellow;
+  background: $base-white;
   border-right: 1px solid $base-gray;
   border-bottom: 1px solid $base-gray;
   box-shadow: 0 0 10px 10px transparentize($sienna, 0.95);
@@ -32,9 +32,15 @@
   &-body {
     position: relative;
 
-    .summary > p {
-      position: relative;
+    .summary {
+      > h3 {
+        display: none;
+      }
+
+      > p {
+        position: relative;
     }
+  }
     
     &:last-child {
       margin-bottom: var(--s1)
@@ -42,6 +48,12 @@
   }
   
   
+  h3 {
+    font-size: var(--s1);
+    line-height: var(--s1);
+    padding: var(--s0) 0 0;
+    padding-block-start: var(--s0);
+  }
 
   a::after {
     bottom: 0;
@@ -75,9 +87,6 @@
  @keyframes hover-out {
    
    0% {
-     
-     // z-index: 100;
-     // transition: 250ms all ease-out;
      background: #fff;
      box-shadow: 2px 2px 10px #ddd;
      border-right: 1px solid $base-gray;
