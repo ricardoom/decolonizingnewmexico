@@ -6,8 +6,7 @@
   
   main {
     display: block;
-    
-    
+
     .interior-page-content  {
       @include setBasicGrid();
       @include gridColumn(
@@ -32,8 +31,6 @@
           margin: unset;
         }
       }
-
-
 
       // TODO: some sass magic here, spitting out the ::before rules in a snazzier fashion...
       h3::before,
@@ -88,7 +85,6 @@
         }
         
         dd {
-        
           padding-bottom: var(--s-1);
           padding-block-end: var(--s-1);
 
