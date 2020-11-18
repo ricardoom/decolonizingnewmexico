@@ -6,8 +6,7 @@
   
   main {
     display: block;
-    
-    
+
     .interior-page-content  {
       @include setBasicGrid();
       @include gridColumn(
@@ -65,6 +64,43 @@
         }
       }
 
+      // Interior Pages DL's
+
+      dl {
+        display: block;
+
+        @media screen and (min-width: $medium-screen){
+          display: grid;
+          grid-template-columns: [left] 1fr [right] 2fr;
+          gap: var(--s-1);  
+
+          dt {
+            grid-column: left;
+          }
+
+          dd {
+            border-bottom: 1px solid $pale-sage;
+            grid-column: right;
+          }
+        }
+        
+        dd {
+          padding-bottom: var(--s-1);
+          padding-block-end: var(--s-1);
+
+          ul * {
+            font-family: $sans-serif;
+          }
+        }
+
+        dt {
+          font-weight: 500;
+          margin-bottom: var(--s-1);
+        }
+      }
+
+      //
+      // TODO: Move this into its own partial
       > figure {
         
         @include gridColumnMember(1, -1);
