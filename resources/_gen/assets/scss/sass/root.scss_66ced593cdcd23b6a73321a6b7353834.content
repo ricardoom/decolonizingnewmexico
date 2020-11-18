@@ -221,16 +221,6 @@ blockquote {
         margin-top: var(--s1); } }
   .stack p {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
-  .stack dl {
-    display: grid;
-    grid-template-columns: [left] 1fr [right] 2fr;
-    gap: var(--s-1); }
-    .stack dl dt {
-      grid-column: left; }
-    .stack dl dd {
-      grid-column: right; }
-      .stack dl dd ul * {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 header.hero {
   background-color: #fcf6d9;
@@ -460,15 +450,24 @@ header.hero {
 
 .pager {
   display: flex;
+  font-size: var(--s05);
   justify-content: space-between;
-  padding-inline-start: var(--s4);
-  padding-inline-end: var(--s4);
-  padding-block-start: var(--s1);
-  padding-block-end: var(--s1); }
-  @supports not (padding-block-start: var(--s1)) {
+  padding-inline-start: var(--s1);
+  padding-inline-end: var(--s1);
+  padding-block-start: var(--s0);
+  padding-block-end: var(--s0); }
+  @supports not (padding-block-start: var(--s0)) {
     .pager {
-      padding: var(--s1) var(--s4); } }
-
+      padding: var(--s0) var(--s2); } }
+  @media screen and (min-width: 48em) {
+    .pager {
+      padding-inline-start: var(--s4);
+      padding-inline-end: var(--s4);
+      padding-block-start: var(--s1);
+      padding-block-end: var(--s1); }
+      @supports not (padding-block-start: var(--s1)) {
+        .pager {
+          padding: var(--s1) var(--s4); } } }
 .breadcrumb {
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
@@ -561,6 +560,25 @@ article nav {
       border-color: #f75b26; }
     .interior-page main .interior-page-content .footnotes h4::before {
       border: none; }
+    .interior-page main .interior-page-content dl {
+      display: grid;
+      grid-template-columns: [left] 1fr [right] 2fr;
+      gap: var(--s-1); }
+      @media screen and (max-width: 48em) {
+        .interior-page main .interior-page-content dl {
+          display: block; }
+          .interior-page main .interior-page-content dl dt {
+            margin-bottom: var(--s-1); } }
+      .interior-page main .interior-page-content dl dt {
+        font-weight: 500;
+        grid-column: left; }
+      .interior-page main .interior-page-content dl dd {
+        border-bottom: 1px solid #ced3ab;
+        grid-column: right;
+        padding-bottom: var(--s-1);
+        padding-block-end: var(--s-1); }
+        .interior-page main .interior-page-content dl dd ul * {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
     .interior-page main .interior-page-content > figure {
       grid-column-start: 1;
       grid-column-end: -1;

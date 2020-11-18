@@ -16,14 +16,26 @@
 }
 .pager {
   display: flex;
+  font-size: var(--s05);
   justify-content: space-between;
-  @include noSupport(padding-block-start, var(--s1) ) {
-    padding: var(--s1) var(--s4);  
+  @include noSupport(padding-block-start, var(--s0) ) {
+    padding: var(--s0) var(--s2);  
   }
-  padding-inline-start: var(--s4);
-  padding-inline-end: var(--s4);
-  padding-block-start: var(--s1);
-  padding-block-end: var(--s1);
+
+  padding-inline-start: var(--s1);
+    padding-inline-end: var(--s1);
+    padding-block-start: var(--s0);
+    padding-block-end: var(--s0);
+
+  @media screen and (min-width: $medium-screen){
+    @include noSupport(padding-block-start, var(--s1) ) {
+      padding: var(--s1) var(--s4);  
+    }
+    padding-inline-start: var(--s4);
+    padding-inline-end: var(--s4);
+    padding-block-start: var(--s1);
+    padding-block-end: var(--s1);
+  }
 }
 
 .breadcrumb {  
