@@ -1,0 +1,13 @@
+.coda  {
+  margin-bottom: var(--s1);
+  max-width: 100%;
+
+  section {
+    @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
+    grid-template-rows: max-content;
+    p {
+      grid-column: 2 / -2;
+    }
+
+  }
+}
