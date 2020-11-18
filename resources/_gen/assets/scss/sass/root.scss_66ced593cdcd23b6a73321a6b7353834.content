@@ -612,6 +612,13 @@ li {
     border: none; }
   .footnotes ol li {
     word-break: break-word; }
+  .footnotes ol [role="doc-endnote"] {
+    margin-block-end: var(--s-1);
+    margin-block-start: var(--s-1); }
+    @supports not (margin-block-end: var(--s-1)) {
+      .footnotes ol [role="doc-endnote"] {
+        margin-top: var(--s-1);
+        margin-bottom: var(--s-1); } }
   .footnotes [aria-expanded="true"] .vert {
     display: none; }
   .footnotes [aria-expanded] rect {

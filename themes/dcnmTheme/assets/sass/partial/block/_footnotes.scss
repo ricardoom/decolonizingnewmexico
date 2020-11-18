@@ -20,22 +20,17 @@
     li {
       word-break: break-word;
     }
+    [role="doc-endnote"] {
+      @include noSupport(margin-block-end, var(--s-1)) {
+        margin-top: var(--s-1);
+        margin-bottom: var(--s-1);
+      }
+      margin-block-end: var(--s-1);
+      margin-block-start: var(--s-1);
+
+    }
   }
-  // Vestige of the H4 Collapsible section
-  // TODO: delete this bit
-  // h4 button {
-  //   all: inherit;
-  //   cursor: pointer;
-
-  //   &:focus svg {
-  //     outline: 2px solid;
-  //   }
-
-  //   & svg {
-  //     height: var(--s0);
-  //   }
-  // }
-
+  
   [aria-expanded="true"] .vert {
     display: none;
   }
