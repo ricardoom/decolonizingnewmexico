@@ -8,6 +8,7 @@ A scholarly project. This site uses Hugo for static site generation, content is 
 ### v0.0.7
 
 - Styles for footnotes, subtle hover effect
+- Fixed #27, `<dl>`s on small screens were breaking due to display grid. 
 
 ### v0.0.6
 
