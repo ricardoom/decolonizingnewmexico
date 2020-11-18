@@ -53,13 +53,14 @@ img:not([alt]) {
   --s-2: calc(var(--s-1) / var(--ratio));
   --s-1: calc(var(--s0) / var(--ratio));
   --s0: 1.125rem;
-  --s05: calc(var(--s0) * var(--halfRatio));
   --s1: calc(var(--s0) * var(--ratio));
   --s2: calc(var(--s1) * var(--ratio));
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   --s6: calc(var(--s5) * var(--ratio));
+  --s05: calc(var(--s0) * var(--halfRatio));
+  --s1-5: calc(var(--s1) * var(--halfRatio));
   --small-screen: 25.875em;
   --oneThird: calc(100vh * 0.33);
   --threeQuarter: calc(100vh * 0.75);
@@ -128,6 +129,9 @@ img:not([alt]) {
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+a:focus {
+  outline: 2px solid #f75b26; }
+
 header > span {
   color: #690209;
   font-size: var(--s0);
@@ -160,8 +164,21 @@ h5 + p {
 p {
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
 
+sup {
+  background-color: rgba(194, 224, 250, 0.15);
+  border-radius: 50%;
+  display: inline-grid;
+  grid-template: var(--s1-5)/var(--s1-5);
+  justify-items: center; }
+  sup a {
+    color: #172e73; }
+    sup a:visited {
+      font-style: italic; }
+  sup:hover {
+    background-color: #c2e0fa; }
+
 .footnotes {
-  font-size: var(--s-1); }
+  font-size: var(--s05); }
 
 blockquote {
   padding-inline: var(--s1);
