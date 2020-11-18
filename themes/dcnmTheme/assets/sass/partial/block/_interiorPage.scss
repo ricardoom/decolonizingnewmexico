@@ -70,27 +70,25 @@
       // Interior Pages DL's
 
       dl {
-        @media screen and (max-width: $medium-screen){
-          display: block;
+        display: block;
+
+        @media screen and (min-width: $medium-screen){
+          display: grid;
+          grid-template-columns: [left] 1fr [right] 2fr;
+          gap: var(--s-1);  
 
           dt {
-            margin-bottom: var(--s-1);
+            grid-column: left;
+          }
+
+          dd {
+            border-bottom: 1px solid $pale-sage;
+            grid-column: right;
           }
         }
-
-        display: grid;
-        grid-template-columns: [left] 1fr [right] 2fr;
-        gap: var(--s-1);
-
-        dt {
-          font-weight: 500;
-          grid-column: left;
-
-        }
-
+        
         dd {
-          border-bottom: 1px solid $pale-sage;
-          grid-column: right;
+        
           padding-bottom: var(--s-1);
           padding-block-end: var(--s-1);
 
@@ -99,7 +97,10 @@
           }
         }
 
-        
+        dt {
+          font-weight: 500;
+          margin-bottom: var(--s-1);
+        }
       }
 
       //

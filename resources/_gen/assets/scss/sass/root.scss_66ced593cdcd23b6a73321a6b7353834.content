@@ -561,24 +561,25 @@ article nav {
     .interior-page main .interior-page-content .footnotes h4::before {
       border: none; }
     .interior-page main .interior-page-content dl {
-      display: grid;
-      grid-template-columns: [left] 1fr [right] 2fr;
-      gap: var(--s-1); }
-      @media screen and (max-width: 48em) {
+      display: block; }
+      @media screen and (min-width: 48em) {
         .interior-page main .interior-page-content dl {
-          display: block; }
+          display: grid;
+          grid-template-columns: [left] 1fr [right] 2fr;
+          gap: var(--s-1); }
           .interior-page main .interior-page-content dl dt {
-            margin-bottom: var(--s-1); } }
-      .interior-page main .interior-page-content dl dt {
-        font-weight: 500;
-        grid-column: left; }
+            grid-column: left; }
+          .interior-page main .interior-page-content dl dd {
+            border-bottom: 1px solid #ced3ab;
+            grid-column: right; } }
       .interior-page main .interior-page-content dl dd {
-        border-bottom: 1px solid #ced3ab;
-        grid-column: right;
         padding-bottom: var(--s-1);
         padding-block-end: var(--s-1); }
         .interior-page main .interior-page-content dl dd ul * {
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+      .interior-page main .interior-page-content dl dt {
+        font-weight: 500;
+        margin-bottom: var(--s-1); }
     .interior-page main .interior-page-content > figure {
       grid-column-start: 1;
       grid-column-end: -1;
