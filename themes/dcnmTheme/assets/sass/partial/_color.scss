@@ -20,6 +20,7 @@ $pale-sage: hsl(67, 31%, 75%);
 $navy-blue:  hsl(225, 67%, 27%);
 $taupish: hsl(33, 59%, 86%);
 $sky-blue: hsl(208, 85%, 87%);
+$t-sky-blue: transparentize($sky-blue, 0.85);
 $golden-rod: hsl(36, 96%, 67%);
 $peach: hsl(19, 78%, 86%);
 $lava-orange: hsl(15, 93%, 56%);
