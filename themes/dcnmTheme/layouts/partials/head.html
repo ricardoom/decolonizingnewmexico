@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="{{ $devStyle.Permalink }}">
   {{ else }}
   <link rel="stylesheet" href="{{ $prodStyle.Permalink }}">
+  {{ partial "ga.html" . }}
   {{ end }}
   <title>{{ .Site.Title }}</title>
   {{ hugo.Generator }}
