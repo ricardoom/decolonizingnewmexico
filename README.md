@@ -4,36 +4,43 @@
 A scholarly project. This site uses Hugo for static site generation, content is managed via Forestry.io and hosted on Netlify.com. This site is visible here: https://decolonizingnewmexico.com
 
 ## Releases & Change Log:
+
+### v0.0.7
+
+- Styles for footnotes, subtle hover effect
+- Fixed #27, `<dl>`s on small screens were breaking due to display grid.
+- Completed #9, add GA to the project
+
 ### v0.0.6
 
-- fully clickable cards in the TOC
-- minor styling fixes across the site
-- aria hidden added to graphics
-- added logic to avoid templates adding empty html
+- Fully clickable cards in the TOC
+- Minor styling fixes across the site
+- Aria hidden added to graphics
+- Added logic to avoid templates adding empty html
 
 ### v0.0.5
 
-- short code for adding images to any part of a markdown file, so 
-- responsive images dynamically updated via Cloudinary
-- full bleed images are now possible
-- home page and interior page hero 
-- footnotes fixed due to screw up w/ Forestry not using them
-  - users will be forced into using the raw markdown editor to avoidthe about screw up
-- some simple hover animations added where appropriate
-  - prefers reduced motion media query has also been added
+- Short code for adding images to any part of a markdown file, so 
+- Responsive images dynamically updated via Cloudinary
+- Full bleed images are now possible
+- Home page and interior page hero 
+- Gootnotes fixed due to screw up w/ Forestry not using them
+  - Users will be forced into using the raw markdown editor to avoidthe about screw up
+- Some simple hover animations added where appropriate
+  - Prefers reduced motion media query has also been added
 
 ### v0.0.4
 
-- design updates
-- added footnote heading
-- fixed issues w/ pager
-- better variable naming in templates
+- Design updates
+- Added footnote heading
+- Fixed issues w/ pager
+- Better variable naming in templates
 - TOC, Footer, About section(s) reflects design
 - Other additions to code to reflect design
-  - better spacing between subsections
-  - eyebrows added
-  - interior page grids
-  - hero section
+  - Better spacing between subsections
+  - Eyebrows added
+  - Interior page grids
+  - Hero section
 
 ### v0.0.3
 

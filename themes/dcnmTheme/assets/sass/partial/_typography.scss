@@ -21,6 +21,10 @@ $slab-serif: 'Rockwell', 'Rockwell Extra Bold', 'Courier New', Monoco, Courier, 
   font-family: $sans-serif; 
 }
 
+a:focus {
+  outline: 2px solid $site-focus-ring;
+}
+
 // style the secondary lines in the header
 header {
   > span {
@@ -71,10 +75,43 @@ p {
   // max-width: var(--measure);
 }
 
-.footnotes {
-  font-size: var(--s-1);
+// 
+// Footnotes
+// The actual, inline text link:
+
+sup {
+  // background-color: transparent;
+  // Do some nudging to the superscipt's background
+  // --s1-5: calc(var(--s1) * var(--halfRatio));
+  background-color: $t-sky-blue;
+  border-radius: 50%;
+  display: inline-grid;
+  grid-template: var(--s1-5) / var(--s1-5);
+  justify-items: center;
+  
+  a {
+    color: $navy-blue;
+    
+    &:visited {
+      font-style: italic;
+    }
+  }
+
+  &:hover {
+    background-color: $sky-blue;
+  }
+
+  
 }
 
+// The list at the end of a page
+
+.footnotes {
+  font-size: var(--s05);
+}
+
+//
+// Block quotes
 blockquote {
   padding-inline: var(--s1);
   position: relative;

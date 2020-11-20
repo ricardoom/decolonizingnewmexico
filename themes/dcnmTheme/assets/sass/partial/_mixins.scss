@@ -57,7 +57,7 @@
 @mixin easyPadMarg(
   
   $baseVal: var(--s0),
-  $spacer: margin, // or padding
+  $spacer: 'margin', // or padding
   $b-start: $baseVal,
   $in-start: $baseVal,
   $b-end: $baseVal,

@@ -20,23 +20,6 @@
         font-family: $serif;
       }
 
-      dl {
-        display: grid;
-        grid-template-columns: [left] 1fr [right] 2fr;
-        gap: var(--s-1);
-
-        dt {
-          grid-column: left;
-        }
-
-        dd {
-          grid-column: right;
-
-          ul * {
-            font-family: $sans-serif;
-          }
-        }
-      }
 
       // @include noSupport(padding-inline, 1px) {
       //   //border: 1px dotted pink;
