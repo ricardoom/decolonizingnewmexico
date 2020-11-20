@@ -24,7 +24,7 @@ A scholarly project. This site uses Hugo for static site generation, content is 
 - Responsive images dynamically updated via Cloudinary
 - Full bleed images are now possible
 - Home page and interior page hero 
-- Gootnotes fixed due to screw up w/ Forestry not using them
+- Footnotes fixed due to screw up w/ Forestry not using them
   - Users will be forced into using the raw markdown editor to avoidthe about screw up
 - Some simple hover animations added where appropriate
   - Prefers reduced motion media query has also been added
