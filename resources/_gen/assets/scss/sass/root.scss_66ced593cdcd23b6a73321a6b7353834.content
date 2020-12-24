@@ -690,10 +690,13 @@ li {
     grid-column-end: 3;
     color: #49121c;
     font-weight: normal; }
+    .home-page main .homepage-content > p:first-child {
+      font-size: var(--s1);
+      line-height: calc(var(--s1) * 1.35); }
     @media screen and (min-width: 25.875em) {
       .home-page main .homepage-content > p {
-        font-size: var(--s1);
-        line-height: calc(var(--s1) * 1.35); } }
+        font-size: var(--s0);
+        line-height: calc(var(--s0) * 1.35); } }
     @media screen and (min-width: 80em) {
       .home-page main .homepage-content > p {
         max-width: var(--smallMeasure); } }
