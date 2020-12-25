@@ -59,8 +59,7 @@ fileID="v1603921670"
 imageName="CCC-Stamp"
 alt="An image of a stamp commemorating the Coronado Cuarto Centennial, 1940"
 caption="A stamp commemorating the Coronado Cuarto Centennial from 1940"
-
-> }}
+>}}
 
 As this selective narrative began to unfold through the decades in these events, and though many non-native Anglo men were involved, several Hispano supporters, primarily from “elite” families, began to buy into this narrative, including Commission Secretary Gilberto Espinosa, B.C. Hernandez, Concha Ortiz y Pino and Fabiola Cabeza de Baca. The event however, did, have its progressive detractors including folklorist Arthur Campa, who throughout the 1930s had criticized the fixation on Spanish origins, particularly at the expense of Indian and Mexican influences. Ahead of his time, in 1939, Campa became even more aggressive in his critique of Spanish heritage symbolism. In a series of essays in El Nuevo Mexicano, this young scholar called on his colleagues to recognize several key issues, including the facts of colonization where most of the settlers were men and of the fallacy of purity of blood and the primacy of Mexican culture, including indigenous ancestors\[^7\] In 1940, the same year of the Exposition, education professor George I. Sanchez, would publish his critical study of Taos County, Forgotten People, which documented the impact of Anglo conquest and neglect after 1848. Like Campa, Sanchez would critique the celebration as organized by outsiders, while ignoring not only the knowledge and local customs of the people, but the issues most impacting them as well.\[^8\] The critique also came from the Isleta Pueblo Governor and President of the All Indian Pueblo Council, Pablo Abeyta, who called into question the honoring of a man who had killed Pueblo people and forced them into war.\[^9\]
 
@@ -89,13 +88,14 @@ The Fiestas de Española and Santa Fe form the primary focus of the following as
 
 The annual event known as the Fiesta del Valle de Española celebrates the Spanish colonial founding of New Mexico and the establishment of the “first European Capital” of New Mexico on July 11, 1598. As articulated in the Fiesta Bylaws, the Fiesta is specifically held to, “commemorate and celebrate the initial conquest of New Mexico by Captain Juan de Oñate, and the establishment of his capital at San Gabriel de Los Españoles, at the confluence of the Rio Chama and the Rio Grande del Norte.\[^14\]
 
-<!-- {{< dynamicImage
+<!-- 
+{{< dynamicImage
 imageName=""
 fileID=""
 alt=""
 caption="From the Espanola Fiesta Facebook Page: The first Oñate Fiesta Royal Court in 1933 with costumes borrowed from a Hollywood film studio. Delfin Salazar portrayed the first Don Juan de Oñate y Salazar and Siria Lucero was the first Mrs. Oñate. Española village mayor Dr. Tobias Espinoza is pictured bottom center left. He is credited with the original vision of the Fiesta. But it wouldn't be until 1969, under mayor Richard Lucero that Fiestas would become an annual community tradition."
-
-> }} -->
+>}}
+-->
 
 First presented in 1932, the impetus credited to Delfin Salazar, the event struggled for significance in the first three decades, and according to Robert Naranjo, the event only occurred six times, first in the early 1930s and from 1948 - 1950.\[^15\] In 1969, then mayor Richard Lucero and other businessmen, reignited the Fiesta.
 
