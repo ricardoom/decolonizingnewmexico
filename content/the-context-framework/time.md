@@ -9,7 +9,8 @@ type = "page"
 weight = 1
 
 +++
-Temporally, New Mexico has often been divided by archaeologists into the troublesome binary of “prehistoric” and “historic”; or framed by historians into distinct periods: “Pre-contact, Spanish Colonial, Mexican, Territorial and American.” All fail to capture the complexity of cycles and the transitions that lead up to and follow events, both cataclysmic and ordinary.<!--more-->
+Temporally, New Mexico has often been divided by archaeologists into the troublesome binary of “prehistoric” and “historic”; or framed by historians into distinct periods: “Pre-contact, Spanish Colonial, Mexican, Territorial and American.” All fail to capture the complexity of cycles and the transitions that lead up to and follow events, both cataclysmic and ordinary.
+<!--more-->
 
 Time here, perhaps anywhere, cannot be captured in a straight line, but rather in the symbol of a spiral and the radiating circles of cause and effect. Sometimes words, phrases or entire stories were more revealing than numbers, like emergence or Ha’atastín, the Diné word for a period remembered as “watching out for enemies.” Yet among the countless dates, there are many that hold meaning still: contact and settlement — 1539, the moment of first contact at Halona:wa Idiwana, the Middle Place, present-day Zuñi Pueblo and 1598, date of Spanish settlers arriving in New Mexico; revolutions, including that of 1680, the most successful indigenous uprising in what is now the U.S. and one that would ensure survival and rescript Pueblo-Spanish relations, or that of 1847, defined by a coalition of Pueblo and Hispanos who would rise up against U.S. imperial occupation; belonging, 1912, the date when New Mexico shifted from a Territory to a State, following over six decades of denial of full citizenship to its residents because of race and religion. In the century since this last transition, a chain of events would transpire — the rise of the military industry, the building of a bomb, development of internment camps and continual struggles over civil rights.
 
@@ -76,8 +77,7 @@ imageName="SurvivingColumbusStill"
 fileID="v1603922622"
 alt="A still image from the film Surviving Columbus"
 caption="Still shot from “Surviving Columbus,” December 19, 1990"
-
-> }}
+>}}
 
 #### Current Commemorative Events - Fiestas
 
