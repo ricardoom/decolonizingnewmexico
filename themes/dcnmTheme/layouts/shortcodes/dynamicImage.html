@@ -11,18 +11,21 @@
 
 {{/* 
   The this is the shortcode call in markdown looks:
-  {{< image
+  {{< dynamicImage
   fileID="v1601912469"
-  imagename="MainPageOSH"
+  imageName="MainPageOSH"
   alt="an image from a website"
   caption="The caption"
+  inline=true
   >}}
 
 variables values provided by the user below:
 */}}
+{{- $caption := .Get "caption" -}}
 {{- $alt := .Get "alt" -}}
 {{- $id := .Get "fileID" -}}
 {{- $imageName := .Get "imageName" -}}
+{{- $inline := .Get "inline" -}}
 {{/* file extension array */}}
 {{- $fileExtension := ( slice ".jpg" ".webp" ".png" ) -}}
 {{/*  constant  values provided by cdn:  */}}
@@ -32,6 +35,20 @@ variables values provided by the user below:
 {{- $cdnFolder := $cloudinary.folder -}}
 {{- $fullURL := delimit ( slice $cdnURL $autoTransform $id $cdnFolder $imageName ( index $fileExtension 0 ) ) "" -}}
 
+{{ if $inline }}
+
+<span class="inline">
+  <img
+       src="{{ $placeHolder2 }}"
+       data-src="{{ $fullURL }}"
+       alt="{{ $alt }}"
+       class="{{ $cloudinary.class }}"
+       loading="lazy" />
+       {{ with .Get "caption" }}
+      <span class="caption">{{ . }}</span>
+      {{ end }}
+</span>
+{{ else }}
 <figure>
   <img
        src="{{ $placeHolder2 }}"
@@ -40,6 +57,7 @@ variables values provided by the user below:
        class="{{ $cloudinary.class }}"
        loading="lazy" />
   {{ with .Get "caption" }}
-  <figcaption>{{ . }}</figcaption>
+  <figcaption class="caption">{{ . }}</figcaption>
   {{ end }}
 </figure>
+{{ end }}

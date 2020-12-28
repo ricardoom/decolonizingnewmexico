@@ -5,7 +5,6 @@
 .interior-page {
   
   main {
-    display: block;
 
     .interior-page-content  {
       @include setBasicGrid();
@@ -99,12 +98,16 @@
         }
       }
 
+
       //
-      // TODO: Move this into its own partial
+      
+      // This rule handles the full bleed
+      //
       > figure {
         
         @include gridColumnMember(1, -1);
-        max-width: 100%;
+        width: 100%;
+        max-width: $wide-screen;
 
         img {
           background: no-repeat url('../../images/placeHolding.svg');
@@ -113,11 +116,15 @@
           width: 100%;
         }
 
-        figcaption {
-        font-size: var(--s-1);
-        font-style: italic;
-        @include easyPadMarg; 
-        }
+        
+      }
+
+      // This set of rules handles images that should be more inline
+
+      .inline {
+        @include easyPadMarg();
+        float: right;
+        width: 50%;
       }
     }
   }
