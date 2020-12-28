@@ -55,7 +55,6 @@
 }
 
 @mixin easyPadMarg(
-  
   $baseVal: var(--s0),
   $spacer: 'margin', // or padding
   $b-start: $baseVal,
@@ -63,7 +62,7 @@
   $b-end: $baseVal,
   $in-end: $baseVal,
 ){
-  #{$spacer}: $baseVal;
+  #{$spacer}: $b-start $in-end $b-end $in-start;
   @supports (margin-block-start: $baseVal) {
     #{$spacer}-block-end: $b-end;
     #{$spacer}-block-start: $b-start;
