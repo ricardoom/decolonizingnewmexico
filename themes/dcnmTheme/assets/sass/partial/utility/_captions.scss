@@ -1,0 +1,12 @@
+// image caption utility 
+.caption {
+  @include easyPadMarg($in-start: 0, $in-end: 0);
+  font-size: var(--s-1);
+  font-style: italic;
+  max-width: unset;
+  }
+//
+
+figcaption.caption {
+  @include easyPadMarg;
+}

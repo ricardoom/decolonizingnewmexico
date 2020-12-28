@@ -3,7 +3,13 @@
 # Decolonizing New Mexico
 A scholarly project. This site uses Hugo for static site generation, content is managed via Forestry.io and hosted on Netlify.com. This site is visible here: https://decolonizingnewmexico.com
 
-## Releases & Change Log:
+## Releases & Change Log
+
+### v0.0.8
+
+- Updated shortcode for image placement to allow for inline images to be added to a given page issue: #48
+- More content updates. Should start using Forestry UI instead of writing markdown
+- Clean up / reorganization of `sass` files.
 
 ### v0.0.7
 
