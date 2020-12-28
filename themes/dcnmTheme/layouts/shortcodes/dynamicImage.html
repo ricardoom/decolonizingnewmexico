@@ -22,20 +22,20 @@ variables values provided by the user below:
 
 
 {{ define "caption" }}
+    {{- $caption := .Get "caption" -}}
     {{ $inline := .Get "inline" }}
     {{ if $inline }}
-    <span class="caption">{{ . }}</span>
+    <span class="caption">{{ $caption }}</span>
     {{ else }}
-    <figcaption class="caption">{{ . }}</figcaption> 
+    <figcaption class="caption">{{ $caption }}</figcaption> 
     {{ end }}
 {{ end }}
 
 {{ define "img" }}
 {{ $placeHolder2 := $.Site.Params.placeHolderSVG }}
-
 {{ $cloudinary := $.Site.Params.cloudinary }}
 
-{{- $caption := .Get "caption" -}}
+
 
 {{- $alt := .Get "alt" -}}
 
