@@ -12,7 +12,6 @@
 @import 'partial/utility/captions';
 @import 'partial/block/hero';
 @import 'partial/block/hpTOC';
-@import 'partial/exception/tocCard.scss';
 @import 'partial/block/hpAbout';
 @import 'partial/block/breadcrumb';
 @import 'partial/block/nav';
@@ -22,6 +21,7 @@
 @import 'partial/block/footnotes';
 @import 'partial/block/footer';
 @import 'partial/block/meta';
+@import 'partial/exception/tocCard.scss';
 @import 'partial/exception/hpContent';
 @import 'partial/exception/skipNav';
 @import 'partial/exception/dropCaps';
@@ -29,6 +29,7 @@
 @import 'partial/exception/poems';
 @import 'partial/exception/smallHeadings';
 @import 'partial/exception/inlineList';
+@import 'partial/exception/nestedPara';
 
 
 * {
