@@ -630,7 +630,7 @@ article nav {
         padding-block-start: var(--s0);
         padding-inline-start: var(--s0);
         padding-inline-end: var(--s0); } }
-  .interior-page main .interior-page-content .fullWidth {
+  .interior-page main .interior-page-content .fullwidth {
     margin: var(--s0) var(--s0) var(--s0) var(--s0);
     padding: var(--s0) var(--s0) var(--s0) var(--s0);
     align-items: center;
@@ -644,13 +644,13 @@ article nav {
     max-width: var(--measure);
     text-align: center; }
     @supports (margin-block-start: var(--s0)) {
-      .interior-page main .interior-page-content .fullWidth {
+      .interior-page main .interior-page-content .fullwidth {
         margin-block-end: var(--s0);
         margin-block-start: var(--s0);
         margin-inline-start: var(--s0);
         margin-inline-end: var(--s0); } }
     @supports (margin-block-start: var(--s0)) {
-      .interior-page main .interior-page-content .fullWidth {
+      .interior-page main .interior-page-content .fullwidth {
         padding-block-end: var(--s0);
         padding-block-start: var(--s0);
         padding-inline-start: var(--s0);

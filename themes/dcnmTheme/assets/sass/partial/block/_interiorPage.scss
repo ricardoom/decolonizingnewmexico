@@ -128,7 +128,7 @@
         width: 50%;
       }
 
-      .fullWidth {
+      .fullwidth {
         @include easyPadMarg();
         @include easyPadMarg($spacer: padding);
         align-items: center;

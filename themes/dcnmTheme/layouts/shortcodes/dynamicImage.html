@@ -2,7 +2,13 @@
   dynamic image w/ cloudninary js 
   */}}
 
+
+
 {{ $inline := .Get "inline" }}
+{{ $display := .Get "display" }}
+
+{{/*  {{ $render := ( or $inline $fullwidth ) }}  */}}
+{{ $classToRender := $display }}
 {{/* all subsequent $cloudinary variables can be found in the config 
     and should look something like: $cloudinary.base_url. With the prefix of $cloudinary... sarsipius.
   */}}
@@ -66,8 +72,8 @@ variables values provided by the user below:
   {{ template "caption" . }}
 {{ end }}
 
-{{ if $inline }}
-  <span class="inline">
+{{ if and ( $inline ) ( ne $display "" ) }}
+  <span class="{{ $classToRender }}">
     {{ template "img" . }}
   </span>
 {{ else }}
