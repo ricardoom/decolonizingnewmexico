@@ -1,8 +1,10 @@
 // image caption utility 
 .caption {
-  @include easyPadMarg($in-start: 0, $in-end: 0);
+  @include easyPadMarg($b-end: 0, $in-start: 0, $in-end: 0);
+  display: inline-block;
   font-size: var(--s-1);
   font-style: italic;
+  line-height: var(--s0);
   max-width: unset;
   }
 //

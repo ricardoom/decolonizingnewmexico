@@ -223,13 +223,15 @@ blockquote {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
 
 .caption {
-  margin: var(--s0) 0 var(--s0) 0;
+  margin: var(--s0) 0 0 0;
+  display: inline-block;
   font-size: var(--s-1);
   font-style: italic;
+  line-height: var(--s0);
   max-width: unset; }
   @supports (margin-block-start: var(--s0)) {
     .caption {
-      margin-block-end: var(--s0);
+      margin-block-end: 0;
       margin-block-start: var(--s0);
       margin-inline-start: 0;
       margin-inline-end: 0; } }
@@ -373,70 +375,6 @@ header.hero {
       .toc-poem aside {
         grid-column-start: 2;
         grid-column-end: 4; } }
-.card {
-  transform: scale(1);
-  transition: 150ms transform ease-in;
-  padding-left: 2.5vw;
-  padding-inline-end: 2.5vw;
-  position: relative; }
-  .card:focus {
-    outline: 2px solid #690209; }
-  .card:focus-within {
-    background: #fff;
-    border-right: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
-    box-shadow: 0 0 10px 10px rgba(105, 2, 9, 0.05);
-    transform: scale(1.125);
-    transition: 100ms transform ease-out;
-    z-index: 100; }
-  @media screen and (min-width: 48em) {
-    .card:hover {
-      background: #fff;
-      border-right: 1px solid #f2f2f2;
-      border-bottom: 1px solid #f2f2f2;
-      box-shadow: 0 0 10px 10px rgba(105, 2, 9, 0.05);
-      transform: scale(1.125);
-      transition: 100ms transform ease-out;
-      z-index: 100; } }
-  .card-body {
-    position: relative; }
-    .card-body .summary > h3 {
-      display: none; }
-    .card-body .summary > p {
-      position: relative; }
-    .card-body:last-child {
-      margin-bottom: var(--s1); }
-  .card h3 {
-    font-size: var(--s1);
-    line-height: var(--s1);
-    padding: var(--s0) 0 0;
-    padding-block-start: var(--s0); }
-  .card a::after {
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0; }
-
-@keyframes hover-in {
-  from {
-    background-color: #fcf6d9; }
-  to {
-    transform: scale(1.2);
-    background: #fff;
-    box-shadow: 2px 2px 10px #ddd;
-    border-right: 1px solid #f2f2f2; } }
-
-@keyframes hover-out {
-  0% {
-    background: #fff;
-    box-shadow: 2px 2px 10px #ddd;
-    border-right: 1px solid #f2f2f2; }
-  100% {
-    transform: scale(1);
-    background-color: #fcf6d9; } }
-
 .about {
   display: grid;
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
@@ -611,6 +549,9 @@ article nav {
       width: 100%; }
   .interior-page main .interior-page-content .inline {
     margin: var(--s0) var(--s0) var(--s0) var(--s0);
+    padding: var(--s0) var(--s0) var(--s0) var(--s0);
+    background-color: #f2f2f2;
+    box-shadow: 0 0 var(--s0) var(--s-2) rgba(2, 2, 2, 0.2);
     float: right;
     width: 50%; }
     @supports (margin-block-start: var(--s0)) {
@@ -619,6 +560,37 @@ article nav {
         margin-block-start: var(--s0);
         margin-inline-start: var(--s0);
         margin-inline-end: var(--s0); } }
+    @supports (margin-block-start: var(--s0)) {
+      .interior-page main .interior-page-content .inline {
+        padding-block-end: var(--s0);
+        padding-block-start: var(--s0);
+        padding-inline-start: var(--s0);
+        padding-inline-end: var(--s0); } }
+  .interior-page main .interior-page-content .fullwidth {
+    margin: var(--s0) var(--s0) var(--s0) var(--s0);
+    padding: var(--s0) var(--s0) var(--s0) var(--s0);
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 var(--s0) var(--s-2) rgba(2, 2, 2, 0.2);
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--measure);
+    text-align: center; }
+    @supports (margin-block-start: var(--s0)) {
+      .interior-page main .interior-page-content .fullwidth {
+        margin-block-end: var(--s0);
+        margin-block-start: var(--s0);
+        margin-inline-start: var(--s0);
+        margin-inline-end: var(--s0); } }
+    @supports (margin-block-start: var(--s0)) {
+      .interior-page main .interior-page-content .fullwidth {
+        padding-block-end: var(--s0);
+        padding-block-start: var(--s0);
+        padding-inline-start: var(--s0);
+        padding-inline-end: var(--s0); } }
 
 .footnotes,
 ol,
@@ -697,6 +669,70 @@ li {
     grid-template-rows: max-content; }
     .coda section p {
       grid-column: 2 / -2; }
+
+.card {
+  transform: scale(1);
+  transition: 150ms transform ease-in;
+  padding-left: 2.5vw;
+  padding-inline-end: 2.5vw;
+  position: relative; }
+  .card:focus {
+    outline: 2px solid #690209; }
+  .card:focus-within {
+    background: #fff;
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0 0 10px 10px rgba(105, 2, 9, 0.05);
+    transform: scale(1.125);
+    transition: 100ms transform ease-out;
+    z-index: 100; }
+  @media screen and (min-width: 48em) {
+    .card:hover {
+      background: #fff;
+      border-right: 1px solid #f2f2f2;
+      border-bottom: 1px solid #f2f2f2;
+      box-shadow: 0 0 10px 10px rgba(105, 2, 9, 0.05);
+      transform: scale(1.125);
+      transition: 100ms transform ease-out;
+      z-index: 100; } }
+  .card-body {
+    position: relative; }
+    .card-body .summary > h3 {
+      display: none; }
+    .card-body .summary > p {
+      position: relative; }
+    .card-body:last-child {
+      margin-bottom: var(--s1); }
+  .card h3 {
+    font-size: var(--s1);
+    line-height: var(--s1);
+    padding: var(--s0) 0 0;
+    padding-block-start: var(--s0); }
+  .card a::after {
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+@keyframes hover-in {
+  from {
+    background-color: #fcf6d9; }
+  to {
+    transform: scale(1.2);
+    background: #fff;
+    box-shadow: 2px 2px 10px #ddd;
+    border-right: 1px solid #f2f2f2; } }
+
+@keyframes hover-out {
+  0% {
+    background: #fff;
+    box-shadow: 2px 2px 10px #ddd;
+    border-right: 1px solid #f2f2f2; }
+  100% {
+    transform: scale(1);
+    background-color: #fcf6d9; } }
 
 .home-page main {
   display: grid;
@@ -835,6 +871,17 @@ h4, h5, h6 {
 
 .inline-list li {
   display: inline; }
+
+li > p {
+  margin: var(--s0) 0 0 0; }
+  @supports (margin-block-start: var(--s0)) {
+    li > p {
+      margin-block-end: 0;
+      margin-block-start: var(--s0);
+      margin-inline-start: 0;
+      margin-inline-end: 0; } }
+  li > p:first-child {
+    margin: 0; }
 
 * {
   max-width: var(--measure); }
