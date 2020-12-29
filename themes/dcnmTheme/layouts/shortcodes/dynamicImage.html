@@ -24,18 +24,21 @@ variables values provided by the user below:
 {{ define "caption" }}
     {{- $caption := .Get "caption" -}}
     {{ $inline := .Get "inline" }}
-    {{ if $inline }}
-    <span class="caption">{{ $caption }}</span>
+    {{ with $inline }}
+      {{ with and ( $caption ) ( ne $caption "" )}}
+        <span class="caption">{{ $caption }}</span>
+      {{ end }}
     {{ else }}
-    <figcaption class="caption">{{ $caption }}</figcaption> 
+      {{ with and ( $caption ) ( ne $caption "" )}}
+        <figcaption class="caption">{{ $caption }}</figcaption> 
+      {{ end }}
     {{ end }}
 {{ end }}
 
 {{ define "img" }}
 {{ $placeHolder2 := $.Site.Params.placeHolderSVG }}
+
 {{ $cloudinary := $.Site.Params.cloudinary }}
-
-
 
 {{- $alt := .Get "alt" -}}
 
@@ -67,7 +70,7 @@ variables values provided by the user below:
   <span class="inline">
     {{ template "img" . }}
   </span>
-  {{ else }}
+{{ else }}
   <figure>
   {{ template "img" . }}  
   </figure>
