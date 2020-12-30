@@ -15,9 +15,12 @@
   background-color: lighten($color: $navy-blue, $amount: 0.75);
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
   font-family: $serif;
   font-size: var(--s0);
-  @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
+  // @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
+  // @include setBasicGrid(var(--s3) repeat(2, 1fr) var(--s3));
+  @include gridColumn($col-2: repeat(2, 1fr));
   overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
@@ -30,7 +33,16 @@
     z-index: 2;
   }
   ul {
-    grid-row: 2 /3;
+    
+  }
+
+  .credits {
+    grid-area: 2 / 2 / -2 / -2;
+  }
+
+  .sponsors {
+    grid-area: 2 / 3 / -2 / -3;
+    place-self: center;
   }
 
   svg {
