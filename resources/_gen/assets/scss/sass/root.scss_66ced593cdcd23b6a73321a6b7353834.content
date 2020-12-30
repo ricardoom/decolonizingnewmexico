@@ -620,7 +620,7 @@ li {
 
 #bg-img.lazy {
   background-image: none;
-  backgound-color: #fcf6d9; }
+  background-color: #fcf6d9; }
 
 #bg-img {
   background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/c_scale,q_10,w_960,f_auto/v1600360322/dcnm/aspens.webp"); }
