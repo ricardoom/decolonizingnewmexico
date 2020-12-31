@@ -626,13 +626,13 @@ li {
   background-image: url("https://res.cloudinary.com/toupeeproofbullets/image/upload/c_scale,q_10,w_960,f_auto/v1600360322/dcnm/aspens.webp"); }
 
 .site-footer {
+  grid-template-columns: minmax(var(--s-1), 1fr) repeat(2, 4fr) minmax(1vw, 1fr);
   background-color: #172f76;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s-1);
-  grid-template-columns: minmax(var(--s-1), 1fr) repeat(2, 4fr) minmax(1vw, 1fr);
   overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
@@ -648,14 +648,14 @@ li {
     grid-area: 2 / 2 / -2 / 3; }
   .site-footer .sponsors {
     grid-area: 2 / 3 / -2 / -3;
+    text-align: center;
     width: 75%; }
     .site-footer .sponsors img {
       width: 100%; }
   .site-footer svg {
     fill: #fff;
-    filter: opacity(0.8);
     grid-area: 1 / 1 / -1 / -1;
-    transform: scaleY(2) scaleX(1.76) translateY(calc(var(--s0) * 1.25));
+    transform: scale(2) translateY(calc(var(--s0) * 1.25));
     transform-origin: bottom;
     width: 100%;
     z-index: 1; }
