@@ -4,7 +4,7 @@
 
 #bg-img.lazy {
   background-image: none;
-  backgound-color: $base-yellow;
+  background-color: $base-yellow;
 }
 
 #bg-img {
@@ -12,36 +12,46 @@
 }
 
 .site-footer {
+  @include gridColumn($col-2: repeat(2, 4fr)); // magic-ish numbers
   background-color: lighten($color: $navy-blue, $amount: 0.75);
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
   font-family: $serif;
-  font-size: var(--s0);
-  @include setBasicGrid(var(--s3) minmax(var(--s0), var(--s1)) var(--s3));
+  font-size: var(--s-1);
   overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
   padding-block-end: var(--s3);
   padding-block-start: var(--s3);
+  place-items: center;
 
   > * {
     @include gridColumnMember;
     color: $navy-blue;
     z-index: 2;
   }
-  ul {
-    grid-row: 2 /3;
+  
+  .credits {
+    grid-area: 2 / 2 / -2 / 3;
+  }
+
+  .sponsors {
+    grid-area: 2 / 3 / -2 / -3;
+    text-align: center;
+    width: 75%;
+
+    img {
+      width: 100%;
+    }
   }
 
   svg {
     fill: $base-white;
-    filter: opacity(0.8);
-    grid-row: 2 / 3;
-    margin: calc(var(--s2) * -1) 0 0 calc(var(--s2) * -1);
-    margin-block-start: calc(var(--s2) * -1);
-    margin-inline-start: calc(var(--s2) * -1);
-    transform: translateY(calc(var(--s0) * 1.25)) scale(1.76);
-    transform-origin: left;
+    grid-area: 1 / 1 / -1 / -1;
+    transform: scale(2) translateY(calc(var(--s0) * 1.25)) ;
+    transform-origin: bottom;
+    width: 100%;
     z-index: 1;
   }
 }
