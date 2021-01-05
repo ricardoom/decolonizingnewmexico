@@ -9,8 +9,8 @@
     float: left;
     font-family: $serif;
     font-size: var(--s3);
-    font-weight: 500;
-    margin: 0.1em 0.1em 0 0;
+    font-weight: 900;
+    margin: 0.1em 0.05em 0 0;
 
     @media screen and (max-width: $small-screen) {
       line-height: 0.35em;
