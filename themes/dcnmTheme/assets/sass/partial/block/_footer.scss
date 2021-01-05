@@ -12,7 +12,7 @@
 }
 
 .site-footer {
-  @include gridColumn($col-2: repeat(2, 4fr)); // magic-ish numbers
+  @include gridColumn(); // magic-ish numbers
   background-color: lighten($color: $navy-blue, $amount: 0.75);
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,32 +26,38 @@
   padding-block-start: var(--s3);
   place-items: center;
 
+
   > * {
     @include gridColumnMember;
     color: $navy-blue;
     z-index: 2;
   }
   
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: 1 / 1 / -1 / -1;
+    justify-content: center;
+    text-align: center;
+  }
+
   .credits {
-    grid-area: 2 / 2 / -2 / 3;
+    @include easyPadMarg($spacer: padding);
   }
 
   .sponsors {
-    grid-area: 2 / 3 / -2 / -3;
-    text-align: center;
-    width: 75%;
-
+    @include easyPadMarg($spacer: padding);
+    
     img {
-      width: 100%;
+      width: 65%;
     }
   }
-
+  
   svg {
     fill: $base-white;
     grid-area: 1 / 1 / -1 / -1;
-    transform: scale(2) translateY(calc(var(--s0) * 1.25)) ;
+    transform: scale(2) translateY(calc(var(--s1) * 1.25)) ;
     transform-origin: bottom;
-    width: 100%;
     z-index: 1;
   }
 }

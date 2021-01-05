@@ -21,7 +21,7 @@ header {
     background-size: cover;
     height: clamp(var(--oneQuarter), var(--threeFifths), var(--threeQuarter));
     justify-items: start;
-    // overflow: hidden;
+    overflow: hidden;
     
     @media (max-width: $small-screen) {
       // height: var(--threeFifths);
