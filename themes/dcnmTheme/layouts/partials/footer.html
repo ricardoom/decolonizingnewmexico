@@ -1,24 +1,22 @@
 {{ $images := .Params.images }}
 {{ $params := .Site.Params }}
-<script>
 
-
-</script>
 <footer id="bg-img" class="[ cover ][ site-footer ][ lazy ]">
-  <ul class="[ credits ]">
-    <li>&copy; {{ now.Year }} {{ $params.author }}</li>
-    <li>Written and Produced by: {{ $params.author }}</li>
-    <li>Design and Development by: {{ $params.development }} | {{ $params.design }}</li>
-  </ul>
-  <ul class="[ sponsors ]">
-    <li>Made possible with generous help from:</li>
-    <li>
-      <a href="https://nmhum.org/" rel="noopener noreferrer" target="_blank">
-        <img src="/images/NMHClogoRGB.jpg" alt="logotype and for the New Mexico Humanities Council">
-      </a>
-  </li>
-  </ul>
-
-  {{ partial "footerBG.svg" . }}
+  <div>
+    <ul class="[ credits ]">
+      <li>&copy; {{ now.Year }} {{ $params.author }}</li>
+      <li>Written and Produced by: {{ $params.author }}</li>
+      <li>Design and Development by: {{ $params.development }} | {{ $params.design }}</li>
+    </ul>
+    <ul class="[ sponsors ]">
+      <li>Made possible with generous help from:</li>
+      <li>
+        <a href="https://nmhum.org/" rel="noopener noreferrer" target="_blank">
+          <img src="/images/NMHClogoRGB.jpg" alt="logotype and for the New Mexico Humanities Council">
+        </a>
+    </li>
+    </ul>
   
+  </div>
+  {{ partial "footerBG.svg" . }}
 </footer>

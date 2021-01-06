@@ -3,16 +3,23 @@
   <ul class="[ inline-list ]">
     {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
   </ul>
+  <div class="toc-link">
+    {{ template "toc" }}
+  </div>
 </nav>
+{{ define "toc"}}
+  <a href="#table-of-contents"></a>
+{{ end }}
+
 {{ define "breadcrumbnav" }}
 {{ if and (eq .p1.Parent "Kind" "page") }}
-{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+  {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
 {{ else if not .p1.IsHome }}
-{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+  {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
 {{ end }}
 {{ if eq .p1 .p2 }}
-<li aria-hidden="true">{{ .p1.Title }}</li>
-{{ else }}
-<li><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
-{{ end }}
+  <li aria-hidden="true">{{ .p1.Title }}</li>
+  {{ else }}
+  <li><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
+  {{ end }}
 {{ end }}
