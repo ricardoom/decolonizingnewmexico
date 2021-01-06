@@ -481,7 +481,6 @@ article nav {
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
   grid-auto-flow: row;
   grid-template-rows: auto;
-  grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 80vw) minmax(1vw, 1fr);
   max-width: none; }
   .interior-page main .interior-page-content > * {
     grid-column-start: 2;
@@ -840,7 +839,7 @@ li {
       .has-dropcap .dropcap:before {
         margin-block-start: 0.2em; } }
   .has-dropcap .dropcap:after {
-    margin-bottom: -0.15em; }
+    margin-bottom: -0.25em; }
     @media screen and (max-width: 25.875em) {
       .has-dropcap .dropcap:after {
         margin: 0; } }

@@ -1,6 +1,8 @@
+
 {{- $content := . -}}
 {{ $stringToFind := `^<p>\S+`}}
 {{- with findRE $stringToFind $content -}}
+
 {{- $firstWord := index . 0 | strings.TrimPrefix "<p>" -}}
 {{- $firstCharacter := substr $firstWord 0 1 -}}
 {{- $remainingCharacters := substr $firstWord 1 -}}

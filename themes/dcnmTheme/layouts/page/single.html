@@ -1,14 +1,22 @@
 {{ define "main" }}
 {{ $local := .Site.IsServer }}
+{{ $color := .Params.color }}
+
 {{ $testLayout := .Page.Params.testlayout }}
+
 {{ $stringToFind := `<section class="footnotes" role="doc-endnotes">` }}
+
 {{ $footNoteHeading := partial "footNoteSectionHead.html" . }}
+
 {{ $sectionToReplace := `((?:.*)<section class=\"footnotes\" role=\"doc-endnotes\">(?:.*)(?:.*))` }}
+
 {{ $footNoteSectionAppend := ( printf "${1}%s${2}" $footNoteHeading )}}
+
 {{ $mainContent := partial "first-paragraph.html" .Content }}
 
+{{ if $local }}
 {{ printf "<!-- this is a single template: page/single.html -->" | safeHTML }}
-
+{{ end }}
 {{ partial "breadcrumb.html" . }}
 {{ if $testLayout }}
 <main id="main-content" class="[ {{ .Params.Type }} ]">
@@ -30,7 +38,7 @@
 <section class="[ stack ][ toc-poem ]">
   {{- partial "toc.html" . -}}
 </section>
-{{/*  {{ if $local }}
+{{ if $local }}
 {{ partial "dev.html" . }}
-{{ end }} */}}
+{{ end }}
 {{ end }}
