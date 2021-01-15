@@ -76,7 +76,13 @@ We acknowledge the breath of those that came before us and all of the living ani
 
 We acknowledge that this place is also part of a much larger sovereign landscape for indigenous peoples: the chronicle of its headwaters are woven into the origin stories of Nambe Pueblo; the clays surrounding the site were a resource for both Tewa people and the Jicarilla Apache; and it is a place where stories are braided into and from the past by the Diné (Navajo), Cochiti, Taos and Hopi Pueblos and more still not yet told.
 
-We acknowledge Spanish settlement occurred over four centuries ago and was as much about the possession of place as it was about the displacement of people. From that beginning, La Villa Real de la Santa Fe was made up of colonists from Spain, Mexico, France, Greece, and Portugal. There were also Africans and many “Indios Méxicanos” whose displacement may have begun in captivity, but lived as free men and women. There were also thousands of enslaved indigenous people who came to be labeled Genízaro, Criado, and Famulo, and whose identities were listed in ecclesiastical records as Aa, Apache, Comanche, Diné, Kiowa, Pawnee, Paiute and Ute. Hundreds more were simply listed in the records as “Mexican Indians.” Complex castas stemmed from these origins, including people labeled as Colores Quebrados, Colores Revueltos, Colores Sospechos, Coyotes, and Mestizos.
+We acknowledge Spanish settlement occurred over four centuries ago and was as much about the possession of place as it was about the displacement of people. From that beginning, La Villa Real de la Santa Fe was made up of colonists from Spain, Mexico, France, Greece, and Portugal. There were also Africans and many “Indios Méxicanos” whose displacement may have begun in captivity, but lived as free men and women. {{< dynamicImage
+  fileID="v1610142387"
+  imageName="coloringBookSFAICrop"
+  alt="an line drawing from the coloring book, showing two hands in cupped formation surrounded by geometric patterning"
+  caption="Page from the coloring book developed by SFAI 2020 Story Maps Fellows Diego Medina and Christian Gering."
+  inline=true  
+  display=inline >}} There were also thousands of enslaved indigenous people who came to be labeled Genízaro, Criado, and Famulo, and whose identities were listed in ecclesiastical records as Aa, Apache, Comanche, Diné, Kiowa, Pawnee, Paiute and Ute. Hundreds more were simply listed in the records as “Mexican Indians.” Complex castas stemmed from these origins, including people labeled as Colores Quebrados, Colores Revueltos, Colores Sospechos, Coyotes, and Mestizos.
 
 Two and half centuries after these first Euro-mestizo settlements were formed, the push and pull of migration from every direction has brought new people to this place, including individuals and families from nearly every single state in the nation and from several other countries. The convergence of cultures and the profound and beautiful complexity of identity that is layered across four centuries of presence here, is reflected in the intricately woven genealogies of Santa Fe's residents.
 
@@ -87,6 +93,14 @@ For those that continue to live in this place, generational or recently arrived,
 Toward understanding the physical manifestations of colonialism, a more thorough analysis of the social-spatial legacy of colonialism remains to be written of New Mexico and the Southwest broadly, including the layout of villages, the presence of churches and the geography of slavery. There are some specific places, however, that represent and reflect contested sites of the colonial history and even violence; yet, even these spaces could be reimagined as sites of consciousness. A few examples follow.
 
 #### The Santa Fe Plaza
+
+{{< dynamicImage
+  fileID="v1610142386"
+  imageName="santaFePanoCrop"
+  alt="a panoramic photograph of the Santa Fe plaza, circa 1915"
+  caption="Haines Photo Co. , Copyright Claimant. Panorama of Santa Fe, N. Mex. New Mexico Santa Fe United States, ca. 1915. Photograph. https://www.loc.gov/item/2007662622/"
+  inline=false  
+  >}}
 
 Spanish colonial plazas throughout the Southwest functioned as part and parcel of empire, including a focus on settlement and governance. As noted by historian Ralph Emerson Twitchell, the plaza was at the “center of the city . . .,” and it served as the witness to countless events. He goes on to accentuate some of these events:
 
@@ -118,17 +132,40 @@ There are many monuments throughout New Mexico which draw upon a variety of symb
 
 Activists have focused primarily on Spanish colonial monuments, while those that reflect U.S. imperialism receive less attention. The “Kearney Monument,” which has escaped notice for many decades, is an example. It is yards away from what used to be the towering plaza obelisk and just steps from the Palace of the Governors.
 
+{{< dynamicImage
+  fileID="v1610142386"
+  imageName="kearnyMonumentCrop"
+  alt="an image of the Kearny Monument at the Santa Fe Plaza"
+  caption="Kearney Monument, Santa Fe Plaza, 1901, Front side of the monument reads: “We come as friends to make you a part of the republic of the United States.” “In our government all men are equal.” “Every man has a right to serve God according to his heart.” Erected by Sunshine Chapter, D.A.R. 1901. Photo by Juan R. Rios, 2016."
+  inline=true  
+  display=fullwidth
+  >}}
+
 On August 14, 1846, over 2,500 U.S. troops filed into Santa Fe, occupying the territory in what was even then a nationally contested war with Mexico. United States Army General Stephen W. Kearny led the troops, declaring himself military governor and claiming New Mexico as part of the United States. The Daughter’s of the American Revolution erected this modest, seemingly indiscreet monument 55 years later.
 
 ##### The Founding of Santa Fe, Peralta Monument
-
+{{< dynamicImage
+  fileID="v1610142386"
+  imageName="peraltaMonumentCropS"
+  alt="an image of the statue of Peralta"
+  caption="The Founding of Santa Fe/ Peralta Monument located on Paseo de Peralta and Grant Avenue. Photo by Juan R. Rios, 2016."
+  inline=true  
+  display=inline >}}
 Artist Dave McGarity created the “Founding of Santa Fe,” a bronze monument depicting  Pedro de Peralta. The third colonial governor of New Mexico, de Peralta served from 1610-1614. Though largely overshadowed by Diego de Vargas Zapata Luján Ponce de León, he nonetheless is considered the founder of Santa Fe.
 
 ##### Statue of Oñate
 
 The decade of the 1990s witnessed statewide celebrations of the conquest of New Mexico by Juan de Oñate, considered by some as the founding father of New Mexico, including the commissioning of two statues in his honor, one in Alcalde and the other in Albuquerque. In 2006, the city of El Paso in Texas also installed its own massive equestrian sculpture featuring Oñate at the El Paso International Airport.
 
-Senator Emilio Naranjo, then one of the most powerful politicians in New Mexico, secured $120,000 in 1991 to erect an equestrian statue of Oñate in Alcalde. Sculptor Reynaldo "Sonny" Rivera created the piece, which from its inception, was controversial. As a nod to a sentence passed in 1599 by Oñate against men from the Pueblo of Acoma over the age of twenty-five, in1997, someone sawed off the the right foot of the statue, including spur and stirrup. Thirteen years later, in the second week of June 2020, in response to the the global reckoning over colonialist monuments, a petition began to circulate calling for the removal of the statue, which followed with a planned protest led by Red Nation and other local Indigenous and Hispano groups. Anticipating potential violence, the Rio Arriba County officials removed it. That day, a young dancer, Than Tsídéh, rose up and drawing from the depths of both resilience and a deep remembering, danced on the remaining pedestal, reminding us New Mexicans that we are not museum pieces, that our history is more dynamic than a statue.  
+Senator Emilio Naranjo, then one of the most powerful politicians in New Mexico, secured $120,000 in 1991 to erect an equestrian statue of Oñate in Alcalde. Sculptor Reynaldo "Sonny" Rivera created the piece, which from its inception, was controversial. As a nod to a sentence passed in 1599 by Oñate against men from the Pueblo of Acoma over the age of twenty-five, in1997, someone sawed off the the right foot of the statue, including spur and stirrup. Thirteen years later, in the second week of June 2020, in response to the the global reckoning over colonialist monuments, a petition began to circulate calling for the removal of the statue, which followed with a planned protest led by Red Nation and other local Indigenous and Hispano groups. Anticipating potential violence, the Rio Arriba County officials removed it. That day, a young dancer, Than Tsídéh, rose up and drawing from the depths of both resilience and a deep remembering, danced on the remaining pedestal, reminding us New Mexicans that we are not museum pieces, that our history is more dynamic than a statue. 
+
+{{< dynamicImage
+  fileID="v1610142386"
+  imageName="SunBird_12Crop"
+  alt="a photo of Than Tsideh, of Ohkay Owingeh Pueblo dancing on the empty platform of a statue of Juan de Oñate"
+  caption="Than Tsídéh, 19, of the Ohkay Owingeh Pueblo dances on the empty platform where a statue of Juan de Oñate was removed, June 15, 2020. Photograph: Gabriela Campos/The Guardian"
+  inline=true  
+  display=fullwidth >}}
 
 Another statue of Oñate has also existed in Albuquerque for decades. The City of Albuquerque commissioned the sculpture of Oñate in the late 1990s. La Jornada depicted the conquistador leading an expedition of Spanish settlers and was installed on the grounds of the Albuquerque Museum. Though there is a detailed history of the piece, fast forward to June 2020, when the city removed it following both a peaceful protest and the violent shooting of a protestor. In the wake of the statue’s removal, the Director of Cultural Services, Dr. Shelle Sanchez, developed and launched a community engagement process that engaged people from across Albuquerque. The purpose of the engagement was to determine what to do about the statue, to either return it to its pedestal or to reimagine the space that it once occupied, differently. More about that project can be found at the this link.
 
