@@ -164,7 +164,7 @@ Senator Emilio Naranjo, then one of the most powerful politicians in New Mexico,
   imageName="SunBird_12Crop"
   alt="a photo of Than Tsideh, of Ohkay Owingeh Pueblo dancing on the empty platform of a statue of Juan de Oñate"
   caption="Than Tsídéh, 19, of the Ohkay Owingeh Pueblo dances on the empty platform where a statue of Juan de Oñate was removed, June 15, 2020. Photograph: Gabriela Campos/The Guardian"
-  inline=true  
+  inline=false  
   display=fullwidth >}}
 
 Another statue of Oñate has also existed in Albuquerque for decades. The City of Albuquerque commissioned the sculpture of Oñate in the late 1990s. La Jornada depicted the conquistador leading an expedition of Spanish settlers and was installed on the grounds of the Albuquerque Museum. Though there is a detailed history of the piece, fast forward to June 2020, when the city removed it following both a peaceful protest and the violent shooting of a protestor. In the wake of the statue’s removal, the Director of Cultural Services, Dr. Shelle Sanchez, developed and launched a community engagement process that engaged people from across Albuquerque. The purpose of the engagement was to determine what to do about the statue, to either return it to its pedestal or to reimagine the space that it once occupied, differently. More about that project can be found at the this link.
@@ -182,8 +182,6 @@ In the current reckoning with truths about the past — some of which are not so
 In this move to raise consciousness and remove these monuments, places like New Mexico seemed to have escaped the attention that is given to locations holding Confederate symbols. It is, after all, a place whose stories have long been marginalized in the national narrative and consciousness, a conquered territory that has never fit into the narrow racial paradigm that has rendered anyone not Black or White invisible. Yet, it is set in a place where Indigenous people have lived continually for millennia and was further settled by Spanish-Mestizos over 422 years ago, older than any settlements that would serve as the “recognized” foundations of the United States.
 
 Given my work as a scholar of Native American slavery and its legacy, there is one monument in particular that has interested me. It is profoundly layered in history and memory, and as such, holds tremendous potential to be reimagined.
-
-
 
 The Soldier’s Monument or Obelisk honors the lives of men who died in two intersecting conflicts — the Civil War and the Indian Wars. It is sited at the historic center of Santa Fe, New Mexico, where it was erected less than two decades following the U.S./Mexican War. Founded under the Spanish empire in the early seventeenth century, Santa Fe sits on an ancient site once home to the Northern and Southern Tewa people thousands of years before. The living memory and stories told by the people of Taytsúgeh Oweengeh (Tesuque Pueblo) hold profound meaning to this day, revealing that the ancestral site, Oga Po’geh is Taytsúgeh and Taytsúgeh is Oga Po’geh still.
 
@@ -220,10 +218,32 @@ The wars waged against the Diné and others were therefore bound to the institut
 
 Recovering history requires whenever possible to recognize the people, even if only by their enslaved names, which appear in both sacramental and census records. Among the thousands impacted by slavery, those held specifically by these legislators included individuals from villages throughout New Mexico, and include 18 Diné people, three Paiutes, three Utes and 17 others whose tribal affiliations are not recorded. The list of these men, women and children, as grouped into distinct households, follows:
 
+- Ana María, Cornelia, José, Vicente, María de la Cruz, María Refugio, María Guadalupe, María Ramona and Soledad Valdez (home of Juan Benito and Maria Estefana Valdez)
+- María Antonia, Juan Manuel, María Rita, and María Archuleta (home of Diego and Jesusita Archuleta)
+- María Candelaria, María Dolores, José Antonio, María Guadalupe, José Domingo Apolonio, and Juan Bautista Sandoval (home of Anastacio and Guadalupe Sandoval)
+- María de Jesús Baca (home of Severo and Maria Ignacia Baca)
+- Gertrudes and Librada Salazar (home of Juan and Carlotta Salazar y Jimenez)
+- Juliana Gallegos (home of Pedro and Josefa Gallegos)
+- Juan de Jesús Romero (home of Juan Policarpio and Maria Rosalia Romero)
+- Guadalupe, María Trinidad, Juan Miguel, María Antonia Jaramillo, José Antonio and Natividad Jaramillo (home of Jose Geronimo and Maria Aniceta Gallegos)
+- Ana María Jaramillo (home of Francisco and Nepomocena Jaramillo)
+- Gregorio and Guadalupe Esquivel (home of Teodoro and Maria Luz Esquibel)
+- Juana, Dolores and Juliana Gallegos (home of Jose Manuel Gallegos and Candelaria Montoya)
+- Rosalia Salazar (home of Aniceto and Maria Ignacia Salazar)
+- Lucio Aragon (home of Leandro and Eutemia Sanch
+- José Antonio Chávez (home of Vicente and María Chavez)
+- María Juana Otero (home of Gregorio N. Otero)
+
 In total, nearly half of the 36 legislators held up to 41 enslaved people, though Juan Benito Valdez, would be remembered in stories shared during the New Deal Writers Project as enslaving himself as many as 30 individuals. In ensuing unsuccessful efforts to end Native American slavery in the region, Valdez and colleague Juan Policarpio Romero, would be charged with the crime of slavery, along with hundreds of others in Taos, Santa Fe and Rio Arriba Counties. In the end, the grand jury that heard the cases failed to indict, not surprising since its composition were citizens intricately bound to the institution of slavery.
 
 ### Reimagining the Memorial
-The Obelisk has been the subject of debate and protest for decades. At the heart of the controversy is the racist word “savage,” which a protester chiseled out in 1974; others inserted different words through the years: “courageous,” “resilient,” and “our brothers.” Yet time has revealed, even in the near five decade absence of the word, the harm lingers.
+
+The Obelisk has been the subject of debate and protest for decades. At the heart of the controversy is the racist word “savage,” which a protester chiseled out in 1974; others inserted different words through the years: “courageous,” “resilient,” and “our brothers.” Yet time has revealed, even in the near five decade absence of the word, the harm lingers. {{< dynamicImage
+  fileID="v1610142386"
+  imageName="ObeliskCrop"
+  alt="an image of red hand prints on the Obelisk"
+  caption="Red Hands on the Obelisk, Santa Fe, New Mexico, June, 2020. Photo courtesy of Juan. R. Rios."
+  inline=true display=fullwidth >}}
 
 While most people continue to conflate the issue and identities into simple binaries, doing so reifies the falacy and is deeply harmful. Untangling these issues is not easy, especially in a region where the culturally and genetically interconnected Native American and Indo-Hispano communities have all inherited the legacy of colonialism and both feel a sense of loss. Ironically, for the contemporary Indo-Hispanos of Santa Fe, who have been disproportionately impacted by loss of land, language and traditions, and who have experienced the dramatic effects of gentrification in a place their ancestors have lived for centuries, the removal of this and other monuments feels like one more thing being “taken away.”
 
