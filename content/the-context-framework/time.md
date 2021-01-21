@@ -3,7 +3,6 @@ color = "taupish"
 date = 2020-09-18T19:19:54Z
 images = true
 slug = ""
-testlayout = true
 title = "Time"
 type = "page"
 weight = 1
@@ -144,7 +143,7 @@ The annual Fiesta de Santa Fe is a series of events, including an historical ena
 
 Yet, for others, the Entrada is an unconscionable celebration of patriarchy and colonialism, at the heart of an invented tradition. In spite of the sense that resistance to the event is new, tensions have actually existed for decades and have continued to escalate.
 
-To understand the significance of the controversies associated with contemporary Fiesta, it is necessary, however, to look more closely at both the historical accounts it represents and the arc of its own creation, through its evolution, to the present moment. The origin can be traced to an idea first conceived when twelve men, friends and admirers of the recently deceased Governor Diego de Vargas, gathered in Santa Fe on September 16, 1712. With recollections, more nostalgic than historical, they noted their purpose was “recalling how this Villa [of Santa Fe] had been conquered on the fourteenth day of September of the past year of sixteen hundred and ninety-two by the General Don Diego de Vargas.”[^26] 
+To understand the significance of the controversies associated with contemporary Fiesta, it is necessary, however, to look more closely at both the historical accounts it represents and the arc of its own creation, through its evolution, to the present moment. The origin can be traced to an idea first conceived when twelve men, friends and admirers of the recently deceased Governor Diego de Vargas, gathered in Santa Fe on September 16, 1712. With recollections, more nostalgic than historical, they noted their purpose was “recalling how this Villa [of Santa Fe] had been conquered on the fourteenth day of September of the past year of sixteen hundred and ninety-two by the General Don Diego de Vargas.”[^26]
 
 Before analyzing 1712, it is important to contextualize first, the moment of 1692. The goal of the de Vargas expedition, as with other previous expeditions and others that would follow, was to re-conquer the land and lay claim to it for a distant king, an ideology based on relations of rule defined by power and politics. The articulation of the Act of Possession at every Pueblo, the thousands of souls absolved and the 969 children baptized — according to de Vargas’ report to his superiors — all must be considered within the larger frame of colonialism.[^27] History is power and in 1692, the court chronicler, Carlos Siguenza y Gongora, charged with recounting the campaign in detail, celebrated the reconquest taking place “without wasting a single ounce of power or unsheathing a sword . . . .”[^28]
 
