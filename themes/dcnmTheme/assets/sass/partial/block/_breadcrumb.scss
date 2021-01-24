@@ -7,7 +7,7 @@
   background-color: $sky-blue;
   clip-path: polygon(0px 5%, 99.07% -1px, 100% 91%, 0.83% 97.37%);
   color: $navy-blue;
-  font-size: var(--s0);
+  font-size: var(--s-1);
   max-width: none;
   
  a {
@@ -45,11 +45,6 @@
   ul {
     @include gridColumnMember;
     place-self: center stretch;
-
-    li:last-child {
-      // evident Kludge
-      // display: none;
-    }
 
     li:before {
       content: ' > ';

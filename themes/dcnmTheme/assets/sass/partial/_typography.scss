@@ -4,8 +4,7 @@
 /// type family
 ///
 
-$sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol';
+$sans-serif: Helvetica, Arial, BlinkMacSystemFont, 'Segoe UI', Roboto,  sans-serif,  -apple-system, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $serif:  Georgia, 'Liberation Serif', Times, Cambria, Utopia, 'Hoefler Text', 'Nimbus Roman No9 L Regular', 'Times New Roman',
   serif;
@@ -132,4 +131,9 @@ blockquote {
     width: var(--s1);
     z-index: -100;
   }
+}
+
+p + blockquote {
+  margin-top: var(--s1);
+  margin-block-start: var(--s0);
 }

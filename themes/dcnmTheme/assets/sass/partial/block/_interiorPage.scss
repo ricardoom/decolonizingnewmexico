@@ -8,15 +8,16 @@
 
     .interior-page-content  {
       @include setBasicGrid();
-      // @include gridColumn(
-      //   minmax(var(--s-1), 1fr),
-      //   minmax(auto, 80vw),
-      //   minmax(1vw, 1fr),
-      //   );
       max-width: none;
 
       > * {
         @include gridColumnMember;
+      }
+      
+      ol {
+        margin: var(--s0) 0;
+        margin-block-end: var(--s0);
+        margin-block-start: var(--s0);
       }
 
       ul > li {
