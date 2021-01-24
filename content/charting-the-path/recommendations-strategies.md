@@ -6,6 +6,7 @@ slug = 'charting-a-path-forward-recommendations-and-strategies'
 type = 'page'
 weight = 3
 color = 'peach'
+images = true
 +++
 As the Western Apache say of their homelands in Arizona, “wisdom sits in places,” and New Mexico is certainly no exception. But one cannot grow wise by simply looking at the surface of the buildings or in neighborhoods. I believe that wisdom can only be achieved by seeing past the layers, which in essence makes it deeply and profoundly contested and connected. <!--more-->It means thinking about what connects one site to the next as part of a complex and intricate network. Sometimes this is visible and can be mapped, but it can also be found in the flow of the acequia, the profundity of language, music and traditions that linger long after a note has been played, the dust rising ever so slightly from an ancient dance. All of these hold the memory of places, and its people and spirit. But these spaces are also sacred because here is where people have lived for generations, burying their dead, nurturing their young, as well as their minds and their hearts.
 
@@ -42,6 +43,15 @@ In the spirit of imagining reconciliation, I propose the following ideas for con
   While communities across the nation have begun to respond with various strategies, including removal of monuments and other memorials, others have called for providing more context and counterpoint to them. What is done will depend upon the will of the community and perhaps the specific monument or memorial. As a first step, it will be important to identify and map existing monuments in New Mexico. This work was in part begun by the City of Santa Fe, but remains incomplete.[^1] Heidi Brandow, an artist who participated as a fellow at the Santa Fe Art Institute (SFAI) as part of the SFAI Story Maps initiative, partnered with the City of Santa Fe's Parks Department, working on social engagement project that examines memorials throughout the city. Her project was to create an inventory of current monuments as well as to categorize them based on demographic information, such as gender and ethnicity. With new maps reflecting the data collected, Brandow’s goal is to include “a proposal that re-envisions the addition of memorials that impart more inclusive and historically accurate representations of the unique and complicated history of Santa Fe.” This project remains salient and important to navigate through the process to address the challenges of monuments.
 
 Following the protests that took place in Albuquerque to remove the statue of Juan de Oñate, under the leadership of Dr. Shelle Sanchez, a community engagement process launched that engaged people from across the city. While these processes are never easy, the workhas provided a framework that may be replicable across communities. More about that project can be found at the following link.
+
+{{< dynamicImage
+  fileID="v1611527945"
+  imageName="RHHPPoster"
+  alt="Graphic from the project summary, “Race, History & Healing Project - Juan de Oñate Statue Community Dialogue,” 2020."
+  caption="Graphic from the project summary, “Race, History & Healing Project - Juan de Oñate Statue Community Dialogue,” 2020."
+  inline=true  
+  display=fullwidth
+  >}}
 
 Beyond the inventorying of monuments across the state, one strategy would be to follow the work in New Orleans, and begin a process for removal of those monuments that are deemed challenging in a modern era. Making these determinations, may be the work of a commission.
 
