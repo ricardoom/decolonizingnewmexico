@@ -197,6 +197,10 @@ blockquote {
     width: var(--s1);
     z-index: -100; }
 
+p + blockquote {
+  margin-top: var(--s1);
+  margin-block-start: var(--s0); }
+
 .center {
   box-sizing: content-box;
   margin-left: auto;
@@ -485,6 +489,10 @@ article nav {
   .interior-page main .interior-page-content > * {
     grid-column-start: 2;
     grid-column-end: 3; }
+  .interior-page main .interior-page-content ol {
+    margin: var(--s0) 0;
+    margin-block-end: var(--s0);
+    margin-block-start: var(--s0); }
   .interior-page main .interior-page-content ul > li {
     font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
     margin: var(--s0) 0;
@@ -907,6 +915,9 @@ li > p {
       margin-inline-end: 0; } }
   li > p:first-child {
     margin: 0; }
+  li > p:last-child {
+    margin-bottom: var(--s0);
+    margin-block-end: var(--s0); }
 
 * {
   max-width: var(--measure); }

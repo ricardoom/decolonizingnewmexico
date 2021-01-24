@@ -132,3 +132,8 @@ blockquote {
     z-index: -100;
   }
 }
+
+p + blockquote {
+  margin-top: var(--s1);
+  margin-block-start: var(--s0);
+}
