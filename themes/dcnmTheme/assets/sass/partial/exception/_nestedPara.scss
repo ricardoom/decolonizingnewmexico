@@ -7,4 +7,9 @@ li > p {
   &:first-child {
     margin: 0;
   }
+
+  &:last-child {
+    margin-bottom: var(--s0);
+    margin-block-end: var(--s0);
+  }
 }
