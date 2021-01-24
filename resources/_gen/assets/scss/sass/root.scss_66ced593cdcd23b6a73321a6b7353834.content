@@ -826,7 +826,6 @@ li {
       top: 0; }
 
 .has-dropcap {
-  font-size: var(--s1-5);
   margin-top: var(--s-1);
   margin-block-start: var(--s-1); }
   .has-dropcap .dropcap {
