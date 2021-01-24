@@ -68,7 +68,7 @@
 
       dl {
         display: block;
-
+        font-size: clamp(0.875rem, var(--s0), 1.1rem);
         @media screen and (min-width: $medium-screen){
           display: grid;
           grid-template-columns: [left] 1fr [right] 2fr;
@@ -79,7 +79,7 @@
           }
 
           dd {
-            border-bottom: 1px solid $pale-sage;
+            // border-bottom: 1px solid $pale-sage;
             grid-column: right;
           }
         }
@@ -94,6 +94,8 @@
         }
 
         dt {
+          @include easyPadMarg($spacer: padding, $baseVal: var(--s-3));
+          background-color: $base-gray;
           font-weight: 500;
           margin-bottom: var(--s-1);
         }
