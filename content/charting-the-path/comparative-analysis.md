@@ -9,15 +9,14 @@ color = "pale-sage"
 +++
 ### Overview
 
-In an effort to contextualize this initiative, comparative research and analysis on methods and frameworks of various Truth and Reconciliation Commission (TRC) projects provided insightful information.<!--more-->TRC models have been critical in resolving deeply rooted conflicts around the world, promoting the belief that confronting and reckoning with the past is necessary for successful transitions from conflict, resentment and tension to peace and connectedness.
+In an effort to contextualize this initiative, comparative research and analysis on methods and frameworks of various Truth and Reconciliation Commission (TRC) projects provided insightful information. TRC models have been critical in resolving deeply rooted conflicts around the world, promoting the belief that confronting and reckoning with the past is necessary for successful transitions from conflict, resentment and tension to peace and connectedness.<!--more-->
 
 While the first truth commission was formed in Uganda in 1974, others were initiated throughout Latin America in the 1970s and 1980s, taking the form of fact-finding, non-judicial committees or councils with the express purpose of uncovering the abuses committed by dictatorships and military juntas, and concomitantly, establishing a more inclusive and representative narrative of history for the country. Since the 1990s, even more countries in Latin America and Africa used this process, as have Australia, Canada and a few communities in the United States, followed with reconciliation after periods of inter-group conflict and political transition. 
 
-The processes for these models have varied, though they typically involve both public and private activities designed to uncover and deepen the understanding of tragedies and/or human rights violations. TRC’s have continued to evolve, and particularly serve as an inspiration in the United States to redress historic legacies and to address the ongoing violence perpetrated against African Americans.
+The processes for these models have varied, though they typically involve both public and private activities designed to uncover and deepen the understanding of tragedies and/or human rights violations. TRC’s have continued to evolve, and particularly serve as an inspiration in the United States to redress historic legacies and to address the ongoing violence perpetrated against African Americans. 
+The Carnegie Council’s 2015 essay, “Examining the Potential for an American Truth and Reconciliation Commission” completed an analysis of several models for these commissions. The W.K. Kellogg Foundation also completed a TRC Comparison Booklet featuring 17 distinct initiatives, including those with national, federal-based focus like President Clinton’s Initiative on Race and the Japanese Internment initiative which resulted in an apology, reparations, and the preservation of 10 detention sites as national landmarks; private efforts such as that taken on by Brown University to investigate and prepare a report about the University’s historical relationship to slavery and the transatlantic slave trade, or that of the Episcopal Church to recognize its own participation and complicity in slavery.
 
-The Carnegie Council’s 2015 essay, “Examining the Potential for an American Truth and Reconciliation Commission” completed an analysis of several models for these commissions. The W.K. Kellogg Foundation also completed a TRC Comparison Booklet featuring 17 distinct initiatives, including those with national, federal-based focus like President Clinton’s Initiative on Race and the Japanese Internment initiative which resulted in an apology, reparations, and the preservation of 10 detention sites as national landmarks; private efforts such as that taken on by Brown University to investigate and prepare a report about the University’s historical relationship to slavery and the transatlantic slave trade, or that of the Episcopal Church to recognize its own participation and complicity in slavery. 
-
-### Comparative Analysis - Truth and Reconciliation Commissions 
+### Comparative Analysis - Truth and Reconciliation Commissions
 
 As noted previously, the Carnegie Council and the WKKF have produced thorough reports on many of TRC’s over the past 30 years. I have also summarized below some primary findings into  my own framework/outline.
 
@@ -27,7 +26,7 @@ Authorization:
 : Under the guidance of Archbishop Desmond Tutu, the TRC was established by the authority of the government of South African. The governing act was:  [Promotion of National Unity and Reconciliation Act, No 34 of 1995](www.justice.gov.za/legislation/acts/1995-034.pdf). It operated, however, as an independent commission.
 
 Where:
-: Cape Town, South Africa 
+: Cape Town, South Africa
 
 Precipitating Events:
 : In the aftermath of apartheid, the focus was on transforming race relations in a nationwide context and emphasizing restorative justice
@@ -37,12 +36,12 @@ When:
 
 Structure:
 : The commission implemented its mandate through three committees: the Amnesty Committee, Reparation and Rehabilitation (R&R) Committee and Human Rights Violations (HRV) Committee that ensured that both rehabilitation and reparations would be provided on an individual basis. It did not offer widespread amnesty to perpetrators, but instead enticed them to come forward and admit their guilt in exchange for amnesty case-by-case. 
-: The TRC also created a [Register of Reconciliation](www.justice.gov.za/trc/ror/index.htm), which provided the public an opportunity to express their regret at failing to prevent human rights violations and to demonstrate their commitment to reconciliation. Live broadcasts of testimony of South Africans before the commissioners in a court-like setup were shown internationally. 
+: The TRC also created a [Register of Reconciliation](www.justice.gov.za/trc/ror/index.htm), which provided the public an opportunity to express their regret at failing to prevent human rights violations and to demonstrate their commitment to reconciliation. Live broadcasts of testimony of South Africans before the commissioners in a court-like setup were shown internationally.
 
 Challenges:
 : The TRC favored an individualized approach that placed victims and perpetrators at the center of the process, rather than the apartheid system itself and its structures of governance. This framing may limit the applicability of the South African model to other settings since the focus upon 'victims' and 'perpetrators' individualized the reconciliation process  and allowed the system of apartheid, and those who worked within it, to remain in the shadows, hidden from scrutiny. Any TRC model that bypasses the role of institutions and structures of governance is heavily flawed regarding addressing structural racism.
 
-#### Truth and Reconciliation Commission of Canada 
+#### Truth and Reconciliation Commission of Canada
 
 (the first TRC to in a society not undergoing fundamental government transition)
 
@@ -59,9 +58,9 @@ When:
 : 2009 - 2015
 
 Structure:
-: Built upon the “Statement of Reconciliation” dated January 7, 1998 and the principles developed by the Working Group on Truth and Reconciliation and of the Exploratory Dialogues (1998-1999), the Truth and Reconciliation Commission of Canada was established in 2009. It spent six years traveling the country to hear the stories of more than 6,000 witnesses, and held seven national events that lasted four days each. 
-: Commission Members: There were 3 commission members, appointmented from a pool of candidates nominated by former students, Aboriginal organizations, churches and government. The Assembly of First Nations (AFN) was consulted in making the final decisions and consideration was given to at least one of the three members being an Aboriginal person.
-: There was also a ten-member Indian Residential Schools Survivor Committee that served as an advisory body to the TRC, as well as a Inuit Subcommission.
+: Built upon the “Statement of Reconciliation” dated January 7, 1998 and the principles developed by the Working Group on Truth and Reconciliation and of the Exploratory Dialogues (1998-1999), the Truth and Reconciliation Commission of Canada was established in 2009. It spent six years traveling the country to hear the stories of more than 6,000 witnesses, and held seven national events that lasted four days each.
+: Commission Members: There were 3 commission members, appointed from a pool of candidates nominated by former students, Aboriginal organizations, churches and government. The Assembly of First Nations (AFN) was consulted in making the final decisions and consideration was given to at least one of the three members being an Aboriginal person.
+: There was also a ten-member Indian Residential Schools Survivor Committee that served as an advisory body to the TRC, as well as an Inuit Subcommission.
 
 Outcomes:
 : A final report released during a live webcast; creation of National Center for Truth and Reconciliation; calls to Action with 94 recommendations in education, health, child welfare, criminal justice
@@ -78,7 +77,7 @@ Authorization:
 : Private
 
 Where:
-: Greensboro, North Carolina 
+: Greensboro, North Carolina
 
 Precipitating Event:
 : On November 3, 1979, in Greensboro, local Ku Klux Klan and Nazi Party members ambushed a coalition of racial and economic justice protesters, killing and/or wounding more than 20 people.
@@ -124,11 +123,11 @@ Testimony:
 : After months of preparation, the Commission took testimony and met with individuals, families and child welfare workers. To build relationships, they planned extended stays in each tribal community. In these communities, groups formed to provide support for those affected by the truth-telling process.
 
 Outcomes:
-: The TRC engaged both Native and non-Native populations, being both very responsive to the needs of tribal communities and navigating non-Native networks within one of the more sparsely populated and geographically isolated states of the east coast. Specifically, the outcomes: 
-: 
-  - Report by Commission (2015) recommending a range of actions for addressing the inequities it found. (There has not been sufficient time to assess the full impact)
+: The TRC engaged both Native and non-Native populations, being both very responsive to the needs of tribal communities and navigating non-Native networks within one of the more sparsely populated and geographically isolated states of the east coast. Specifically, the outcomes:
 
-  - In addition to recommendations specific to the operation of the Maine child welfare system, the Commission advocated that the people of Maine:
+    - Report by Commission (2015) recommending a range of actions for addressing the inequities it found. (There has not been sufficient time to assess the full impact)
+
+    - In addition to recommendations specific to the operation of the Maine child welfare system, the Commission advocated that the people of Maine:
 
     - “Respect tribal sovereignty and commit to resolve and uphold federal, state and tribal jurisdictions and protocols at both state and local levels, and 
 

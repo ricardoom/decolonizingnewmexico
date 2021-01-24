@@ -518,7 +518,8 @@ article nav {
   .interior-page main .interior-page-content .footnotes h4::before {
     border: none; }
   .interior-page main .interior-page-content dl {
-    display: block; }
+    display: block;
+    font-size: clamp(0.875rem, var(--s0), 1.1rem); }
     @media screen and (min-width: 48em) {
       .interior-page main .interior-page-content dl {
         display: grid;
@@ -527,7 +528,6 @@ article nav {
         .interior-page main .interior-page-content dl dt {
           grid-column: left; }
         .interior-page main .interior-page-content dl dd {
-          border-bottom: 1px solid #ced3ab;
           grid-column: right; } }
     .interior-page main .interior-page-content dl dd {
       padding-bottom: var(--s-1);
@@ -535,8 +535,16 @@ article nav {
       .interior-page main .interior-page-content dl dd ul * {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
     .interior-page main .interior-page-content dl dt {
+      padding: var(--s-3) var(--s-3) var(--s-3) var(--s-3);
+      background-color: #f2f2f2;
       font-weight: 500;
       margin-bottom: var(--s-1); }
+      @supports (margin-block-start: var(--s-3)) {
+        .interior-page main .interior-page-content dl dt {
+          padding-block-end: var(--s-3);
+          padding-block-start: var(--s-3);
+          padding-inline-start: var(--s-3);
+          padding-inline-end: var(--s-3); } }
   .interior-page main .interior-page-content > figure {
     grid-column-start: 1;
     grid-column-end: -1;
