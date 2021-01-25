@@ -19,13 +19,13 @@
     font-family: $serif;
   }
 
-  > p {
+  // > p {
 
-    @media screen and (min-width: $medium-screen) {
-    column-count: 2;
-    column-gap: var(--s0);
-    column-width: auto;
-    max-width: none;
-    }
-  }
+  //   @media screen and (min-width: $medium-screen) {
+  //   column-count: 2;
+  //   column-gap: var(--s0);
+  //   column-width: auto;
+  //   max-width: none;
+  //   }
+  // }
 }
