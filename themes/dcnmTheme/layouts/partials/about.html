@@ -1,3 +1,5 @@
 <section class="[ stack ][ about ]">
-  {{ with $.Site.GetPage "page" "about" }}{{ .Content }}{{ end }}
+  {{ with $.Site.GetPage "page" "about" }}
+  {{ partial "first-paragraph.html" .Content }}
+  {{ end }}
 </section>
