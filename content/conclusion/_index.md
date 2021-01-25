@@ -16,7 +16,7 @@ This work will require both imagination and hope, the one thing that remained at
 {{< dynamicImage
   fileID="v1601997425"
   imageName="aspens_c"
-  alt="an image of stand of aspen tress as seen from the forest floor"
+  alt="an image of a stand of aspen tress as seen from the forest floor"
   >}}
 
 There is no way to fully measure the depths of the cultural wounding that came from colonialism and imperialism. While statistics in part measure the impact of the devastation, particularly of poverty, homelessness, suicide, hunger and a devastating dependence on drugs and alcohol, none fully capture the harm to the spirit of a community as whole, especially when calculated across multiple generations. As I think about the idea of a cultural wounding, at the metaphorical level, the ravages of a fire that impacts a forest comes to mind; and how over time, there is also healing from the conflagration that occurs organically.
