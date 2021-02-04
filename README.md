@@ -5,6 +5,11 @@ A scholarly project. This site uses Hugo for static site generation, content is 
 
 ## Releases & Change Log
 
+### v0.0.9
+
+- Sponsor logos added to the footer space
+- CSS clean up / removal of commented out
+
 ### v0.0.8
 
 - Updated shortcode for image placement to allow for inline images to be added to a given page issue: #48
