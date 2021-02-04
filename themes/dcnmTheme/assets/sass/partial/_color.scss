@@ -13,7 +13,7 @@ $t-yellow: transparentize($base-yellow, 0.2);
 // type colors for the header and main TOC
 $sienna: hsl(356, 96%, 21%);
 $rose: hsl(356, 72%, 55%);
-
+$t-rose: transparentize($rose, 0.75);
 // type color for the home page intro / preface text / toc / page block colors
 $umber: hsl(350, 60%, 18%);
 $pale-sage: hsl(67, 31%, 75%);
@@ -29,7 +29,7 @@ $caliche: hsl(18, 82%, 36%);
 // Accessibility
 //
 
-$site-focus-ring: $lava-orange;
+$site-focus-ring: $rose;
 
 
 
