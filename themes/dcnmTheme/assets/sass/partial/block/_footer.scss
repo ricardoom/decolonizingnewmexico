@@ -16,9 +16,10 @@
   background-color: lighten($color: $navy-blue, $amount: 0.75);
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(2px 5.31%, 100% 0px, 99.74% 96.13%, 0.26% 100.83%);
   display: grid;
   font-family: $serif;
-  font-size: var(--s-1);
+  font-size: var(--s05);
   overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
@@ -34,31 +35,26 @@
   }
   
   div {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: $base-white;
     grid-area: 1 / 1 / -1 / -1;
     justify-content: center;
-    text-align: center;
   }
 
   .credits {
+    @include easyPadMarg($baseVal: auto, $spacer: margin, $in-end: 0, $in-start: 0);
     @include easyPadMarg($spacer: padding);
-  }
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
 
-  .sponsors {
-    @include easyPadMarg($spacer: padding);
-    
-    img {
-      width: 65%;
+    li {
+      flex: 1 1 auto; 
     }
-  }
-  
-  svg {
-    fill: $base-white;
-    grid-area: 1 / 1 / -1 / -1;
-    transform: scale(2) translateY(calc(var(--s1) * 1.25)) ;
-    transform-origin: bottom;
-    z-index: 1;
+
+    .sponsor {
+    flex: 1 1 45%;
+    align-self: center;
+    }
   }
 }
 
