@@ -130,7 +130,7 @@ img:not([alt]) {
   font-family: Helvetica, Arial, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, -apple-system, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 a:focus {
-  outline: 2px solid #f75b26; }
+  outline: 2px solid #df3a45; }
 
 header > span {
   color: #690209;
@@ -162,7 +162,7 @@ h5 + p {
   margin-top: .53em; }
 
 p {
-  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
+  font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
 
 sup {
   background-color: rgba(194, 224, 250, 0.15);
@@ -189,7 +189,7 @@ blockquote {
   blockquote::before {
     content: '“';
     filter: opacity(0.1);
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+    font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
     font-size: var(--s5);
     left: calc(var(--s-2) * -1);
     position: absolute;
@@ -224,7 +224,7 @@ p + blockquote {
         margin-bottom: var(--s1);
         margin-top: var(--s1); } }
   .stack p {
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
+    font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
 
 .caption {
   margin: var(--s0) 0 0 0;
@@ -281,14 +281,14 @@ header.hero {
     max-width: none;
     width: 100vw; }
     header.hero .hero-svg .a {
-      fill: rgba(247, 91, 38, 0.5); }
+      fill: rgba(223, 58, 69, 0.25); }
     header.hero .hero-svg .b {
       fill: rgba(167, 62, 17, 0.4); }
     header.hero .hero-svg .c {
       fill: rgba(247, 209, 191, 0.6); }
   header.hero .title-bg {
     align-self: center;
-    fill: #fcbb5a;
+    fill: #ced3ab;
     filter: opacity(0.65);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -313,7 +313,7 @@ header.hero {
       line-height: 1.1; }
     header.hero .hero-lockup > span {
       --scaler: calc(var(--ratio) * 2vw);
-      color: #690209;
+      color: #020202;
       display: block;
       font-size: clamp(var(--s0), var(--scaler), var(--s1));
       font-weight: 500;
@@ -353,7 +353,7 @@ header.hero {
   padding-block-start: var(--s3);
   padding-block-end: var(--s1); }
   .toc-poem h2 {
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+    font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
     margin: var(--s0) 0;
     margin-block-end: var(--s0);
     margin-block-start: var(--s0); }
@@ -394,7 +394,7 @@ header.hero {
     grid-column-start: 2;
     grid-column-end: 3; }
   .about > h3 {
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
+    font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif; }
 
 .breadcrumb,
 .pager {
@@ -447,7 +447,7 @@ header.hero {
   grid-template-columns: minmax(var(--s-1), 1fr) minmax(auto, 79vw) minmax(1vw, 1fr);
   grid-auto-flow: row;
   grid-template-rows: auto;
-  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+  font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s0);
   justify-content: flex-start;
   margin-top: var(--s1);
@@ -489,7 +489,7 @@ article nav {
     margin-block-end: var(--s0);
     margin-block-start: var(--s0); }
   .interior-page main .interior-page-content ul > li {
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+    font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
     margin: var(--s0) 0;
     margin-block-end: var(--s0);
     margin-block-start: var(--s0); }
@@ -643,7 +643,7 @@ li {
   background-size: cover;
   clip-path: polygon(2px 5.31%, 100% 0px, 99.74% 96.13%, 0.26% 100.83%);
   display: grid;
-  font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+  font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
   font-size: var(--s05);
   overflow: hidden;
   padding-top: var(--s3);
@@ -830,7 +830,7 @@ li {
   margin-block-start: var(--s-1); }
   .has-dropcap .dropcap {
     float: left;
-    font-family: Georgia, "Liberation Serif", Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
+    font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
     font-size: var(--s3);
     font-weight: 900;
     margin: 0.1em 0.05em 0 0; }
