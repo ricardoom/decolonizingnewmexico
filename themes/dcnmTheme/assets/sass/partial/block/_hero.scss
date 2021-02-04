@@ -24,7 +24,6 @@ header {
     overflow: hidden;
     
     @media (max-width: $small-screen) {
-      // height: var(--threeFifths);
       padding-bottom: 0;
       padding-block-end: 0;
     }
@@ -37,11 +36,6 @@ header {
       height: 100%;
       max-width: none;
       width: 100vw;
-      // filter: opacity(0.5);
-
-      @media screen and (max-width: $small-screen) {
-        // filter: opacity(0.5)
-      }
 
       // TODO: do something less generic naming wise here:
       .a {
@@ -59,7 +53,7 @@ header {
 
     .title-bg {
       align-self: center;
-      fill: $taupish;
+      fill: $pale-sage;
       filter: opacity(0.65);
       grid-column: 1 / 2;
       grid-row: 2 / 3;

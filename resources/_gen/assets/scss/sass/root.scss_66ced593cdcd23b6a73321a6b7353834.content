@@ -288,7 +288,7 @@ header.hero {
       fill: rgba(247, 209, 191, 0.6); }
   header.hero .title-bg {
     align-self: center;
-    fill: #f0ddc6;
+    fill: #ced3ab;
     filter: opacity(0.65);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
