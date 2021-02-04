@@ -1,12 +1,12 @@
 +++
-title = 'Story'
-date = 2020-09-18T15:20:21-04:00
-draft = false
-slug = ''
-type = 'page'
-weight = 4
-color = 'golden-rod'
+color = "golden-rod"
+date = 2020-09-18T19:20:21Z
 images = "true"
+slug = ""
+title = "Story"
+type = "page"
+weight = 4
+
 +++
 In New Mexico, there are as many stories as there have been and are people, places and events, and recognizing that the story depends upon its teller is essential. Here, multiple and overlapping themes evoke origins, prophesy, innovation and convergence. Some are tales spun to excite, enchant or lure and others to inform and elevate.<!--more-->
 
@@ -60,7 +60,7 @@ Interrogating the language of conquest and dominance, as well as the words that 
 
 The most recognized of New Mexico symbols, the zia can be found on the New Mexico state flag, as well as on letterhead, license plates, tattoos and numerous other products. Archeologist Harry P. Mera, a Pennsylvania-born physician and resident of New Mexico at the time, often receives the credit for what is a distinctively Indigenous design. Responding to a 1923 competition issued by the Daughters of the American Revolution, he took the motif from a nineteenth century pot on display in the Museum of Anthropology in Santa Fe, where he worked with his spouse, Reba. He also incorporated in the flag, “red and yellow . . . the colors of Isabel of Castilla that the Spanish Conquistadors brought to the New World,” according to the Office of the New Mexico Secretary of State, . again reflecting the romanticization of Spanish conquest, this time embedded in the iconography of New Mexico. Further, Zia Pueblo continues to claim, as it rightfully has for decades in a trademark battle, that the State appropriated its sun symbol without the tribe’s permission.[^8]
 
-##### Municipal Seals
+#### Municipal Seals
 
 While municipalities should conduct a fuller analysis of their official seals I have examined those of the following four cities as a start: Albuquerque, Española, Santa Fe and Taos.
 
