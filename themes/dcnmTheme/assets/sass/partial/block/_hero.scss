@@ -24,7 +24,6 @@ header {
     overflow: hidden;
     
     @media (max-width: $small-screen) {
-      // height: var(--threeFifths);
       padding-bottom: 0;
       padding-block-end: 0;
     }
@@ -37,15 +36,10 @@ header {
       height: 100%;
       max-width: none;
       width: 100vw;
-      // filter: opacity(0.5);
-
-      @media screen and (max-width: $small-screen) {
-        // filter: opacity(0.5)
-      }
 
       // TODO: do something less generic naming wise here:
       .a {
-        fill: transparentize($color: $lava-orange, $amount: 0.5);
+        fill: $t-rose;
       }
 
       .b {
@@ -59,7 +53,7 @@ header {
 
     .title-bg {
       align-self: center;
-      fill: $golden-rod;
+      fill: $pale-sage;
       filter: opacity(0.65);
       grid-column: 1 / 2;
       grid-row: 2 / 3;
@@ -92,19 +86,12 @@ header {
 
       > span {
         --scaler: calc(var(--ratio) * 2vw);
-        color: $sienna;
+        color: $dark-gray;
         display: block;
         font-size: clamp( var(--s0), var(--scaler), var(--s1) );
         font-weight: 500;
         line-height: max(0.8, 1);
       }
-
-      // &.interior {
-      //   @include easyPadMarg($spacer: padding,
-      //   $baseVal: var(--s2),
-      //   $in-start: 0,
-      //   $in-end: 0);
-      // }
     }
 
     > * > * {
