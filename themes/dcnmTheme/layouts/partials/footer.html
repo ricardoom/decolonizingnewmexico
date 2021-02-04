@@ -6,17 +6,18 @@
     <ul class="[ credits ]">
       <li>&copy; {{ now.Year }} {{ $params.author }}</li>
       <li>Written and Produced by: {{ $params.author }}</li>
-      <li>Design and Development by: {{ $params.development }} | {{ $params.design }}</li>
-    </ul>
-    <ul class="[ sponsors ]">
-      <li>Made possible with generous help from:</li>
-      <li>
-        <a href="https://nmhum.org/" rel="noopener noreferrer" target="_blank">
+      <li>Design and Development by: {{ $params.development }} | <a href="http://ricardogalvez.design">{{ $params.design }}</a></li>
+      <li>This program is made possible through the generous support of the McCune Foundation, <a href="https://www.creativestrategies360.com/">Creative Strategies 360</a>, and the New Mexico Humanities Council.</li>
+      <li class="sponsor">
+        <a href="https://nmhum.org/" rel="noopener">
           <img src="/images/NMHClogoRGB.jpg" alt="logotype and for the New Mexico Humanities Council">
         </a>
-    </li>
-    </ul>
-  
+      </li>
+      <li class="sponsor">
+        <a href="https://nmmccune.org/" rel="noopener">
+          <img src="/images/McCune_Logo_sm.svg" alt="logotype for the McCune Foundation">
+        </a>
+      </li>
+    </ul>  
   </div>
-  {{ partial "footerBG.svg" . }}
 </footer>

@@ -641,9 +641,10 @@ li {
   background-color: #172f76;
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(2px 5.31%, 100% 0px, 99.74% 96.13%, 0.26% 100.83%);
   display: grid;
   font-family: "Liberation Serif", Georgia, Times, Cambria, Utopia, "Hoefler Text", "Nimbus Roman No9 L Regular", "Times New Roman", serif;
-  font-size: var(--s-1);
+  font-size: var(--s05);
   overflow: hidden;
   padding-top: var(--s3);
   padding-bottom: var(--s3);
@@ -656,35 +657,31 @@ li {
     color: #172e73;
     z-index: 2; }
   .site-footer div {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #fff;
     grid-area: 1 / 1 / -1 / -1;
-    justify-content: center;
-    text-align: center; }
+    justify-content: center; }
   .site-footer .credits {
-    padding: var(--s0) var(--s0) var(--s0) var(--s0); }
+    margin: auto 0 auto 0;
+    padding: var(--s0) var(--s0) var(--s0) var(--s0);
+    display: flex;
+    flex-wrap: wrap; }
+    @supports (margin-block-start: auto) {
+      .site-footer .credits {
+        margin-block-end: auto;
+        margin-block-start: auto;
+        margin-inline-start: 0;
+        margin-inline-end: 0; } }
     @supports (margin-block-start: var(--s0)) {
       .site-footer .credits {
         padding-block-end: var(--s0);
         padding-block-start: var(--s0);
         padding-inline-start: var(--s0);
         padding-inline-end: var(--s0); } }
-  .site-footer .sponsors {
-    padding: var(--s0) var(--s0) var(--s0) var(--s0); }
-    @supports (margin-block-start: var(--s0)) {
-      .site-footer .sponsors {
-        padding-block-end: var(--s0);
-        padding-block-start: var(--s0);
-        padding-inline-start: var(--s0);
-        padding-inline-end: var(--s0); } }
-    .site-footer .sponsors img {
-      width: 65%; }
-  .site-footer svg {
-    fill: #fff;
-    grid-area: 1 / 1 / -1 / -1;
-    transform: scale(2) translateY(calc(var(--s1) * 1.25));
-    transform-origin: bottom;
-    z-index: 1; }
+    .site-footer .credits li {
+      flex: 1 1 auto; }
+    .site-footer .credits .sponsor {
+      flex: 1 1 45%;
+      align-self: center; }
 
 .coda {
   margin-bottom: var(--s1);
