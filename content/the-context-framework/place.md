@@ -1,14 +1,13 @@
 +++
-title = 'Place'
-date = 2020-09-18T15:20:12-04:00
-draft = false
-slug = ''
-type = 'page'
-weight = 3
 color = "sky-blue"
+date = 2020-09-18T19:20:12Z
 images = "true"
-+++
+slug = ""
+title = "Place"
+type = "page"
+weight = 3
 
++++
 The representations of New Mexico spatially are often revealed in cartography, though in the colonial context, mapping is largely about power and politics: positioning places, people and objects in space; lines on parchment often made at the behest of distant popes, kings and presidents. <!--more-->The manifest ideology of empire making — Spain, Mexico, the United States — is revealed in the colonial and even modern context, where settlement occurs hand-in-hand with despoblacion, the dis-peopling of an area. Tracing the lure to land, reveals the complexity, perhaps even contradictions of land grants, artist colonies and the economic push and pull of migrations resulting in a contest over space and place that continue in the developments rising up in neighborhoods across the state.
 
 But place, the “first of all beings” according to Aristotle, is a living force and also reflects where wisdom continues to sit, particularly salient where the continuous human habitation on the land is thousands of years old, perhaps beyond time. Even now, when someone looks at a ruin, but sees a home full of laughter and tears, they recognize a deep connection to geographic humanity. Ancient world-views are reflected in Indigenous homelands, though many were diminished or lost by conquest, some have been retained: the four sacred mountains that define the parameters of Dinetah, the Diné homeland; and the Tewa Pueblo Indian world which embody spaces that radiate and reflect balance; surrounding bupingeh (heart of the Pueblo) are the homes and villages, just as nearby hills encircle the community and far off mountains further still, connecting land and sky. I also think of the Spanish word and concept, querencia, more than the love of land, but a generational connection to homeland for Indo-Hispanos who became land-based, peoples who are connected to Indigenous peoples ancestrally and in the contemporary moment, as in-laws, friends and neighbors.
@@ -66,9 +65,9 @@ These social issues also have impacted rural communities. Today, New Mexico’s 
 
 Although elders taught many, at a young age, including me, to recognize where we stand, upon the layers of Indigenous homelands, even and perhaps especially when those communities have been separated from land that no longer exists. I also learned this from other relatives and friends as an adult during my professional journey. As a graduate student, I was neighbors with Dr. Rina Swentzell, who became a friend and mentor, and speaking to this imperative of homelands, Rina said,“wherever we go, we leave our breath behind us.” For Dr. Swentzell, this powerful invocation recognizes those who came before us and the land upon which we sit, as well as the life force that remains with us as descendants.
 
-Over the past decade, many organizations have begun to adopt the practice of land acknowledgement; some mostly White-led organizations have even developed manuals for doing so. Concomitantly, in the racial reckoning that has swept the nation, protestors have painted with their own acknowledgements, with messages that reads simply, “Land Back”; and in Santa Fe on monuments, buildings and protest signs, “Tewa Land.” These messages also have proliferated on social media. These organizational-led acknowledgments and the messages from protest movements, however, freeze time and introduce a message of return without offering a tangible process of reparations to do so. Some also include either specific Indigenous communities whose claim would be disputed by other Indigenous communities or the message is so vague that it fails to acknowledge the specificity of sovereignty.
+Over the past decade, many organizations have begun to adopt the practice of land acknowledgement; some mostly White-led organizations have even developed manuals for doing so. Concomitantly, in the racial reckoning that has swept the nation, protestors have painted with their own acknowledgements, with messages that reads simply, “Land Back”; and in Santa Fe on monuments, buildings and protest signs, “Tewa Land.” These messages also have proliferated on social media. In all of these initiatives, it is important to identify the specific Indigenous communities and to offer a tangible process for reparations and to identify. 
 
-It is important to acknowledge Indigenous lands and their people, present and long since gone, to tell the truths about colonial and imperial conquest; but it is also important to recognize the complexity and layers, and to work in community, particularly in those Indigenous communities that do have claims to the lands. Every effort should be made to imagine and develop narratives that effect new openings for understanding and transformation, including a frame for reparations. I had the opportunity to engage in this deep work in collaboration with the Santa Fe Art Institute, culminating in a peopled-land acknowledgment that I drafted based on both archival and ethnographic research, and in consultation with archaeologists, other scholars, and most importantly, in partnership with Tesuque Pueblo. Its members deliberated the document, story gathered around it and ultimately made it their own. This land acknowledgment follows:
+The imperative underlying this work is  is to acknowledge Indigenous lands and their people, present and long since gone, to tell the truths about colonial and imperial conquest; but it is also important to recognize the complexity and layers, and to work in community, particularly in those Indigenous communities that do have claims to the lands. Every effort should be made to imagine and develop narratives that effect new openings for understanding and transformation, including a frame for reparations. I had the opportunity to engage in this deep work in collaboration with the Santa Fe Art Institute, culminating in a peopled-land acknowledgment that I drafted based on both archival and ethnographic research, and in consultation with archaeologists, other scholars, and most importantly, in partnership with Tesuque Pueblo. Its members deliberated the document, story gathered around it and ultimately made it their own. This land acknowledgment follows:
 
 ##### Acknowledging this place, its history and its people
 
