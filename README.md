@@ -9,6 +9,7 @@ A scholarly project. This site uses Hugo for static site generation, content is 
 
 - Sponsor logos added to the footer space
 - CSS clean up / removal of commented out
+- Added in Open Graph meta
 
 ### v0.0.8
 
