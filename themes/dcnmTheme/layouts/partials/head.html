@@ -1,3 +1,7 @@
+{{ $ogCard := .Site.Params.meta.cardImage }}
+
+{{ $metaURL := .Site.Params.meta.url }}
+
 {{ $targetPath := "css/root.css" }}
 
 {{ $options := ( dict "targetPath" $targetPath "enableSourceMap" true "includePaths" (slice "sass/vendor")) }}
@@ -20,6 +24,11 @@
   {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}">
   {{ end }}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ $metaURL }}" />
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta property="og:description" content="The goal of the project was to understand and address the various manifestations of historic trauma that have continued to divide the community of Santa Fe." />
+  <meta property="og:image" content="{{ $ogCard }}" />
   {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $devStyle.Permalink }}">
   {{ else }}

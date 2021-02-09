@@ -22,7 +22,9 @@ sectionPagesMenu = "main"
     homepage = 'home-page'
     interiorpage = 'interior-page'
     layouttest = 'layout-test'
-    
+  [params.meta]
+      url = "http://decolonizingnewmexico.com"
+      cardImage = "https://res.cloudinary.com/toupeeproofbullets/image/upload/v1612896174/dcnm/dcnm_card.png"
 [menu]
   [[ menu.hp ]]
     identifier = "Table of Contents"
