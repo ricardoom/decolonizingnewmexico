@@ -11,7 +11,7 @@ sectionPagesMenu = "main"
   design = "ricardogalvez.design"
   development ="Ricardo E. Gálvez"
   subtitle = "Remembering, Reimagining and Recovering"
-  description = "The Decolonization of New Mexico"
+  description = "The goal of the project was to understand and address the various manifestations of historic trauma that have continued to divide the community of Santa Fe."
   heroimage = "https://res.cloudinary.com/toupeeproofbullets/image/upload/v1598883685/dcnm/IMG_0569.jpg"
   placeHolderSVG = "/images/placeHolding.svg"  
   [params.cloudinary]

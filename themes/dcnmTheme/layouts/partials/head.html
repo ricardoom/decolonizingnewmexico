@@ -21,14 +21,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Site.Title }}" />
   {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}">
+  <meta property="og:description" content="{{ . }}" />
+  <meta name="twitter:site" content="{{ . }}" />
+  <meta name="twitter:description" content="{{ . }}" />
   {{ end }}
+  <meta name="twitter:creator" content="@ERaelGalvez">
+  <meta name="twitter:image" content="{{ $ogCard }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ $metaURL }}" />
   <meta property="og:title" content="{{ .Site.Title }}" />
-  <meta property="og:description" content="The goal of the project was to understand and address the various manifestations of historic trauma that have continued to divide the community of Santa Fe." />
   <meta property="og:image" content="{{ $ogCard }}" />
+  <meta property="twitter:image:alt" content="An image of two boys dressed in plastic conquistador costumes while a young girl in princess costume looks on">
   {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $devStyle.Permalink }}">
   {{ else }}
